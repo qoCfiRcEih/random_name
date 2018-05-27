@@ -1,0 +1,2750 @@
+<?xml version="1.0"?>
+       <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "xhtml11.dtd">
+       <html xmlns="http://www.w3.org/1999/xhtml"
+             xml:lang="en"><head><meta name="author" content="Created with Hot Potatoes by Half-Baked Software"></meta><meta name="keywords" content="Hot Potatoes, Hot Potatoes, Half-Baked Software, Windows, University of Victoria"></meta>
+
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<meta name="DC:Title" content="Tema 8: Documentaci&#x00F3;n y comunicaci&#x00F3;n" />
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+
+<title>
+Tema 8: Documentaci&#x00F3;n y comunicaci&#x00F3;n
+</title>
+
+<!-- Made with executable version 6.3 Release 0 Build 5 -->
+
+<!-- The following insertion allows you to add your own code directly to this head tag from the configuration screen -->
+
+
+
+<style type="text/css">
+
+/*  hp6.cs_                   */ 
+/*  Facelift Responsive      */
+/*  7 February 2014         */  
+/*  This version 1.3 - 24 March 2016 - Add responsive iframe */
+
+/* This is a modified CSS3 stylesheet for rounded corners of buttons,
+the layout boxes and the input boxes in the exercise,
+as well as dropshadows on buttons and draggable cards in JMix drag and drop */
+
+/* Removed all browser specific -moz -khtml -webkit  24 March 2016 */
+
+/* Stan Bogdanov  */
+/* stanbogdanov@yahoo.com     */
+/* http://ewbooks.info/hotpot */
+   
+
+/* Elements in square brackets are replaced by data based on configuration settings when the exercise is built. */
+
+/* Resetting */
+/* set image and video max width to 100% */
+img,
+video,
+object,
+embed {
+	max-width: 100%;
+	height: auto;
+	/*width: auto\9; The CSS validator doesn't like this*/ /* for ie8 but should we care about IE8, when IE11 has been around for quite a lot ?*/
+} 
+
+	.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+	margin-left:auto;margin-right:auto;text-align:center; /* Stan: Comment out this line if you don't want the video to be centered */
+}
+
+	.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* BeginCorePageCSS */
+
+/* Made with executable version 6.3 Release 0 Build 5 */
+
+
+/* Hack to hide a nested Quicktime player from IE, which can't handle it. */
+* html object.MediaPlayerNotForIE {
+	display: none;
+}
+
+body{
+	font-family: arial,helvetica,sans-serif;
+	background-color: #ffffff;
+	color: #000000;
+ 
+	margin-right: 1%;
+	margin-left: 1%;
+	font-size: small;
+}
+
+p{
+	text-align: left;
+	margin: 0px;
+	font-size: 100%;
+}
+
+table,div,span,td{
+	font-size: 100%;
+	color: #000000;
+}
+
+div.Titles{
+	padding: 0.5em;
+	text-align: center;
+	color: #000000;
+}
+
+button{
+	font-family: arial,helvetica,sans-serif;
+	font-size: 100%;
+	display: inline;
+/* Stan_Rounded buttons */
+	border-radius: 5px;
+	padding: 4px 17px;
+	margin:2px;
+/* Stan_Rounded buttons  END*/
+}
+
+button:link,
+button:visited,
+button:hover,
+button:focus,
+button:active {
+	outline: none;
+}
+
+
+.ExerciseTitle{
+	font-size: 100%;
+	color: #000000;
+}
+
+.ExerciseSubtitle{
+	font-size: 100%;
+	color: #000000;
+}
+
+div.StdDiv{
+	background-color: #dddddd;
+	text-align: center;
+	font-size: 100%;
+	color: #000000;
+	padding: 0.5em;
+	border: 1px solid #ccc;
+	margin-bottom: 1px;
+/*Stan Rounded corners of layout boxes */	
+	border-radius: 5px;
+/*Stan Rounded corners of layout boxes */	
+}
+
+/* EndCorePageCSS */
+
+.RTLText{
+	text-align: right;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", arial,helvetica,sans-serif; 
+}
+
+.CentredRTLText{
+	text-align: center;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", arial,helvetica,sans-serif; 
+}
+
+button p.RTLText{
+	text-align: center;
+}
+
+.RTLGapBox{
+	text-align: right;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Times New Roman", arial,helvetica,sans-serif;
+}
+
+.Guess{
+	font-weight: bold;
+}
+
+.CorrectAnswer{
+	font-weight: bold;
+}
+
+div#Timer{
+	padding: 0.25em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: #000000;
+
+}
+
+span#TimerText{
+	padding: 0.25em;
+	border-width: 1px;
+	border-style: solid;
+	font-weight: bold;
+	display: none;
+	color: #000000;
+/* Stan  rounded corners of timer */	
+  border-radius: 10px;
+  /* Stan  rounded corners of timer end */
+}
+
+span.Instructions{
+
+}
+
+div.ExerciseText{
+
+}
+
+.FeedbackText, .FeedbackText span.CorrectAnswer, .FeedbackText span.Guess, .FeedbackText span.Answer{
+	color: #000000;
+}
+
+.LeftItem{
+	font-size: 100%;
+	color: #000000;
+	text-align: left;
+}
+
+.RightItem{
+	font-weight: bold;
+	font-size: 100%;
+	color: #000000;
+}
+
+span.CorrectMark{
+
+}
+
+
+input, textarea{
+	font-family: Verdana,Geneva,Arial,sans-serif;
+	font-size: 100%;
+
+/* Stan_rounded border of input boxes and textarea */
+	border-radius: 5px;
+	padding: 5px;
+	border:1px solid silver;
+/* Stan_rounded border of input boxes and textarea END */
+}
+
+/* Stan_rounded focus border of input boxes and textarea */
+
+input:focus, textarea:focus {
+	outline: none; 
+	border-radius: 5px;
+	padding: 5px;
+	border:1px solid silver;
+/* Stan rounded focus border of input boxes and textarea end 8 December 2012 */	
+
+
+/* Stan inset dropshade of input boxes and textarea */
+	box-shadow: -1px -1px 5px #888;
+/* Stan inset dropshade of input boxes and textarea end 8 December 2012 */
+	}
+	
+select{
+	font-size: 100%;
+	/* Stan - Rounded menu */
+	border-radius: 5px;
+	padding: 3px 2px 3px 5px;
+	border: 1px solid silver;
+/* Stan - Rounded menu END */
+}
+
+select:focus {
+outline:none;
+}
+
+div.Feedback {
+	background-color: #ffffff;
+	left: 33%;
+	width: 34%;
+	top: 33%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+	position: absolute;
+	display: none;
+	font-size: 100%;
+/* Stan_rounded border of feedback box */
+	border-radius: 5px;
+	padding: 5px;
+/* Stan_rounded border of fixed box END */
+	
+}
+
+
+
+
+div.ExerciseDiv{
+	color: #000000;
+}
+
+/* JMatch flashcard styles */
+table.FlashcardTable{
+	background-color: transparent;
+	color: #000000;
+	border-color: #000000;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	width: 90%;
+	position: relative;
+	text-align: center;
+	padding: 0px;
+}
+
+table.FlashcardTable tr{
+	border-style: none;
+	margin: 0px;
+	padding: 0px;
+	background-color: #dddddd;
+}
+
+table.FlashcardTable td.Showing{
+	font-size: 140%;
+	text-align: center;
+	width: 50%;
+	display: table-cell;
+	padding: 2em;
+	margin: 0px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: silver;
+	color: #000000;
+	background-color: #dddddd;
+}
+
+table.FlashcardTable td.Hidden{
+	display: none;
+}
+
+/* JMix styles */
+div#SegmentDiv{
+	margin-top: 2em;
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+a.ExSegment{
+	font-size: 120%;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+}
+
+span.RemainingWordList{
+	font-style: italic;
+}
+
+div.DropLine {
+	position: absolute;
+	text-align: center;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	width: 80%;
+}
+
+/* JCloze styles */
+
+.ClozeWordList{
+	text-align: center;
+	font-weight: bold;
+}
+
+div.ClozeBody{
+	text-align: left;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	line-height: 2.0
+}
+
+span.GapSpan{
+	font-weight: bold;
+}
+
+/* JCross styles */
+
+table.CrosswordGrid{
+	margin: auto auto 1em auto;
+	border-collapse: collapse;
+	padding: 0px;
+	background-color: #000000;
+}
+
+table.CrosswordGrid tbody tr td{
+	width: 1.5em;
+	height: 1.5em;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 140%;
+	padding: 1px;
+	margin: 0px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	color: #000000;
+}
+
+table.CrosswordGrid span{
+	color: #000000;
+}
+
+table.CrosswordGrid td.BlankCell{
+	background-color: #000000;
+	color: #000000;
+}
+
+table.CrosswordGrid td.LetterOnlyCell{
+	text-align: center;
+	vertical-align: middle;
+	background-color: #ffffff;
+	color: #000000;
+	font-weight: bold;
+}
+
+table.CrosswordGrid td.NumLetterCell{
+	text-align: left;
+	vertical-align: top;
+	background-color: #ffffff;
+	color: #000000;
+	padding: 1px;
+	font-weight: bold;
+}
+
+.NumLetterCellText{
+	cursor: pointer;
+	color: #000000;
+}
+
+.GridNum{
+	vertical-align: super;
+	font-size: 66%;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+}
+
+.GridNum:hover, .GridNum:visited{
+	color: #000000;
+}
+
+table#Clues{
+	margin: auto;
+	vertical-align: top;
+}
+
+table#Clues td{
+	vertical-align: top;
+}
+
+table.ClueList{
+  margin: auto;
+}
+
+td.ClueNum{
+	text-align: right;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+td.Clue{
+	text-align: left;
+}
+
+div#ClueEntry{
+	text-align: left;
+	margin-bottom: 1em;
+}
+
+/* Keypad styles */
+
+div.Keypad{
+	text-align: center;
+	display: none; /* initially hidden, shown if needed */
+	margin-bottom: 0.5em;
+}
+
+div.Keypad button{
+	font-family: arial,helvetica,sans-serif;
+	font-size: 100%;
+	background-color: #ffffff;
+	color: #000000;
+	width: 2em;
+}
+
+/* JQuiz styles */
+
+div.QuestionNavigation{
+	text-align: center;
+}
+
+.QNum{
+	margin: 0em 1em 0.5em 1em;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+textarea{
+	font-family: arial,helvetica,sans-serif;
+	border: 1px solid #ccc;
+}
+
+.QuestionText{
+	text-align: left;
+	margin: 0px;
+	font-size: 100%;
+}
+
+.Answer{
+	font-size: 100%;
+	letter-spacing: 0.1em;
+}
+
+.PartialAnswer{
+	font-size: 100%;
+	letter-spacing: 0.1em;
+	color: #000000;
+}
+
+.Highlight{
+	color: #000000;
+	background-color: gold;
+	font-weight: bold;
+	font-size: 100%;
+}
+
+ol.QuizQuestions{
+	text-align: left;
+	list-style-type: none;
+}
+
+li.QuizQuestion{
+	padding: 1em;
+	border-color: #ccc;
+}
+
+ol.MCAnswers{
+	text-align: left;
+	list-style-type: upper-alpha;
+	padding: 1em;
+}
+
+ol.MCAnswers li{
+	margin-bottom: 1em;
+}
+
+ol.MSelAnswers{
+	text-align: left;
+	list-style-type: lower-alpha;
+	padding: 1em;
+}
+
+div.ShortAnswer{
+	padding: 1em;
+}
+
+.FuncButton {
+	text-align: center;
+	border: 1px solid silver;
+	margin-right:2px;
+
+	border-left-color: #eeeeee;
+	border-top-color: #eeeeee;
+	border-right-color: #6e6e6e;
+	border-bottom-color: #6e6e6e;
+	color: #000000;
+	background-color: #dddddd;
+
+
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+/* Stan Button Shadow Dec 4 2012*/	
+	box-shadow: 2px 2px 5px #888;
+/* Stan Button Shadow end */
+}
+
+.FuncButtonUp {
+	text-align: center;
+	border: 1px solid silver;
+	margin-right:2px;
+
+	border-left-color: #eeeeee;
+	border-top-color: #eeeeee;
+	border-right-color: #6e6e6e;
+	border-bottom-color: #6e6e6e;
+
+	background-color: #000000;
+	color: #dddddd;
+
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+
+/* Stan Button Shadow */	
+	box-shadow: -2px -2px 5px #888;
+/* Stan Button Shadow end  Dec 4 2012*/
+}
+
+.FuncButtonDown {
+	text-align: center;
+	border:1px solid silver;
+	margin-right:2px;
+
+	border-left-color: #6e6e6e;
+	border-top-color: #6e6e6e;
+	border-right-color: #eeeeee;
+	border-bottom-color: #eeeeee;
+	background-color: #000000;
+	color: #dddddd;
+
+
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+
+/* Stan Button Shadow Dec 4 2012 */	
+	box-shadow: -2px -2px 5px #888;
+/* Stan Button Shadow end */
+}
+
+/*BeginNavBarStyle*/
+
+div.NavButtonBar{
+	background-color: #000000;
+	border: 1px solid #000000;
+	text-align: center;
+	margin: 2px 0px 2px 0px;
+	clear: both;
+	font-size: 100%;
+
+/* Stan Rounded corner of Nav Bar 	*/
+	border-radius: 5px;
+/* Stan Rounded corner of Nav Bar  end */
+/* Stan NavBar Shadow Dec 6 2012 	*/
+	box-shadow: -2px -2px 5px #888;
+/* Stan navBar Shadow end  Dec 6 2012 */
+padding:1px;
+}
+
+.NavButton {
+	border: 1px solid silver;
+	
+	border-left-color: #7f7f7f;
+	border-top-color: #7f7f7f;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	background-color: #000000;
+	color: #ffffff;
+
+
+	cursor: pointer;	
+/* Stan Shadow on buttons Dec 4 2012 	*/
+	box-shadow: 2px 2px 5px #000000;
+/* Stan Shadow on buttons end */
+}
+
+.NavButtonUp {
+	border:1px solid silver;
+
+	border-left-color: #7f7f7f;
+	border-top-color: #7f7f7f;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	color: #000000;
+	background-color: #dddddd;
+
+	cursor: pointer;	
+/* Stan Shadow on buttons Dec 4 2012 */
+	box-shadow: -2px -2px 5px #000000;
+/* Stan Shadow on buttons end */
+}
+
+.NavButtonDown {
+	border: 1px solid silver;
+
+	border-left-color: #000000;
+	border-top-color: #000000;
+	border-right-color: #7f7f7f;
+	border-bottom-color: #7f7f7f;
+	color: #000000;
+	background-color: #dddddd;
+
+	cursor: pointer;
+/* Stan Shadow on buttons Dec 4 2012 */
+	box-shadow: -2px -2px 5px #000000;
+/* Stan Shadow on buttons end */	
+}
+
+/*EndNavBarStyle*/
+
+a{
+	color: #0000ff;
+}
+
+a:visited{
+	color: #ff00ff;
+}
+
+a:hover{
+	color: #0000ff;
+}
+
+div.CardStyle {
+	position: absolute;
+	font-family: arial,helvetica,sans-serif;
+	font-size: 100%;
+	padding: 5px;
+	border: 1px solid silver;
+	color: #000000;
+	background-color: #dddddd;
+	left: -50px;
+	top: -50px;
+	overflow: visible;
+	
+/* Stan_rounded border of cards */
+	border-radius: 5px;
+/* Stan_rounded border of cards END */
+
+/* Stan card Shadow Dec 4 2012 */
+	box-shadow: -2px -2px 2px #888;
+/* Stan card Shadow end */
+}
+
+.rtl{
+	text-align: right;
+	font-size: 140%;
+}
+
+
+/* Responsive */
+
+
+/****************
+smaller than 980
+*****************/
+@media screen and (max-width: 980px) {
+
+/* embedded videos */
+	.video embed,
+	.video object {
+		width: 100%;
+		height: auto;
+		min-height: 300px;
+	}
+	
+	.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+	margin-left:auto;margin-right:auto;text-align:center; /* Stan: Comment out this line if you don't want the video to be centered */
+}
+
+	.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div.Feedback {
+	background-color: #ffffff;
+	left: 2%;
+	top: 1%;
+	width: 95%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+	position: absolute;
+	display: none;
+	font-size: 100%;
+/* Stan_rounded border of feedback box */
+	border-radius: 5px;
+	padding: 5px;
+/* Stan_rounded border of fixed box END */
+	
+	}
+}
+
+/************************************************************************************
+smaller than 650
+*************************************************************************************/
+@media screen and (max-width: 650px) {
+
+	/* embedded videos */
+	.video embed,
+	.video object {
+		min-height: 250px;
+	}
+
+	.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+	margin-left:auto;margin-right:auto;text-align:center; /* Stan: Comment out this line if you don't want the video to be centered */
+}
+
+	.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+	div.LeftContainer{
+		border-style: none;
+		padding: 2px 0px 2px 0px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+	div.RightContainer{
+		border-style: none;
+		padding: 2px 0px 2px 0px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+div.Feedback {
+	background-color: #ffffff;
+	left: 2%;
+	top: 1%;
+	width: 93%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+	position: absolute;
+	display: none;
+	font-size: 100%;
+/* Stan_rounded border of feedback box */
+	border-radius: 5px;
+	padding: 5px;
+/* Stan_rounded border of fixed box END */
+	
+}
+	
+	}
+
+/************************************************************************************
+smaller than 560
+*************************************************************************************/
+@media screen and (max-width: 480px) {
+
+	/* disable webkit text size adjust (for iPhone) */
+	html {
+		-webkit-text-size-adjust: none;
+	}
+	
+	/* embedded videos */
+	.video embed,
+	.video object {
+		min-height: 250px;
+	}
+	
+	.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+	margin-left:auto;margin-right:auto;text-align:center; /* Stan: Comment out this line if you don't want the video to be centered */
+}
+
+	.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+	
+	div.LeftContainer{
+		border-style: none;
+		padding: 2px 0px 2px 0px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+	div.RightContainer{
+		border-style: none;
+		padding: 2px 0px 2px 0px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+div.Feedback {
+	background-color: #ffffff;
+	left: 2%;
+	top: 1%;
+	width: 92%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+	position: absolute;
+	display: none;
+	font-size: 100%;
+/* Stan_rounded border of feedback box */
+	border-radius: 5px;
+	padding: 5px;
+/* Stan_rounded border of fixed box END */
+	
+	}
+}
+
+/************************************************************************************
+smaller than 480
+*************************************************************************************/
+@media screen  and (max-width: 360px) {
+      
+	/* disable webkit text size adjust (for iPhone) */
+	html {
+		-webkit-text-size-adjust: none;
+	}
+	
+	/* embedded videos */
+	.video embed,
+	.video object {
+		min-height: 250px;
+	}
+	
+	.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+	margin-left:auto;margin-right:auto;text-align:center; /* Stan: Comment out this line if you don't want the video to be centered */
+}
+
+	.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+	
+	
+	div.LeftContainer{
+		border-style: none;
+		padding: 2px 0px 2px 0px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+	div.RightContainer{
+		border-style: none;
+		padding: 2px 0px 2px 0px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+div.Feedback {
+	background-color: #ffffff;
+	left: 2%;
+	top: 1%;
+	width: 92%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+	position: absolute;
+	display: none;
+	font-size: 100%;
+/* Stan_rounded border of feedback box */
+	border-radius: 5px;
+	padding: 5px;
+/* Stan_rounded border of fixed box END */
+	
+	}
+}
+	
+
+@media screen and (max-width: 320px) {
+    
+	/* disable webkit text size adjust (for iPhone) */
+	html {
+		-webkit-text-size-adjust: none;
+	}
+	
+	/* embedded videos */
+	.video embed,
+	.video object {
+		min-height: 250px;
+	}
+	
+	.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+	margin-left:auto;margin-right:auto;text-align:center; /* Stan: Comment out this line if you don't want the video to be centered */
+}
+
+	.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+	div.LeftContainer{
+		border-style: none;
+		padding: 2px 0px 2px 0px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+	div.RightContainer{
+		border-style: none;
+		padding: 2px 0px 2px 0px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+div.Feedback {
+	background-color: #ffffff;
+	left: 2%;
+	top: 1%;
+	width: 92%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+	position: absolute;
+	display: none;
+	font-size: 100%;
+/* Stan_rounded border of feedback box */
+	border-radius: 5px;
+	padding: 5px;
+/* Stan_rounded border of fixed box END */
+	
+	}
+      }
+	  
+
+/* ============================================== */
+/* Smaller devices                                */
+/* Android Portrait                       240x320 */
+/* ============================================== */
+@media screen and (max-width:240px) {
+
+	
+	/* embedded videos */
+	.video embed,
+	.video object {
+		min-height: 250px;
+	}
+	
+		
+	.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+	margin-left:auto;margin-right:auto;text-align:center; /* Stan: Comment out this line if you don't want the video to be centered */
+}
+
+	.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+	
+	div.LeftContainer{
+		border-style: none;
+		padding: 2px 0px 2px 0px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+	div.RightContainer{
+		border-style: none;
+		padding: 2px 0px 2px 0px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+div.Feedback {
+	background-color: #ffffff;
+	left: 2%;
+	top: 1%;
+	width: 92%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+	position: absolute;
+	display: none;
+	font-size: 100%;
+/* Stan_rounded border of feedback box */
+	border-radius: 5px;
+	padding: 5px;
+/* Stan_rounded border of fixed box END */
+	
+	}
+}
+
+
+</style>
+
+<script type="text/javascript">
+
+//<![CDATA[
+
+<!--
+
+
+
+
+function Client(){
+//if not a DOM browser, hopeless
+	this.min = false; if (document.getElementById){this.min = true;};
+
+	this.ua = navigator.userAgent;
+	this.name = navigator.appName;
+	this.ver = navigator.appVersion;  
+
+//Get data about the browser
+	this.mac = (this.ver.indexOf('Mac') != -1);
+	this.win = (this.ver.indexOf('Windows') != -1);
+
+//Look for Gecko
+	this.gecko = (this.ua.indexOf('Gecko') > 1);
+	if (this.gecko){
+		this.geckoVer = parseInt(this.ua.substring(this.ua.indexOf('Gecko')+6, this.ua.length));
+//		if (this.geckoVer < 20020000){this.min = false;}
+	}
+	
+//Look for Firebird
+	this.firebird = (this.ua.indexOf('Firebird') > 1);
+	
+//Look for Safari
+	this.safari = (this.ua.indexOf('Safari') > 1);
+	if (this.safari){
+		this.gecko = false;
+	}
+	
+//Look for IE
+	this.ie = (this.ua.indexOf('MSIE') > 0);
+	if (this.ie){
+		this.ieVer = parseFloat(this.ua.substring(this.ua.indexOf('MSIE')+5, this.ua.length));
+		if (this.ieVer < 5.5){this.min = false;}
+	}
+	
+//Look for Opera
+	this.opera = (this.ua.indexOf('Opera') > 0);
+	if (this.opera){
+		this.operaVer = parseFloat(this.ua.substring(this.ua.indexOf('Opera')+6, this.ua.length));
+		if (this.operaVer < 7.04){this.min = false;}
+	}
+	if (this.min == false){
+//		alert('Your browser may not be able to handle this page.');
+	}
+	
+//Special case for the horrible ie5mac
+	this.ie5mac = (this.ie&&this.mac&&(this.ieVer<6));
+}
+
+var C = new Client();
+
+//for (prop in C){
+//	alert(prop + ': ' + C[prop]);
+//}
+
+
+
+//CODE FOR HANDLING NAV BUTTONS AND FUNCTION BUTTONS
+
+//[strNavBarJS]
+function NavBtnOver(Btn){
+	if (Btn.className != 'NavButtonDown'){Btn.className = 'NavButtonUp';}
+}
+
+function NavBtnOut(Btn){
+	Btn.className = 'NavButton';
+}
+
+function NavBtnDown(Btn){
+	Btn.className = 'NavButtonDown';
+}
+//[/strNavBarJS]
+
+function FuncBtnOver(Btn){
+	if (Btn.className != 'FuncButtonDown'){Btn.className = 'FuncButtonUp';}
+}
+
+function FuncBtnOut(Btn){
+	Btn.className = 'FuncButton';
+}
+
+function FuncBtnDown(Btn){
+	Btn.className = 'FuncButtonDown';
+}
+
+function FocusAButton(){
+	if (document.getElementById('CheckButton1') != null){
+		document.getElementById('CheckButton1').focus();
+	}
+	else{
+		if (document.getElementById('CheckButton2') != null){
+			document.getElementById('CheckButton2').focus();
+		}
+		else{
+			document.getElementsByTagName('button')[0].focus();
+		}
+	}
+}
+
+
+
+
+//CODE FOR HANDLING DISPLAY OF POPUP FEEDBACK BOX
+
+var topZ = 1000;
+
+function ShowMessage(Feedback){
+	var Output = Feedback + '<br /><br />';
+	document.getElementById('FeedbackContent').innerHTML = Output;
+	var FDiv = document.getElementById('FeedbackDiv');
+	topZ++;
+	FDiv.style.zIndex = topZ;
+	FDiv.style.top = TopSettingWithScrollOffset(30) + 'px';
+
+	FDiv.style.display = 'block';
+
+	ShowElements(false, 'input');
+	ShowElements(false, 'select');
+	ShowElements(false, 'object');
+	ShowElements(true, 'object', 'FeedbackContent');
+
+//Focus the OK button
+	setTimeout("document.getElementById('FeedbackOKButton').focus()", 50);
+	
+//
+}
+
+function ShowElements(Show, TagName, ContainerToReverse){
+// added third argument to allow objects in the feedback box to appear
+//IE bug -- hide all the form elements that will show through the popup
+//FF on Mac bug : doesn't redisplay objects whose visibility is set to visible
+//unless the object's display property is changed
+
+	//get container object (by Id passed in, or use document otherwise)
+	TopNode = document.getElementById(ContainerToReverse);
+	var Els;
+	if (TopNode != null) {
+		Els = TopNode.getElementsByTagName(TagName);
+	} else {
+		Els = document.getElementsByTagName(TagName);
+	}
+
+	for (var i=0; i<Els.length; i++){
+		if (TagName == "object") {
+			//manipulate object elements in all browsers
+			if (Show == true){
+				Els[i].style.visibility = 'visible';
+				//get Mac FireFox to manipulate display, to force screen redraw
+				if (C.mac && C.gecko) {Els[i].style.display = '';}
+			}
+			else{
+				Els[i].style.visibility = 'hidden';
+				if (C.mac && C.gecko) {Els[i].style.display = 'none';}
+			}
+		} 
+		else {
+			// tagName is either input or select (that is, Form Elements)
+			// ie6 has a problem with Form elements, so manipulate those
+			if (C.ie) {
+				if (C.ieVer < 7) {
+					if (Show == true){
+						Els[i].style.visibility = 'visible';
+					}
+					else{
+						Els[i].style.visibility = 'hidden';
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+function HideFeedback(){
+	document.getElementById('FeedbackDiv').style.display = 'none';
+	ShowElements(true, 'input');
+	ShowElements(true, 'select');
+	ShowElements(true, 'object');
+	if (Finished == true){
+		Finish();
+	}
+}
+
+
+//GENERAL UTILITY FUNCTIONS AND VARIABLES
+
+//PAGE DIMENSION FUNCTIONS
+function PageDim(){
+//Get the page width and height
+	this.W = 600;
+	this.H = 400;
+	this.W = document.getElementsByTagName('body')[0].clientWidth;
+	this.H = document.getElementsByTagName('body')[0].clientHeight;
+}
+
+var pg = null;
+
+function GetPageXY(El) {
+	var XY = {x: 0, y: 0};
+	while(El){
+		XY.x += El.offsetLeft;
+		XY.y += El.offsetTop;
+		El = El.offsetParent;
+	}
+	return XY;
+}
+
+function GetScrollTop(){
+	if (typeof(window.pageYOffset) == 'number'){
+		return window.pageYOffset;
+	}
+	else{
+		if ((document.body)&&(document.body.scrollTop)){
+			return document.body.scrollTop;
+		}
+		else{
+			if ((document.documentElement)&&(document.documentElement.scrollTop)){
+				return document.documentElement.scrollTop;
+			}
+			else{
+				return 0;
+			}
+		}
+	}
+}
+
+function GetViewportHeight(){
+	if (typeof window.innerHeight != 'undefined'){
+		return window.innerHeight;
+	}
+	else{
+		if (((typeof document.documentElement != 'undefined')&&(typeof document.documentElement.clientHeight !=
+     'undefined'))&&(document.documentElement.clientHeight != 0)){
+			return document.documentElement.clientHeight;
+		}
+		else{
+			return document.getElementsByTagName('body')[0].clientHeight;
+		}
+	}
+}
+
+function TopSettingWithScrollOffset(TopPercent){
+	var T = Math.floor(GetViewportHeight() * (TopPercent/100));
+	return GetScrollTop() + T; 
+}
+
+//CODE FOR AVOIDING LOSS OF DATA WHEN BACKSPACE KEY INVOKES history.back()
+var InTextBox = false;
+
+function SuppressBackspace(e){ 
+	if (InTextBox == true){return;}
+	if (C.ie) {
+		thisKey = window.event.keyCode;
+	}
+	else {
+		thisKey = e.keyCode;
+	}
+
+	var Suppress = false;
+
+	if (thisKey == 8) {
+		Suppress = true;
+	}
+
+	if (Suppress == true){
+		if (C.ie){
+			window.event.returnValue = false;	
+			window.event.cancelBubble = true;
+		}
+		else{
+			e.preventDefault();
+		}
+	}
+}
+
+if (C.ie){
+	document.attachEvent('onkeydown',SuppressBackspace);
+	window.attachEvent('onkeydown',SuppressBackspace);
+}
+else{
+	if (window.addEventListener){
+		window.addEventListener('keypress',SuppressBackspace,false);
+	}
+}
+
+function ReduceItems(InArray, ReduceToSize){
+	var ItemToDump=0;
+	var j=0;
+	while (InArray.length > ReduceToSize){
+		ItemToDump = Math.floor(InArray.length*Math.random());
+		InArray.splice(ItemToDump, 1);
+	}
+}
+
+function Shuffle(InArray){
+	var Num;
+	var Temp = new Array();
+	var Len = InArray.length;
+
+	var j = Len;
+
+	for (var i=0; i<Len; i++){
+		Temp[i] = InArray[i];
+	}
+
+	for (i=0; i<Len; i++){
+		Num = Math.floor(j  *  Math.random());
+		InArray[i] = Temp[Num];
+
+		for (var k=Num; k < (j-1); k++) {
+			Temp[k] = Temp[k+1];
+		}
+		j--;
+	}
+	return InArray;
+}
+
+function WriteToInstructions(Feedback) {
+	document.getElementById('InstructionsDiv').innerHTML = Feedback;
+
+}
+
+
+
+
+function EscapeDoubleQuotes(InString){
+	return InString.replace(/"/g, '&quot;')
+}
+
+function TrimString(InString){
+        var x = 0;
+
+        if (InString.length != 0) {
+                while ((InString.charAt(InString.length - 1) == '\u0020') || (InString.charAt(InString.length - 1) == '\u000A') || (InString.charAt(InString.length - 1) == '\u000D')){
+                        InString = InString.substring(0, InString.length - 1)
+                }
+
+                while ((InString.charAt(0) == '\u0020') || (InString.charAt(0) == '\u000A') || (InString.charAt(0) == '\u000D')){
+                        InString = InString.substring(1, InString.length)
+                }
+
+                while (InString.indexOf('  ') != -1) {
+                        x = InString.indexOf('  ')
+                        InString = InString.substring(0, x) + InString.substring(x+1, InString.length)
+                 }
+
+                return InString;
+        }
+
+        else {
+                return '';
+        }
+}
+
+function FindLongest(InArray){
+	if (InArray.length < 1){return -1;}
+
+	var Longest = 0;
+	for (var i=1; i<InArray.length; i++){
+		if (InArray[i].length > InArray[Longest].length){
+			Longest = i;
+		}
+	}
+	return Longest;
+}
+
+//UNICODE CHARACTER FUNCTIONS
+function IsCombiningDiacritic(CharNum){
+	var Result = (((CharNum >= 0x0300)&&(CharNum <= 0x370))||((CharNum >= 0x20d0)&&(CharNum <= 0x20ff)));
+	Result = Result || (((CharNum >= 0x3099)&&(CharNum <= 0x309a))||((CharNum >= 0xfe20)&&(CharNum <= 0xfe23)));
+	return Result;
+}
+
+function IsCJK(CharNum){
+	return ((CharNum >= 0x3000)&&(CharNum < 0xd800));
+}
+
+//SETUP FUNCTIONS
+//BROWSER WILL REFILL TEXT BOXES FROM CACHE IF NOT PREVENTED
+function ClearTextBoxes(){
+	var NList = document.getElementsByTagName('input');
+	for (var i=0; i<NList.length; i++){
+		if ((NList[i].id.indexOf('Guess') > -1)||(NList[i].id.indexOf('Gap') > -1)){
+			NList[i].value = '';
+		}
+		if (NList[i].id.indexOf('Chk') > -1){
+			NList[i].checked = '';
+		}
+	}
+}
+
+//EXTENSION TO ARRAY OBJECT
+function Array_IndexOf(Input){
+	var Result = -1;
+	for (var i=0; i<this.length; i++){
+		if (this[i] == Input){
+			Result = i;
+		}
+	}
+	return Result;
+}
+Array.prototype.indexOf = Array_IndexOf;
+
+//IE HAS RENDERING BUG WITH BOTTOM NAVBAR
+function RemoveBottomNavBarForIE(){
+	if ((C.ie)&&(document.getElementById('Reading') != null)){
+		if (document.getElementById('BottomNavBar') != null){
+			document.getElementById('TheBody').removeChild(document.getElementById('BottomNavBar'));
+		}
+	}
+}
+
+
+
+
+//HOTPOTNET-RELATED CODE
+
+var HPNStartTime = (new Date()).getTime();
+var SubmissionTimeout = 30000;
+var Detail = ''; //Global that is used to submit tracking data
+
+function Finish(){
+//If there's a form, fill it out and submit it
+	if (document.store != null){
+		Frm = document.store;
+		Frm.starttime.value = HPNStartTime;
+		Frm.endtime.value = (new Date()).getTime();
+		Frm.mark.value = Score;
+		Frm.detail.value = Detail;
+		Frm.submit();
+	}
+}
+
+
+
+
+
+//JQUIZ CORE JAVASCRIPT CODE
+
+var CurrQNum = 0;
+var CorrectIndicator = ':-)';
+var IncorrectIndicator = 'X';
+var YourScoreIs = 'Your score is ';
+
+//New for 6.2.2.0
+var CompletedSoFar = 'Questions completed so far: ';
+var ExerciseCompleted = 'You have completed the exercise.';
+var ShowCompletedSoFar = true;
+
+var ContinuousScoring = true;
+var CorrectFirstTime = 'Questions answered correctly first time: ';
+var ShowCorrectFirstTime = true;
+var ShuffleQs = true;
+var ShuffleAs = true;
+var DefaultRight = 'Correct!';
+var DefaultWrong = 'Sorry! Try again.';
+var QsToShow = 60;
+var Score = 0;
+var Finished = false;
+var Qs = null;
+var QArray = new Array();
+var ShowingAllQuestions = false;
+var ShowAllQuestionsCaption = 'Show all questions';
+var ShowOneByOneCaption = 'Show questions one by one';
+var State = new Array();
+var Feedback = '';
+var TimeOver = false;
+var strInstructions = '';
+var Locked = false;
+
+//The following variable can be used to add a message explaining that
+//the question is finished, so no further marking will take place.
+var strQuestionFinished = '';
+
+function CompleteEmptyFeedback(){
+	var QNum, ANum;
+	for (QNum=0; QNum<I.length; QNum++){
+//Only do this if not multi-select
+		if (I[QNum][2] != '3'){
+  		for (ANum = 0; ANum<I[QNum][3].length; ANum++){
+  			if (I[QNum][3][ANum][1].length < 1){
+  				if (I[QNum][3][ANum][2] > 0){
+  					I[QNum][3][ANum][1] = DefaultRight;
+  				}
+  				else{
+  					I[QNum][3][ANum][1] = DefaultWrong;
+  				}
+  			}
+  		}
+		}
+	}
+}
+
+function SetUpQuestions(){
+	var AList = new Array(); 
+	var QList = new Array();
+	var i, j;
+	Qs = document.getElementById('Questions');
+	while (Qs.getElementsByTagName('li').length > 0){
+		QList.push(Qs.removeChild(Qs.getElementsByTagName('li')[0]));
+	}
+	var DumpItem = 0;
+	if (QsToShow > QList.length){
+		QsToShow = QList.length;
+	}
+	while (QsToShow < QList.length){
+		DumpItem = Math.floor(QList.length*Math.random());
+		for (j=DumpItem; j<(QList.length-1); j++){
+			QList[j] = QList[j+1];
+		}
+		QList.length = QList.length-1;
+	}
+	if (ShuffleQs == true){
+		QList = Shuffle(QList);
+	}
+	if (ShuffleAs == true){
+		var As;
+		for (var i=0; i<QList.length; i++){
+			As = QList[i].getElementsByTagName('ol')[0];
+			if (As != null){
+  			AList.length = 0;
+				while (As.getElementsByTagName('li').length > 0){
+					AList.push(As.removeChild(As.getElementsByTagName('li')[0]));
+				}
+				AList = Shuffle(AList);
+				for (j=0; j<AList.length; j++){
+					As.appendChild(AList[j]);
+				}
+			}
+		}
+	}
+	
+	for (i=0; i<QList.length; i++){
+		Qs.appendChild(QList[i]);
+		QArray[QArray.length] = QList[i];
+	}
+
+//Show the first item
+	QArray[0].style.display = '';
+	
+//Now hide all except the first item
+	for (i=1; i<QArray.length; i++){
+		QArray[i].style.display = 'none';
+	}		
+	SetQNumReadout();
+	
+	SetFocusToTextbox();
+}
+
+function SetFocusToTextbox(){
+//if there's a textbox, set the focus in it
+	if (QArray[CurrQNum].getElementsByTagName('input')[0] != null){
+		QArray[CurrQNum].getElementsByTagName('input')[0].focus();
+//and show a keypad if there is one
+		if (document.getElementById('CharacterKeypad') != null){
+			document.getElementById('CharacterKeypad').style.display = 'block';
+		}
+	}
+	else{
+  	if (QArray[CurrQNum].getElementsByTagName('textarea')[0] != null){
+  		QArray[CurrQNum].getElementsByTagName('textarea')[0].focus();	
+//and show a keypad if there is one
+			if (document.getElementById('CharacterKeypad') != null){
+				document.getElementById('CharacterKeypad').style.display = 'block';
+			}
+		}
+//This added for 6.0.4.11: hide accented character buttons if no textbox
+		else{
+			if (document.getElementById('CharacterKeypad') != null){
+				document.getElementById('CharacterKeypad').style.display = 'none';
+			}
+		}
+	}
+}
+
+function ChangeQ(ChangeBy){
+//The following line prevents moving to another question until the current
+//question is answered correctly. Uncomment it to enable this behaviour. 
+//	if (State[CurrQNum][0] == -1){return;}
+	if (((CurrQNum + ChangeBy) < 0)||((CurrQNum + ChangeBy) >= QArray.length)){return;}
+	QArray[CurrQNum].style.display = 'none';
+	CurrQNum += ChangeBy;
+	QArray[CurrQNum].style.display = '';
+//Undocumented function added 10/12/2004
+	ShowSpecialReadingForQuestion();
+	SetQNumReadout();
+	SetFocusToTextbox();
+}
+
+var HiddenReadingShown = false;
+function ShowSpecialReadingForQuestion(){
+//Undocumented function for showing specific reading text elements which change with each question
+//Added on 10/12/2004
+	if (document.getElementById('ReadingDiv') != null){
+		if (HiddenReadingShown == true){
+			document.getElementById('ReadingDiv').innerHTML = '';
+		}
+		if (QArray[CurrQNum] != null){
+//Fix for 6.0.4.25
+			var Children = QArray[CurrQNum].getElementsByTagName('div');
+			for (var i=0; i<Children.length; i++){
+			if (Children[i].className=="HiddenReading"){
+					document.getElementById('ReadingDiv').innerHTML = Children[i].innerHTML;
+					HiddenReadingShown = true;
+//Hide the ShowAllQuestions button to avoid confusion
+					if (document.getElementById('ShowMethodButton') != null){
+						document.getElementById('ShowMethodButton').style.display = 'none';
+					}
+				}
+			}	
+		}
+	}
+}
+
+function SetQNumReadout(){
+	document.getElementById('QNumReadout').innerHTML = (CurrQNum+1) + ' / ' + QArray.length;
+	if ((CurrQNum+1) >= QArray.length){
+		if (document.getElementById('NextQButton') != null){
+			document.getElementById('NextQButton').style.visibility = 'hidden';
+		}
+	}
+	else{
+		if (document.getElementById('NextQButton') != null){
+			document.getElementById('NextQButton').style.visibility = 'visible';
+		}
+	}
+	if (CurrQNum <= 0){
+		if (document.getElementById('PrevQButton') != null){
+			document.getElementById('PrevQButton').style.visibility = 'hidden';
+		}
+	}
+	else{
+		if (document.getElementById('PrevQButton') != null){
+			document.getElementById('PrevQButton').style.visibility = 'visible';
+		}
+	}
+}
+
+var I=new Array();
+I[0]=new Array();I[0][0]=100;
+I[0][1]='';
+I[0][2]='0';
+I[0][3]=new Array();
+I[0][3][0]=new Array('La urgencia de la informaci\u00F3n requerida y la facilidad de uso.','',0,0,1);
+I[0][3][1]=new Array('Las necesidades de informaci\u00F3n interna y externa, la facilidad de uso y el entorno del proyecto.','',0,0,1);
+I[0][3][2]=new Array('Codificaci\u00F3n, Transmisi\u00F3n, Decodificaci\u00F3n, Aceptaci\u00F3n y Respuesta.','',1,100,1);
+I[1]=new Array();I[1][0]=100;
+I[1][1]='';
+I[1][2]='0';
+I[1][3]=new Array();
+I[1][3][0]=new Array('La codificaci\u00F3n, transmisi\u00F3n y aceptaci\u00F3n del mensaje.','',0,0,1);
+I[1][3][1]=new Array('La informaci\u00F3n sobre las tecnolog\u00EDas a usar.','',0,0,1);
+I[1][3][2]=new Array('Las necesidades de informaci\u00F3n interna y externa.','',1,100,1);
+I[2]=new Array();I[2][0]=100;
+I[2][1]='';
+I[2][2]='0';
+I[2][3]=new Array();
+I[2][3][0]=new Array('...de \u00E1mbito nacional y sectorial.','',0,0,1);
+I[2][3][1]=new Array('...de \u00E1mbito internacional y multisectorial.','',0,0,1);
+I[2][3][2]=new Array('...de \u00E1mbito internacional y sectorial.','',1,100,1);
+I[2][3][3]=new Array('...de \u00E1mbito nacional y multisectorial.','',0,0,1);
+I[3]=new Array();I[3][0]=100;
+I[3][1]='';
+I[3][2]='0';
+I[3][3]=new Array();
+I[3][3][0]=new Array('Consiste en integrar en el proyecto toda la normativa aplicable, que sea propia de la organizaci\u00F3n.','',1,100,1);
+I[3][3][1]=new Array('Consiste en identificar la noramtiva de la organizaci\u00F3n que se contradiga con la de los estudios con entidad propia.','',0,0,1);
+I[3][3][2]=new Array('Consiste en generar o identificar normativa para la organizaci\u00F3n que mejore los procesos en los proyectos.','',0,0,1);
+I[4]=new Array();I[4][0]=100;
+I[4][1]='';
+I[4][2]='0';
+I[4][3]=new Array();
+I[4][3][0]=new Array('Vertical e informal.','',0,0,1);
+I[4][3][1]=new Array('Externa y formal.','',1,100,1);
+I[4][3][2]=new Array('Escrita y extraoficial.','',0,0,1);
+I[5]=new Array();I[5][0]=100;
+I[5][1]='';
+I[5][2]='0';
+I[5][3]=new Array();
+I[5][3][0]=new Array('...de \u00E1mbito internacional y multisectorial.','',0,0,1);
+I[5][3][1]=new Array('...de \u00E1mbito nacional y multisectorial.','',0,0,1);
+I[5][3][2]=new Array('...de \u00E1mbito internacional y sectorial.','',1,100,1);
+I[5][3][3]=new Array('...de \u00E1mbito nacional y sectorial.','',0,0,1);
+I[6]=new Array();I[6][0]=100;
+I[6][1]='';
+I[6][2]='0';
+I[6][3]=new Array();
+I[6][3][0]=new Array('En la fase previa al propio desarrollo del proyecto.','',1,100,1);
+I[6][3][1]=new Array('En la fase de desarrollo del proyecto.','',0,0,1);
+I[6][3][2]=new Array('En la fase de mantenimiento del proyecto.','',0,0,1);
+I[7]=new Array();I[7][0]=100;
+I[7][1]='';
+I[7][2]='0';
+I[7][3]=new Array();
+I[7][3][0]=new Array('Consiste en hacer una consultor\u00EDa de normativa TIC que sea de aplicaci\u00F3n a la tecnolog\u00EDa usada en el proyecto.','',0,0,1);
+I[7][3][1]=new Array('Consiste en consultar a expertos del dominio de aplicaci\u00F3n para ver qu\u00E9 aspectos del proyecto pueden estar afectados por alguna norma o ley.','',1,100,1);
+I[7][3][2]=new Array('Consiste en que sea la propia organizaci\u00F3n quien haga estudios de normativa y no externalice estos procesos.','',0,0,1);
+I[8]=new Array();I[8][0]=100;
+I[8][1]='';
+I[8][2]='0';
+I[8][3]=new Array();
+I[8][3][0]=new Array('El m\u00E9todo para crear el informe de desempe\u00F1o.','',0,0,1);
+I[8][3][1]=new Array('El m\u00E9todo para evaluar los costes del personal asignado a las comunicaciones.','',0,0,1);
+I[8][3][2]=new Array('El m\u00E9todo para actualizar y refinar el plan de gesti\u00F3n de las comunicaciones.','',1,100,1);
+I[9]=new Array();I[9][0]=100;
+I[9][1]='';
+I[9][2]='0';
+I[9][3]=new Array();
+I[9][3][0]=new Array('El glosario de terminolog\u00EDa com\u00FAn.','',1,100,1);
+I[9][3][1]=new Array('La provisi\u00F3n de aceso a los repositorios.','',0,0,1);
+I[9][3][2]=new Array('La lista de distribuci\u00F3n de documento.','',0,0,1);
+I[10]=new Array();I[10][0]=100;
+I[10][1]='';
+I[10][2]='0';
+I[10][3]=new Array();
+I[10][3][0]=new Array('Tecnolog\u00EDa de comunicaciones, Modelos de comunicaciones, M\u00E9todos de comunicaci\u00F3n, Sistemas de gesti\u00F3n de la informaci\u00F3n e Informes de desempe\u00F1o.','',1,100,1);
+I[10][3][1]=new Array('An\u00E1lisis de los requisitos de comunicaci\u00F3n, Tecnolog\u00EDa de comunicaciones, Modelos de comunicaciones, M\u00E9todos de comunicaci\u00F3n, Sistemas de gesti\u00F3n de la informaci\u00F3n y Reuniones.','',0,0,1);
+I[10][3][2]=new Array('Sistemas de Gesti\u00F3n de Informaci\u00F3n, Juicio de expertos y Reuniones.','',0,0,1);
+I[11]=new Array();I[11][0]=100;
+I[11][1]='';
+I[11][2]='0';
+I[11][3]=new Array();
+I[11][3][0]=new Array('S\u00ED.','',0,0,1);
+I[11][3][1]=new Array('No.','',0,0,1);
+I[11][3][2]=new Array('No, pero hay que justificar los que no aparezcan.','',1,100,1);
+I[12]=new Array();I[12][0]=100;
+I[12][1]='';
+I[12][2]='0';
+I[12][3]=new Array();
+I[12][3][0]=new Array('...de \u00E1mbito nacional y sectorial.','',0,0,1);
+I[12][3][1]=new Array('...de \u00E1mbito internacional y multisectorial.','',0,0,1);
+I[12][3][2]=new Array('...de \u00E1mbito internacional y sectorial.','',0,0,1);
+I[12][3][3]=new Array('...de \u00E1mbito nacional y multisectorial.','',1,100,1);
+I[13]=new Array();I[13][0]=100;
+I[13][1]='';
+I[13][2]='0';
+I[13][3]=new Array();
+I[13][3][0]=new Array('La codificaci\u00F3n y decodificaci\u00F3n del mensaje.','',0,0,1);
+I[13][3][1]=new Array('La urgencia de la informaci\u00F3n requerida y la Facilidad de uso.','',1,100,1);
+I[13][3][2]=new Array('La transmisi\u00F3n y aceptaci\u00F3n del mensaje.','',0,0,1);
+I[14]=new Array();I[14][0]=100;
+I[14][1]='';
+I[14][2]='0';
+I[14][3]=new Array();
+I[14][3][0]=new Array('Hacer estudios con entidad propia para saber si nos afecta alguna ley.','',0,0,1);
+I[14][3][1]=new Array('Usar herramientas para buscar las normas y las leyes que nos afectan.','',0,0,1);
+I[14][3][2]=new Array('Identificar la legislaci\u00F3n, la normativa, las patentes y los derechos de autor que puedan condicionar el dise\u00F1o del proyecto.','',1,100,1);
+I[15]=new Array();I[15][0]=100;
+I[15][1]='';
+I[15][2]='0';
+I[15][3]=new Array();
+I[15][3][0]=new Array('Gestionar las comunicaciones es el proceso de crear, recoger, distribuir, guardar y mantener la informaci\u00F3n del proyecto de acuerdo a la planificaci\u00F3n de la gesti\u00F3n de las comunicaciones.','',1,100,1);
+I[15][3][1]=new Array('Gestionar las comunicaciones es el proceso de segimiento de la informaci\u00F3n del proyecto de acuerdo a la planificaci\u00F3n de la gesti\u00F3n de las comunicaciones.','',0,0,1);
+I[15][3][2]=new Array('Gestionar las comunicaciones es el proceso de definir los requisitos de la informaci\u00F3n del proyecto de acuerdo a la planificaci\u00F3n de la gesti\u00F3n de las comunicaciones.','',0,0,1);
+I[16]=new Array();I[16][0]=100;
+I[16][1]='';
+I[16][2]='0';
+I[16][3]=new Array();
+I[16][3][0]=new Array('4','',0,0,1);
+I[16][3][1]=new Array('6','',1,100,1);
+I[16][3][2]=new Array('8','',0,0,1);
+I[17]=new Array();I[17][0]=100;
+I[17][1]='';
+I[17][2]='0';
+I[17][3]=new Array();
+I[17][3][0]=new Array('La adaptaci\u00F3n de los modelos de comunicaci\u00F3n a los requisitos del proyecto.','',0,0,1);
+I[17][3][1]=new Array('La persona responsable de comunicar la informaci\u00F3n.','',1,100,1);
+I[17][3][2]=new Array('Asegurar que la informaci\u00F3n est\u00E1 disponible para las personas en tiempo y forma.','',0,0,1);
+I[18]=new Array();I[18][0]=100;
+I[18][1]='';
+I[18][2]='0';
+I[18][3]=new Array();
+I[18][3][0]=new Array('Es el proceso de crear, recoger, distribuir, guardar y mantener la informaci\u00F3n del proyecto de acuerdo a la planificaci\u00F3n de la gesti\u00F3n de las comunicaciones.','',0,0,1);
+I[18][3][1]=new Array('El Control de las Comunicaciones es el proceso de seguimiento y control de las comunicaciones a trav\u00E9s de todo el ciclo de vida del proyecto para garantizar las necesidades de informaci\u00F3n de los interesados en el proyecto se cumplen.','',1,100,1);
+I[18][3][2]=new Array('Es el proceso de definir los requisitos de la informaci\u00F3n del proyecto de acuerdo a la planificaci\u00F3n de la gesti\u00F3n de las comunicaciones.','',0,0,1);
+I[19]=new Array();I[19][0]=100;
+I[19][1]='';
+I[19][2]='0';
+I[19][3]=new Array();
+I[19][3][0]=new Array('Las tecnolog\u00EDas de comunicaci\u00F3n y los Sistemas de gesti\u00F3n de la informaci\u00F3n.','',0,0,1);
+I[19][3][1]=new Array('Los Sistemas de Gesti\u00F3n de Informaci\u00F3n y el Juicio de expertos.','',0,0,1);
+I[19][3][2]=new Array('El An\u00E1lisis de los requisitos de comunicaci\u00F3n y las Reuniones.','',1,100,1);
+I[20]=new Array();I[20][0]=100;
+I[20][1]='';
+I[20][2]='0';
+I[20][3]=new Array();
+I[20][3][0]=new Array('Es el proceso para definir los canales y procesos de comunicaci\u00F3n relacionados con el proyecto.','',1,100,1);
+I[20][3][1]=new Array('Es el proceso para formalizar los modelos y m\u00E9todos de comunicaci\u00F3n relacionados con el proyecto.','',0,0,1);
+I[20][3][2]=new Array('Es el proceso para formalizar los procesos y procedimientos de comunicaci\u00F3n relacionados con el proyecto.','',0,0,1);
+I[21]=new Array();I[21][0]=100;
+I[21][1]='';
+I[21][2]='0';
+I[21][3]=new Array();
+I[21][3][0]=new Array('...de \u00E1mbito nacional y multisectorial.','',0,0,1);
+I[21][3][1]=new Array('...de \u00E1mbito internacional y sectoria.l','',1,100,1);
+I[21][3][2]=new Array('...de \u00E1mbito internacional y multisectorial.','',0,0,1);
+I[21][3][3]=new Array('...de \u00E1mbito nacional y sectorial.','',0,0,1);
+I[22]=new Array();I[22][0]=100;
+I[22][1]='';
+I[22][2]='0';
+I[22][3]=new Array();
+I[22][3][0]=new Array('La adaptaci\u00F3n de los modelos de comunicaci\u00F3n a los requisitos del proyecto.','',0,0,1);
+I[22][3][1]=new Array('Los m\u00E9todos o tecnolog\u00EDas utilizados para transmitir la informaci\u00F3n.','',1,100,1);
+I[23]=new Array();I[23][0]=100;
+I[23][1]='';
+I[23][2]='0';
+I[23][3]=new Array();
+I[23][3][0]=new Array('La persona responsable de autorizar la divulgaci\u00F3n de informaci\u00F3n confidencial.','',1,100,1);
+I[23][3][1]=new Array('La persona responsable de poner informaci\u00F3n en los medios de tipo pull.','',0,0,1);
+I[23][3][2]=new Array('La persona responsable de realizar los informes de desempe\u00F1o.','',0,0,1);
+I[24]=new Array();I[24][0]=100;
+I[24][1]='';
+I[24][2]='0';
+I[24][3]=new Array();
+I[24][3][0]=new Array('Los diagramas de flujo de la informaci\u00F3n que circula dentro del proyecto','',1,100,1);
+I[24][3][1]=new Array('Los flujogramas de trabajo','',0,0,1);
+I[24][3][2]=new Array('Los organigramas jer\u00E1rquidos del equipo de proyecto','',0,0,1);
+I[25]=new Array();I[25][0]=100;
+I[25][1]='';
+I[25][2]='0';
+I[25][3]=new Array();
+I[25][3][0]=new Array('Los requisitos de comunicaci\u00F3n de los interesados','',1,100,1);
+I[25][3][1]=new Array('Los registros de las comunicaciones','',0,0,1);
+I[25][3][2]=new Array('La distribuci\u00F3n de medios de comunicaci\u00F3n entre los miembros del equipo de proyecto','',0,0,1);
+I[26]=new Array();I[26][0]=100;
+I[26][1]='';
+I[26][2]='0';
+I[26][3]=new Array();
+I[26][3][0]=new Array('Consiste en usar expertos en vez de normas, ya que los expertos tienen experiencia directa','',0,0,1);
+I[26][3][1]=new Array('Consiste en preguntar a expertos en normas para que nos aconsejen c\u00F3mo usarlas','',0,0,1);
+I[26][3][2]=new Array('Consiste en ayudarse de personas con experiencia para identificar normativa o legislaci\u00F3n que pueda afectar al proyecto','',1,100,1);
+I[27]=new Array();I[27][0]=100;
+I[27][1]='';
+I[27][2]='0';
+I[27][3]=new Array();
+I[27][3][0]=new Array('Vertical y extraoficial','',0,0,1);
+I[27][3][1]=new Array('Formal y oficial','',0,0,1);
+I[27][3][2]=new Array('Interna y oral','',1,100,1);
+I[28]=new Array();I[28][0]=100;
+I[28][1]='';
+I[28][2]='0';
+I[28][3]=new Array();
+I[28][3][0]=new Array('Orientativas y de uso obligatorio','',0,0,1);
+I[28][3][1]=new Array('Certificables y no certificables','',1,100,1);
+I[28][3][2]=new Array('Internacionales, nacionales, etc','',0,0,1);
+I[29]=new Array();I[29][0]=100;
+I[29][1]='';
+I[29][2]='0';
+I[29][3]=new Array();
+I[29][3][0]=new Array('Es informaci\u00F3n que se env\u00EDa a los receptores sin posibilidad de contestaci\u00F3n, por ejemplo informes, faxes, blogs, etc.','',1,100,1);
+I[29][3][1]=new Array('Es comunicaci\u00F3n multidireccional, como por ejemplo emails, reuniones, videoconferencias, tel\u00E9fono, etc.','',0,0,1);
+I[29][3][2]=new Array('Es informaci\u00F3n que busca el usuario en alg\u00FAn lugar, por ejemplo, repositorios, p\u00E1ginas web, etc.','',0,0,1);
+I[30]=new Array();I[30][0]=100;
+I[30][1]='';
+I[30][2]='0';
+I[30][3]=new Array();
+I[30][3][0]=new Array('El archivado de la documentaci\u00F3n','',0,0,1);
+I[30][3][1]=new Array('La provisi\u00F3n de acceso a los Sistemas de trabajo colaborativo','',0,0,1);
+I[30][3][2]=new Array('Los recursos asignados para las actividades de comunicaci\u00F3n','',1,100,1);
+I[31]=new Array();I[31][0]=100;
+I[31][1]='';
+I[31][2]='0';
+I[31][3]=new Array();
+I[31][3][0]=new Array('Consiste en identificar las normas por su c\u00F3digo','',1,100,1);
+I[31][3][1]=new Array('Consiste en codificar las normas de manera que s\u00F3lo las puedan leer quienes tienen permisos','',0,0,1);
+I[31][3][2]=new Array('Consiste en escribir programas que permitan buscas las normas','',0,0,1);
+I[32]=new Array();I[32][0]=100;
+I[32][1]='';
+I[32][2]='0';
+I[32][3]=new Array();
+I[32][3][0]=new Array('Las p\u00E9rdidas de informaci\u00F3n por denegaci\u00F3pn de servicio','',0,0,1);
+I[32][3][1]=new Array('Las restricciones en materia de comunicaci\u00F3n','',1,100,1);
+I[32][3][2]=new Array('La adaptaci\u00F3n de las medidas de seguridad por acceos no permitidos','',0,0,1);
+I[33]=new Array();I[33][0]=100;
+I[33][1]='';
+I[33][2]='0';
+I[33][3]=new Array();
+I[33][3][0]=new Array('...de \u00E1mbito internacional y sectorial','',0,0,1);
+I[33][3][1]=new Array('...de \u00E1mbito internacional y multisectorial','',1,100,1);
+I[33][3][2]=new Array('...de \u00E1mbito nacional y multisectorial','',0,0,1);
+I[33][3][3]=new Array('...de \u00E1mbito nacional y sectorial','',0,0,1);
+I[34]=new Array();I[34][0]=100;
+I[34][1]='';
+I[34][2]='0';
+I[34][3]=new Array();
+I[34][3][0]=new Array('Integraci\u00F3n, Juicio de expertos, Herramientas, Estudios con entidad propia, Normativa de la Organizaci\u00F3n y Consulta','',0,0,1);
+I[34][3][1]=new Array('Integraci\u00F3n, Juicio de expertos, Consulta, Estudios con entidad propia, Normativa de la Organizaci\u00F3n y Consenso','',0,0,1);
+I[34][3][2]=new Array('Codificaci\u00F3n, Juicio de expertos, Herramientas, Estudios con entidad propia, Normativa de la Organizaci\u00F3n y Mejora de procesos','',1,100,1);
+I[35]=new Array();I[35][0]=100;
+I[35][1]='';
+I[35][2]='0';
+I[35][3]=new Array();
+I[35][3][0]=new Array('Los organigramas','',1,100,1);
+I[35][3][1]=new Array('La urgencia','',0,0,1);
+I[35][3][2]=new Array('Los cronogramas','',0,0,1);
+I[36]=new Array();I[36][0]=100;
+I[36][1]='';
+I[36][2]='0';
+I[36][3]=new Array();
+I[36][3][0]=new Array('Consiste en generar o identificar normativa para la organizaci\u00F3n que mejore los procesos en los proyectos, a partir del proyecto actual','',1,100,1);
+I[36][3][1]=new Array('Consiste enmejorar los procesos del proyecto usando las normas adecuadas Esto es lo que hacen las normas habitualmente, pero no es lo que recoje esta t\u00E9cnica','',0,0,1);
+I[36][3][2]=new Array('Consiste en mejorar las normas que se van a aplicar a un proyecto si tienen defectos o no se adaptan','',0,0,1);
+I[37]=new Array();I[37][0]=100;
+I[37][1]='';
+I[37][2]='0';
+I[37][3]=new Array();
+I[37][3][0]=new Array('El motivo de la distribuci\u00F3n de cada tipo de informaci\u00F3n','',1,100,1);
+I[37][3][1]=new Array('Las listas de distribuci\u00F3n de documentos','',0,0,1);
+I[37][3][2]=new Array('Los medios f\u00EDsicos de informaci\u00F3n','',0,0,1);
+I[38]=new Array();I[38][0]=100;
+I[38][1]='';
+I[38][2]='0';
+I[38][3]=new Array();
+I[38][3][0]=new Array('Tecnolog\u00EDa de comunicaci\u00F3n','',1,100,1);
+I[38][3][1]=new Array('Mod\u00E9los de comunicaci\u00F3n','',0,0,1);
+I[38][3][2]=new Array('M\u00E9todos de comunicaci\u00F3n','',0,0,1);
+I[39]=new Array();I[39][0]=100;
+I[39][1]='';
+I[39][2]='0';
+I[39][3]=new Array();
+I[39][3][0]=new Array('Es comunicaci\u00F3n multidireccional, como por ejemplo emails, reuniones, videoconferencias, tel\u00E9fono, etc.','',1,100,1);
+I[39][3][1]=new Array('Es informaci\u00F3n que se env\u00EDa a los receptores sin posibilidad de contestaci\u00F3n, por ejemplo informes, faxes, blogs, etc.','',0,0,1);
+I[39][3][2]=new Array('Es informaci\u00F3n que busca el usuario en alg\u00FAn lugar, por ejemplo, repositorios, p\u00E1ginas web, etc.','',0,0,1);
+I[40]=new Array();I[40][0]=100;
+I[40][1]='';
+I[40][2]='0';
+I[40][3]=new Array();
+I[40][3][0]=new Array('Internacionales, nacionales, etc.','',1,100,1);
+I[40][3][1]=new Array('Orientativas y de uso obligatorio','',0,0,1);
+I[40][3][2]=new Array('Terminolog\u00EDa, ensayo, etc.','',0,0,1);
+I[41]=new Array();I[41][0]=100;
+I[41][1]='';
+I[41][2]='0';
+I[41][3]=new Array();
+I[41][3][0]=new Array('Planificar la Gesti\u00F3n de las Comunicaciones, Gestionar las Comunicaciones y Controlar las Comunicaciones','',1,100,1);
+I[41][3][1]=new Array('La Creaci\u00F3n, la Distribuci\u00F3n y el Almacenamiento','',0,0,1);
+I[41][3][2]=new Array('El Control, el Seguimiento y la Disposici\u00F3n final de la informaci\u00F3n del proyecto','',0,0,1);
+I[42]=new Array();I[42][0]=100;
+I[42][1]='';
+I[42][2]='0';
+I[42][3]=new Array();
+I[42][3][0]=new Array('Comunicaci\u00F3n escrita, vertical, formal y oficial','',0,0,1);
+I[42][3][1]=new Array('Lo sinformes de desempe\u00F1o','',0,0,1);
+I[42][3][2]=new Array('Copias en papel, gesti\u00F3n de documentos electr\u00F3nicos y Herramientas electr\u00F3nicas de gesti\u00F3n de proyectos','',1,100,1);
+I[43]=new Array();I[43][0]=100;
+I[43][1]='';
+I[43][2]='0';
+I[43][3]=new Array();
+I[43][3][0]=new Array('En determinar el n\u00FAmero de canales que van a usar la comunciaci\u00F3n','',0,0,1);
+I[43][3][1]=new Array('En determinar los requisitos de comunicaci\u00F3n necesaria y el valor de esa informaci\u00F3n','',1,100,1);
+I[43][3][2]=new Array('En determinar los m\u00E9todos que se usen para realizar la comunicaci\u00F3n','',0,0,1);
+I[44]=new Array();I[44][0]=100;
+I[44][1]='';
+I[44][2]='0';
+I[44][3]=new Array();
+I[44][3][0]=new Array('El plazo y la frecuencia para la distribuci\u00F3n de la informaci\u00F3n','',1,100,1);
+I[44][3][1]=new Array('El archivado de la documentaci\u00F3n','',0,0,1);
+I[44][3][2]=new Array('Los registros de las comunicaciones','',0,0,1);
+I[45]=new Array();I[45][0]=100;
+I[45][1]='';
+I[45][2]='0';
+I[45][3]=new Array();
+I[45][3][0]=new Array('Tecnolog\u00EDa de comunicaciones, Modelos de comunicaciones, M\u00E9todos de comunicaci\u00F3n, Sistemas de gesti\u00F3n de la informaci\u00F3n e Informes de desempe\u00F1o','',0,0,1);
+I[45][3][1]=new Array('Sistemas de gesti\u00F3n de la informaci\u00F3n, Juicio de expertos y Reuniones','',1,100,1);
+I[45][3][2]=new Array('An\u00E1lisis de los requisitos de comunicaci\u00F3n, Tecnolog\u00EDa de comunicaciones, Modelos de comunicaciones, M\u00E9todos de comunicaci\u00F3n, Sistemas de gesti\u00F3n de la informaci\u00F3n y Reuniones','',0,0,1);
+I[46]=new Array();I[46][0]=100;
+I[46][1]='';
+I[46][2]='0';
+I[46][3]=new Array();
+I[46][3][0]=new Array('Obliga a seguir unos procedimientos rigurosos para conseguir los est\u00E1ndares de calidad','',0,0,1);
+I[46][3][1]=new Array('Define procedimientos que corrigen el modo de hacer habitual cuando est\u00E1 equivocado','',0,0,1);
+I[46][3][2]=new Array('Permite aprovecharse de las mejores pr\u00E1cticas realizadas por otros profesionales con mayor experiencia en el campo que sea de aplicaci\u00F3n','',1,100,1);
+I[47]=new Array();I[47][0]=100;
+I[47][1]='';
+I[47][2]='0';
+I[47][3]=new Array();
+I[47][3][0]=new Array('El proceso de actualizaci\u00F3n de riesgos de comunicaci\u00F3n','',0,0,1);
+I[47][3][1]=new Array('El proceso de creaci\u00F3n del informe de desempe\u00F1o','',0,0,1);
+I[47][3][2]=new Array('El proceso de escalaci\u00F3n','',1,100,1);
+I[48]=new Array();I[48][0]=100;
+I[48][1]='';
+I[48][2]='0';
+I[48][3]=new Array();
+I[48][3][0]=new Array('La provisi\u00F3n de acceso de los stakeholder a la informaci\u00F3n que requieren en cada momento','',0,0,1);
+I[48][3][1]=new Array('La actualizaci\u00F3n de la informaci\u00F3n en los medios de comunicaci\u00F3n','',0,0,1);
+I[48][3][2]=new Array('La persona o los grupos que recibir\u00E1n la informaci\u00F3n','',1,100,1);
+I[49]=new Array();I[49][0]=100;
+I[49][1]='';
+I[49][2]='0';
+I[49][3]=new Array();
+I[49][3][0]=new Array('Los relacionados con las etapas de definici\u00F3n, construcci\u00F3n, pruebas, implantaci\u00F3n y puesta en servicio','',1,100,1);
+I[49][3][1]=new Array('Los relacionados con las etapas de definici\u00F3n y desarrollo del proyecto','',0,0,1);
+I[49][3][2]=new Array('Los relacionados con la etapa de definici\u00F3n del proyecto','',0,0,1);
+I[50]=new Array();I[50][0]=100;
+I[50][1]='';
+I[50][2]='0';
+I[50][3]=new Array();
+I[50][3][0]=new Array('Escrita y horizontal','',0,0,1);
+I[50][3][1]=new Array('Vertical e informal','',1,100,1);
+I[50][3][2]=new Array('Interna y extraoficial','',0,0,1);
+I[51]=new Array();I[51][0]=100;
+I[51][1]='';
+I[51][2]='0';
+I[51][3]=new Array();
+I[51][3][0]=new Array('En la fase previa al propio desarrollo del proyecto','',1,100,1);
+I[51][3][1]=new Array('En la fase de mantenimiento del proyecto','',0,0,1);
+I[51][3][2]=new Array('En la fase de desarrollo del proyecto','',0,0,1);
+I[52]=new Array();I[52][0]=100;
+I[52][1]='';
+I[52][2]='0';
+I[52][3]=new Array();
+I[52][3][0]=new Array('Interna y externa, formar e informal, vertical y horizontal, oficial y extraoficial y escrita y oral','',0,0,1);
+I[52][3][1]=new Array('Codificaci\u00F3n, Transmisi\u00F3n, Decodificaci\u00F3n, Aceptaci\u00F3n y Respuesta','',0,0,1);
+I[52][3][2]=new Array('Interactiva, pusk y pull','',1,100,1);
+I[53]=new Array();I[53][0]=100;
+I[53][1]='';
+I[53][2]='0';
+I[53][3]=new Array();
+I[53][3][0]=new Array('Consiste en buscar normas a trav\u00E9s de herramientas de b\u00FAsqueda especilizada','',1,100,1);
+I[53][3][1]=new Array('Consiste en usar herramientas para nos ayuden a implantar las normas','',0,0,1);
+I[53][3][2]=new Array('Consiste en generar normas adaptadas al proyecto usando herramientas','',0,0,1);
+I[54]=new Array();I[54][0]=100;
+I[54][1]='';
+I[54][2]='0';
+I[54][3]=new Array();
+I[54][3][0]=new Array('Formal y externa','',1,100,1);
+I[54][3][1]=new Array('Oficial y vertical','',0,0,1);
+I[54][3][2]=new Array('Escrita e informal','',0,0,1);
+I[55]=new Array();I[55][0]=100;
+I[55][1]='';
+I[55][2]='0';
+I[55][3]=new Array();
+I[55][3][0]=new Array('12','',0,0,1);
+I[55][3][1]=new Array('6','',0,0,1);
+I[55][3][2]=new Array('15','',1,100,1);
+I[56]=new Array();I[56][0]=100;
+I[56][1]='';
+I[56][2]='0';
+I[56][3]=new Array();
+I[56][3][0]=new Array('Es informaci\u00F3n que se env\u00EDa a los receptores sin posibilidad de contestaci\u00F3n, por ejemplo informes, faxes, blogs, etc.','',0,0,1);
+I[56][3][1]=new Array('Es informaci\u00F3n que busca el usuario en alg\u00FAn lugar, por ejemplo, repositorios, p\u00E1ginas web, etc.','',1,100,1);
+I[56][3][2]=new Array('Es comunicaci\u00F3n multidireccional, como por ejemplo emails, reuniones, videoconferencias, tel\u00E9fono, etc.','',0,0,1);
+I[57]=new Array();I[57][0]=100;
+I[57][1]='';
+I[57][2]='0';
+I[57][3]=new Array();
+I[57][3][0]=new Array('Son informes que se realizan peri\u00F3dicamente para informar a los stakeholders del proyecto sobre los aspectos que les interesan en relaci\u00F3n al avance del proyecto.','',1,100,1);
+I[57][3][1]=new Array('SOn inforrmes sobre los resultados finales del proyecto.','',0,0,1);
+I[57][3][2]=new Array('Son cuadros de mando que usan los componentes del equipo.','',0,0,1);
+I[58]=new Array();I[58][0]=100;
+I[58][1]='';
+I[58][2]='0';
+I[58][3]=new Array();
+I[58][3][0]=new Array('Orientativas y de uso obligatorio.','',1,100,1);
+I[58][3][1]=new Array('Terminolog\u00EDa, ensayo, etc.','',0,0,1);
+I[58][3][2]=new Array('Certificables y no certificables.','',0,0,1);
+I[59]=new Array();I[59][0]=100;
+I[59][1]='';
+I[59][2]='0';
+I[59][3]=new Array();
+I[59][3][0]=new Array('Internacionales, nacionales, etc.','',0,0,1);
+I[59][3][1]=new Array('Certificables y no certificables.','',0,0,1);
+I[59][3][2]=new Array('Terminolog\u00EDa, ensayo, etc.','',1,100,1);
+
+
+function StartUp(){
+	RemoveBottomNavBarForIE();
+
+//If there's only one question, no need for question navigation controls
+	if (QsToShow < 2){
+		document.getElementById('QNav').style.display = 'none';
+	}
+	
+//Stash the instructions so they can be redisplayed
+	strInstructions = document.getElementById('InstructionsDiv').innerHTML;
+	
+
+	
+
+	
+
+	
+	CompleteEmptyFeedback();
+
+	SetUpQuestions();
+	ClearTextBoxes();
+	CreateStatusArray();
+	
+
+	
+//Check search string for q parameter
+	if (document.location.search.length > 0){
+		if (ShuffleQs == false){
+			var JumpTo = parseInt(document.location.search.substring(1,document.location.search.length))-1;
+			if (JumpTo <= QsToShow){
+				ChangeQ(JumpTo);
+			}
+		}
+	}
+//Undocumented function added 10/12/2004
+	ShowSpecialReadingForQuestion();
+}
+
+function ShowHideQuestions(){
+	FuncBtnOut(document.getElementById('ShowMethodButton'));
+	document.getElementById('ShowMethodButton').style.display = 'none';
+	if (ShowingAllQuestions == false){
+		for (var i=0; i<QArray.length; i++){
+				QArray[i].style.display = '';
+			}
+		document.getElementById('Questions').style.listStyleType = 'decimal';
+		document.getElementById('OneByOneReadout').style.display = 'none';
+		document.getElementById('ShowMethodButton').innerHTML = ShowOneByOneCaption;
+		ShowingAllQuestions = true;
+	}
+	else{
+		for (var i=0; i<QArray.length; i++){
+				if (i != CurrQNum){
+					QArray[i].style.display = 'none';
+				}
+			}
+		document.getElementById('Questions').style.listStyleType = 'none';
+		document.getElementById('OneByOneReadout').style.display = '';
+		document.getElementById('ShowMethodButton').innerHTML = ShowAllQuestionsCaption;
+		ShowingAllQuestions = false;	
+	}
+	document.getElementById('ShowMethodButton').style.display = 'inline';
+}
+
+function CreateStatusArray(){
+	var QNum, ANum;
+//For each item in the item array
+	for (QNum=0; QNum<I.length; QNum++){
+//Check if the question still exists (hasn't been nuked by showing a random selection)
+		if (document.getElementById('Q_' + QNum) != null){
+			State[QNum] = new Array();
+			State[QNum][0] = -1; //Score for this q; -1 shows question not done yet
+			State[QNum][1] = new Array(); //answers
+			for (ANum = 0; ANum<I[QNum][3].length; ANum++){
+				State[QNum][1][ANum] = 0; //answer not chosen yet; when chosen, will store its position in the series of choices
+			}
+			State[QNum][2] = 0; //tries at this q so far
+			State[QNum][3] = 0; //incrementing percent-correct values of selected answers
+			State[QNum][4] = 0; //penalties incurred for hints
+			State[QNum][5] = ''; //Sequence of answers chosen by number
+		}
+		else{
+			State[QNum] = null;
+		}
+	}
+}
+
+
+
+function CheckMCAnswer(QNum, ANum, Btn){
+//if question doesn't exist, bail
+	if (State[QNum].length < 1){return;}
+	
+//Get the feedback
+	Feedback = I[QNum][3][ANum][1];
+	
+//Now show feedback and bail if question already complete
+	if (State[QNum][0] > -1){
+//Add an extra message explaining that the question
+// is finished if defined by the user
+		if (strQuestionFinished.length > 0){Feedback += '<br />' + strQuestionFinished;}
+//Show the feedback
+		ShowMessage(Feedback);
+//New for 6.2.2.1: If you want to mark an answer as correct even when it's the final choice, uncomment this line.
+//		if (I[QNum][3][ANum][2] >= 1){Btn.innerHTML = CorrectIndicator;}else{Btn.innerHTML = IncorrectIndicator;}	
+		return;
+	}
+	
+//Hide the button while processing
+	Btn.style.display = 'none';
+
+//Increment the number of tries
+	State[QNum][2]++;
+	
+//Add the percent-correct value of this answer
+	State[QNum][3] += I[QNum][3][ANum][3];
+	
+//Store the try number in the answer part of the State array, for tracking purposes
+	State[QNum][1][ANum] = State[QNum][2];
+	if (State[QNum][5].length > 0){State[QNum][5] += ' | ';}
+	State[QNum][5] += String.fromCharCode(65+ANum);
+	
+//Should this answer be accepted as correct?
+	if (I[QNum][3][ANum][2] < 1){
+//It's wrong
+
+//Mark the answer
+		Btn.innerHTML = IncorrectIndicator;
+		
+//Remove any previous score unless exercise is finished (6.0.3.8+)
+		if (Finished == false){
+			WriteToInstructions(strInstructions);
+		}	
+		
+//Check whether this leaves just one MC answer unselected, in which case the Q is terminated
+		var RemainingAnswer = FinalAnswer(QNum);
+		if (RemainingAnswer > -1){
+//Behave as if the last answer had been selected, but give no credit for it
+//Increment the number of tries
+			State[QNum][2]++;		
+		
+//Calculate the score for this question
+			CalculateMCQuestionScore(QNum);
+			
+//Get the overall score and add it to the feedback
+			CalculateOverallScore();
+//New for 6.2.2.1
+			var QsDone = CheckQuestionsCompleted();
+			if ((ContinuousScoring == true)||(Finished == true)){
+				Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
+				WriteToInstructions(YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone);
+			}
+			else{
+				WriteToInstructions(QsDone);
+			}
+		}
+	}
+	else{
+//It's right
+//Mark the answer
+		Btn.innerHTML = CorrectIndicator;
+				
+//Calculate the score for this question
+		CalculateMCQuestionScore(QNum);
+		
+//New for 6.2.2.0
+		var QsDone = CheckQuestionsCompleted();
+
+//Get the overall score and add it to the feedback
+		if (ContinuousScoring == true){
+			CalculateOverallScore();
+			if ((ContinuousScoring == true)||(Finished == true)){
+				Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
+				WriteToInstructions(YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone);
+			}
+		}
+		else{
+			WriteToInstructions(QsDone);
+		}
+	}
+	
+//Show the button again
+	Btn.style.display = 'inline';
+	
+//Finally, show the feedback	
+	ShowMessage(Feedback);
+	
+//Check whether all questions are now done
+	CheckFinished();
+}
+
+function CalculateMCQuestionScore(QNum){
+	var Tries = State[QNum][2] + State[QNum][4]; //include tries and hint penalties
+	var PercentCorrect = State[QNum][3];
+	var TotAns = GetTotalMCAnswers(QNum);
+	var HintPenalties = State[QNum][4];
+	
+//Make sure it's not already complete
+
+	if (State[QNum][0] < 0){
+//Allow for Hybrids
+		if (HintPenalties >= 1){
+			State[QNum][0] = 0;
+		}
+		else{
+//This line calculates the score for this question
+			if (TotAns == 1){
+				State[QNum][0] = 1;
+			}
+			else{
+				State[QNum][0] = ((TotAns-((Tries*100)/State[QNum][3]))/(TotAns-1));
+			}
+		}
+//Fix for Safari bug added for version 6.0.3.42 (negative infinity problem)
+		if ((State[QNum][0] < 0)||(State[QNum][0] == Number.NEGATIVE_INFINITY)){
+			State[QNum][0] = 0;
+		}
+	}
+}
+
+function GetTotalMCAnswers(QNum){
+	var Result = 0;
+	for (var ANum=0; ANum<I[QNum][3].length; ANum++){
+		if (I[QNum][3][ANum][4] == 1){ //This is an MC answer
+			Result++;
+		}
+	}
+	return Result;
+}
+
+function FinalAnswer(QNum){
+	var UnchosenAnswers = 0;
+	var FinalAnswer = -1;
+	for (var ANum=0; ANum<I[QNum][3].length; ANum++){
+		if (I[QNum][3][ANum][4] == 1){ //This is an MC answer
+			if (State[QNum][1][ANum] < 1){ //This answer hasn't been chosen yet
+				UnchosenAnswers++;
+				FinalAnswer = ANum;
+			}
+		}
+	}
+	if (UnchosenAnswers == 1){
+		return FinalAnswer;
+	}
+	else{
+		return -1;
+	}
+}
+
+
+
+
+
+function CalculateOverallScore(){
+	var TotalWeighting = 0;
+	var TotalScore = 0;
+	
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] > -1){
+				TotalWeighting += I[QNum][0];
+				TotalScore += (I[QNum][0] * State[QNum][0]);
+			}
+		}
+	}
+	if (TotalWeighting > 0){
+		Score = Math.floor((TotalScore/TotalWeighting)*100);
+	}
+	else{
+//if TotalWeighting is 0, no questions so far have any value, so 
+//no penalty should be shown.
+		Score = 100; 
+	}
+}
+
+//New for 6.2.2.0
+function CheckQuestionsCompleted(){
+	if (ShowCompletedSoFar == false){return '';}
+	var QsCompleted = 0;
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] >= 0){
+				QsCompleted++;
+			}
+		}
+	}
+//Fixes for 6.2.2.2
+	if (QsCompleted >= QArray.length){
+		return ExerciseCompleted;
+	}
+	else{
+		return CompletedSoFar + ' ' + QsCompleted + '/' + QArray.length + '.';
+	}
+}
+
+function CheckFinished(){
+	var FB = '';
+	var AllDone = true;
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] < 0){
+				AllDone = false;
+			}
+		}
+	}
+	if (AllDone == true){
+	
+//Report final score and submit if necessary
+		CalculateOverallScore();
+		FB = YourScoreIs + ' ' + Score + '%.';
+		if (ShowCorrectFirstTime == true){
+			var CFT = 0;
+			for (QNum=0; QNum<State.length; QNum++){
+				if (State[QNum] != null){
+					if (State[QNum][0] >= 1){
+						CFT++;
+					}
+				}
+			}
+			FB += '<br />' + CorrectFirstTime + ' ' + CFT + '/' + QsToShow;
+		}
+		
+//New for 6.2.2.0
+		FB += '<br />' + ExerciseCompleted;
+		
+		WriteToInstructions(FB);
+		
+		Finished == true;
+
+
+
+
+		TimeOver = true;
+		Locked = true;
+		
+
+
+		Finished = true;
+		Detail = '<?xml version="1.0"?><hpnetresult><fields>';
+		for (QNum=0; QNum<State.length; QNum++){
+			if (State[QNum] != null){
+				if (State[QNum][5].length > 0){
+					Detail += '<field><fieldname>Question #' + (QNum+1) + '</fieldname><fieldtype>question-tracking</fieldtype><fieldlabel>Q ' + (QNum+1) + '</fieldlabel><fieldlabelid>QuestionTrackingField</fieldlabelid><fielddata>' + State[QNum][5] + '</fielddata></field>';
+				}
+			}
+		}
+		Detail += '</fields></hpnetresult>';
+		setTimeout('Finish()', SubmissionTimeout);
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+//-->
+
+//]]>
+
+</script>
+
+
+</head>
+
+<body onload="StartUp()" id="TheBody" >
+
+<!-- BeginTopNavButtons -->
+
+
+<div class="NavButtonBar" id="TopNavBar">
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="history.back(); return false;">&lt;=</button>
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)"  onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='index.htm'; return false;"> Index </button>
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='tema_9.htm'; return false;">=&gt;</button>
+
+
+</div>
+
+
+
+<!-- EndTopNavButtons -->
+
+<div class="Titles">
+	<h2 class="ExerciseTitle">Tema 8: Documentaci&#x00F3;n y comunicaci&#x00F3;n</h2>
+
+	<h3 class="ExerciseSubtitle">Quiz</h3>
+
+
+
+</div>
+
+<div id="InstructionsDiv" class="StdDiv">
+	<div id="Instructions"></div>
+</div>
+
+
+
+
+<div id="MainDiv" class="StdDiv">
+ 
+<div id="QNav" class="QuestionNavigation">
+
+<p style="text-align: right;">
+<button id="ShowMethodButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="ShowHideQuestions(); return false;">Show all questions</button>
+</p>
+
+<div id="OneByOneReadout">
+<button id="PrevQButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="ChangeQ(-1); return false;">&lt;=</button>
+
+<span id="QNumReadout" class="QNum">&nbsp;</span>
+
+<button id="NextQButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="ChangeQ(1); return false;">=&gt;</button>
+<br />
+</div>
+
+</div>
+ 
+<ol class="QuizQuestions" id="Questions">
+<li class="QuizQuestion" id="Q_0" style="display: none;"><div class="QuestionText">Dentro de la Planificaci&#x00F3;n de la gesti&#x00F3;n de las comunicaciones, al definir los modelos de comunicaci&#x00F3;n, en la calidad de dicha comunicaci&#x00F3;n influyen diferentes factores que componen el canal de comunicaci&#x00F3;n, &#x00BF;cu&#x00E1;les?</div><ol class="MCAnswers"><li id="Q_0_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_0_0_Btn" onclick="CheckMCAnswer(0,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La urgencia de la informaci&#x00F3;n requerida y la facilidad de uso.</li><li id="Q_0_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_0_1_Btn" onclick="CheckMCAnswer(0,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Las necesidades de informaci&#x00F3;n interna y externa, la facilidad de uso y el entorno del proyecto.</li><li id="Q_0_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_0_2_Btn" onclick="CheckMCAnswer(0,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Codificaci&#x00F3;n, Transmisi&#x00F3;n, Decodificaci&#x00F3;n, Aceptaci&#x00F3;n y Respuesta.</li></ol></li>
+<li class="QuizQuestion" id="Q_1" style="display: none;"><div class="QuestionText">Entre la informaci&#x00F3;n usada para determinar los requisitos de comunicaci&#x00F3;n est&#x00E1;...</div><ol class="MCAnswers"><li id="Q_1_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_1_0_Btn" onclick="CheckMCAnswer(1,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La codificaci&#x00F3;n, transmisi&#x00F3;n y aceptaci&#x00F3;n del mensaje.</li><li id="Q_1_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_1_1_Btn" onclick="CheckMCAnswer(1,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La informaci&#x00F3;n sobre las tecnolog&#x00ED;as a usar.</li><li id="Q_1_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_1_2_Btn" onclick="CheckMCAnswer(1,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Las necesidades de informaci&#x00F3;n interna y externa.</li></ol></li>
+<li class="QuizQuestion" id="Q_2" style="display: none;"><div class="QuestionText">IEEE es una entidad de normalizaci&#x00F3;n...</div><ol class="MCAnswers"><li id="Q_2_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_2_0_Btn" onclick="CheckMCAnswer(2,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;...de &#x00E1;mbito nacional y sectorial.</li><li id="Q_2_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_2_1_Btn" onclick="CheckMCAnswer(2,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;...de &#x00E1;mbito internacional y multisectorial.</li><li id="Q_2_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_2_2_Btn" onclick="CheckMCAnswer(2,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;...de &#x00E1;mbito internacional y sectorial.</li><li id="Q_2_3"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_2_3_Btn" onclick="CheckMCAnswer(2,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;...de &#x00E1;mbito nacional y multisectorial.</li></ol></li>
+<li class="QuizQuestion" id="Q_3" style="display: none;"><div class="QuestionText">Dentro de las t&#x00E9;cnicas de b&#x00FA;squeda de aspectos legales y normativos, &#x00BF;en qu&#x00E9; consiste la normativa de la organizaci&#x00F3;n?</div><ol class="MCAnswers"><li id="Q_3_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_3_0_Btn" onclick="CheckMCAnswer(3,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Consiste en integrar en el proyecto toda la normativa aplicable, que sea propia de la organizaci&#x00F3;n.</li><li id="Q_3_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_3_1_Btn" onclick="CheckMCAnswer(3,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Consiste en identificar la noramtiva de la organizaci&#x00F3;n que se contradiga con la de los estudios con entidad propia.</li><li id="Q_3_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_3_2_Btn" onclick="CheckMCAnswer(3,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Consiste en generar o identificar normativa para la organizaci&#x00F3;n que mejore los procesos en los proyectos.</li></ol></li>
+<li class="QuizQuestion" id="Q_4" style="display: none;"><div class="QuestionText">Publicar algunos resultados del proyecto para informaci&#x00F3;n del cliente, &#x00BF;qu&#x00E9; tipo de comunciaci&#x00F3;n ser&#x00ED;a?</div><ol class="MCAnswers"><li id="Q_4_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_4_0_Btn" onclick="CheckMCAnswer(4,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Vertical e informal.</li><li id="Q_4_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_4_1_Btn" onclick="CheckMCAnswer(4,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Externa y formal.</li><li id="Q_4_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_4_2_Btn" onclick="CheckMCAnswer(4,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Escrita y extraoficial.</li></ol></li>
+<li class="QuizQuestion" id="Q_5" style="display: none;"><div class="QuestionText">OMG es una entidad de normalizaci&#x00F3;n...</div><ol class="MCAnswers"><li id="Q_5_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_5_0_Btn" onclick="CheckMCAnswer(5,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;...de &#x00E1;mbito internacional y multisectorial.</li><li id="Q_5_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_5_1_Btn" onclick="CheckMCAnswer(5,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;...de &#x00E1;mbito nacional y multisectorial.</li><li id="Q_5_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_5_2_Btn" onclick="CheckMCAnswer(5,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;...de &#x00E1;mbito internacional y sectorial.</li><li id="Q_5_3"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_5_3_Btn" onclick="CheckMCAnswer(5,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;...de &#x00E1;mbito nacional y sectorial.</li></ol></li>
+<li class="QuizQuestion" id="Q_6" style="display: none;"><div class="QuestionText">&#x00BF;En qu&#x00E9; fase se elabora documentaci&#x00F3;n usando la Norma UNE-157801?</div><ol class="MCAnswers"><li id="Q_6_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_6_0_Btn" onclick="CheckMCAnswer(6,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;En la fase previa al propio desarrollo del proyecto.</li><li id="Q_6_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_6_1_Btn" onclick="CheckMCAnswer(6,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;En la fase de desarrollo del proyecto.</li><li id="Q_6_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_6_2_Btn" onclick="CheckMCAnswer(6,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;En la fase de mantenimiento del proyecto.</li></ol></li>
+<li class="QuizQuestion" id="Q_7" style="display: none;"><div class="QuestionText">Dentro de las t&#x00E9;cnicas de b&#x00FA;squeda de aspectos legales y normativos, &#x00BF;En qu&#x00E9; consisten los estudios con entidad propia?</div><ol class="MCAnswers"><li id="Q_7_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_7_0_Btn" onclick="CheckMCAnswer(7,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Consiste en hacer una consultor&#x00ED;a de normativa TIC que sea de aplicaci&#x00F3;n a la tecnolog&#x00ED;a usada en el proyecto.</li><li id="Q_7_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_7_1_Btn" onclick="CheckMCAnswer(7,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Consiste en consultar a expertos del dominio de aplicaci&#x00F3;n para ver qu&#x00E9; aspectos del proyecto pueden estar afectados por alguna norma o ley.</li><li id="Q_7_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_7_2_Btn" onclick="CheckMCAnswer(7,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Consiste en que sea la propia organizaci&#x00F3;n quien haga estudios de normativa y no externalice estos procesos.</li></ol></li>
+<li class="QuizQuestion" id="Q_8" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;les de los siguientes criterios formar&#x00E1;n parte del Plan de Gesti&#x00F3;n de las comunicaciones?</div><ol class="MCAnswers"><li id="Q_8_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_8_0_Btn" onclick="CheckMCAnswer(8,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El m&#x00E9;todo para crear el informe de desempe&#x00F1;o.</li><li id="Q_8_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_8_1_Btn" onclick="CheckMCAnswer(8,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El m&#x00E9;todo para evaluar los costes del personal asignado a las comunicaciones.</li><li id="Q_8_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_8_2_Btn" onclick="CheckMCAnswer(8,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El m&#x00E9;todo para actualizar y refinar el plan de gesti&#x00F3;n de las comunicaciones.</li></ol></li>
+<li class="QuizQuestion" id="Q_9" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;les de los siguientes criterios formar&#x00E1;n parte del Plan de Gesti&#x00F3;n de las comunicaciones?</div><ol class="MCAnswers"><li id="Q_9_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_9_0_Btn" onclick="CheckMCAnswer(9,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El glosario de terminolog&#x00ED;a com&#x00FA;n.</li><li id="Q_9_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_9_1_Btn" onclick="CheckMCAnswer(9,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La provisi&#x00F3;n de aceso a los repositorios.</li><li id="Q_9_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_9_2_Btn" onclick="CheckMCAnswer(9,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La lista de distribuci&#x00F3;n de documento.</li></ol></li>
+<li class="QuizQuestion" id="Q_10" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;les son las t&#x00E9;cnicas de Gesti&#x00F3;n de las Comunicaciones? </div><ol class="MCAnswers"><li id="Q_10_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_10_0_Btn" onclick="CheckMCAnswer(10,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Tecnolog&#x00ED;a de comunicaciones, Modelos de comunicaciones, M&#x00E9;todos de comunicaci&#x00F3;n, Sistemas de gesti&#x00F3;n de la informaci&#x00F3;n e Informes de desempe&#x00F1;o.</li><li id="Q_10_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_10_1_Btn" onclick="CheckMCAnswer(10,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;An&#x00E1;lisis de los requisitos de comunicaci&#x00F3;n, Tecnolog&#x00ED;a de comunicaciones, Modelos de comunicaciones, M&#x00E9;todos de comunicaci&#x00F3;n, Sistemas de gesti&#x00F3;n de la informaci&#x00F3;n y Reuniones.</li><li id="Q_10_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_10_2_Btn" onclick="CheckMCAnswer(10,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Sistemas de Gesti&#x00F3;n de Informaci&#x00F3;n, Juicio de expertos y Reuniones.</li></ol></li>
+<li class="QuizQuestion" id="Q_11" style="display: none;"><div class="QuestionText">La norma propone la elaboraci&#x00F3;n de una serie de documentos, &#x00BF;Son todos obligatorios?</div><ol class="MCAnswers"><li id="Q_11_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_11_0_Btn" onclick="CheckMCAnswer(11,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;S&#x00ED;.</li><li id="Q_11_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_11_1_Btn" onclick="CheckMCAnswer(11,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;No.</li><li id="Q_11_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_11_2_Btn" onclick="CheckMCAnswer(11,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;No, pero hay que justificar los que no aparezcan.</li></ol></li>
+<li class="QuizQuestion" id="Q_12" style="display: none;"><div class="QuestionText">AENOR es una entidad de normalizaci&#x00F3;n...</div><ol class="MCAnswers"><li id="Q_12_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_12_0_Btn" onclick="CheckMCAnswer(12,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;...de &#x00E1;mbito nacional y sectorial.</li><li id="Q_12_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_12_1_Btn" onclick="CheckMCAnswer(12,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;...de &#x00E1;mbito internacional y multisectorial.</li><li id="Q_12_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_12_2_Btn" onclick="CheckMCAnswer(12,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;...de &#x00E1;mbito internacional y sectorial.</li><li id="Q_12_3"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_12_3_Btn" onclick="CheckMCAnswer(12,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;...de &#x00E1;mbito nacional y multisectorial.</li></ol></li>
+<li class="QuizQuestion" id="Q_13" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;les de los siguientes son factores que influyen en las decisiones de selecci&#x00F3;n de Tecnolog&#x00ED;as de comunicaci&#x00F3;n?</div><ol class="MCAnswers"><li id="Q_13_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_13_0_Btn" onclick="CheckMCAnswer(13,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La codificaci&#x00F3;n y decodificaci&#x00F3;n del mensaje.</li><li id="Q_13_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_13_1_Btn" onclick="CheckMCAnswer(13,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La urgencia de la informaci&#x00F3;n requerida y la Facilidad de uso.</li><li id="Q_13_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_13_2_Btn" onclick="CheckMCAnswer(13,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La transmisi&#x00F3;n y aceptaci&#x00F3;n del mensaje.</li></ol></li>
+<li class="QuizQuestion" id="Q_14" style="display: none;"><div class="QuestionText">&#x00BF;Qu&#x00E9; proceso es importante hacer a la hora de planear un proyecto para evitar compliaciones legales futuras?</div><ol class="MCAnswers"><li id="Q_14_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_14_0_Btn" onclick="CheckMCAnswer(14,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Hacer estudios con entidad propia para saber si nos afecta alguna ley.</li><li id="Q_14_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_14_1_Btn" onclick="CheckMCAnswer(14,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Usar herramientas para buscar las normas y las leyes que nos afectan.</li><li id="Q_14_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_14_2_Btn" onclick="CheckMCAnswer(14,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Identificar la legislaci&#x00F3;n, la normativa, las patentes y los derechos de autor que puedan condicionar el dise&#x00F1;o del proyecto.</li></ol></li>
+<li class="QuizQuestion" id="Q_15" style="display: none;"><div class="QuestionText">En qu&#x00E9; consiste la Gesti&#x00F3;n de las Comunicaciones?</div><ol class="MCAnswers"><li id="Q_15_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_15_0_Btn" onclick="CheckMCAnswer(15,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Gestionar las comunicaciones es el proceso de crear, recoger, distribuir, guardar y mantener la informaci&#x00F3;n del proyecto de acuerdo a la planificaci&#x00F3;n de la gesti&#x00F3;n de las comunicaciones.</li><li id="Q_15_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_15_1_Btn" onclick="CheckMCAnswer(15,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Gestionar las comunicaciones es el proceso de segimiento de la informaci&#x00F3;n del proyecto de acuerdo a la planificaci&#x00F3;n de la gesti&#x00F3;n de las comunicaciones.</li><li id="Q_15_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_15_2_Btn" onclick="CheckMCAnswer(15,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Gestionar las comunicaciones es el proceso de definir los requisitos de la informaci&#x00F3;n del proyecto de acuerdo a la planificaci&#x00F3;n de la gesti&#x00F3;n de las comunicaciones.</li></ol></li>
+<li class="QuizQuestion" id="Q_16" style="display: none;"><div class="QuestionText">Un equipo de proyecto compuesto por 4 personas, &#x00BF;Cu&#x00E1;ntos canales de comunicaci&#x00F3;n genera?</div><ol class="MCAnswers"><li id="Q_16_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_16_0_Btn" onclick="CheckMCAnswer(16,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;4</li><li id="Q_16_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_16_1_Btn" onclick="CheckMCAnswer(16,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;6</li><li id="Q_16_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_16_2_Btn" onclick="CheckMCAnswer(16,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;8</li></ol></li>
+<li class="QuizQuestion" id="Q_17" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;les de los siguientes criterios formar&#x00E1;n parte del Plan de Gesti&#x00F3;n de las comunicaciones?</div><ol class="MCAnswers"><li id="Q_17_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_17_0_Btn" onclick="CheckMCAnswer(17,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La adaptaci&#x00F3;n de los modelos de comunicaci&#x00F3;n a los requisitos del proyecto.</li><li id="Q_17_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_17_1_Btn" onclick="CheckMCAnswer(17,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La persona responsable de comunicar la informaci&#x00F3;n.</li><li id="Q_17_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_17_2_Btn" onclick="CheckMCAnswer(17,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Asegurar que la informaci&#x00F3;n est&#x00E1; disponible para las personas en tiempo y forma.</li></ol></li>
+<li class="QuizQuestion" id="Q_18" style="display: none;"><div class="QuestionText">&#x00BF;En qu&#x00E9; consiste el Control de la Comunicaciones?</div><ol class="MCAnswers"><li id="Q_18_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_18_0_Btn" onclick="CheckMCAnswer(18,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es el proceso de crear, recoger, distribuir, guardar y mantener la informaci&#x00F3;n del proyecto de acuerdo a la planificaci&#x00F3;n de la gesti&#x00F3;n de las comunicaciones.</li><li id="Q_18_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_18_1_Btn" onclick="CheckMCAnswer(18,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El Control de las Comunicaciones es el proceso de seguimiento y control de las comunicaciones a trav&#x00E9;s de todo el ciclo de vida del proyecto para garantizar las necesidades de informaci&#x00F3;n de los interesados en el proyecto se cumplen.</li><li id="Q_18_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_18_2_Btn" onclick="CheckMCAnswer(18,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es el proceso de definir los requisitos de la informaci&#x00F3;n del proyecto de acuerdo a la planificaci&#x00F3;n de la gesti&#x00F3;n de las comunicaciones.</li></ol></li>
+<li class="QuizQuestion" id="Q_19" style="display: none;"><div class="QuestionText">&#x00BF;Cuales de las siguientes son t&#x00E9;cnicas para la planificaci&#x00F3;n de la Gesti&#x00F3;n de las Comunicaciones?</div><ol class="MCAnswers"><li id="Q_19_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_19_0_Btn" onclick="CheckMCAnswer(19,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Las tecnolog&#x00ED;as de comunicaci&#x00F3;n y los Sistemas de gesti&#x00F3;n de la informaci&#x00F3;n.</li><li id="Q_19_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_19_1_Btn" onclick="CheckMCAnswer(19,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Los Sistemas de Gesti&#x00F3;n de Informaci&#x00F3;n y el Juicio de expertos.</li><li id="Q_19_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_19_2_Btn" onclick="CheckMCAnswer(19,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El An&#x00E1;lisis de los requisitos de comunicaci&#x00F3;n y las Reuniones.</li></ol></li>
+<li class="QuizQuestion" id="Q_20" style="display: none;"><div class="QuestionText">&#x00BF;En qu&#x00E9; consiste la planificaci&#x00F3;n de la Gesti&#x00F3;n de las Comunicaciones?</div><ol class="MCAnswers"><li id="Q_20_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_20_0_Btn" onclick="CheckMCAnswer(20,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es el proceso para definir los canales y procesos de comunicaci&#x00F3;n relacionados con el proyecto.</li><li id="Q_20_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_20_1_Btn" onclick="CheckMCAnswer(20,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es el proceso para formalizar los modelos y m&#x00E9;todos de comunicaci&#x00F3;n relacionados con el proyecto.</li><li id="Q_20_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_20_2_Btn" onclick="CheckMCAnswer(20,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es el proceso para formalizar los procesos y procedimientos de comunicaci&#x00F3;n relacionados con el proyecto.</li></ol></li>
+<li class="QuizQuestion" id="Q_21" style="display: none;"><div class="QuestionText">W3C es una entidad de normalizaci&#x00F3;n...</div><ol class="MCAnswers"><li id="Q_21_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_21_0_Btn" onclick="CheckMCAnswer(21,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;...de &#x00E1;mbito nacional y multisectorial.</li><li id="Q_21_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_21_1_Btn" onclick="CheckMCAnswer(21,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;...de &#x00E1;mbito internacional y sectoria.l</li><li id="Q_21_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_21_2_Btn" onclick="CheckMCAnswer(21,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;...de &#x00E1;mbito internacional y multisectorial.</li><li id="Q_21_3"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_21_3_Btn" onclick="CheckMCAnswer(21,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;...de &#x00E1;mbito nacional y sectorial.</li></ol></li>
+<li class="QuizQuestion" id="Q_22" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;les de los siguientes criterios formar&#x00E1;n parte del Plan de Gesti&#x00F3;n de las comunicaciones?</div><ol class="MCAnswers"><li id="Q_22_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_22_0_Btn" onclick="CheckMCAnswer(22,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La adaptaci&#x00F3;n de los modelos de comunicaci&#x00F3;n a los requisitos del proyecto.</li><li id="Q_22_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_22_1_Btn" onclick="CheckMCAnswer(22,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Los m&#x00E9;todos o tecnolog&#x00ED;as utilizados para transmitir la informaci&#x00F3;n.</li></ol></li>
+<li class="QuizQuestion" id="Q_23" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;les de los siguientes criterios formar&#x00E1;n parte del Plan de Gesti&#x00F3;n de las comunicaciones?</div><ol class="MCAnswers"><li id="Q_23_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_23_0_Btn" onclick="CheckMCAnswer(23,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La persona responsable de autorizar la divulgaci&#x00F3;n de informaci&#x00F3;n confidencial.</li><li id="Q_23_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_23_1_Btn" onclick="CheckMCAnswer(23,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La persona responsable de poner informaci&#x00F3;n en los medios de tipo pull.</li><li id="Q_23_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_23_2_Btn" onclick="CheckMCAnswer(23,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La persona responsable de realizar los informes de desempe&#x00F1;o.</li></ol></li>
+<li class="QuizQuestion" id="Q_24" style="display: none;"><div class="QuestionText">Cu&#x00E1;les de los siguientes criterios formar&#x00E1;n parte del Plan de Gesti&#x00F3;n de las comunicaciones?</div><ol class="MCAnswers"><li id="Q_24_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_24_0_Btn" onclick="CheckMCAnswer(24,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Los diagramas de flujo de la informaci&#x00F3;n que circula dentro del proyecto</li><li id="Q_24_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_24_1_Btn" onclick="CheckMCAnswer(24,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Los flujogramas de trabajo</li><li id="Q_24_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_24_2_Btn" onclick="CheckMCAnswer(24,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Los organigramas jer&#x00E1;rquidos del equipo de proyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_25" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;les de los siguientes criterios formar&#x00E1;n parte del Plan de Gesti&#x00F3;n de las comunicaciones?</div><ol class="MCAnswers"><li id="Q_25_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_25_0_Btn" onclick="CheckMCAnswer(25,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Los requisitos de comunicaci&#x00F3;n de los interesados</li><li id="Q_25_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_25_1_Btn" onclick="CheckMCAnswer(25,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Los registros de las comunicaciones</li><li id="Q_25_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_25_2_Btn" onclick="CheckMCAnswer(25,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La distribuci&#x00F3;n de medios de comunicaci&#x00F3;n entre los miembros del equipo de proyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_26" style="display: none;"><div class="QuestionText">Dentro de las t&#x00E9;cnicas de b&#x00FA;squeda de aspectos legales y normativos, &#x00BF;En qu&#x00E9; consiste el Juicio de expertos?</div><ol class="MCAnswers"><li id="Q_26_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_26_0_Btn" onclick="CheckMCAnswer(26,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Consiste en usar expertos en vez de normas, ya que los expertos tienen experiencia directa</li><li id="Q_26_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_26_1_Btn" onclick="CheckMCAnswer(26,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Consiste en preguntar a expertos en normas para que nos aconsejen c&#x00F3;mo usarlas</li><li id="Q_26_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_26_2_Btn" onclick="CheckMCAnswer(26,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Consiste en ayudarse de personas con experiencia para identificar normativa o legislaci&#x00F3;n que pueda afectar al proyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_27" style="display: none;"><div class="QuestionText">Pedir explicaciones por una decisi&#x00F3;n de un miembro del equipo por parte del jefe de proyecto, &#x00BF;Que tipo de comunciaci&#x00F3;n ser&#x00ED;a?</div><ol class="MCAnswers"><li id="Q_27_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_27_0_Btn" onclick="CheckMCAnswer(27,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Vertical y extraoficial</li><li id="Q_27_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_27_1_Btn" onclick="CheckMCAnswer(27,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Formal y oficial</li><li id="Q_27_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_27_2_Btn" onclick="CheckMCAnswer(27,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Interna y oral</li></ol></li>
+<li class="QuizQuestion" id="Q_28" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;les son los tipos de normas por su capacidad para demostrar su uso?</div><ol class="MCAnswers"><li id="Q_28_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_28_0_Btn" onclick="CheckMCAnswer(28,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Orientativas y de uso obligatorio</li><li id="Q_28_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_28_1_Btn" onclick="CheckMCAnswer(28,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Certificables y no certificables</li><li id="Q_28_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_28_2_Btn" onclick="CheckMCAnswer(28,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Internacionales, nacionales, etc</li></ol></li>
+<li class="QuizQuestion" id="Q_29" style="display: none;"><div class="QuestionText">&#x00BF;C&#x00F3;mo es la comunicaci&#x00F3;n tipo push</div><ol class="MCAnswers"><li id="Q_29_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_29_0_Btn" onclick="CheckMCAnswer(29,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es informaci&#x00F3;n que se env&#x00ED;a a los receptores sin posibilidad de contestaci&#x00F3;n, por ejemplo informes, faxes, blogs, etc.</li><li id="Q_29_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_29_1_Btn" onclick="CheckMCAnswer(29,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es comunicaci&#x00F3;n multidireccional, como por ejemplo emails, reuniones, videoconferencias, tel&#x00E9;fono, etc.</li><li id="Q_29_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_29_2_Btn" onclick="CheckMCAnswer(29,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es informaci&#x00F3;n que busca el usuario en alg&#x00FA;n lugar, por ejemplo, repositorios, p&#x00E1;ginas web, etc.</li></ol></li>
+<li class="QuizQuestion" id="Q_30" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;les de los siguientes criterios formar&#x00E1;n parte del Plan de Gesti&#x00F3;n de las comunicaciones?</div><ol class="MCAnswers"><li id="Q_30_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_30_0_Btn" onclick="CheckMCAnswer(30,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El archivado de la documentaci&#x00F3;n</li><li id="Q_30_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_30_1_Btn" onclick="CheckMCAnswer(30,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La provisi&#x00F3;n de acceso a los Sistemas de trabajo colaborativo</li><li id="Q_30_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_30_2_Btn" onclick="CheckMCAnswer(30,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Los recursos asignados para las actividades de comunicaci&#x00F3;n</li></ol></li>
+<li class="QuizQuestion" id="Q_31" style="display: none;"><div class="QuestionText">Dentro de las t&#x00E9;cnicas de b&#x00FA;squeda de aspectos legales y normativos, &#x00BF;En qu&#x00E9; consiste la Codificaci&#x00F3;n?</div><ol class="MCAnswers"><li id="Q_31_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_31_0_Btn" onclick="CheckMCAnswer(31,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Consiste en identificar las normas por su c&#x00F3;digo</li><li id="Q_31_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_31_1_Btn" onclick="CheckMCAnswer(31,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Consiste en codificar las normas de manera que s&#x00F3;lo las puedan leer quienes tienen permisos</li><li id="Q_31_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_31_2_Btn" onclick="CheckMCAnswer(31,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Consiste en escribir programas que permitan buscas las normas</li></ol></li>
+<li class="QuizQuestion" id="Q_32" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;les de los siguientes criterios formar&#x00E1;n parte del Plan de Gesti&#x00F3;n de las comunicaciones?</div><ol class="MCAnswers"><li id="Q_32_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_32_0_Btn" onclick="CheckMCAnswer(32,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Las p&#x00E9;rdidas de informaci&#x00F3;n por denegaci&#x00F3;pn de servicio</li><li id="Q_32_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_32_1_Btn" onclick="CheckMCAnswer(32,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Las restricciones en materia de comunicaci&#x00F3;n</li><li id="Q_32_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_32_2_Btn" onclick="CheckMCAnswer(32,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La adaptaci&#x00F3;n de las medidas de seguridad por acceos no permitidos</li></ol></li>
+<li class="QuizQuestion" id="Q_33" style="display: none;"><div class="QuestionText">ISO es una entidad de normalizaci&#x00F3;n...</div><ol class="MCAnswers"><li id="Q_33_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_33_0_Btn" onclick="CheckMCAnswer(33,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;...de &#x00E1;mbito internacional y sectorial</li><li id="Q_33_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_33_1_Btn" onclick="CheckMCAnswer(33,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;...de &#x00E1;mbito internacional y multisectorial</li><li id="Q_33_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_33_2_Btn" onclick="CheckMCAnswer(33,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;...de &#x00E1;mbito nacional y multisectorial</li><li id="Q_33_3"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_33_3_Btn" onclick="CheckMCAnswer(33,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;...de &#x00E1;mbito nacional y sectorial</li></ol></li>
+<li class="QuizQuestion" id="Q_34" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;les son las principales t&#x00E9;cnicas de b&#x00FA;squeda de aspectos legales y normativos?</div><ol class="MCAnswers"><li id="Q_34_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_34_0_Btn" onclick="CheckMCAnswer(34,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Integraci&#x00F3;n, Juicio de expertos, Herramientas, Estudios con entidad propia, Normativa de la Organizaci&#x00F3;n y Consulta</li><li id="Q_34_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_34_1_Btn" onclick="CheckMCAnswer(34,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Integraci&#x00F3;n, Juicio de expertos, Consulta, Estudios con entidad propia, Normativa de la Organizaci&#x00F3;n y Consenso</li><li id="Q_34_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_34_2_Btn" onclick="CheckMCAnswer(34,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Codificaci&#x00F3;n, Juicio de expertos, Herramientas, Estudios con entidad propia, Normativa de la Organizaci&#x00F3;n y Mejora de procesos</li></ol></li>
+<li class="QuizQuestion" id="Q_35" style="display: none;"><div class="QuestionText">Entre la informaci&#x00F3;n usada para determinar los requisitos de comunicaci&#x00F3;n est&#x00E1;...</div><ol class="MCAnswers"><li id="Q_35_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_35_0_Btn" onclick="CheckMCAnswer(35,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Los organigramas</li><li id="Q_35_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_35_1_Btn" onclick="CheckMCAnswer(35,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La urgencia</li><li id="Q_35_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_35_2_Btn" onclick="CheckMCAnswer(35,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Los cronogramas</li></ol></li>
+<li class="QuizQuestion" id="Q_36" style="display: none;"><div class="QuestionText">Dentro de las t&#x00E9;cnicas de b&#x00FA;squeda de aspectos legales y normativos, &#x00BF;En qu&#x00E9; consiste la Mejora de procesos?</div><ol class="MCAnswers"><li id="Q_36_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_36_0_Btn" onclick="CheckMCAnswer(36,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Consiste en generar o identificar normativa para la organizaci&#x00F3;n que mejore los procesos en los proyectos, a partir del proyecto actual</li><li id="Q_36_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_36_1_Btn" onclick="CheckMCAnswer(36,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Consiste enmejorar los procesos del proyecto usando las normas adecuadas<br />Esto es lo que hacen las normas habitualmente, pero no es lo que recoje esta t&#x00E9;cnica</li><li id="Q_36_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_36_2_Btn" onclick="CheckMCAnswer(36,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Consiste en mejorar las normas que se van a aplicar a un proyecto si tienen defectos o no se adaptan</li></ol></li>
+<li class="QuizQuestion" id="Q_37" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;les de los siguientes criterios formar&#x00E1;n parte del Plan de Gesti&#x00F3;n de las comunicaciones?</div><ol class="MCAnswers"><li id="Q_37_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_37_0_Btn" onclick="CheckMCAnswer(37,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El motivo de la distribuci&#x00F3;n de cada tipo de informaci&#x00F3;n</li><li id="Q_37_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_37_1_Btn" onclick="CheckMCAnswer(37,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Las listas de distribuci&#x00F3;n de documentos</li><li id="Q_37_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_37_2_Btn" onclick="CheckMCAnswer(37,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Los medios f&#x00ED;sicos de informaci&#x00F3;n</li></ol></li>
+<li class="QuizQuestion" id="Q_38" style="display: none;"><div class="QuestionText">La Sensibilidad y confidencialidad de la informaci&#x00F3;n es un factor de decisi&#x00F3;n, &#x00BF;en qu&#x00E9; t&#x00E9;cnica de planifiaci&#x00F3;n de la gesti&#x00F1;on de las comunicaciones influye?</div><ol class="MCAnswers"><li id="Q_38_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_38_0_Btn" onclick="CheckMCAnswer(38,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Tecnolog&#x00ED;a de comunicaci&#x00F3;n</li><li id="Q_38_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_38_1_Btn" onclick="CheckMCAnswer(38,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Mod&#x00E9;los de comunicaci&#x00F3;n</li><li id="Q_38_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_38_2_Btn" onclick="CheckMCAnswer(38,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;M&#x00E9;todos de comunicaci&#x00F3;n</li></ol></li>
+<li class="QuizQuestion" id="Q_39" style="display: none;"><div class="QuestionText">&#x00BF;C&#x00F3;mo es la comunicaci&#x00F3;n interactiva? </div><ol class="MCAnswers"><li id="Q_39_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_39_0_Btn" onclick="CheckMCAnswer(39,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es comunicaci&#x00F3;n multidireccional, como por ejemplo emails, reuniones, videoconferencias, tel&#x00E9;fono, etc.</li><li id="Q_39_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_39_1_Btn" onclick="CheckMCAnswer(39,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es informaci&#x00F3;n que se env&#x00ED;a a los receptores sin posibilidad de contestaci&#x00F3;n, por ejemplo informes, faxes, blogs, etc.</li><li id="Q_39_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_39_2_Btn" onclick="CheckMCAnswer(39,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es informaci&#x00F3;n que busca el usuario en alg&#x00FA;n lugar, por ejemplo, repositorios, p&#x00E1;ginas web, etc.</li></ol></li>
+<li class="QuizQuestion" id="Q_40" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;les son los tipos de normas por su &#x00E1;mbito de aplicaci&#x00F3;n?</div><ol class="MCAnswers"><li id="Q_40_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_40_0_Btn" onclick="CheckMCAnswer(40,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Internacionales, nacionales, etc.</li><li id="Q_40_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_40_1_Btn" onclick="CheckMCAnswer(40,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Orientativas y de uso obligatorio</li><li id="Q_40_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_40_2_Btn" onclick="CheckMCAnswer(40,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Terminolog&#x00ED;a, ensayo, etc.</li></ol></li>
+<li class="QuizQuestion" id="Q_41" style="display: none;"><div class="QuestionText">La planificaci&#x00F3;n de comunicaci&#x00F3;n tiene tres procesos importantes, &#x00BF;Cu&#x00E1;les? </div><ol class="MCAnswers"><li id="Q_41_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_41_0_Btn" onclick="CheckMCAnswer(41,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Planificar la Gesti&#x00F3;n de las Comunicaciones, Gestionar las Comunicaciones y Controlar las Comunicaciones</li><li id="Q_41_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_41_1_Btn" onclick="CheckMCAnswer(41,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La Creaci&#x00F3;n, la Distribuci&#x00F3;n y el Almacenamiento</li><li id="Q_41_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_41_2_Btn" onclick="CheckMCAnswer(41,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El Control, el Seguimiento y la Disposici&#x00F3;n final de la informaci&#x00F3;n del proyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_42" style="display: none;"><div class="QuestionText">Dentro de las t&#x00E9;cnicas de gesti&#x00F3;n de las Comuncaciones, &#x00BF;Qu&#x00E9; sistemas se usar&#x00E1;n para la comunicaci&#x00F3;n?</div><ol class="MCAnswers"><li id="Q_42_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_42_0_Btn" onclick="CheckMCAnswer(42,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Comunicaci&#x00F3;n escrita, vertical, formal y oficial</li><li id="Q_42_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_42_1_Btn" onclick="CheckMCAnswer(42,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Lo sinformes de desempe&#x00F1;o</li><li id="Q_42_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_42_2_Btn" onclick="CheckMCAnswer(42,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Copias en papel, gesti&#x00F3;n de documentos electr&#x00F3;nicos y Herramientas electr&#x00F3;nicas de gesti&#x00F3;n de proyectos</li></ol></li>
+<li class="QuizQuestion" id="Q_43" style="display: none;"><div class="QuestionText">Dentro de las t&#x00E9;cnicas para la planificaci&#x00F3;n de la Gesti&#x00F3;n de las Comunicaciones, &#x00BF;En qu&#x00E9; consiste el An&#x00E1;lisis de los requisitos de comunicaci&#x00F3;n?</div><ol class="MCAnswers"><li id="Q_43_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_43_0_Btn" onclick="CheckMCAnswer(43,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;En determinar el n&#x00FA;mero de canales que van a usar la comunciaci&#x00F3;n</li><li id="Q_43_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_43_1_Btn" onclick="CheckMCAnswer(43,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;En determinar los requisitos de comunicaci&#x00F3;n necesaria y el valor de esa informaci&#x00F3;n</li><li id="Q_43_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_43_2_Btn" onclick="CheckMCAnswer(43,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;En determinar los m&#x00E9;todos que se usen para realizar la comunicaci&#x00F3;n</li></ol></li>
+<li class="QuizQuestion" id="Q_44" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;les de los siguientes criterios formar&#x00E1;n parte del Plan de Gesti&#x00F3;n de las comunicaciones?</div><ol class="MCAnswers"><li id="Q_44_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_44_0_Btn" onclick="CheckMCAnswer(44,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El plazo y la frecuencia para la distribuci&#x00F3;n de la informaci&#x00F3;n</li><li id="Q_44_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_44_1_Btn" onclick="CheckMCAnswer(44,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El archivado de la documentaci&#x00F3;n</li><li id="Q_44_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_44_2_Btn" onclick="CheckMCAnswer(44,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Los registros de las comunicaciones</li></ol></li>
+<li class="QuizQuestion" id="Q_45" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;les son las t&#x00E9;cnicas del Control de las Comunicaciones? </div><ol class="MCAnswers"><li id="Q_45_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_45_0_Btn" onclick="CheckMCAnswer(45,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Tecnolog&#x00ED;a de comunicaciones, Modelos de comunicaciones, M&#x00E9;todos de comunicaci&#x00F3;n, Sistemas de gesti&#x00F3;n de la informaci&#x00F3;n e Informes de desempe&#x00F1;o</li><li id="Q_45_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_45_1_Btn" onclick="CheckMCAnswer(45,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Sistemas de gesti&#x00F3;n de la informaci&#x00F3;n, Juicio de expertos y Reuniones</li><li id="Q_45_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_45_2_Btn" onclick="CheckMCAnswer(45,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;An&#x00E1;lisis de los requisitos de comunicaci&#x00F3;n, Tecnolog&#x00ED;a de comunicaciones, Modelos de comunicaciones, M&#x00E9;todos de comunicaci&#x00F3;n, Sistemas de gesti&#x00F3;n de la informaci&#x00F3;n y Reuniones</li></ol></li>
+<li class="QuizQuestion" id="Q_46" style="display: none;"><div class="QuestionText">&#x00BF;En qu&#x00E9; consiste la normalizaci&#x00F3;n?</div><ol class="MCAnswers"><li id="Q_46_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_46_0_Btn" onclick="CheckMCAnswer(46,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Obliga a seguir unos procedimientos rigurosos para conseguir los est&#x00E1;ndares de calidad</li><li id="Q_46_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_46_1_Btn" onclick="CheckMCAnswer(46,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Define procedimientos que corrigen el modo de hacer habitual cuando est&#x00E1; equivocado</li><li id="Q_46_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_46_2_Btn" onclick="CheckMCAnswer(46,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Permite aprovecharse de las mejores pr&#x00E1;cticas realizadas por otros profesionales con mayor experiencia en el campo que sea de aplicaci&#x00F3;n</li></ol></li>
+<li class="QuizQuestion" id="Q_47" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;les de los siguientes criterios formar&#x00E1;n parte del Plan de Gesti&#x00F3;n de las comunicaciones?</div><ol class="MCAnswers"><li id="Q_47_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_47_0_Btn" onclick="CheckMCAnswer(47,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El proceso de actualizaci&#x00F3;n de riesgos de comunicaci&#x00F3;n</li><li id="Q_47_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_47_1_Btn" onclick="CheckMCAnswer(47,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El proceso de creaci&#x00F3;n del informe de desempe&#x00F1;o</li><li id="Q_47_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_47_2_Btn" onclick="CheckMCAnswer(47,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El proceso de escalaci&#x00F3;n</li></ol></li>
+<li class="QuizQuestion" id="Q_48" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;les de los siguientes criterios formar&#x00E1;n parte del Plan de Gesti&#x00F3;n de las comunicaciones?</div><ol class="MCAnswers"><li id="Q_48_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_48_0_Btn" onclick="CheckMCAnswer(48,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La provisi&#x00F3;n de acceso de los stakeholder a la informaci&#x00F3;n que requieren en cada momento</li><li id="Q_48_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_48_1_Btn" onclick="CheckMCAnswer(48,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La actualizaci&#x00F3;n de la informaci&#x00F3;n en los medios de comunicaci&#x00F3;n</li><li id="Q_48_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_48_2_Btn" onclick="CheckMCAnswer(48,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La persona o los grupos que recibir&#x00E1;n la informaci&#x00F3;n</li></ol></li>
+<li class="QuizQuestion" id="Q_49" style="display: none;"><div class="QuestionText">&#x00BF;Qu&#x00E9; problemas principales trata de solucionar la norma?</div><ol class="MCAnswers"><li id="Q_49_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_49_0_Btn" onclick="CheckMCAnswer(49,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Los relacionados con las etapas de definici&#x00F3;n, construcci&#x00F3;n, pruebas, implantaci&#x00F3;n y puesta en servicio</li><li id="Q_49_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_49_1_Btn" onclick="CheckMCAnswer(49,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Los relacionados con las etapas de definici&#x00F3;n y desarrollo del proyecto</li><li id="Q_49_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_49_2_Btn" onclick="CheckMCAnswer(49,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Los relacionados con la etapa de definici&#x00F3;n del proyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_50" style="display: none;"><div class="QuestionText">Un email del Jefe de Proyecto comunicando que se va a disponer de licencias de un producto, &#x00BF;Que tipo de comunciaci&#x00F3;n ser&#x00ED;a?</div><ol class="MCAnswers"><li id="Q_50_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_50_0_Btn" onclick="CheckMCAnswer(50,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Escrita y horizontal</li><li id="Q_50_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_50_1_Btn" onclick="CheckMCAnswer(50,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Vertical e informal</li><li id="Q_50_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_50_2_Btn" onclick="CheckMCAnswer(50,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Interna y extraoficial</li></ol></li>
+<li class="QuizQuestion" id="Q_51" style="display: none;"><div class="QuestionText">&#x00BF;En qu&#x00E9; fase se elabora documentaci&#x00F3;n usando la Norma UNE157801? </div><ol class="MCAnswers"><li id="Q_51_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_51_0_Btn" onclick="CheckMCAnswer(51,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;En la fase previa al propio desarrollo del proyecto</li><li id="Q_51_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_51_1_Btn" onclick="CheckMCAnswer(51,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;En la fase de mantenimiento del proyecto</li><li id="Q_51_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_51_2_Btn" onclick="CheckMCAnswer(51,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;En la fase de desarrollo del proyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_52" style="display: none;"><div class="QuestionText">Dentro de la Planificaci&#x00F3;n de la gesti&#x00F3;n de las comunicaciones, en la t&#x00E9;cnica para definir los m&#x00E9;todos de comunicaci&#x00F3;n, &#x00BF;C&#x00F3;mo pueden clasificarse los fiferentes m&#x00E9;todos de comunicaci&#x00F3;n?</div><ol class="MCAnswers"><li id="Q_52_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_52_0_Btn" onclick="CheckMCAnswer(52,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Interna y externa, formar e informal, vertical y horizontal, oficial y extraoficial y escrita y oral</li><li id="Q_52_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_52_1_Btn" onclick="CheckMCAnswer(52,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Codificaci&#x00F3;n, Transmisi&#x00F3;n, Decodificaci&#x00F3;n, Aceptaci&#x00F3;n y Respuesta</li><li id="Q_52_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_52_2_Btn" onclick="CheckMCAnswer(52,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Interactiva, pusk y pull</li></ol></li>
+<li class="QuizQuestion" id="Q_53" style="display: none;"><div class="QuestionText">Dentro de las t&#x00E9;cnicas de b&#x00FA;squeda de aspectos legales y normativos, &#x00BF;En qu&#x00E9; consiste el uso de Herramientas?</div><ol class="MCAnswers"><li id="Q_53_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_53_0_Btn" onclick="CheckMCAnswer(53,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Consiste en buscar normas a trav&#x00E9;s de herramientas de b&#x00FA;squeda especilizada</li><li id="Q_53_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_53_1_Btn" onclick="CheckMCAnswer(53,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Consiste en usar herramientas para nos ayuden a implantar las normas</li><li id="Q_53_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_53_2_Btn" onclick="CheckMCAnswer(53,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Consiste en generar normas adaptadas al proyecto usando herramientas</li></ol></li>
+<li class="QuizQuestion" id="Q_54" style="display: none;"><div class="QuestionText">Un informe de progreso para el cliente, &#x00BF;Que tipo de comunciaci&#x00F3;n ser&#x00ED;a? </div><ol class="MCAnswers"><li id="Q_54_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_54_0_Btn" onclick="CheckMCAnswer(54,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Formal y externa</li><li id="Q_54_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_54_1_Btn" onclick="CheckMCAnswer(54,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Oficial y vertical</li><li id="Q_54_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_54_2_Btn" onclick="CheckMCAnswer(54,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Escrita e informal</li></ol></li>
+<li class="QuizQuestion" id="Q_55" style="display: none;"><div class="QuestionText">Un equipo de proyecto compuesto por 6 personas, &#x00BF;Cu&#x00E1;ntos canales de comunicaci&#x00F3;n genera?</div><ol class="MCAnswers"><li id="Q_55_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_55_0_Btn" onclick="CheckMCAnswer(55,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;12</li><li id="Q_55_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_55_1_Btn" onclick="CheckMCAnswer(55,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;6</li><li id="Q_55_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_55_2_Btn" onclick="CheckMCAnswer(55,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;15</li></ol></li>
+<li class="QuizQuestion" id="Q_56" style="display: none;"><div class="QuestionText">&#x00BF;C&#x00F3;mo es la comunicaci&#x00F3;n tipo pull</div><ol class="MCAnswers"><li id="Q_56_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_56_0_Btn" onclick="CheckMCAnswer(56,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es informaci&#x00F3;n que se env&#x00ED;a a los receptores sin posibilidad de contestaci&#x00F3;n, por ejemplo informes, faxes, blogs, etc.</li><li id="Q_56_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_56_1_Btn" onclick="CheckMCAnswer(56,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es informaci&#x00F3;n que busca el usuario en alg&#x00FA;n lugar, por ejemplo, repositorios, p&#x00E1;ginas web, etc.</li><li id="Q_56_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_56_2_Btn" onclick="CheckMCAnswer(56,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es comunicaci&#x00F3;n multidireccional, como por ejemplo emails, reuniones,<br />videoconferencias, tel&#x00E9;fono, etc.</li></ol></li>
+<li class="QuizQuestion" id="Q_57" style="display: none;"><div class="QuestionText">&#x00BF;Qu&#x00E9; son los informes de desempe&#x00F1;o?</div><ol class="MCAnswers"><li id="Q_57_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_57_0_Btn" onclick="CheckMCAnswer(57,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son informes que se realizan peri&#x00F3;dicamente para informar a los stakeholders del proyecto sobre los aspectos que les interesan en relaci&#x00F3;n al avance del proyecto.</li><li id="Q_57_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_57_1_Btn" onclick="CheckMCAnswer(57,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;SOn inforrmes sobre los resultados finales del proyecto.</li><li id="Q_57_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_57_2_Btn" onclick="CheckMCAnswer(57,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son cuadros de mando que usan los componentes del equipo.</li></ol></li>
+<li class="QuizQuestion" id="Q_58" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;les son los tipos de normas por su capacidad legal para obligar al cumplimiento?</div><ol class="MCAnswers"><li id="Q_58_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_58_0_Btn" onclick="CheckMCAnswer(58,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Orientativas y de uso obligatorio.</li><li id="Q_58_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_58_1_Btn" onclick="CheckMCAnswer(58,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Terminolog&#x00ED;a, ensayo, etc.</li><li id="Q_58_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_58_2_Btn" onclick="CheckMCAnswer(58,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Certificables y no certificables.</li></ol></li>
+<li class="QuizQuestion" id="Q_59" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;les son los tipos de normas por el objeto normalizado?</div><ol class="MCAnswers"><li id="Q_59_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_59_0_Btn" onclick="CheckMCAnswer(59,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Internacionales, nacionales, etc.</li><li id="Q_59_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_59_1_Btn" onclick="CheckMCAnswer(59,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Certificables y no certificables.</li><li id="Q_59_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_59_2_Btn" onclick="CheckMCAnswer(59,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Terminolog&#x00ED;a, ensayo, etc.</li></ol></li></ol>
+
+
+
+</div>
+
+
+
+<div class="Feedback" id="FeedbackDiv">
+<div class="FeedbackText" id="FeedbackContent"></div>
+<button id="FeedbackOKButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="HideFeedback(); return false;">&nbsp;OK&nbsp;</button>
+</div>
+
+<!-- BeginBottomNavButtons -->
+
+
+<div class="NavButtonBar" id="BottomNavBar">
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="history.back(); return false;">&lt;=</button>
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)"  onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='index.htm'; return false;"> Index </button>
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='tema_9.htm'; return false;">=&gt;</button>
+
+
+</div>
+
+
+
+<!-- EndBottomNavButtons -->
+
+<!-- BeginSubmissionForm -->
+
+<!-- EndSubmissionForm -->
+
+</body>
+
+</html>

@@ -1,0 +1,2758 @@
+<?xml version="1.0"?>
+       <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "xhtml11.dtd">
+       <html xmlns="http://www.w3.org/1999/xhtml"
+             xml:lang="en"><head><meta name="author" content="Created with Hot Potatoes by Half-Baked Software"></meta><meta name="keywords" content="Hot Potatoes, Hot Potatoes, Half-Baked Software, Windows, University of Victoria"></meta>
+
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<meta name="DC:Title" content="Tema 3: Organizaci&#x00F3;n de los recursos y del proyecto" />
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+
+<title>
+Tema 3: Organizaci&#x00F3;n de los recursos y del proyecto
+</title>
+
+<!-- Made with executable version 6.3 Release 0 Build 5 -->
+
+<!-- The following insertion allows you to add your own code directly to this head tag from the configuration screen -->
+
+
+
+<style type="text/css">
+
+/*  hp6.cs_                   */ 
+/*  Facelift Responsive      */
+/*  7 February 2014         */  
+/*  This version 1.3 - 24 March 2016 - Add responsive iframe */
+
+/* This is a modified CSS3 stylesheet for rounded corners of buttons,
+the layout boxes and the input boxes in the exercise,
+as well as dropshadows on buttons and draggable cards in JMix drag and drop */
+
+/* Removed all browser specific -moz -khtml -webkit  24 March 2016 */
+
+/* Stan Bogdanov  */
+/* stanbogdanov@yahoo.com     */
+/* http://ewbooks.info/hotpot */
+   
+
+/* Elements in square brackets are replaced by data based on configuration settings when the exercise is built. */
+
+/* Resetting */
+/* set image and video max width to 100% */
+img,
+video,
+object,
+embed {
+	max-width: 100%;
+	height: auto;
+	/*width: auto\9; The CSS validator doesn't like this*/ /* for ie8 but should we care about IE8, when IE11 has been around for quite a lot ?*/
+} 
+
+	.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+	margin-left:auto;margin-right:auto;text-align:center; /* Stan: Comment out this line if you don't want the video to be centered */
+}
+
+	.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* BeginCorePageCSS */
+
+/* Made with executable version 6.3 Release 0 Build 5 */
+
+
+/* Hack to hide a nested Quicktime player from IE, which can't handle it. */
+* html object.MediaPlayerNotForIE {
+	display: none;
+}
+
+body{
+	font-family: arial,helvetica,sans-serif;
+	background-color: #ffffff;
+	color: #000000;
+ 
+	margin-right: 1%;
+	margin-left: 1%;
+	font-size: small;
+}
+
+p{
+	text-align: left;
+	margin: 0px;
+	font-size: 100%;
+}
+
+table,div,span,td{
+	font-size: 100%;
+	color: #000000;
+}
+
+div.Titles{
+	padding: 0.5em;
+	text-align: center;
+	color: #000000;
+}
+
+button{
+	font-family: arial,helvetica,sans-serif;
+	font-size: 100%;
+	display: inline;
+/* Stan_Rounded buttons */
+	border-radius: 5px;
+	padding: 4px 17px;
+	margin:2px;
+/* Stan_Rounded buttons  END*/
+}
+
+button:link,
+button:visited,
+button:hover,
+button:focus,
+button:active {
+	outline: none;
+}
+
+
+.ExerciseTitle{
+	font-size: 100%;
+	color: #000000;
+}
+
+.ExerciseSubtitle{
+	font-size: 100%;
+	color: #000000;
+}
+
+div.StdDiv{
+	background-color: #dddddd;
+	text-align: center;
+	font-size: 100%;
+	color: #000000;
+	padding: 0.5em;
+	border: 1px solid #ccc;
+	margin-bottom: 1px;
+/*Stan Rounded corners of layout boxes */	
+	border-radius: 5px;
+/*Stan Rounded corners of layout boxes */	
+}
+
+/* EndCorePageCSS */
+
+.RTLText{
+	text-align: right;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", arial,helvetica,sans-serif; 
+}
+
+.CentredRTLText{
+	text-align: center;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", arial,helvetica,sans-serif; 
+}
+
+button p.RTLText{
+	text-align: center;
+}
+
+.RTLGapBox{
+	text-align: right;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Times New Roman", arial,helvetica,sans-serif;
+}
+
+.Guess{
+	font-weight: bold;
+}
+
+.CorrectAnswer{
+	font-weight: bold;
+}
+
+div#Timer{
+	padding: 0.25em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: #000000;
+
+}
+
+span#TimerText{
+	padding: 0.25em;
+	border-width: 1px;
+	border-style: solid;
+	font-weight: bold;
+	display: none;
+	color: #000000;
+/* Stan  rounded corners of timer */	
+  border-radius: 10px;
+  /* Stan  rounded corners of timer end */
+}
+
+span.Instructions{
+
+}
+
+div.ExerciseText{
+
+}
+
+.FeedbackText, .FeedbackText span.CorrectAnswer, .FeedbackText span.Guess, .FeedbackText span.Answer{
+	color: #000000;
+}
+
+.LeftItem{
+	font-size: 100%;
+	color: #000000;
+	text-align: left;
+}
+
+.RightItem{
+	font-weight: bold;
+	font-size: 100%;
+	color: #000000;
+}
+
+span.CorrectMark{
+
+}
+
+
+input, textarea{
+	font-family: Verdana,Geneva,Arial,sans-serif;
+	font-size: 100%;
+
+/* Stan_rounded border of input boxes and textarea */
+	border-radius: 5px;
+	padding: 5px;
+	border:1px solid silver;
+/* Stan_rounded border of input boxes and textarea END */
+}
+
+/* Stan_rounded focus border of input boxes and textarea */
+
+input:focus, textarea:focus {
+	outline: none; 
+	border-radius: 5px;
+	padding: 5px;
+	border:1px solid silver;
+/* Stan rounded focus border of input boxes and textarea end 8 December 2012 */	
+
+
+/* Stan inset dropshade of input boxes and textarea */
+	box-shadow: -1px -1px 5px #888;
+/* Stan inset dropshade of input boxes and textarea end 8 December 2012 */
+	}
+	
+select{
+	font-size: 100%;
+	/* Stan - Rounded menu */
+	border-radius: 5px;
+	padding: 3px 2px 3px 5px;
+	border: 1px solid silver;
+/* Stan - Rounded menu END */
+}
+
+select:focus {
+outline:none;
+}
+
+div.Feedback {
+	background-color: #ffffff;
+	left: 33%;
+	width: 34%;
+	top: 33%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+	position: absolute;
+	display: none;
+	font-size: 100%;
+/* Stan_rounded border of feedback box */
+	border-radius: 5px;
+	padding: 5px;
+/* Stan_rounded border of fixed box END */
+	
+}
+
+
+
+
+div.ExerciseDiv{
+	color: #000000;
+}
+
+/* JMatch flashcard styles */
+table.FlashcardTable{
+	background-color: transparent;
+	color: #000000;
+	border-color: #000000;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	width: 90%;
+	position: relative;
+	text-align: center;
+	padding: 0px;
+}
+
+table.FlashcardTable tr{
+	border-style: none;
+	margin: 0px;
+	padding: 0px;
+	background-color: #dddddd;
+}
+
+table.FlashcardTable td.Showing{
+	font-size: 140%;
+	text-align: center;
+	width: 50%;
+	display: table-cell;
+	padding: 2em;
+	margin: 0px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: silver;
+	color: #000000;
+	background-color: #dddddd;
+}
+
+table.FlashcardTable td.Hidden{
+	display: none;
+}
+
+/* JMix styles */
+div#SegmentDiv{
+	margin-top: 2em;
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+a.ExSegment{
+	font-size: 120%;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+}
+
+span.RemainingWordList{
+	font-style: italic;
+}
+
+div.DropLine {
+	position: absolute;
+	text-align: center;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	width: 80%;
+}
+
+/* JCloze styles */
+
+.ClozeWordList{
+	text-align: center;
+	font-weight: bold;
+}
+
+div.ClozeBody{
+	text-align: left;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	line-height: 2.0
+}
+
+span.GapSpan{
+	font-weight: bold;
+}
+
+/* JCross styles */
+
+table.CrosswordGrid{
+	margin: auto auto 1em auto;
+	border-collapse: collapse;
+	padding: 0px;
+	background-color: #000000;
+}
+
+table.CrosswordGrid tbody tr td{
+	width: 1.5em;
+	height: 1.5em;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 140%;
+	padding: 1px;
+	margin: 0px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	color: #000000;
+}
+
+table.CrosswordGrid span{
+	color: #000000;
+}
+
+table.CrosswordGrid td.BlankCell{
+	background-color: #000000;
+	color: #000000;
+}
+
+table.CrosswordGrid td.LetterOnlyCell{
+	text-align: center;
+	vertical-align: middle;
+	background-color: #ffffff;
+	color: #000000;
+	font-weight: bold;
+}
+
+table.CrosswordGrid td.NumLetterCell{
+	text-align: left;
+	vertical-align: top;
+	background-color: #ffffff;
+	color: #000000;
+	padding: 1px;
+	font-weight: bold;
+}
+
+.NumLetterCellText{
+	cursor: pointer;
+	color: #000000;
+}
+
+.GridNum{
+	vertical-align: super;
+	font-size: 66%;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+}
+
+.GridNum:hover, .GridNum:visited{
+	color: #000000;
+}
+
+table#Clues{
+	margin: auto;
+	vertical-align: top;
+}
+
+table#Clues td{
+	vertical-align: top;
+}
+
+table.ClueList{
+  margin: auto;
+}
+
+td.ClueNum{
+	text-align: right;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+td.Clue{
+	text-align: left;
+}
+
+div#ClueEntry{
+	text-align: left;
+	margin-bottom: 1em;
+}
+
+/* Keypad styles */
+
+div.Keypad{
+	text-align: center;
+	display: none; /* initially hidden, shown if needed */
+	margin-bottom: 0.5em;
+}
+
+div.Keypad button{
+	font-family: arial,helvetica,sans-serif;
+	font-size: 100%;
+	background-color: #ffffff;
+	color: #000000;
+	width: 2em;
+}
+
+/* JQuiz styles */
+
+div.QuestionNavigation{
+	text-align: center;
+}
+
+.QNum{
+	margin: 0em 1em 0.5em 1em;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+textarea{
+	font-family: arial,helvetica,sans-serif;
+	border: 1px solid #ccc;
+}
+
+.QuestionText{
+	text-align: left;
+	margin: 0px;
+	font-size: 100%;
+}
+
+.Answer{
+	font-size: 100%;
+	letter-spacing: 0.1em;
+}
+
+.PartialAnswer{
+	font-size: 100%;
+	letter-spacing: 0.1em;
+	color: #000000;
+}
+
+.Highlight{
+	color: #000000;
+	background-color: gold;
+	font-weight: bold;
+	font-size: 100%;
+}
+
+ol.QuizQuestions{
+	text-align: left;
+	list-style-type: none;
+}
+
+li.QuizQuestion{
+	padding: 1em;
+	border-color: #ccc;
+}
+
+ol.MCAnswers{
+	text-align: left;
+	list-style-type: upper-alpha;
+	padding: 1em;
+}
+
+ol.MCAnswers li{
+	margin-bottom: 1em;
+}
+
+ol.MSelAnswers{
+	text-align: left;
+	list-style-type: lower-alpha;
+	padding: 1em;
+}
+
+div.ShortAnswer{
+	padding: 1em;
+}
+
+.FuncButton {
+	text-align: center;
+	border: 1px solid silver;
+	margin-right:2px;
+
+	border-left-color: #eeeeee;
+	border-top-color: #eeeeee;
+	border-right-color: #6e6e6e;
+	border-bottom-color: #6e6e6e;
+	color: #000000;
+	background-color: #dddddd;
+
+
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+/* Stan Button Shadow Dec 4 2012*/	
+	box-shadow: 2px 2px 5px #888;
+/* Stan Button Shadow end */
+}
+
+.FuncButtonUp {
+	text-align: center;
+	border: 1px solid silver;
+	margin-right:2px;
+
+	border-left-color: #eeeeee;
+	border-top-color: #eeeeee;
+	border-right-color: #6e6e6e;
+	border-bottom-color: #6e6e6e;
+
+	background-color: #000000;
+	color: #dddddd;
+
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+
+/* Stan Button Shadow */	
+	box-shadow: -2px -2px 5px #888;
+/* Stan Button Shadow end  Dec 4 2012*/
+}
+
+.FuncButtonDown {
+	text-align: center;
+	border:1px solid silver;
+	margin-right:2px;
+
+	border-left-color: #6e6e6e;
+	border-top-color: #6e6e6e;
+	border-right-color: #eeeeee;
+	border-bottom-color: #eeeeee;
+	background-color: #000000;
+	color: #dddddd;
+
+
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+
+/* Stan Button Shadow Dec 4 2012 */	
+	box-shadow: -2px -2px 5px #888;
+/* Stan Button Shadow end */
+}
+
+/*BeginNavBarStyle*/
+
+div.NavButtonBar{
+	background-color: #000000;
+	border: 1px solid #000000;
+	text-align: center;
+	margin: 2px 0px 2px 0px;
+	clear: both;
+	font-size: 100%;
+
+/* Stan Rounded corner of Nav Bar 	*/
+	border-radius: 5px;
+/* Stan Rounded corner of Nav Bar  end */
+/* Stan NavBar Shadow Dec 6 2012 	*/
+	box-shadow: -2px -2px 5px #888;
+/* Stan navBar Shadow end  Dec 6 2012 */
+padding:1px;
+}
+
+.NavButton {
+	border: 1px solid silver;
+	
+	border-left-color: #7f7f7f;
+	border-top-color: #7f7f7f;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	background-color: #000000;
+	color: #ffffff;
+
+
+	cursor: pointer;	
+/* Stan Shadow on buttons Dec 4 2012 	*/
+	box-shadow: 2px 2px 5px #000000;
+/* Stan Shadow on buttons end */
+}
+
+.NavButtonUp {
+	border:1px solid silver;
+
+	border-left-color: #7f7f7f;
+	border-top-color: #7f7f7f;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	color: #000000;
+	background-color: #dddddd;
+
+	cursor: pointer;	
+/* Stan Shadow on buttons Dec 4 2012 */
+	box-shadow: -2px -2px 5px #000000;
+/* Stan Shadow on buttons end */
+}
+
+.NavButtonDown {
+	border: 1px solid silver;
+
+	border-left-color: #000000;
+	border-top-color: #000000;
+	border-right-color: #7f7f7f;
+	border-bottom-color: #7f7f7f;
+	color: #000000;
+	background-color: #dddddd;
+
+	cursor: pointer;
+/* Stan Shadow on buttons Dec 4 2012 */
+	box-shadow: -2px -2px 5px #000000;
+/* Stan Shadow on buttons end */	
+}
+
+/*EndNavBarStyle*/
+
+a{
+	color: #0000ff;
+}
+
+a:visited{
+	color: #ff00ff;
+}
+
+a:hover{
+	color: #0000ff;
+}
+
+div.CardStyle {
+	position: absolute;
+	font-family: arial,helvetica,sans-serif;
+	font-size: 100%;
+	padding: 5px;
+	border: 1px solid silver;
+	color: #000000;
+	background-color: #dddddd;
+	left: -50px;
+	top: -50px;
+	overflow: visible;
+	
+/* Stan_rounded border of cards */
+	border-radius: 5px;
+/* Stan_rounded border of cards END */
+
+/* Stan card Shadow Dec 4 2012 */
+	box-shadow: -2px -2px 2px #888;
+/* Stan card Shadow end */
+}
+
+.rtl{
+	text-align: right;
+	font-size: 140%;
+}
+
+
+/* Responsive */
+
+
+/****************
+smaller than 980
+*****************/
+@media screen and (max-width: 980px) {
+
+/* embedded videos */
+	.video embed,
+	.video object {
+		width: 100%;
+		height: auto;
+		min-height: 300px;
+	}
+	
+	.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+	margin-left:auto;margin-right:auto;text-align:center; /* Stan: Comment out this line if you don't want the video to be centered */
+}
+
+	.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div.Feedback {
+	background-color: #ffffff;
+	left: 2%;
+	top: 1%;
+	width: 95%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+	position: absolute;
+	display: none;
+	font-size: 100%;
+/* Stan_rounded border of feedback box */
+	border-radius: 5px;
+	padding: 5px;
+/* Stan_rounded border of fixed box END */
+	
+	}
+}
+
+/************************************************************************************
+smaller than 650
+*************************************************************************************/
+@media screen and (max-width: 650px) {
+
+	/* embedded videos */
+	.video embed,
+	.video object {
+		min-height: 250px;
+	}
+
+	.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+	margin-left:auto;margin-right:auto;text-align:center; /* Stan: Comment out this line if you don't want the video to be centered */
+}
+
+	.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+	div.LeftContainer{
+		border-style: none;
+		padding: 2px 0px 2px 0px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+	div.RightContainer{
+		border-style: none;
+		padding: 2px 0px 2px 0px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+div.Feedback {
+	background-color: #ffffff;
+	left: 2%;
+	top: 1%;
+	width: 93%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+	position: absolute;
+	display: none;
+	font-size: 100%;
+/* Stan_rounded border of feedback box */
+	border-radius: 5px;
+	padding: 5px;
+/* Stan_rounded border of fixed box END */
+	
+}
+	
+	}
+
+/************************************************************************************
+smaller than 560
+*************************************************************************************/
+@media screen and (max-width: 480px) {
+
+	/* disable webkit text size adjust (for iPhone) */
+	html {
+		-webkit-text-size-adjust: none;
+	}
+	
+	/* embedded videos */
+	.video embed,
+	.video object {
+		min-height: 250px;
+	}
+	
+	.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+	margin-left:auto;margin-right:auto;text-align:center; /* Stan: Comment out this line if you don't want the video to be centered */
+}
+
+	.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+	
+	div.LeftContainer{
+		border-style: none;
+		padding: 2px 0px 2px 0px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+	div.RightContainer{
+		border-style: none;
+		padding: 2px 0px 2px 0px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+div.Feedback {
+	background-color: #ffffff;
+	left: 2%;
+	top: 1%;
+	width: 92%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+	position: absolute;
+	display: none;
+	font-size: 100%;
+/* Stan_rounded border of feedback box */
+	border-radius: 5px;
+	padding: 5px;
+/* Stan_rounded border of fixed box END */
+	
+	}
+}
+
+/************************************************************************************
+smaller than 480
+*************************************************************************************/
+@media screen  and (max-width: 360px) {
+      
+	/* disable webkit text size adjust (for iPhone) */
+	html {
+		-webkit-text-size-adjust: none;
+	}
+	
+	/* embedded videos */
+	.video embed,
+	.video object {
+		min-height: 250px;
+	}
+	
+	.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+	margin-left:auto;margin-right:auto;text-align:center; /* Stan: Comment out this line if you don't want the video to be centered */
+}
+
+	.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+	
+	
+	div.LeftContainer{
+		border-style: none;
+		padding: 2px 0px 2px 0px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+	div.RightContainer{
+		border-style: none;
+		padding: 2px 0px 2px 0px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+div.Feedback {
+	background-color: #ffffff;
+	left: 2%;
+	top: 1%;
+	width: 92%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+	position: absolute;
+	display: none;
+	font-size: 100%;
+/* Stan_rounded border of feedback box */
+	border-radius: 5px;
+	padding: 5px;
+/* Stan_rounded border of fixed box END */
+	
+	}
+}
+	
+
+@media screen and (max-width: 320px) {
+    
+	/* disable webkit text size adjust (for iPhone) */
+	html {
+		-webkit-text-size-adjust: none;
+	}
+	
+	/* embedded videos */
+	.video embed,
+	.video object {
+		min-height: 250px;
+	}
+	
+	.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+	margin-left:auto;margin-right:auto;text-align:center; /* Stan: Comment out this line if you don't want the video to be centered */
+}
+
+	.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+	div.LeftContainer{
+		border-style: none;
+		padding: 2px 0px 2px 0px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+	div.RightContainer{
+		border-style: none;
+		padding: 2px 0px 2px 0px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+div.Feedback {
+	background-color: #ffffff;
+	left: 2%;
+	top: 1%;
+	width: 92%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+	position: absolute;
+	display: none;
+	font-size: 100%;
+/* Stan_rounded border of feedback box */
+	border-radius: 5px;
+	padding: 5px;
+/* Stan_rounded border of fixed box END */
+	
+	}
+      }
+	  
+
+/* ============================================== */
+/* Smaller devices                                */
+/* Android Portrait                       240x320 */
+/* ============================================== */
+@media screen and (max-width:240px) {
+
+	
+	/* embedded videos */
+	.video embed,
+	.video object {
+		min-height: 250px;
+	}
+	
+		
+	.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+	margin-left:auto;margin-right:auto;text-align:center; /* Stan: Comment out this line if you don't want the video to be centered */
+}
+
+	.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+	
+	div.LeftContainer{
+		border-style: none;
+		padding: 2px 0px 2px 0px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+	div.RightContainer{
+		border-style: none;
+		padding: 2px 0px 2px 0px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+div.Feedback {
+	background-color: #ffffff;
+	left: 2%;
+	top: 1%;
+	width: 92%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+	position: absolute;
+	display: none;
+	font-size: 100%;
+/* Stan_rounded border of feedback box */
+	border-radius: 5px;
+	padding: 5px;
+/* Stan_rounded border of fixed box END */
+	
+	}
+}
+
+
+</style>
+
+<script type="text/javascript">
+
+//<![CDATA[
+
+<!--
+
+
+
+
+function Client(){
+//if not a DOM browser, hopeless
+	this.min = false; if (document.getElementById){this.min = true;};
+
+	this.ua = navigator.userAgent;
+	this.name = navigator.appName;
+	this.ver = navigator.appVersion;  
+
+//Get data about the browser
+	this.mac = (this.ver.indexOf('Mac') != -1);
+	this.win = (this.ver.indexOf('Windows') != -1);
+
+//Look for Gecko
+	this.gecko = (this.ua.indexOf('Gecko') > 1);
+	if (this.gecko){
+		this.geckoVer = parseInt(this.ua.substring(this.ua.indexOf('Gecko')+6, this.ua.length));
+//		if (this.geckoVer < 20020000){this.min = false;}
+	}
+	
+//Look for Firebird
+	this.firebird = (this.ua.indexOf('Firebird') > 1);
+	
+//Look for Safari
+	this.safari = (this.ua.indexOf('Safari') > 1);
+	if (this.safari){
+		this.gecko = false;
+	}
+	
+//Look for IE
+	this.ie = (this.ua.indexOf('MSIE') > 0);
+	if (this.ie){
+		this.ieVer = parseFloat(this.ua.substring(this.ua.indexOf('MSIE')+5, this.ua.length));
+		if (this.ieVer < 5.5){this.min = false;}
+	}
+	
+//Look for Opera
+	this.opera = (this.ua.indexOf('Opera') > 0);
+	if (this.opera){
+		this.operaVer = parseFloat(this.ua.substring(this.ua.indexOf('Opera')+6, this.ua.length));
+		if (this.operaVer < 7.04){this.min = false;}
+	}
+	if (this.min == false){
+//		alert('Your browser may not be able to handle this page.');
+	}
+	
+//Special case for the horrible ie5mac
+	this.ie5mac = (this.ie&&this.mac&&(this.ieVer<6));
+}
+
+var C = new Client();
+
+//for (prop in C){
+//	alert(prop + ': ' + C[prop]);
+//}
+
+
+
+//CODE FOR HANDLING NAV BUTTONS AND FUNCTION BUTTONS
+
+//[strNavBarJS]
+function NavBtnOver(Btn){
+	if (Btn.className != 'NavButtonDown'){Btn.className = 'NavButtonUp';}
+}
+
+function NavBtnOut(Btn){
+	Btn.className = 'NavButton';
+}
+
+function NavBtnDown(Btn){
+	Btn.className = 'NavButtonDown';
+}
+//[/strNavBarJS]
+
+function FuncBtnOver(Btn){
+	if (Btn.className != 'FuncButtonDown'){Btn.className = 'FuncButtonUp';}
+}
+
+function FuncBtnOut(Btn){
+	Btn.className = 'FuncButton';
+}
+
+function FuncBtnDown(Btn){
+	Btn.className = 'FuncButtonDown';
+}
+
+function FocusAButton(){
+	if (document.getElementById('CheckButton1') != null){
+		document.getElementById('CheckButton1').focus();
+	}
+	else{
+		if (document.getElementById('CheckButton2') != null){
+			document.getElementById('CheckButton2').focus();
+		}
+		else{
+			document.getElementsByTagName('button')[0].focus();
+		}
+	}
+}
+
+
+
+
+//CODE FOR HANDLING DISPLAY OF POPUP FEEDBACK BOX
+
+var topZ = 1000;
+
+function ShowMessage(Feedback){
+	var Output = Feedback + '<br /><br />';
+	document.getElementById('FeedbackContent').innerHTML = Output;
+	var FDiv = document.getElementById('FeedbackDiv');
+	topZ++;
+	FDiv.style.zIndex = topZ;
+	FDiv.style.top = TopSettingWithScrollOffset(30) + 'px';
+
+	FDiv.style.display = 'block';
+
+	ShowElements(false, 'input');
+	ShowElements(false, 'select');
+	ShowElements(false, 'object');
+	ShowElements(true, 'object', 'FeedbackContent');
+
+//Focus the OK button
+	setTimeout("document.getElementById('FeedbackOKButton').focus()", 50);
+	
+//
+}
+
+function ShowElements(Show, TagName, ContainerToReverse){
+// added third argument to allow objects in the feedback box to appear
+//IE bug -- hide all the form elements that will show through the popup
+//FF on Mac bug : doesn't redisplay objects whose visibility is set to visible
+//unless the object's display property is changed
+
+	//get container object (by Id passed in, or use document otherwise)
+	TopNode = document.getElementById(ContainerToReverse);
+	var Els;
+	if (TopNode != null) {
+		Els = TopNode.getElementsByTagName(TagName);
+	} else {
+		Els = document.getElementsByTagName(TagName);
+	}
+
+	for (var i=0; i<Els.length; i++){
+		if (TagName == "object") {
+			//manipulate object elements in all browsers
+			if (Show == true){
+				Els[i].style.visibility = 'visible';
+				//get Mac FireFox to manipulate display, to force screen redraw
+				if (C.mac && C.gecko) {Els[i].style.display = '';}
+			}
+			else{
+				Els[i].style.visibility = 'hidden';
+				if (C.mac && C.gecko) {Els[i].style.display = 'none';}
+			}
+		} 
+		else {
+			// tagName is either input or select (that is, Form Elements)
+			// ie6 has a problem with Form elements, so manipulate those
+			if (C.ie) {
+				if (C.ieVer < 7) {
+					if (Show == true){
+						Els[i].style.visibility = 'visible';
+					}
+					else{
+						Els[i].style.visibility = 'hidden';
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+function HideFeedback(){
+	document.getElementById('FeedbackDiv').style.display = 'none';
+	ShowElements(true, 'input');
+	ShowElements(true, 'select');
+	ShowElements(true, 'object');
+	if (Finished == true){
+		Finish();
+	}
+}
+
+
+//GENERAL UTILITY FUNCTIONS AND VARIABLES
+
+//PAGE DIMENSION FUNCTIONS
+function PageDim(){
+//Get the page width and height
+	this.W = 600;
+	this.H = 400;
+	this.W = document.getElementsByTagName('body')[0].clientWidth;
+	this.H = document.getElementsByTagName('body')[0].clientHeight;
+}
+
+var pg = null;
+
+function GetPageXY(El) {
+	var XY = {x: 0, y: 0};
+	while(El){
+		XY.x += El.offsetLeft;
+		XY.y += El.offsetTop;
+		El = El.offsetParent;
+	}
+	return XY;
+}
+
+function GetScrollTop(){
+	if (typeof(window.pageYOffset) == 'number'){
+		return window.pageYOffset;
+	}
+	else{
+		if ((document.body)&&(document.body.scrollTop)){
+			return document.body.scrollTop;
+		}
+		else{
+			if ((document.documentElement)&&(document.documentElement.scrollTop)){
+				return document.documentElement.scrollTop;
+			}
+			else{
+				return 0;
+			}
+		}
+	}
+}
+
+function GetViewportHeight(){
+	if (typeof window.innerHeight != 'undefined'){
+		return window.innerHeight;
+	}
+	else{
+		if (((typeof document.documentElement != 'undefined')&&(typeof document.documentElement.clientHeight !=
+     'undefined'))&&(document.documentElement.clientHeight != 0)){
+			return document.documentElement.clientHeight;
+		}
+		else{
+			return document.getElementsByTagName('body')[0].clientHeight;
+		}
+	}
+}
+
+function TopSettingWithScrollOffset(TopPercent){
+	var T = Math.floor(GetViewportHeight() * (TopPercent/100));
+	return GetScrollTop() + T; 
+}
+
+//CODE FOR AVOIDING LOSS OF DATA WHEN BACKSPACE KEY INVOKES history.back()
+var InTextBox = false;
+
+function SuppressBackspace(e){ 
+	if (InTextBox == true){return;}
+	if (C.ie) {
+		thisKey = window.event.keyCode;
+	}
+	else {
+		thisKey = e.keyCode;
+	}
+
+	var Suppress = false;
+
+	if (thisKey == 8) {
+		Suppress = true;
+	}
+
+	if (Suppress == true){
+		if (C.ie){
+			window.event.returnValue = false;	
+			window.event.cancelBubble = true;
+		}
+		else{
+			e.preventDefault();
+		}
+	}
+}
+
+if (C.ie){
+	document.attachEvent('onkeydown',SuppressBackspace);
+	window.attachEvent('onkeydown',SuppressBackspace);
+}
+else{
+	if (window.addEventListener){
+		window.addEventListener('keypress',SuppressBackspace,false);
+	}
+}
+
+function ReduceItems(InArray, ReduceToSize){
+	var ItemToDump=0;
+	var j=0;
+	while (InArray.length > ReduceToSize){
+		ItemToDump = Math.floor(InArray.length*Math.random());
+		InArray.splice(ItemToDump, 1);
+	}
+}
+
+function Shuffle(InArray){
+	var Num;
+	var Temp = new Array();
+	var Len = InArray.length;
+
+	var j = Len;
+
+	for (var i=0; i<Len; i++){
+		Temp[i] = InArray[i];
+	}
+
+	for (i=0; i<Len; i++){
+		Num = Math.floor(j  *  Math.random());
+		InArray[i] = Temp[Num];
+
+		for (var k=Num; k < (j-1); k++) {
+			Temp[k] = Temp[k+1];
+		}
+		j--;
+	}
+	return InArray;
+}
+
+function WriteToInstructions(Feedback) {
+	document.getElementById('InstructionsDiv').innerHTML = Feedback;
+
+}
+
+
+
+
+function EscapeDoubleQuotes(InString){
+	return InString.replace(/"/g, '&quot;')
+}
+
+function TrimString(InString){
+        var x = 0;
+
+        if (InString.length != 0) {
+                while ((InString.charAt(InString.length - 1) == '\u0020') || (InString.charAt(InString.length - 1) == '\u000A') || (InString.charAt(InString.length - 1) == '\u000D')){
+                        InString = InString.substring(0, InString.length - 1)
+                }
+
+                while ((InString.charAt(0) == '\u0020') || (InString.charAt(0) == '\u000A') || (InString.charAt(0) == '\u000D')){
+                        InString = InString.substring(1, InString.length)
+                }
+
+                while (InString.indexOf('  ') != -1) {
+                        x = InString.indexOf('  ')
+                        InString = InString.substring(0, x) + InString.substring(x+1, InString.length)
+                 }
+
+                return InString;
+        }
+
+        else {
+                return '';
+        }
+}
+
+function FindLongest(InArray){
+	if (InArray.length < 1){return -1;}
+
+	var Longest = 0;
+	for (var i=1; i<InArray.length; i++){
+		if (InArray[i].length > InArray[Longest].length){
+			Longest = i;
+		}
+	}
+	return Longest;
+}
+
+//UNICODE CHARACTER FUNCTIONS
+function IsCombiningDiacritic(CharNum){
+	var Result = (((CharNum >= 0x0300)&&(CharNum <= 0x370))||((CharNum >= 0x20d0)&&(CharNum <= 0x20ff)));
+	Result = Result || (((CharNum >= 0x3099)&&(CharNum <= 0x309a))||((CharNum >= 0xfe20)&&(CharNum <= 0xfe23)));
+	return Result;
+}
+
+function IsCJK(CharNum){
+	return ((CharNum >= 0x3000)&&(CharNum < 0xd800));
+}
+
+//SETUP FUNCTIONS
+//BROWSER WILL REFILL TEXT BOXES FROM CACHE IF NOT PREVENTED
+function ClearTextBoxes(){
+	var NList = document.getElementsByTagName('input');
+	for (var i=0; i<NList.length; i++){
+		if ((NList[i].id.indexOf('Guess') > -1)||(NList[i].id.indexOf('Gap') > -1)){
+			NList[i].value = '';
+		}
+		if (NList[i].id.indexOf('Chk') > -1){
+			NList[i].checked = '';
+		}
+	}
+}
+
+//EXTENSION TO ARRAY OBJECT
+function Array_IndexOf(Input){
+	var Result = -1;
+	for (var i=0; i<this.length; i++){
+		if (this[i] == Input){
+			Result = i;
+		}
+	}
+	return Result;
+}
+Array.prototype.indexOf = Array_IndexOf;
+
+//IE HAS RENDERING BUG WITH BOTTOM NAVBAR
+function RemoveBottomNavBarForIE(){
+	if ((C.ie)&&(document.getElementById('Reading') != null)){
+		if (document.getElementById('BottomNavBar') != null){
+			document.getElementById('TheBody').removeChild(document.getElementById('BottomNavBar'));
+		}
+	}
+}
+
+
+
+
+//HOTPOTNET-RELATED CODE
+
+var HPNStartTime = (new Date()).getTime();
+var SubmissionTimeout = 30000;
+var Detail = ''; //Global that is used to submit tracking data
+
+function Finish(){
+//If there's a form, fill it out and submit it
+	if (document.store != null){
+		Frm = document.store;
+		Frm.starttime.value = HPNStartTime;
+		Frm.endtime.value = (new Date()).getTime();
+		Frm.mark.value = Score;
+		Frm.detail.value = Detail;
+		Frm.submit();
+	}
+}
+
+
+
+
+
+//JQUIZ CORE JAVASCRIPT CODE
+
+var CurrQNum = 0;
+var CorrectIndicator = ':-)';
+var IncorrectIndicator = 'X';
+var YourScoreIs = 'Your score is ';
+
+//New for 6.2.2.0
+var CompletedSoFar = 'Questions completed so far: ';
+var ExerciseCompleted = 'You have completed the exercise.';
+var ShowCompletedSoFar = true;
+
+var ContinuousScoring = true;
+var CorrectFirstTime = 'Questions answered correctly first time: ';
+var ShowCorrectFirstTime = true;
+var ShuffleQs = true;
+var ShuffleAs = true;
+var DefaultRight = 'Correct!';
+var DefaultWrong = 'Sorry! Try again.';
+var QsToShow = 63;
+var Score = 0;
+var Finished = false;
+var Qs = null;
+var QArray = new Array();
+var ShowingAllQuestions = false;
+var ShowAllQuestionsCaption = 'Show all questions';
+var ShowOneByOneCaption = 'Show questions one by one';
+var State = new Array();
+var Feedback = '';
+var TimeOver = false;
+var strInstructions = '';
+var Locked = false;
+
+//The following variable can be used to add a message explaining that
+//the question is finished, so no further marking will take place.
+var strQuestionFinished = '';
+
+function CompleteEmptyFeedback(){
+	var QNum, ANum;
+	for (QNum=0; QNum<I.length; QNum++){
+//Only do this if not multi-select
+		if (I[QNum][2] != '3'){
+  		for (ANum = 0; ANum<I[QNum][3].length; ANum++){
+  			if (I[QNum][3][ANum][1].length < 1){
+  				if (I[QNum][3][ANum][2] > 0){
+  					I[QNum][3][ANum][1] = DefaultRight;
+  				}
+  				else{
+  					I[QNum][3][ANum][1] = DefaultWrong;
+  				}
+  			}
+  		}
+		}
+	}
+}
+
+function SetUpQuestions(){
+	var AList = new Array(); 
+	var QList = new Array();
+	var i, j;
+	Qs = document.getElementById('Questions');
+	while (Qs.getElementsByTagName('li').length > 0){
+		QList.push(Qs.removeChild(Qs.getElementsByTagName('li')[0]));
+	}
+	var DumpItem = 0;
+	if (QsToShow > QList.length){
+		QsToShow = QList.length;
+	}
+	while (QsToShow < QList.length){
+		DumpItem = Math.floor(QList.length*Math.random());
+		for (j=DumpItem; j<(QList.length-1); j++){
+			QList[j] = QList[j+1];
+		}
+		QList.length = QList.length-1;
+	}
+	if (ShuffleQs == true){
+		QList = Shuffle(QList);
+	}
+	if (ShuffleAs == true){
+		var As;
+		for (var i=0; i<QList.length; i++){
+			As = QList[i].getElementsByTagName('ol')[0];
+			if (As != null){
+  			AList.length = 0;
+				while (As.getElementsByTagName('li').length > 0){
+					AList.push(As.removeChild(As.getElementsByTagName('li')[0]));
+				}
+				AList = Shuffle(AList);
+				for (j=0; j<AList.length; j++){
+					As.appendChild(AList[j]);
+				}
+			}
+		}
+	}
+	
+	for (i=0; i<QList.length; i++){
+		Qs.appendChild(QList[i]);
+		QArray[QArray.length] = QList[i];
+	}
+
+//Show the first item
+	QArray[0].style.display = '';
+	
+//Now hide all except the first item
+	for (i=1; i<QArray.length; i++){
+		QArray[i].style.display = 'none';
+	}		
+	SetQNumReadout();
+	
+	SetFocusToTextbox();
+}
+
+function SetFocusToTextbox(){
+//if there's a textbox, set the focus in it
+	if (QArray[CurrQNum].getElementsByTagName('input')[0] != null){
+		QArray[CurrQNum].getElementsByTagName('input')[0].focus();
+//and show a keypad if there is one
+		if (document.getElementById('CharacterKeypad') != null){
+			document.getElementById('CharacterKeypad').style.display = 'block';
+		}
+	}
+	else{
+  	if (QArray[CurrQNum].getElementsByTagName('textarea')[0] != null){
+  		QArray[CurrQNum].getElementsByTagName('textarea')[0].focus();	
+//and show a keypad if there is one
+			if (document.getElementById('CharacterKeypad') != null){
+				document.getElementById('CharacterKeypad').style.display = 'block';
+			}
+		}
+//This added for 6.0.4.11: hide accented character buttons if no textbox
+		else{
+			if (document.getElementById('CharacterKeypad') != null){
+				document.getElementById('CharacterKeypad').style.display = 'none';
+			}
+		}
+	}
+}
+
+function ChangeQ(ChangeBy){
+//The following line prevents moving to another question until the current
+//question is answered correctly. Uncomment it to enable this behaviour. 
+//	if (State[CurrQNum][0] == -1){return;}
+	if (((CurrQNum + ChangeBy) < 0)||((CurrQNum + ChangeBy) >= QArray.length)){return;}
+	QArray[CurrQNum].style.display = 'none';
+	CurrQNum += ChangeBy;
+	QArray[CurrQNum].style.display = '';
+//Undocumented function added 10/12/2004
+	ShowSpecialReadingForQuestion();
+	SetQNumReadout();
+	SetFocusToTextbox();
+}
+
+var HiddenReadingShown = false;
+function ShowSpecialReadingForQuestion(){
+//Undocumented function for showing specific reading text elements which change with each question
+//Added on 10/12/2004
+	if (document.getElementById('ReadingDiv') != null){
+		if (HiddenReadingShown == true){
+			document.getElementById('ReadingDiv').innerHTML = '';
+		}
+		if (QArray[CurrQNum] != null){
+//Fix for 6.0.4.25
+			var Children = QArray[CurrQNum].getElementsByTagName('div');
+			for (var i=0; i<Children.length; i++){
+			if (Children[i].className=="HiddenReading"){
+					document.getElementById('ReadingDiv').innerHTML = Children[i].innerHTML;
+					HiddenReadingShown = true;
+//Hide the ShowAllQuestions button to avoid confusion
+					if (document.getElementById('ShowMethodButton') != null){
+						document.getElementById('ShowMethodButton').style.display = 'none';
+					}
+				}
+			}	
+		}
+	}
+}
+
+function SetQNumReadout(){
+	document.getElementById('QNumReadout').innerHTML = (CurrQNum+1) + ' / ' + QArray.length;
+	if ((CurrQNum+1) >= QArray.length){
+		if (document.getElementById('NextQButton') != null){
+			document.getElementById('NextQButton').style.visibility = 'hidden';
+		}
+	}
+	else{
+		if (document.getElementById('NextQButton') != null){
+			document.getElementById('NextQButton').style.visibility = 'visible';
+		}
+	}
+	if (CurrQNum <= 0){
+		if (document.getElementById('PrevQButton') != null){
+			document.getElementById('PrevQButton').style.visibility = 'hidden';
+		}
+	}
+	else{
+		if (document.getElementById('PrevQButton') != null){
+			document.getElementById('PrevQButton').style.visibility = 'visible';
+		}
+	}
+}
+
+var I=new Array();
+I[0]=new Array();I[0][0]=100;
+I[0][1]='';
+I[0][2]='0';
+I[0][3]=new Array();
+I[0][3][0]=new Array('Un adelanto (Lead) es la cantidad de tiempo que una actividad puede ser adelantadacon respeto a otra que la sucede','',0,0,1);
+I[0][3][1]=new Array('Un adelanto (Lead) es la cantidad de tiempo que una actividad puede ser adelantadacon respeto a otra que la precede','',1,100,1);
+I[0][3][2]=new Array('Un adelanto (Lead) es la cantidad de tiempo que una actividad puede ser adelantadasin cambiar el camino cr\u00EDtico','',0,0,1);
+I[1]=new Array();I[1][0]=100;
+I[1][1]='';
+I[1][2]='0';
+I[1][3]=new Array();
+I[1][3][0]=new Array('Progress Breakdown Structure, es una representaci\u00F3n del estado de avance en lasactividades del proyecto','',0,0,1);
+I[1][3][1]=new Array('Product Breakdown Structure,es una representaci\u00F3n en forma de \u00E1rbol de losproductos que hay que crear para alcanzar el final del proyecto','',1,100,1);
+I[1][3][2]=new Array('Partial Breakdown Structure, es una visi\u00F3n parcial de la estructura de trabajos delproyecto','',0,0,1);
+I[2]=new Array();I[2][0]=100;
+I[2][1]='';
+I[2][2]='0';
+I[2][3]=new Array();
+I[2][3][0]=new Array('La gobernabilidad del proyecto es una funci\u00F3n de supervisi\u00F3n que est\u00E1 alineada conel modelo de gobierno de la organizaci\u00F3n, y que abarca el ciclo de vida del proyecto','',1,100,1);
+I[2][3][1]=new Array('Es un proceso de nombramiento de responsables del proyecto para que existanresponsables del gobierno','',0,0,1);
+I[2][3][2]=new Array('Es un proceso de otorgamiento de responsabilidades al Jefe de Proyecto para que \u00E9steejerza su funci\u00F3n de gobierno','',0,0,1);
+I[3]=new Array();I[3][0]=100;
+I[3][1]='';
+I[3][2]='0';
+I[3][3]=new Array();
+I[3][3][0]=new Array('Es la opini\u00F3n de los directivos de la empresa sobre la actividad','',0,0,1);
+I[3][3][1]=new Array('Es la opini\u00F3n de personas que han tenido experiencia previa con actividades similares','',1,100,1);
+I[3][3][2]=new Array('Es la opini\u00F3n de expertos contratados para ayudar en el proyecto','',0,0,1);
+I[4]=new Array();I[4][0]=100;
+I[4][1]='';
+I[4][2]='0';
+I[4][3]=new Array();
+I[4][3][0]=new Array('Organizativa, Cultural y social','',0,0,1);
+I[4][3][1]=new Array('Funcional, Matricial y Orientada a proyectos','',0,0,1);
+I[4][3][2]=new Array('Matricial d\u00E9bil, Matricial media y Fuertemente matricial','',1,100,1);
+I[5]=new Array();I[5][0]=100;
+I[5][1]='';
+I[5][2]='0';
+I[5][3]=new Array();
+I[5][3][0]=new Array('Los ciclos de vida adaptativos son aquellos que evolucionan con la pol\u00EDtica de laempresa','',0,0,1);
+I[5][3][1]=new Array('Los ciclos de vida adaptativos tienen por objeto responder a los altos niveles decambio y la participaci\u00F3n continua de las partes interesadas','',1,100,1);
+I[5][3][2]=new Array('Los ciclos de vida adaptativos son aquellos que pueden responder a los riesgos delproyecto','',0,0,1);
+I[6]=new Array();I[6][0]=100;
+I[6][1]='';
+I[6][2]='0';
+I[6][3]=new Array();
+I[6][3][0]=new Array('Son aquellas cuya secuencia de ejecuci\u00F3n puede establecerse discrecionalmente, noest\u00E1n sujetas a una imposici\u00F3n concreta','',1,100,1);
+I[6][3][1]=new Array('Son aquellas que no son obligatorias y, por tanto, es el equipo quien decide ponerlasen el proyecto','',0,0,1);
+I[6][3][2]=new Array('Son aquellas actividades que no son necesarias para el proyecto','',0,0,1);
+I[7]=new Array();I[7][0]=100;
+I[7][1]='';
+I[7][2]='0';
+I[7][3]=new Array();
+I[7][3][0]=new Array('Es una tarea que calcula primero los costes de las actividades m\u00E1s sencillas y despu\u00E9slos de las m\u00E1s complejas','',0,0,1);
+I[7][3][1]=new Array('Consiste en estimar las actividades por su importancia, comenzando por las de mayorimportancia','',0,0,1);
+I[7][3][2]=new Array('Es una t\u00E9cnica de estimaci\u00F3n que va a de las tareas de mayor detalle a la las de mayornivel sumando los costes de las tareas componentes','',1,100,1);
+I[8]=new Array();I[8][0]=100;
+I[8][1]='';
+I[8][2]='0';
+I[8][3]=new Array();
+I[8][3][0]=new Array('Start-to-Finish, es una relaci\u00F3n en la cual una actividad no puede terminar hasta queotra actividad concreta haya comenzado','',1,100,1);
+I[8][3][1]=new Array('Start-to-Finish, es una relaci\u00F3n en la cual una actividad no puede terminar hasta queotra actividad concreta haya terminado','',0,0,1);
+I[8][3][2]=new Array('Start-to-Finish, es una relaci\u00F3n en la cual una actividad no puede comenzar hasta queotra actividad concreta haya terminado','',0,0,1);
+I[9]=new Array();I[9][0]=100;
+I[9][1]='';
+I[9][2]='0';
+I[9][3]=new Array();
+I[9][3][0]=new Array('Se usa informaci\u00F3n hist\u00F3rica y se basa en la estimaci\u00F3n de una actividad por analog\u00EDacon otras de similar tama\u00F1o o complejidad','',1,100,1);
+I[9][3][1]=new Array('Se usa un cat\u00E1logo de analog\u00EDas entre actividades para estimar la duraci\u00F3n','',0,0,1);
+I[9][3][2]=new Array('Se comparan todas las actividades con otras actividades para comprobar su parecido','',0,0,1);
+I[10]=new Array();I[10][0]=100;
+I[10][1]='';
+I[10][2]='0';
+I[10][3]=new Array();
+I[10][3][0]=new Array('Descomposici\u00F3n, Planificaci\u00F3n Progresiva y Juicio de Expertos','',1,100,1);
+I[10][3][1]=new Array('Las vistas de descomposici\u00F3n y las vistas de despliegue','',0,0,1);
+I[10][3][2]=new Array('las t\u00E9cnicas Delphi y los Brainstormings','',0,0,1);
+I[11]=new Array();I[11][0]=100;
+I[11][1]='';
+I[11][2]='0';
+I[11][3]=new Array();
+I[11][3][0]=new Array('Tipo, Clase, Aspecto y Evaluaci\u00F3n','',0,0,1);
+I[11][3][1]=new Array('Nombre, Direcci\u00F3n y C\u00F3digo','',0,0,1);
+I[11][3][2]=new Array('T\u00EDtulo, Duraci\u00F3n, Relaci\u00F3n con el WBS y Nivel de actividad','',1,100,1);
+I[12]=new Array();I[12][0]=100;
+I[12][1]='';
+I[12][2]='0';
+I[12][3]=new Array();
+I[12][3][0]=new Array('Son actividades que tienen relaciones con otras actividades, pero sus reslutados sonpropios del proyecto','',0,0,1);
+I[12][3][1]=new Array('Son actividades que s\u00F3lo se relacionan con ellas mismas','',0,0,1);
+I[12][3][2]=new Array('Las dependencias internas se refieren a relaciones entre las propias actividades delproyecto','',1,100,1);
+I[13]=new Array();I[13][0]=100;
+I[13][1]='';
+I[13][2]='0';
+I[13][3]=new Array();
+I[13][3][0]=new Array('Es un proceso basado en simulaciones de duraci\u00F3n usando t\u00E9cnicas como por ejemplo Monte Carlo','',0,0,1);
+I[13][3][1]=new Array('Es un proceso iterativo de valoraci\u00F3n por parte de expertos que, en cada iteraci\u00F3n,valoran en funci\u00F3n de los resultados de la anterior','',1,100,1);
+I[13][3][2]=new Array('Es una t\u00E9cnica param\u00E9trica de c\u00E1lculo que consiste en iteraciones de c\u00E1lculo que van afinando la duraci\u00F3n de una actividad','',0,0,1);
+I[14]=new Array();I[14][0]=100;
+I[14][1]='';
+I[14][2]='0';
+I[14][3]=new Array();
+I[14][3][0]=new Array('Es un modelo en que cada empleado realiza una sola funci\u00F3n en un proyecto','',0,0,1);
+I[14][3][1]=new Array('Es una organizaci\u00F3n en base a departamentos funcionales','',0,0,1);
+I[14][3][2]=new Array('Es una jerarqu\u00EDa en la que cada empleado tiene un superior claro','',1,100,1);
+I[15]=new Array();I[15][0]=100;
+I[15][1]='';
+I[15][2]='0';
+I[15][3]=new Array();
+I[15][3][0]=new Array('La estimaci\u00F3n param\u00E9trica se basa en el uso de tablas de actividades que est\u00E1ncalculadas previamente','',0,0,1);
+I[15][3][1]=new Array('La estimaci\u00F3n param\u00E9trica se basa en el uso de par\u00E1metros est\u00E1ndar para estimar lasduraciones','',0,0,1);
+I[15][3][2]=new Array('La estimaci\u00F3n param\u00E9trica se basa en el uso de alg\u00FAn algoritmo de c\u00E1lculo que recoge informaci\u00F3n hist\u00F3rica','',1,100,1);
+I[16]=new Array();I[16][0]=100;
+I[16][1]='';
+I[16][2]='0';
+I[16][3]=new Array();
+I[16][3][0]=new Array('El \u00E9xito del proyecto consiste en que todos los requisitos se hayan implementado','',0,0,1);
+I[16][3][1]=new Array('El \u00E9xito del proyecto se mide en t\u00E9rminos de que los plazos y los costes hayan sido lospactados al principio del proyecto','',0,0,1);
+I[16][3][2]=new Array('El \u00E9xito del proyecto se mide en t\u00E9rminos de completar el proyecto dentro de las limitaciones de alcance, tiempo, costo, calidad, recursos y riesgo aprobado entre los directores de proyectos y la alta direcci\u00F3n','',1,100,1);
+I[17]=new Array();I[17][0]=100;
+I[17][1]='';
+I[17][2]='0';
+I[17][3]=new Array();
+I[17][3][0]=new Array('La estructura organizacional es un factor del entorno de la empresa que puede afectarla disponibilidad de recursos e influenciar como se dirigen los proyectos','',1,100,1);
+I[17][3][1]=new Array('Los proyectos se realizan desde empresas con organizaciones orientadas a proyectospara empresas con organizaci\u00F3n funcional','',0,0,1);
+I[17][3][2]=new Array('Las empresas que se dedican a realizar proyectos deben tener una estructuraorientada a proyectos, no pueden tener una estructura funcional','',0,0,1);
+I[18]=new Array();I[18][0]=100;
+I[18][1]='';
+I[18][2]='0';
+I[18][3]=new Array();
+I[18][3][0]=new Array('Este tipo de estimaci\u00F3n usa brainstormings o t\u00E9cnicas Delphi entre un grupo deexpertos, para hacer la estimaci\u00F3n','',1,100,1);
+I[18][3][1]=new Array('Es tipo de estimaci\u00F3n consiste en agrupar los tiempos para que tareas similares sehagan en la misma franja de proyecto','',0,0,1);
+I[18][3][2]=new Array('Este tipo de estimaci\u00F3n forma grupos de actividades que son similares y las estimausando una t\u00E9cnica com\u00FAn','',0,0,1);
+I[19]=new Array();I[19][0]=100;
+I[19][1]='';
+I[19][2]='0';
+I[19][3]=new Array();
+I[19][3][0]=new Array('Inicio, Elaboraci\u00F3n, Construcci\u00F3n y Transici\u00F3n','',0,0,1);
+I[19][3][1]=new Array('"Inicio y planificaci\u00F3n", "Ejecuci\u00F3n, Monitorizaci\u00F3n y Control" y "Cierre"','',1,100,1);
+I[19][3][2]=new Array('Arranque, Identificaci\u00F3n, Priorizaci\u00F3n, Monitorizaci\u00F3n y Control','',0,0,1);
+I[20]=new Array();I[20][0]=100;
+I[20][1]='';
+I[20][2]='0';
+I[20][3]=new Array();
+I[20][3][0]=new Array('Un retardo (Lag) es la cantidad de tiempo que una actividad puede ser retrasada conrespecto a otra que la sucede','',0,0,1);
+I[20][3][1]=new Array('Un retardo (Lag) es la cantidad de tiempo que una actividad puede ser retrasada sincambiar el camino cr\u00EDtico','',0,0,1);
+I[20][3][2]=new Array('Un retardo (Lag) es la cantidad de tiempo que una actividad puede ser retrasada conrespecto a otra que la precede','',1,100,1);
+I[21]=new Array();I[21][0]=100;
+I[21][1]='';
+I[21][2]='0';
+I[21][3]=new Array();
+I[21][3][0]=new Array('Identificaci\u00F3n, Nombre, Descripci\u00F3n, Precedentes y Sucesoras entre otros','',0,0,1);
+I[21][3][1]=new Array('Juicio de expertos, Estimaci\u00F3n por analog\u00EDa, Estimaci\u00F3n param\u00E9trica, Estimaci\u00F3n detres puntos, T\u00E9cnicas de decisi\u00F3n por grupo y An\u00E1lisis de reservas','',0,0,1);
+I[21][3][2]=new Array('Juicio de expertos, An\u00E1lisis alternativos, Datos de estimaci\u00F3n publicados, Estimaci\u00F3nBottom-Up y uso de Software de gesti\u00F3n y estimaci\u00F3n de proyectos','',1,100,1);
+I[22]=new Array();I[22][0]=100;
+I[22][1]='';
+I[22][2]='0';
+I[22][3]=new Array();
+I[22][3][0]=new Array('Que cada funci\u00F3n sea realizada por m\u00E1s de un departamento de la empresa','',0,0,1);
+I[22][3][1]=new Array('Que cada departamento tenga asignado un solo trabajo en el proyecto','',0,0,1);
+I[22][3][2]=new Array('Que cada departamento pueda realizar su trabajo independientemente de los dem\u00E1s','',1,100,1);
+I[23]=new Array();I[23][0]=100;
+I[23][1]='';
+I[23][2]='0';
+I[23][3]=new Array();
+I[23][3][0]=new Array('Debe tener capacidad de liderazgo','',0,0,1);
+I[23][3][1]=new Array('Debe tener competencias multiculturales','',1,100,1);
+I[23][3][2]=new Array('Debe tener conocimiento de idiomas','',0,0,1);
+I[24]=new Array();I[24][0]=100;
+I[24][1]='';
+I[24][2]='0';
+I[24][3]=new Array();
+I[24][3][0]=new Array('Identifica el 100% de trabajo requerido para llevar a cabo el proyecto','',1,100,1);
+I[24][3][1]=new Array('Identifica el 100% de los trabajos formales del proyecto','',0,0,1);
+I[24][3][2]=new Array('Identifica un alto porcentaje de los trabajos del proyecto','',0,0,1);
+I[25]=new Array();I[25][0]=100;
+I[25][1]='';
+I[25][2]='0';
+I[25][3]=new Array();
+I[25][3][0]=new Array('Ayuda a predecir la calidad del proyecto','',0,0,1);
+I[25][3][1]=new Array('Permite predecir el grado de adecuaci\u00F3n del proyecto al objetivo','',0,0,1);
+I[25][3][2]=new Array('Ayuda a establecer una correlaci\u00F3n de cada actividad con la meta final del proyecto','',1,100,1);
+I[26]=new Array();I[26][0]=100;
+I[26][1]='';
+I[26][2]='0';
+I[26][3]=new Array();
+I[26][3][0]=new Array('Consiste en estudiar las reservas de tiempo que se crean de manera natural al estimarmuchas actividades','',0,0,1);
+I[26][3][1]=new Array('Las estimaciones pueden incluir tiempos reservados para contingencias (buffers)pensados para situaciones de riesgo en las que la duraci\u00F3n podr\u00EDa extenderse','',1,100,1);
+I[26][3][2]=new Array('Consiste en poner todas las holguras juntas para producir reservas de tiempo para elproyecto','',0,0,1);
+I[27]=new Array();I[27][0]=100;
+I[27][1]='';
+I[27][2]='0';
+I[27][3]=new Array();
+I[27][3][0]=new Array('Un stakeholder es cualquier individuo, grupo u organizaci\u00F3n que haya invertido dineroen el proyecto','',0,0,1);
+I[27][3][1]=new Array('Un stakeholder es cualquier individuo, grupo u organizaci\u00F3n que pueda afectar osentirse afectado por cualquier decisi\u00F3n, actividad o resultado del proyecto','',1,100,1);
+I[27][3][2]=new Array('Un stakeholder es cualquier individuo, grupo u organizaci\u00F3n que pueda sentirseafectado por aspectos socioculturales cuando el proyecto tiene caracter global','',0,0,1);
+I[28]=new Array();I[28][0]=100;
+I[28][1]='';
+I[28][2]='0';
+I[28][3]=new Array();
+I[28][3][0]=new Array('...toda actividad estar\u00E1 representada por una elipse','',0,0,1);
+I[28][3][1]=new Array('...toda actividad estar\u00E1 relacionada con otra actividad en el \u00E1rbol','',0,0,1);
+I[28][3][2]=new Array('...toda actividad da lugar a un resultado y no hay ning\u00FAn resultado (a excepci\u00F3n delestado inicial) que no tenga una actividad previa','',1,100,1);
+I[29]=new Array();I[29][0]=100;
+I[29][1]='';
+I[29][2]='0';
+I[29][3]=new Array();
+I[29][3][0]=new Array('La estimaci\u00F3n por tres puntos (o tres valores) se basa en hacer un c\u00E1lculo de tres tiposde estimaci\u00F3n de duraci\u00F3n y quedarse con la m\u00E1s probable','',0,0,1);
+I[29][3][1]=new Array('La estimaci\u00F3n por tres puntos (o tres valores) se basa en hacer un c\u00E1lculo de tres tiposde estimaci\u00F3n de duraci\u00F3n usando t\u00E9cnicas de simulaci\u00F3n Monte Carlo','',0,0,1);
+I[29][3][2]=new Array('La estimaci\u00F3n por tres puntos (o tres valores) se basa en hacer un c\u00E1lculo de tres tiposde estimaci\u00F3n de duraci\u00F3n: m\u00E1s probable, optimista y pesimista','',1,100,1);
+I[30]=new Array();I[30][0]=100;
+I[30][1]='';
+I[30][2]='0';
+I[30][3]=new Array();
+I[30][3][0]=new Array('Son del tipo "est\u00E1 compuesto de" cuando se va de la ra\u00EDz a las hojas y del tipo "formaparte de" cuando se va hacia la ra\u00EDz','',1,100,1);
+I[30][3][1]=new Array('Son del tipo "pertenece a" para determinar qu\u00E9 productos forman parte de otros m\u00E1scomplejos','',0,0,1);
+I[30][3][2]=new Array('Son del tipo "Ser\u00E1 realizado por" para determinar qu\u00E9 trabajos realizar\u00E1n qu\u00E9personas en el proyecto','',0,0,1);
+I[31]=new Array();I[31][0]=100;
+I[31][1]='';
+I[31][2]='0';
+I[31][3]=new Array();
+I[31][3][0]=new Array('Tiene autoridad, pero no responsabilidad en el proyecto','',0,0,1);
+I[31][3][1]=new Array('Tienen un papel bien definido con un nivel de responsabilidad y autoridadperfectamente acotado durante todo el proyecto','',0,0,1);
+I[31][3][2]=new Array('Tienen diferentes niveles de responsabilidad y autoridad que pueden varia a lo largodel proyecto','',1,100,1);
+I[32]=new Array();I[32][0]=100;
+I[32][1]='';
+I[32][2]='0';
+I[32][3]=new Array();
+I[32][3][0]=new Array('Definici\u00F3n de plantillas','',0,0,1);
+I[32][3][1]=new Array('Requisitos gu\u00EDas para le cierre de proyecto','',0,0,1);
+I[32][3][2]=new Array('Procesos financieros y gesti\u00F3n de riesgos','',1,100,1);
+I[33]=new Array();I[33][0]=100;
+I[33][1]='';
+I[33][2]='0';
+I[33][3]=new Array();
+I[33][3][0]=new Array('Alcance del proyecto, WBS y Diccionario WBS','',1,100,1);
+I[33][3][1]=new Array('El presupuesto y la estimaci\u00F3n de personal','',0,0,1);
+I[33][3][2]=new Array('El presupuesto y el Alcance del proyecto','',0,0,1);
+I[34]=new Array();I[34][0]=100;
+I[34][1]='';
+I[34][2]='0';
+I[34][3]=new Array();
+I[34][3][0]=new Array('Start-to-Start, es una relaci\u00F3n que indica que una actividad no puede comenzar hastaque otra concreta haya terminado','',0,0,1);
+I[34][3][1]=new Array('Start-to-Start, es una relaci\u00F3n que indica que una actividad no puede comenzar hastaque otra concreta haya comenzado','',1,100,1);
+I[34][3][2]=new Array('Start-to-Start, es una relaci\u00F3n que indica que una actividad varias actividades debebcomenzar juntas','',0,0,1);
+I[35]=new Array();I[35][0]=100;
+I[35][1]='';
+I[35][2]='0';
+I[35][3]=new Array();
+I[35][3][0]=new Array('Un hito en un punto o evento importante en el proyecto','',1,100,1);
+I[35][3][1]=new Array('Un hito es una marca del proyecto','',0,0,1);
+I[35][3][2]=new Array('Un hito es una actividad m\u00E1s con una duraci\u00F3n de un d\u00EDa','',0,0,1);
+I[36]=new Array();I[36][0]=100;
+I[36][1]='';
+I[36][2]='0';
+I[36][3]=new Array();
+I[36][3][0]=new Array('La estimaci\u00F3n param\u00E9trica se basa en el uso de tablas de actividades que est\u00E1ncalculadas previamente','',0,0,1);
+I[36][3][1]=new Array('La estimaci\u00F3n param\u00E9trica se basa en el uso de alg\u00FAn algoritmo de c\u00E1lculo que recoge informaci\u00F3n hist\u00F3rica','',1,100,1);
+I[36][3][2]=new Array('La estimaci\u00F3n param\u00E9trica se basa en el uso de par\u00E1metros est\u00E1ndar para estimar lasduraciones','',0,0,1);
+I[37]=new Array();I[37][0]=100;
+I[37][1]='';
+I[37][2]='0';
+I[37][3]=new Array();
+I[37][3][0]=new Array('Planes, Procesos, Pol\u00EDticas, Procedimientos y Conocimiento corporativo','',1,100,1);
+I[37][3][1]=new Array('Financieros y Humanos','',0,0,1);
+I[37][3][2]=new Array('Ecol\u00F3gicos, Globalizadores y Socioculturales','',0,0,1);
+I[38]=new Array();I[38][0]=100;
+I[38][1]='';
+I[38][2]='0';
+I[38][3]=new Array();
+I[38][3][0]=new Array('Juicio de expertos, Estimaci\u00F3n por analog\u00EDa, Estimaci\u00F3n param\u00E9trica, Estimaci\u00F3n detres puntos, T\u00E9cnicas de decisi\u00F3n por grupo y An\u00E1lisis de reservas','',1,100,1);
+I[38][3][1]=new Array('Juicio de expertos, An\u00E1lisis alternativos, Datos de estimaci\u00F3n publicados, Estimaci\u00F3nBottom-Up y uso de Software de gesti\u00F3n y estimaci\u00F3n de proyectos','',0,0,1);
+I[38][3][2]=new Array('Identificaci\u00F3n, Nombre, Descripci\u00F3n, Precedentes y Sucesoras entre otros','',0,0,1);
+I[39]=new Array();I[39][0]=100;
+I[39][1]='';
+I[39][2]='0';
+I[39][3]=new Array();
+I[39][3][0]=new Array('Son actividades que tienen resultados m\u00E1s all\u00E1 del alcance del proyecto','',0,0,1);
+I[39][3][1]=new Array('Son actividades que no pertenecen al proyecto, aunque se ejecuten al mismo tiempo','',0,0,1);
+I[39][3][2]=new Array('Son actividades que incluyen relaciones a actividades externas no pertenecientes alproyecto','',1,100,1);
+I[40]=new Array();I[40][0]=100;
+I[40][1]='';
+I[40][2]='0';
+I[40][3]=new Array();
+I[40][3][0]=new Array('Finish-to-Finish, es una relaci\u00F3n de precedencia que indica que una actividad no puedeterminar hasta que lo haya hecho otra concreta','',1,100,1);
+I[40][3][1]=new Array('Finish-to-Finish, es una relaci\u00F3n de precedencia que indica que varias actividadestienen que terminar juntas','',0,0,1);
+I[40][3][2]=new Array('Finish-to-Finish, es una relaci\u00F3n de precedencia que indica que una actividad no puedeterminar hasta que otra concreta haya comenzado','',0,0,1);
+I[41]=new Array();I[41][0]=100;
+I[41][1]='';
+I[41][2]='0';
+I[41][3]=new Array();
+I[41][3][0]=new Array('Una tarea hamaca est\u00E1 definida por un conjunto de tareas detalladas','',1,100,1);
+I[41][3][1]=new Array('Una tarea hamaca es una tarea con holguras en el WBS','',0,0,1);
+I[41][3][2]=new Array('Una tarea hamaca es una tarea que forma parte de una s\u00FAper tarea','',0,0,1);
+I[42]=new Array();I[42][0]=100;
+I[42][1]='';
+I[42][2]='0';
+I[42][3]=new Array();
+I[42][3][0]=new Array('No, la arquitectura y la gesti\u00F3n de proyecto son fases diferentes','',0,0,1);
+I[42][3][1]=new Array('Si, el proyecto y la arquitectura tienen los mismos stakeholders','',0,0,1);
+I[42][3][2]=new Array('Si, a partir de algunos estilos de disposici\u00F3n','',1,100,1);
+I[43]=new Array();I[43][0]=100;
+I[43][1]='';
+I[43][2]='0';
+I[43][3]=new Array();
+I[43][3][0]=new Array('Visi\u00F3n, misi\u00F3n, valores, creencia y expectativas','',1,100,1);
+I[43][3][1]=new Array('Resultados empresariales, posici\u00F3n de mercado y marketing corporativo','',0,0,1);
+I[43][3][2]=new Array('Departamentos, oficinas, locales, etc.','',0,0,1);
+I[44]=new Array();I[44][0]=100;
+I[44][1]='';
+I[44][2]='0';
+I[44][3]=new Array();
+I[44][3][0]=new Array('Son actividades que deben comenzar obligatoriamente al mismo tiempo','',0,0,1);
+I[44][3][1]=new Array('Son actividades que debe realizarse obligatoriamente, bien sea por cuestionescontractuales o porque la naturaleza del trabajo las impone','',1,100,1);
+I[44][3][2]=new Array('Son actividades que obligan al equipo a una atenci\u00F3n especial','',0,0,1);
+I[45]=new Array();I[45][0]=100;
+I[45][1]='';
+I[45][2]='0';
+I[45][3]=new Array();
+I[45][3][0]=new Array('Organization Breakdown Structure, representa las responsabilidades sobre larealizaci\u00F3n de actividades del proyecto.','',1,100,1);
+I[46]=new Array();I[46][0]=100;
+I[46][1]='';
+I[46][2]='0';
+I[46][3]=new Array();
+I[46][3][0]=new Array('Work Breakdown Structure, se utiliza para representar la estructura de descomposici\u00F3ndel trabajo.','',1,100,1);
+I[47]=new Array();I[47][0]=100;
+I[47][1]='';
+I[47][2]='0';
+I[47][3]=new Array();
+I[47][3][0]=new Array('\u2026El desarrollo de modelo de cronograma del proyecto.','',1,100,1);
+I[48]=new Array();I[48][0]=100;
+I[48][1]='';
+I[48][2]='0';
+I[48][3]=new Array();
+I[48][3][0]=new Array('Finish-to-Start, es una relaci\u00F3n de precedencia entre las actividades que indica que unaactividad no puede empezar hasta que otra concreta haya terminado.','',1,100,1);
+I[49]=new Array();I[49][0]=100;
+I[49][1]='';
+I[49][2]='0';
+I[49][3]=new Array();
+I[49][3][0]=new Array('Consiste en actividades que, por experiencia previa, se tienen tabuladas y se puedecalcular f\u00E1cilmente los recursos que precisan aplicando dichas tablas.','',1,100,1);
+I[50]=new Array();I[50][0]=100;
+I[50][1]='';
+I[50][2]='0';
+I[50][3]=new Array();
+I[50][3][0]=new Array('Es el proceso de an\u00E1lisis de secuencias de actividades, duraciones, requisitos de recursosy restricciones del propio cronograma para crear un modelo de programaci\u00F3n delproyecto.','',1,100,1);
+I[50][3][1]=new Array('Es el proceso de creacion de actividades y su descomposicion en tareas','',0,0,1);
+I[50][3][2]=new Array('Es un proceso de colocar todas las actividades en un margen de tiempo definido a priori para el proyecto','',0,0,1);
+I[51]=new Array();I[51][0]=100;
+I[51][1]='';
+I[51][2]='0';
+I[51][3]=new Array();
+I[51][3][0]=new Array('Resource Breakdown Structure, es una lista jer\u00E1rquica de los recursos necesarios parala gesti\u00F3n y control del proyecto','',1,100,1);
+I[51][3][1]=new Array('Rescue Breakdown Structure, es la lista de recursos de que dispone el equipo pararecuperar situaciones complejas en el proyecto','',0,0,1);
+I[51][3][2]=new Array('Relational Breakdown Structure, es un grafo representando las relaciones entre lasdiferentes actividades del proyecto','',0,0,1);
+I[52]=new Array();I[52][0]=100;
+I[52][1]='';
+I[52][2]='0';
+I[52][3]=new Array();
+I[52][3][0]=new Array('...un proceso en el que se estima el tiempo que llevar\u00E1 la gesti\u00F3n del proyecto','',0,0,1);
+I[52][3][1]=new Array('...un proceso en el cual se establecen pol\u00EDticas, procedimientos y documentaci\u00F3n paraplanificar, desarrollar, gestionar ejecutar y controlar los tiempos del proyecto','',1,100,1);
+I[52][3][2]=new Array('...un proceso de c\u00E1lculo de los tiempos de cada actividad de gesti\u00F3n del proyecto','',0,0,1);
+I[53]=new Array();I[53][0]=100;
+I[53][1]='';
+I[53][2]='0';
+I[53][3]=new Array();
+I[53][3][0]=new Array('Oficinas, despachos, recursos y centros de desarrollo','',0,0,1);
+I[53][3][1]=new Array('Personas, recursos financieros y disponibilidad','',0,0,1);
+I[53][3][2]=new Array('Visiones compartidas, valores, creencias y expectativas','',1,100,1);
+I[54]=new Array();I[54][0]=100;
+I[54][1]='';
+I[54][2]='0';
+I[54][3]=new Array();
+I[54][3][0]=new Array('Tienen diferentes niveles de responsabilidad y autoridad que pueden variar a lo largodel proyecto.','',1,100,1);
+I[55]=new Array();I[55][0]=100;
+I[55][1]='';
+I[55][2]='0';
+I[55][3]=new Array();
+I[55][3][0]=new Array('Consiste en recalcular toda la estimaci\u00F3n de recuros con otro m\u00E9todos difenrente delusado por primera vez','',0,0,1);
+I[55][3][1]=new Array('Son m\u00E9todos experimentales que est\u00E1n poco probados en la industria','',0,0,1);
+I[55][3][2]=new Array('Son habitualmente m\u00E9todos ad-hoc de cualquier tipo que ayudan a la estimaci\u00F3n','',1,100,1);
+I[56]=new Array();I[56][0]=100;
+I[56][1]='';
+I[56][2]='0';
+I[56][3]=new Array();
+I[56][3][0]=new Array('Debe tener competencias multiculturales Correcta','',1,100,1);
+I[56][3][1]=new Array('Debe tener capacidad de liderazgo','',0,0,1);
+I[56][3][2]=new Array('Debe tener conocimiento de idiomas','',0,0,1);
+I[57]=new Array();I[57][0]=100;
+I[57][1]='';
+I[57][2]='0';
+I[57][3]=new Array();
+I[57][3][0]=new Array('. ...el desarrollo de modelo de cronograma del proyecto Correcta','',1,100,1);
+I[57][3][1]=new Array('...el criterio de las horas de trabajo por jornada','',0,0,1);
+I[57][3][2]=new Array('..el criterio del tiempo a utilizar en los procesos de desarrollo de software','',0,0,1);
+I[58]=new Array();I[58][0]=100;
+I[58][1]='';
+I[58][2]='0';
+I[58][3]=new Array();
+I[58][3][0]=new Array('...el desarrollo de modelo de cronograma del proyecto Correcta','',1,100,1);
+I[58][3][1]=new Array('..el criterio del tiempo a utilizar en los procesos de desarrollo de software','',0,0,1);
+I[58][3][2]=new Array('..el criterio de las horas de trabajo por jornada','',0,0,1);
+I[59]=new Array();I[59][0]=100;
+I[59][1]='';
+I[59][2]='0';
+I[59][3]=new Array();
+I[59][3][0]=new Array('WBS, OBS, PBS y RBS','',0,0,1);
+I[59][3][1]=new Array('ID, T\u00EDtulo, Nombre, Precedentes y Sucesoras','',0,0,1);
+I[59][3][2]=new Array('Objetivos del proyecto, Componentes, Productos, Entregables, Paquetes de trabajo y Actividades Correcta','',1,100,1);
+I[60]=new Array();I[60][0]=100;
+I[60][1]='';
+I[60][2]='0';
+I[60][3]=new Array();
+I[60][3][0]=new Array('Nombre, Direcci\u00F3n y C\u00F3digo','',0,0,1);
+I[60][3][1]=new Array('Tipo, Clase, Aspecto y Evaluaci\u00F3n','',0,0,1);
+I[60][3][2]=new Array('T\u00EDtulo, Duraci\u00F3n, Relaci\u00F3n con el WBS y Nivel de actividad Correcta','',1,100,1);
+I[61]=new Array();I[61][0]=100;
+I[61][1]='';
+I[61][2]='0';
+I[61][3]=new Array();
+I[61][3][0]=new Array('La gobernabilidad del proyecto es una funci\u00F3n de supervisi\u00F3n que est\u00E1 alineada con el modelo de gobierno de la organizaci\u00F3n, y que abarca el ciclo de vida del proyecto Correcta','',1,100,1);
+I[61][3][1]=new Array('Es un proceso de otorgamiento de responsabilidades al Jefe de Proyecto para que \u00E9ste ejerza su funci\u00F3n de gobierno','',0,0,1);
+I[61][3][2]=new Array('Es un proceso de nombramiento de responsables del proyecto para que existan responsables del gobierno','',0,0,1);
+I[62]=new Array();I[62][0]=100;
+I[62][1]='';
+I[62][2]='0';
+I[62][3]=new Array();
+I[62][3][0]=new Array('Consiste en tener listas de precios para las actividades','',0,0,1);
+I[62][3][1]=new Array('Consiste en publicar los precios de las actividades del proyecto para que el cliente sepa los costes a priori','',0,0,1);
+I[62][3][2]=new Array('Consiste en actividades que, por experiencia previa, se tienen tabuladas y se puede calcualr f\u00E1cilmente los recusos que precisan aplicando dichas tablas','',1,100,1);
+
+
+function StartUp(){
+	RemoveBottomNavBarForIE();
+
+//If there's only one question, no need for question navigation controls
+	if (QsToShow < 2){
+		document.getElementById('QNav').style.display = 'none';
+	}
+	
+//Stash the instructions so they can be redisplayed
+	strInstructions = document.getElementById('InstructionsDiv').innerHTML;
+	
+
+	
+
+	
+
+	
+	CompleteEmptyFeedback();
+
+	SetUpQuestions();
+	ClearTextBoxes();
+	CreateStatusArray();
+	
+
+	
+//Check search string for q parameter
+	if (document.location.search.length > 0){
+		if (ShuffleQs == false){
+			var JumpTo = parseInt(document.location.search.substring(1,document.location.search.length))-1;
+			if (JumpTo <= QsToShow){
+				ChangeQ(JumpTo);
+			}
+		}
+	}
+//Undocumented function added 10/12/2004
+	ShowSpecialReadingForQuestion();
+}
+
+function ShowHideQuestions(){
+	FuncBtnOut(document.getElementById('ShowMethodButton'));
+	document.getElementById('ShowMethodButton').style.display = 'none';
+	if (ShowingAllQuestions == false){
+		for (var i=0; i<QArray.length; i++){
+				QArray[i].style.display = '';
+			}
+		document.getElementById('Questions').style.listStyleType = 'decimal';
+		document.getElementById('OneByOneReadout').style.display = 'none';
+		document.getElementById('ShowMethodButton').innerHTML = ShowOneByOneCaption;
+		ShowingAllQuestions = true;
+	}
+	else{
+		for (var i=0; i<QArray.length; i++){
+				if (i != CurrQNum){
+					QArray[i].style.display = 'none';
+				}
+			}
+		document.getElementById('Questions').style.listStyleType = 'none';
+		document.getElementById('OneByOneReadout').style.display = '';
+		document.getElementById('ShowMethodButton').innerHTML = ShowAllQuestionsCaption;
+		ShowingAllQuestions = false;	
+	}
+	document.getElementById('ShowMethodButton').style.display = 'inline';
+}
+
+function CreateStatusArray(){
+	var QNum, ANum;
+//For each item in the item array
+	for (QNum=0; QNum<I.length; QNum++){
+//Check if the question still exists (hasn't been nuked by showing a random selection)
+		if (document.getElementById('Q_' + QNum) != null){
+			State[QNum] = new Array();
+			State[QNum][0] = -1; //Score for this q; -1 shows question not done yet
+			State[QNum][1] = new Array(); //answers
+			for (ANum = 0; ANum<I[QNum][3].length; ANum++){
+				State[QNum][1][ANum] = 0; //answer not chosen yet; when chosen, will store its position in the series of choices
+			}
+			State[QNum][2] = 0; //tries at this q so far
+			State[QNum][3] = 0; //incrementing percent-correct values of selected answers
+			State[QNum][4] = 0; //penalties incurred for hints
+			State[QNum][5] = ''; //Sequence of answers chosen by number
+		}
+		else{
+			State[QNum] = null;
+		}
+	}
+}
+
+
+
+function CheckMCAnswer(QNum, ANum, Btn){
+//if question doesn't exist, bail
+	if (State[QNum].length < 1){return;}
+	
+//Get the feedback
+	Feedback = I[QNum][3][ANum][1];
+	
+//Now show feedback and bail if question already complete
+	if (State[QNum][0] > -1){
+//Add an extra message explaining that the question
+// is finished if defined by the user
+		if (strQuestionFinished.length > 0){Feedback += '<br />' + strQuestionFinished;}
+//Show the feedback
+		ShowMessage(Feedback);
+//New for 6.2.2.1: If you want to mark an answer as correct even when it's the final choice, uncomment this line.
+//		if (I[QNum][3][ANum][2] >= 1){Btn.innerHTML = CorrectIndicator;}else{Btn.innerHTML = IncorrectIndicator;}	
+		return;
+	}
+	
+//Hide the button while processing
+	Btn.style.display = 'none';
+
+//Increment the number of tries
+	State[QNum][2]++;
+	
+//Add the percent-correct value of this answer
+	State[QNum][3] += I[QNum][3][ANum][3];
+	
+//Store the try number in the answer part of the State array, for tracking purposes
+	State[QNum][1][ANum] = State[QNum][2];
+	if (State[QNum][5].length > 0){State[QNum][5] += ' | ';}
+	State[QNum][5] += String.fromCharCode(65+ANum);
+	
+//Should this answer be accepted as correct?
+	if (I[QNum][3][ANum][2] < 1){
+//It's wrong
+
+//Mark the answer
+		Btn.innerHTML = IncorrectIndicator;
+		
+//Remove any previous score unless exercise is finished (6.0.3.8+)
+		if (Finished == false){
+			WriteToInstructions(strInstructions);
+		}	
+		
+//Check whether this leaves just one MC answer unselected, in which case the Q is terminated
+		var RemainingAnswer = FinalAnswer(QNum);
+		if (RemainingAnswer > -1){
+//Behave as if the last answer had been selected, but give no credit for it
+//Increment the number of tries
+			State[QNum][2]++;		
+		
+//Calculate the score for this question
+			CalculateMCQuestionScore(QNum);
+			
+//Get the overall score and add it to the feedback
+			CalculateOverallScore();
+//New for 6.2.2.1
+			var QsDone = CheckQuestionsCompleted();
+			if ((ContinuousScoring == true)||(Finished == true)){
+				Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
+				WriteToInstructions(YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone);
+			}
+			else{
+				WriteToInstructions(QsDone);
+			}
+		}
+	}
+	else{
+//It's right
+//Mark the answer
+		Btn.innerHTML = CorrectIndicator;
+				
+//Calculate the score for this question
+		CalculateMCQuestionScore(QNum);
+		
+//New for 6.2.2.0
+		var QsDone = CheckQuestionsCompleted();
+
+//Get the overall score and add it to the feedback
+		if (ContinuousScoring == true){
+			CalculateOverallScore();
+			if ((ContinuousScoring == true)||(Finished == true)){
+				Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
+				WriteToInstructions(YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone);
+			}
+		}
+		else{
+			WriteToInstructions(QsDone);
+		}
+	}
+	
+//Show the button again
+	Btn.style.display = 'inline';
+	
+//Finally, show the feedback	
+	ShowMessage(Feedback);
+	
+//Check whether all questions are now done
+	CheckFinished();
+}
+
+function CalculateMCQuestionScore(QNum){
+	var Tries = State[QNum][2] + State[QNum][4]; //include tries and hint penalties
+	var PercentCorrect = State[QNum][3];
+	var TotAns = GetTotalMCAnswers(QNum);
+	var HintPenalties = State[QNum][4];
+	
+//Make sure it's not already complete
+
+	if (State[QNum][0] < 0){
+//Allow for Hybrids
+		if (HintPenalties >= 1){
+			State[QNum][0] = 0;
+		}
+		else{
+//This line calculates the score for this question
+			if (TotAns == 1){
+				State[QNum][0] = 1;
+			}
+			else{
+				State[QNum][0] = ((TotAns-((Tries*100)/State[QNum][3]))/(TotAns-1));
+			}
+		}
+//Fix for Safari bug added for version 6.0.3.42 (negative infinity problem)
+		if ((State[QNum][0] < 0)||(State[QNum][0] == Number.NEGATIVE_INFINITY)){
+			State[QNum][0] = 0;
+		}
+	}
+}
+
+function GetTotalMCAnswers(QNum){
+	var Result = 0;
+	for (var ANum=0; ANum<I[QNum][3].length; ANum++){
+		if (I[QNum][3][ANum][4] == 1){ //This is an MC answer
+			Result++;
+		}
+	}
+	return Result;
+}
+
+function FinalAnswer(QNum){
+	var UnchosenAnswers = 0;
+	var FinalAnswer = -1;
+	for (var ANum=0; ANum<I[QNum][3].length; ANum++){
+		if (I[QNum][3][ANum][4] == 1){ //This is an MC answer
+			if (State[QNum][1][ANum] < 1){ //This answer hasn't been chosen yet
+				UnchosenAnswers++;
+				FinalAnswer = ANum;
+			}
+		}
+	}
+	if (UnchosenAnswers == 1){
+		return FinalAnswer;
+	}
+	else{
+		return -1;
+	}
+}
+
+
+
+
+
+function CalculateOverallScore(){
+	var TotalWeighting = 0;
+	var TotalScore = 0;
+	
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] > -1){
+				TotalWeighting += I[QNum][0];
+				TotalScore += (I[QNum][0] * State[QNum][0]);
+			}
+		}
+	}
+	if (TotalWeighting > 0){
+		Score = Math.floor((TotalScore/TotalWeighting)*100);
+	}
+	else{
+//if TotalWeighting is 0, no questions so far have any value, so 
+//no penalty should be shown.
+		Score = 100; 
+	}
+}
+
+//New for 6.2.2.0
+function CheckQuestionsCompleted(){
+	if (ShowCompletedSoFar == false){return '';}
+	var QsCompleted = 0;
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] >= 0){
+				QsCompleted++;
+			}
+		}
+	}
+//Fixes for 6.2.2.2
+	if (QsCompleted >= QArray.length){
+		return ExerciseCompleted;
+	}
+	else{
+		return CompletedSoFar + ' ' + QsCompleted + '/' + QArray.length + '.';
+	}
+}
+
+function CheckFinished(){
+	var FB = '';
+	var AllDone = true;
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] < 0){
+				AllDone = false;
+			}
+		}
+	}
+	if (AllDone == true){
+	
+//Report final score and submit if necessary
+		CalculateOverallScore();
+		FB = YourScoreIs + ' ' + Score + '%.';
+		if (ShowCorrectFirstTime == true){
+			var CFT = 0;
+			for (QNum=0; QNum<State.length; QNum++){
+				if (State[QNum] != null){
+					if (State[QNum][0] >= 1){
+						CFT++;
+					}
+				}
+			}
+			FB += '<br />' + CorrectFirstTime + ' ' + CFT + '/' + QsToShow;
+		}
+		
+//New for 6.2.2.0
+		FB += '<br />' + ExerciseCompleted;
+		
+		WriteToInstructions(FB);
+		
+		Finished == true;
+
+
+
+
+		TimeOver = true;
+		Locked = true;
+		
+
+
+		Finished = true;
+		Detail = '<?xml version="1.0"?><hpnetresult><fields>';
+		for (QNum=0; QNum<State.length; QNum++){
+			if (State[QNum] != null){
+				if (State[QNum][5].length > 0){
+					Detail += '<field><fieldname>Question #' + (QNum+1) + '</fieldname><fieldtype>question-tracking</fieldtype><fieldlabel>Q ' + (QNum+1) + '</fieldlabel><fieldlabelid>QuestionTrackingField</fieldlabelid><fielddata>' + State[QNum][5] + '</fielddata></field>';
+				}
+			}
+		}
+		Detail += '</fields></hpnetresult>';
+		setTimeout('Finish()', SubmissionTimeout);
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+//-->
+
+//]]>
+
+</script>
+
+
+</head>
+
+<body onload="StartUp()" id="TheBody" >
+
+<!-- BeginTopNavButtons -->
+
+
+<div class="NavButtonBar" id="TopNavBar">
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="history.back(); return false;">&lt;=</button>
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)"  onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='index.htm'; return false;"> Index </button>
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='tema_4.htm'; return false;">=&gt;</button>
+
+
+</div>
+
+
+
+<!-- EndTopNavButtons -->
+
+<div class="Titles">
+	<h2 class="ExerciseTitle">Tema 3: Organizaci&#x00F3;n de los recursos y del proyecto</h2>
+
+	<h3 class="ExerciseSubtitle">Quiz</h3>
+
+
+
+</div>
+
+<div id="InstructionsDiv" class="StdDiv">
+	<div id="Instructions"></div>
+</div>
+
+
+
+
+<div id="MainDiv" class="StdDiv">
+ 
+<div id="QNav" class="QuestionNavigation">
+
+<p style="text-align: right;">
+<button id="ShowMethodButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="ShowHideQuestions(); return false;">Show all questions</button>
+</p>
+
+<div id="OneByOneReadout">
+<button id="PrevQButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="ChangeQ(-1); return false;">&lt;=</button>
+
+<span id="QNumReadout" class="QNum">&nbsp;</span>
+
+<button id="NextQButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="ChangeQ(1); return false;">=&gt;</button>
+<br />
+</div>
+
+</div>
+ 
+<ol class="QuizQuestions" id="Questions">
+<li class="QuizQuestion" id="Q_0" style="display: none;"><div class="QuestionText">Hablando de actividades, &#x00BF;qu&#x00E9; son los Adelantos (Leads)?</div><ol class="MCAnswers"><li id="Q_0_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_0_0_Btn" onclick="CheckMCAnswer(0,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Un adelanto (Lead) es la cantidad de tiempo que una actividad puede ser adelantadacon respeto a otra que la sucede</li><li id="Q_0_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_0_1_Btn" onclick="CheckMCAnswer(0,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Un adelanto (Lead) es la cantidad de tiempo que una actividad puede ser adelantadacon respeto a otra que la precede</li><li id="Q_0_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_0_2_Btn" onclick="CheckMCAnswer(0,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Un adelanto (Lead) es la cantidad de tiempo que una actividad puede ser adelantadasin cambiar el camino cr&#x00ED;tico</li></ol></li>
+<li class="QuizQuestion" id="Q_1" style="display: none;"><div class="QuestionText">&#x00BF;Qu&#x00E9; es el PBS?</div><ol class="MCAnswers"><li id="Q_1_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_1_0_Btn" onclick="CheckMCAnswer(1,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Progress Breakdown Structure, es una representaci&#x00F3;n del estado de avance en lasactividades del proyecto</li><li id="Q_1_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_1_1_Btn" onclick="CheckMCAnswer(1,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Product Breakdown Structure,es una representaci&#x00F3;n en forma de &#x00E1;rbol de losproductos que hay que crear para alcanzar el final del proyecto</li><li id="Q_1_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_1_2_Btn" onclick="CheckMCAnswer(1,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Partial Breakdown Structure, es una visi&#x00F3;n parcial de la estructura de trabajos delproyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_2" style="display: none;"><div class="QuestionText">&#x00BF;Que se entiende por gobernabilidad del proyecto?</div><ol class="MCAnswers"><li id="Q_2_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_2_0_Btn" onclick="CheckMCAnswer(2,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La gobernabilidad del proyecto es una funci&#x00F3;n de supervisi&#x00F3;n que est&#x00E1; alineada conel modelo de gobierno de la organizaci&#x00F3;n, y que abarca el ciclo de vida del proyecto</li><li id="Q_2_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_2_1_Btn" onclick="CheckMCAnswer(2,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es un proceso de nombramiento de responsables del proyecto para que existanresponsables del gobierno</li><li id="Q_2_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_2_2_Btn" onclick="CheckMCAnswer(2,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es un proceso de otorgamiento de responsabilidades al Jefe de Proyecto para que &#x00E9;steejerza su funci&#x00F3;n de gobierno</li></ol></li>
+<li class="QuizQuestion" id="Q_3" style="display: none;"><div class="QuestionText">Hablando de estimaci&#x00F3;n de recursos para las actividades, &#x00BF;En qu&#x00E9; consiste el Juicio de expertos?</div><ol class="MCAnswers"><li id="Q_3_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_3_0_Btn" onclick="CheckMCAnswer(3,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es la opini&#x00F3;n de los directivos de la empresa sobre la actividad</li><li id="Q_3_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_3_1_Btn" onclick="CheckMCAnswer(3,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es la opini&#x00F3;n de personas que han tenido experiencia previa con actividades similares</li><li id="Q_3_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_3_2_Btn" onclick="CheckMCAnswer(3,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es la opini&#x00F3;n de expertos contratados para ayudar en el proyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_4" style="display: none;"><div class="QuestionText">&#x00BF;Qu&#x00E9; tipos de organizaci&#x00F3;n matricial existen?</div><ol class="MCAnswers"><li id="Q_4_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_4_0_Btn" onclick="CheckMCAnswer(4,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Organizativa, Cultural y social</li><li id="Q_4_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_4_1_Btn" onclick="CheckMCAnswer(4,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Funcional, Matricial y Orientada a proyectos</li><li id="Q_4_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_4_2_Btn" onclick="CheckMCAnswer(4,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Matricial d&#x00E9;bil, Matricial media y Fuertemente matricial</li></ol></li>
+<li class="QuizQuestion" id="Q_5" style="display: none;"><div class="QuestionText">&#x00BF;Qu&#x00E9; son los ciclos de vida adaptativos?</div><ol class="MCAnswers"><li id="Q_5_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_5_0_Btn" onclick="CheckMCAnswer(5,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Los ciclos de vida adaptativos son aquellos que evolucionan con la pol&#x00ED;tica de laempresa</li><li id="Q_5_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_5_1_Btn" onclick="CheckMCAnswer(5,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Los ciclos de vida adaptativos tienen por objeto responder a los altos niveles decambio y la participaci&#x00F3;n continua de las partes interesadas</li><li id="Q_5_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_5_2_Btn" onclick="CheckMCAnswer(5,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Los ciclos de vida adaptativos son aquellos que pueden responder a los riesgos delproyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_6" style="display: none;"><div class="QuestionText">Hablando de dependencia entre las actividades, &#x00BF;Qu&#x00E9; es la Dependencia Discrecional?</div><ol class="MCAnswers"><li id="Q_6_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_6_0_Btn" onclick="CheckMCAnswer(6,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son aquellas cuya secuencia de ejecuci&#x00F3;n puede establecerse discrecionalmente, noest&#x00E1;n sujetas a una imposici&#x00F3;n concreta</li><li id="Q_6_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_6_1_Btn" onclick="CheckMCAnswer(6,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son aquellas que no son obligatorias y, por tanto, es el equipo quien decide ponerlasen el proyecto</li><li id="Q_6_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_6_2_Btn" onclick="CheckMCAnswer(6,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son aquellas actividades que no son necesarias para el proyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_7" style="display: none;"><div class="QuestionText">Hablando de estimaci&#x00F3;n de recursos para las actividades, &#x00BF;En qu&#x00E9; consiste la estimaci&#x00F3;nEstimaci&#x00F3;n Bottom-Up?</div><ol class="MCAnswers"><li id="Q_7_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_7_0_Btn" onclick="CheckMCAnswer(7,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es una tarea que calcula primero los costes de las actividades m&#x00E1;s sencillas y despu&#x00E9;slos de las m&#x00E1;s complejas</li><li id="Q_7_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_7_1_Btn" onclick="CheckMCAnswer(7,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Consiste en estimar las actividades por su importancia, comenzando por las de mayorimportancia</li><li id="Q_7_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_7_2_Btn" onclick="CheckMCAnswer(7,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es una t&#x00E9;cnica de estimaci&#x00F3;n que va a de las tareas de mayor detalle a la las de mayornivel sumando los costes de las tareas componentes</li></ol></li>
+<li class="QuizQuestion" id="Q_8" style="display: none;"><div class="QuestionText">Hablando de actividades, &#x00BF;qu&#x00E9; significa la precedencia SF?</div><ol class="MCAnswers"><li id="Q_8_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_8_0_Btn" onclick="CheckMCAnswer(8,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Start-to-Finish, es una relaci&#x00F3;n en la cual una actividad no puede terminar hasta queotra actividad concreta haya comenzado</li><li id="Q_8_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_8_1_Btn" onclick="CheckMCAnswer(8,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Start-to-Finish, es una relaci&#x00F3;n en la cual una actividad no puede terminar hasta queotra actividad concreta haya terminado</li><li id="Q_8_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_8_2_Btn" onclick="CheckMCAnswer(8,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Start-to-Finish, es una relaci&#x00F3;n en la cual una actividad no puede comenzar hasta queotra actividad concreta haya terminado</li></ol></li>
+<li class="QuizQuestion" id="Q_9" style="display: none;"><div class="QuestionText">Hablando de estimaci&#x00F3;n de duraci&#x00F3;n de las actividades, &#x00BF;En qu&#x00E9; consiste la Estimaci&#x00F3;npor Analog&#x00ED;a?</div><ol class="MCAnswers"><li id="Q_9_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_9_0_Btn" onclick="CheckMCAnswer(9,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Se usa informaci&#x00F3;n hist&#x00F3;rica y se basa en la estimaci&#x00F3;n de una actividad por analog&#x00ED;acon otras de similar tama&#x00F1;o o complejidad</li><li id="Q_9_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_9_1_Btn" onclick="CheckMCAnswer(9,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Se usa un cat&#x00E1;logo de analog&#x00ED;as entre actividades para estimar la duraci&#x00F3;n</li><li id="Q_9_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_9_2_Btn" onclick="CheckMCAnswer(9,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Se comparan todas las actividades con otras actividades para comprobar su parecido</li></ol></li>
+<li class="QuizQuestion" id="Q_10" style="display: none;"><div class="QuestionText">Seg&#x00FA;n el (PMBOK, 2013), las t&#x00E9;cnicas habituales para la definici&#x00F3;n de actividades son...</div><ol class="MCAnswers"><li id="Q_10_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_10_0_Btn" onclick="CheckMCAnswer(10,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Descomposici&#x00F3;n, Planificaci&#x00F3;n Progresiva y Juicio de Expertos</li><li id="Q_10_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_10_1_Btn" onclick="CheckMCAnswer(10,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Las vistas de descomposici&#x00F3;n y las vistas de despliegue</li><li id="Q_10_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_10_2_Btn" onclick="CheckMCAnswer(10,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;las t&#x00E9;cnicas Delphi y los Brainstormings</li></ol></li>
+<li class="QuizQuestion" id="Q_11" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;l de las siguientes es una lista de atributos de una actividad?</div><ol class="MCAnswers"><li id="Q_11_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_11_0_Btn" onclick="CheckMCAnswer(11,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Tipo, Clase, Aspecto y Evaluaci&#x00F3;n</li><li id="Q_11_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_11_1_Btn" onclick="CheckMCAnswer(11,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Nombre, Direcci&#x00F3;n y C&#x00F3;digo</li><li id="Q_11_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_11_2_Btn" onclick="CheckMCAnswer(11,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;T&#x00ED;tulo, Duraci&#x00F3;n, Relaci&#x00F3;n con el WBS y Nivel de actividad</li></ol></li>
+<li class="QuizQuestion" id="Q_12" style="display: none;"><div class="QuestionText">Hablando de dependencia entre las actividades, &#x00BF;Qu&#x00E9; es la Dependencia Interna?</div><ol class="MCAnswers"><li id="Q_12_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_12_0_Btn" onclick="CheckMCAnswer(12,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son actividades que tienen relaciones con otras actividades, pero sus reslutados sonpropios del proyecto</li><li id="Q_12_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_12_1_Btn" onclick="CheckMCAnswer(12,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son actividades que s&#x00F3;lo se relacionan con ellas mismas</li><li id="Q_12_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_12_2_Btn" onclick="CheckMCAnswer(12,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Las dependencias internas se refieren a relaciones entre las propias actividades delproyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_13" style="display: none;"><div class="QuestionText">Hablando de estimaci&#x00F3;n de duraci&#x00F3;n de las actividades, &#x00BF;En qu&#x00E9; consiste la T&#x00E9;cnicaDelphi?</div><ol class="MCAnswers"><li id="Q_13_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_13_0_Btn" onclick="CheckMCAnswer(13,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es un proceso basado en simulaciones de duraci&#x00F3;n usando t&#x00E9;cnicas como por ejemplo Monte Carlo</li><li id="Q_13_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_13_1_Btn" onclick="CheckMCAnswer(13,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es un proceso iterativo de valoraci&#x00F3;n por parte de expertos que, en cada iteraci&#x00F3;n,valoran en funci&#x00F3;n de los resultados de la anterior</li><li id="Q_13_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_13_2_Btn" onclick="CheckMCAnswer(13,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es una t&#x00E9;cnica param&#x00E9;trica de c&#x00E1;lculo que consiste en iteraciones de c&#x00E1;lculo que van afinando la duraci&#x00F3;n de una actividad</li></ol></li>
+<li class="QuizQuestion" id="Q_14" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;l es la organizaci&#x00F3;n funcional cl&#x00E1;sica de una empresa?</div><ol class="MCAnswers"><li id="Q_14_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_14_0_Btn" onclick="CheckMCAnswer(14,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es un modelo en que cada empleado realiza una sola funci&#x00F3;n en un proyecto</li><li id="Q_14_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_14_1_Btn" onclick="CheckMCAnswer(14,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es una organizaci&#x00F3;n en base a departamentos funcionales</li><li id="Q_14_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_14_2_Btn" onclick="CheckMCAnswer(14,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es una jerarqu&#x00ED;a en la que cada empleado tiene un superior claro</li></ol></li>
+<li class="QuizQuestion" id="Q_15" style="display: none;"><div class="QuestionText">Hablando de estimaci&#x00F3;n de duraci&#x00F3;n de las actividades, &#x00BF;En qu&#x00E9; consiste la Estimaci&#x00F3;nParam&#x00E9;trica?</div><ol class="MCAnswers"><li id="Q_15_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_15_0_Btn" onclick="CheckMCAnswer(15,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La estimaci&#x00F3;n param&#x00E9;trica se basa en el uso de tablas de actividades que est&#x00E1;ncalculadas previamente</li><li id="Q_15_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_15_1_Btn" onclick="CheckMCAnswer(15,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La estimaci&#x00F3;n param&#x00E9;trica se basa en el uso de par&#x00E1;metros est&#x00E1;ndar para estimar lasduraciones</li><li id="Q_15_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_15_2_Btn" onclick="CheckMCAnswer(15,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La estimaci&#x00F3;n param&#x00E9;trica se basa en el uso de alg&#x00FA;n algoritmo de c&#x00E1;lculo que recoge informaci&#x00F3;n hist&#x00F3;rica</li></ol></li>
+<li class="QuizQuestion" id="Q_16" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;l es el concepto de &#x00E9;xito del proyecto?</div><ol class="MCAnswers"><li id="Q_16_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_16_0_Btn" onclick="CheckMCAnswer(16,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El &#x00E9;xito del proyecto consiste en que todos los requisitos se hayan implementado</li><li id="Q_16_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_16_1_Btn" onclick="CheckMCAnswer(16,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El &#x00E9;xito del proyecto se mide en t&#x00E9;rminos de que los plazos y los costes hayan sido lospactados al principio del proyecto</li><li id="Q_16_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_16_2_Btn" onclick="CheckMCAnswer(16,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El &#x00E9;xito del proyecto se mide en t&#x00E9;rminos de completar el proyecto dentro de las limitaciones de alcance, tiempo, costo, calidad, recursos y riesgo aprobado entre los directores de proyectos y la alta direcci&#x00F3;n</li></ol></li>
+<li class="QuizQuestion" id="Q_17" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;l de las siguientes afirmaciones es cierta?</div><ol class="MCAnswers"><li id="Q_17_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_17_0_Btn" onclick="CheckMCAnswer(17,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La estructura organizacional es un factor del entorno de la empresa que puede afectarla disponibilidad de recursos e influenciar como se dirigen los proyectos</li><li id="Q_17_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_17_1_Btn" onclick="CheckMCAnswer(17,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Los proyectos se realizan desde empresas con organizaciones orientadas a proyectospara empresas con organizaci&#x00F3;n funcional</li><li id="Q_17_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_17_2_Btn" onclick="CheckMCAnswer(17,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Las empresas que se dedican a realizar proyectos deben tener una estructuraorientada a proyectos, no pueden tener una estructura funcional</li></ol></li>
+<li class="QuizQuestion" id="Q_18" style="display: none;"><div class="QuestionText">Hablando de estimaci&#x00F3;n de duraci&#x00F3;n de las actividades, &#x00BF;En qu&#x00E9; consisten las T&#x00E9;cnicasde decisi&#x00F3;n por grupo?</div><ol class="MCAnswers"><li id="Q_18_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_18_0_Btn" onclick="CheckMCAnswer(18,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Este tipo de estimaci&#x00F3;n usa brainstormings o t&#x00E9;cnicas Delphi entre un grupo deexpertos, para hacer la estimaci&#x00F3;n</li><li id="Q_18_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_18_1_Btn" onclick="CheckMCAnswer(18,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es tipo de estimaci&#x00F3;n consiste en agrupar los tiempos para que tareas similares sehagan en la misma franja de proyecto</li><li id="Q_18_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_18_2_Btn" onclick="CheckMCAnswer(18,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Este tipo de estimaci&#x00F3;n forma grupos de actividades que son similares y las estimausando una t&#x00E9;cnica com&#x00FA;n</li></ol></li>
+<li class="QuizQuestion" id="Q_19" style="display: none;"><div class="QuestionText">Los procesos organizacionales que se llevan a cabo en un proyecto se pueden clasificaren...</div><ol class="MCAnswers"><li id="Q_19_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_19_0_Btn" onclick="CheckMCAnswer(19,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Inicio, Elaboraci&#x00F3;n, Construcci&#x00F3;n y Transici&#x00F3;n</li><li id="Q_19_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_19_1_Btn" onclick="CheckMCAnswer(19,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;"Inicio y planificaci&#x00F3;n", "Ejecuci&#x00F3;n, Monitorizaci&#x00F3;n y Control" y "Cierre"</li><li id="Q_19_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_19_2_Btn" onclick="CheckMCAnswer(19,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Arranque, Identificaci&#x00F3;n, Priorizaci&#x00F3;n, Monitorizaci&#x00F3;n y Control</li></ol></li>
+<li class="QuizQuestion" id="Q_20" style="display: none;"><div class="QuestionText">Hablando de actividades, &#x00BF;qu&#x00E9; son los Retardos (Lags)?</div><ol class="MCAnswers"><li id="Q_20_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_20_0_Btn" onclick="CheckMCAnswer(20,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Un retardo (Lag) es la cantidad de tiempo que una actividad puede ser retrasada conrespecto a otra que la sucede</li><li id="Q_20_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_20_1_Btn" onclick="CheckMCAnswer(20,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Un retardo (Lag) es la cantidad de tiempo que una actividad puede ser retrasada sincambiar el camino cr&#x00ED;tico</li><li id="Q_20_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_20_2_Btn" onclick="CheckMCAnswer(20,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Un retardo (Lag) es la cantidad de tiempo que una actividad puede ser retrasada conrespecto a otra que la precede</li></ol></li>
+<li class="QuizQuestion" id="Q_21" style="display: none;"><div class="QuestionText">&#x00BF;Qu&#x00E9; t&#x00E9;cnicas son habituales para hacer estimaci&#x00F3;n de recursos para las actividades?</div><ol class="MCAnswers"><li id="Q_21_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_21_0_Btn" onclick="CheckMCAnswer(21,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Identificaci&#x00F3;n, Nombre, Descripci&#x00F3;n, Precedentes y Sucesoras entre otros</li><li id="Q_21_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_21_1_Btn" onclick="CheckMCAnswer(21,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Juicio de expertos, Estimaci&#x00F3;n por analog&#x00ED;a, Estimaci&#x00F3;n param&#x00E9;trica, Estimaci&#x00F3;n detres puntos, T&#x00E9;cnicas de decisi&#x00F3;n por grupo y An&#x00E1;lisis de reservas</li><li id="Q_21_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_21_2_Btn" onclick="CheckMCAnswer(21,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Juicio de expertos, An&#x00E1;lisis alternativos, Datos de estimaci&#x00F3;n publicados, Estimaci&#x00F3;nBottom-Up y uso de Software de gesti&#x00F3;n y estimaci&#x00F3;n de proyectos</li></ol></li>
+<li class="QuizQuestion" id="Q_22" style="display: none;"><div class="QuestionText">La organizaci&#x00F3;n funcional de la empresa, &#x00BF;qu&#x00E9; permite?</div><ol class="MCAnswers"><li id="Q_22_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_22_0_Btn" onclick="CheckMCAnswer(22,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Que cada funci&#x00F3;n sea realizada por m&#x00E1;s de un departamento de la empresa</li><li id="Q_22_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_22_1_Btn" onclick="CheckMCAnswer(22,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Que cada departamento tenga asignado un solo trabajo en el proyecto</li><li id="Q_22_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_22_2_Btn" onclick="CheckMCAnswer(22,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Que cada departamento pueda realizar su trabajo independientemente de los dem&#x00E1;s</li></ol></li>
+<li class="QuizQuestion" id="Q_23" style="display: none;"><div class="QuestionText">&#x00BF;Qu&#x00E9; caracter&#x00ED;stica especial se espera de un Jefe de proyecto que tenga un alcanceglobal?</div><ol class="MCAnswers"><li id="Q_23_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_23_0_Btn" onclick="CheckMCAnswer(23,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Debe tener capacidad de liderazgo</li><li id="Q_23_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_23_1_Btn" onclick="CheckMCAnswer(23,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Debe tener competencias multiculturales</li><li id="Q_23_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_23_2_Btn" onclick="CheckMCAnswer(23,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Debe tener conocimiento de idiomas</li></ol></li>
+<li class="QuizQuestion" id="Q_24" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;l de los siguientes es un beneficio aportado al proyecto por el WBS?</div><ol class="MCAnswers"><li id="Q_24_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_24_0_Btn" onclick="CheckMCAnswer(24,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Identifica el 100% de trabajo requerido para llevar a cabo el proyecto</li><li id="Q_24_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_24_1_Btn" onclick="CheckMCAnswer(24,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Identifica el 100% de los trabajos formales del proyecto</li><li id="Q_24_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_24_2_Btn" onclick="CheckMCAnswer(24,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Identifica un alto porcentaje de los trabajos del proyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_25" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;l de los siguientes es un beneficio aportado al proyecto por el WBS?</div><ol class="MCAnswers"><li id="Q_25_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_25_0_Btn" onclick="CheckMCAnswer(25,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Ayuda a predecir la calidad del proyecto</li><li id="Q_25_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_25_1_Btn" onclick="CheckMCAnswer(25,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Permite predecir el grado de adecuaci&#x00F3;n del proyecto al objetivo</li><li id="Q_25_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_25_2_Btn" onclick="CheckMCAnswer(25,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Ayuda a establecer una correlaci&#x00F3;n de cada actividad con la meta final del proyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_26" style="display: none;"><div class="QuestionText">Hablando de estimaci&#x00F3;n de duraci&#x00F3;n de las actividades, &#x00BF;En qu&#x00E9; consiste el An&#x00E1;lisis deReservas?</div><ol class="MCAnswers"><li id="Q_26_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_26_0_Btn" onclick="CheckMCAnswer(26,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Consiste en estudiar las reservas de tiempo que se crean de manera natural al estimarmuchas actividades</li><li id="Q_26_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_26_1_Btn" onclick="CheckMCAnswer(26,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Las estimaciones pueden incluir tiempos reservados para contingencias (buffers)pensados para situaciones de riesgo en las que la duraci&#x00F3;n podr&#x00ED;a extenderse</li><li id="Q_26_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_26_2_Btn" onclick="CheckMCAnswer(26,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Consiste en poner todas las holguras juntas para producir reservas de tiempo para elproyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_27" style="display: none;"><div class="QuestionText">&#x00BF;Qu&#x00E9; es un stakeholder?</div><ol class="MCAnswers"><li id="Q_27_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_27_0_Btn" onclick="CheckMCAnswer(27,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Un stakeholder es cualquier individuo, grupo u organizaci&#x00F3;n que haya invertido dineroen el proyecto</li><li id="Q_27_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_27_1_Btn" onclick="CheckMCAnswer(27,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Un stakeholder es cualquier individuo, grupo u organizaci&#x00F3;n que pueda afectar osentirse afectado por cualquier decisi&#x00F3;n, actividad o resultado del proyecto</li><li id="Q_27_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_27_2_Btn" onclick="CheckMCAnswer(27,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Un stakeholder es cualquier individuo, grupo u organizaci&#x00F3;n que pueda sentirseafectado por aspectos socioculturales cuando el proyecto tiene caracter global</li></ol></li>
+<li class="QuizQuestion" id="Q_28" style="display: none;"><div class="QuestionText">De acuerdo a los formalismos del WBS...</div><ol class="MCAnswers"><li id="Q_28_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_28_0_Btn" onclick="CheckMCAnswer(28,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;...toda actividad estar&#x00E1; representada por una elipse</li><li id="Q_28_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_28_1_Btn" onclick="CheckMCAnswer(28,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;...toda actividad estar&#x00E1; relacionada con otra actividad en el &#x00E1;rbol</li><li id="Q_28_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_28_2_Btn" onclick="CheckMCAnswer(28,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;...toda actividad da lugar a un resultado y no hay ning&#x00FA;n resultado (a excepci&#x00F3;n delestado inicial) que no tenga una actividad previa</li></ol></li>
+<li class="QuizQuestion" id="Q_29" style="display: none;"><div class="QuestionText">Hablando de estimaci&#x00F3;n de duraci&#x00F3;n de las actividades, &#x00BF;En qu&#x00E9; consiste la Estimaci&#x00F3;nde tres puntos?</div><ol class="MCAnswers"><li id="Q_29_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_29_0_Btn" onclick="CheckMCAnswer(29,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La estimaci&#x00F3;n por tres puntos (o tres valores) se basa en hacer un c&#x00E1;lculo de tres tiposde estimaci&#x00F3;n de duraci&#x00F3;n y quedarse con la m&#x00E1;s probable</li><li id="Q_29_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_29_1_Btn" onclick="CheckMCAnswer(29,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La estimaci&#x00F3;n por tres puntos (o tres valores) se basa en hacer un c&#x00E1;lculo de tres tiposde estimaci&#x00F3;n de duraci&#x00F3;n usando t&#x00E9;cnicas de simulaci&#x00F3;n Monte Carlo</li><li id="Q_29_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_29_2_Btn" onclick="CheckMCAnswer(29,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La estimaci&#x00F3;n por tres puntos (o tres valores) se basa en hacer un c&#x00E1;lculo de tres tiposde estimaci&#x00F3;n de duraci&#x00F3;n: m&#x00E1;s probable, optimista y pesimista</li></ol></li>
+<li class="QuizQuestion" id="Q_30" style="display: none;"><div class="QuestionText">Las relaciones entre los elementos de un WBS, &#x00BF;de qu&#x00E9; tipos son?</div><ol class="MCAnswers"><li id="Q_30_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_30_0_Btn" onclick="CheckMCAnswer(30,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son del tipo "est&#x00E1; compuesto de" cuando se va de la ra&#x00ED;z a las hojas y del tipo "formaparte de" cuando se va hacia la ra&#x00ED;z</li><li id="Q_30_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_30_1_Btn" onclick="CheckMCAnswer(30,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son del tipo "pertenece a" para determinar qu&#x00E9; productos forman parte de otros m&#x00E1;scomplejos</li><li id="Q_30_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_30_2_Btn" onclick="CheckMCAnswer(30,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son del tipo "Ser&#x00E1; realizado por" para determinar qu&#x00E9; trabajos realizar&#x00E1;n qu&#x00E9;personas en el proyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_31" style="display: none;"><div class="QuestionText">&#x00BF;C&#x00F3;mo se comportan los stakeholders respecto a la responsabilidad y autoridad en leproyecto?</div><ol class="MCAnswers"><li id="Q_31_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_31_0_Btn" onclick="CheckMCAnswer(31,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Tiene autoridad, pero no responsabilidad en el proyecto</li><li id="Q_31_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_31_1_Btn" onclick="CheckMCAnswer(31,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Tienen un papel bien definido con un nivel de responsabilidad y autoridadperfectamente acotado durante todo el proyecto</li><li id="Q_31_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_31_2_Btn" onclick="CheckMCAnswer(31,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Tienen diferentes niveles de responsabilidad y autoridad que pueden varia a lo largodel proyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_32" style="display: none;"><div class="QuestionText">Dentro de las actividades de los procesos organizacionales &#x00BF;Qu&#x00E9; actividades est&#x00E1;nrelacionadas con la Ejecuci&#x00F3;n, Monitorizaci&#x00F3;n y control?</div><ol class="MCAnswers"><li id="Q_32_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_32_0_Btn" onclick="CheckMCAnswer(32,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Definici&#x00F3;n de plantillas</li><li id="Q_32_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_32_1_Btn" onclick="CheckMCAnswer(32,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Requisitos gu&#x00ED;as para le cierre de proyecto</li><li id="Q_32_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_32_2_Btn" onclick="CheckMCAnswer(32,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Procesos financieros y gesti&#x00F3;n de riesgos</li></ol></li>
+<li class="QuizQuestion" id="Q_33" style="display: none;"><div class="QuestionText">De acuerdo al PMBOK, &#x00BF;Qu&#x00E9; documentos acompa&#x00F1;an al WBS?</div><ol class="MCAnswers"><li id="Q_33_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_33_0_Btn" onclick="CheckMCAnswer(33,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Alcance del proyecto, WBS y Diccionario WBS</li><li id="Q_33_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_33_1_Btn" onclick="CheckMCAnswer(33,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El presupuesto y la estimaci&#x00F3;n de personal</li><li id="Q_33_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_33_2_Btn" onclick="CheckMCAnswer(33,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El presupuesto y el Alcance del proyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_34" style="display: none;"><div class="QuestionText">Hablando de actividades, &#x00BF;qu&#x00E9; significa la precedencia SS?</div><ol class="MCAnswers"><li id="Q_34_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_34_0_Btn" onclick="CheckMCAnswer(34,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Start-to-Start, es una relaci&#x00F3;n que indica que una actividad no puede comenzar hastaque otra concreta haya terminado</li><li id="Q_34_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_34_1_Btn" onclick="CheckMCAnswer(34,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Start-to-Start, es una relaci&#x00F3;n que indica que una actividad no puede comenzar hastaque otra concreta haya comenzado</li><li id="Q_34_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_34_2_Btn" onclick="CheckMCAnswer(34,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Start-to-Start, es una relaci&#x00F3;n que indica que una actividad varias actividades debebcomenzar juntas</li></ol></li>
+<li class="QuizQuestion" id="Q_35" style="display: none;"><div class="QuestionText">&#x00BF;Qu&#x00E9; es un hito (milestone) en un proyecto?</div><ol class="MCAnswers"><li id="Q_35_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_35_0_Btn" onclick="CheckMCAnswer(35,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Un hito en un punto o evento importante en el proyecto</li><li id="Q_35_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_35_1_Btn" onclick="CheckMCAnswer(35,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Un hito es una marca del proyecto</li><li id="Q_35_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_35_2_Btn" onclick="CheckMCAnswer(35,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Un hito es una actividad m&#x00E1;s con una duraci&#x00F3;n de un d&#x00ED;a</li></ol></li>
+<li class="QuizQuestion" id="Q_36" style="display: none;"><div class="QuestionText">Hablando de estimaci&#x00F3;n de duraci&#x00F3;n de las actividades, &#x00BF;En qu&#x00E9; consiste la Estimaci&#x00F3;n Param&#x00E9;trica?</div><ol class="MCAnswers"><li id="Q_36_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_36_0_Btn" onclick="CheckMCAnswer(36,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La estimaci&#x00F3;n param&#x00E9;trica se basa en el uso de tablas de actividades que est&#x00E1;ncalculadas previamente</li><li id="Q_36_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_36_1_Btn" onclick="CheckMCAnswer(36,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La estimaci&#x00F3;n param&#x00E9;trica se basa en el uso de alg&#x00FA;n algoritmo de c&#x00E1;lculo que recoge informaci&#x00F3;n hist&#x00F3;rica</li><li id="Q_36_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_36_2_Btn" onclick="CheckMCAnswer(36,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La estimaci&#x00F3;n param&#x00E9;trica se basa en el uso de par&#x00E1;metros est&#x00E1;ndar para estimar lasduraciones</li></ol></li>
+<li class="QuizQuestion" id="Q_37" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;les de los siguientes son activos de los procesos de una organizaci&#x00F3;n?</div><ol class="MCAnswers"><li id="Q_37_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_37_0_Btn" onclick="CheckMCAnswer(37,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Planes, Procesos, Pol&#x00ED;ticas, Procedimientos y Conocimiento corporativo</li><li id="Q_37_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_37_1_Btn" onclick="CheckMCAnswer(37,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Financieros y Humanos</li><li id="Q_37_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_37_2_Btn" onclick="CheckMCAnswer(37,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Ecol&#x00F3;gicos, Globalizadores y Socioculturales</li></ol></li>
+<li class="QuizQuestion" id="Q_38" style="display: none;"><div class="QuestionText">&#x00BF;Qu&#x00E9; t&#x00E9;cnicas son habituales para hacer estimaci&#x00F3;n de la duraci&#x00F3;n de las actividades?</div><ol class="MCAnswers"><li id="Q_38_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_38_0_Btn" onclick="CheckMCAnswer(38,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Juicio de expertos, Estimaci&#x00F3;n por analog&#x00ED;a, Estimaci&#x00F3;n param&#x00E9;trica, Estimaci&#x00F3;n detres puntos, T&#x00E9;cnicas de decisi&#x00F3;n por grupo y An&#x00E1;lisis de reservas</li><li id="Q_38_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_38_1_Btn" onclick="CheckMCAnswer(38,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Juicio de expertos, An&#x00E1;lisis alternativos, Datos de estimaci&#x00F3;n publicados, Estimaci&#x00F3;nBottom-Up y uso de Software de gesti&#x00F3;n y estimaci&#x00F3;n de proyectos</li><li id="Q_38_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_38_2_Btn" onclick="CheckMCAnswer(38,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Identificaci&#x00F3;n, Nombre, Descripci&#x00F3;n, Precedentes y Sucesoras entre otros</li></ol></li>
+<li class="QuizQuestion" id="Q_39" style="display: none;"><div class="QuestionText">Hablando de dependencia entre las actividades, &#x00BF;Qu&#x00E9; es la Dependencia Externa?</div><ol class="MCAnswers"><li id="Q_39_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_39_0_Btn" onclick="CheckMCAnswer(39,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son actividades que tienen resultados m&#x00E1;s all&#x00E1; del alcance del proyecto</li><li id="Q_39_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_39_1_Btn" onclick="CheckMCAnswer(39,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son actividades que no pertenecen al proyecto, aunque se ejecuten al mismo tiempo</li><li id="Q_39_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_39_2_Btn" onclick="CheckMCAnswer(39,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son actividades que incluyen relaciones a actividades externas no pertenecientes alproyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_40" style="display: none;"><div class="QuestionText">Hablando de actividades, &#x00BF;qu&#x00E9; significa la precedencia FF?</div><ol class="MCAnswers"><li id="Q_40_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_40_0_Btn" onclick="CheckMCAnswer(40,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Finish-to-Finish, es una relaci&#x00F3;n de precedencia que indica que una actividad no puedeterminar hasta que lo haya hecho otra concreta</li><li id="Q_40_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_40_1_Btn" onclick="CheckMCAnswer(40,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Finish-to-Finish, es una relaci&#x00F3;n de precedencia que indica que varias actividadestienen que terminar juntas</li><li id="Q_40_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_40_2_Btn" onclick="CheckMCAnswer(40,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Finish-to-Finish, es una relaci&#x00F3;n de precedencia que indica que una actividad no puedeterminar hasta que otra concreta haya comenzado</li></ol></li>
+<li class="QuizQuestion" id="Q_41" style="display: none;"><div class="QuestionText">&#x00BF;Qu&#x00E9; es una tarea hamaca?</div><ol class="MCAnswers"><li id="Q_41_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_41_0_Btn" onclick="CheckMCAnswer(41,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Una tarea hamaca est&#x00E1; definida por un conjunto de tareas detalladas</li><li id="Q_41_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_41_1_Btn" onclick="CheckMCAnswer(41,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Una tarea hamaca es una tarea con holguras en el WBS</li><li id="Q_41_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_41_2_Btn" onclick="CheckMCAnswer(41,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Una tarea hamaca es una tarea que forma parte de una s&#x00FA;per tarea</li></ol></li>
+<li class="QuizQuestion" id="Q_42" style="display: none;"><div class="QuestionText">&#x00BF;Es posible obtener informaci&#x00F3;n importante de la Arquitectura del Software paraconstruir el WBS?</div><ol class="MCAnswers"><li id="Q_42_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_42_0_Btn" onclick="CheckMCAnswer(42,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;No, la arquitectura y la gesti&#x00F3;n de proyecto son fases diferentes</li><li id="Q_42_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_42_1_Btn" onclick="CheckMCAnswer(42,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Si, el proyecto y la arquitectura tienen los mismos stakeholders</li><li id="Q_42_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_42_2_Btn" onclick="CheckMCAnswer(42,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Si, a partir de algunos estilos de disposici&#x00F3;n</li></ol></li>
+<li class="QuizQuestion" id="Q_43" style="display: none;"><div class="QuestionText">La organizaci&#x00F3;n y estilos culturales de una empresa, &#x00BF;Qu&#x00E9; experiencias comunesincluyen?</div><ol class="MCAnswers"><li id="Q_43_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_43_0_Btn" onclick="CheckMCAnswer(43,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Visi&#x00F3;n, misi&#x00F3;n, valores, creencia y expectativas</li><li id="Q_43_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_43_1_Btn" onclick="CheckMCAnswer(43,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Resultados empresariales, posici&#x00F3;n de mercado y marketing corporativo</li><li id="Q_43_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_43_2_Btn" onclick="CheckMCAnswer(43,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Departamentos, oficinas, locales, etc.</li></ol></li>
+<li class="QuizQuestion" id="Q_44" style="display: none;"><div class="QuestionText">Hablando de dependencia entre las actividades, &#x00BF;Qu&#x00E9; es la Dependencia Obligatoria?</div><ol class="MCAnswers"><li id="Q_44_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_44_0_Btn" onclick="CheckMCAnswer(44,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son actividades que deben comenzar obligatoriamente al mismo tiempo</li><li id="Q_44_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_44_1_Btn" onclick="CheckMCAnswer(44,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son actividades que debe realizarse obligatoriamente, bien sea por cuestionescontractuales o porque la naturaleza del trabajo las impone</li><li id="Q_44_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_44_2_Btn" onclick="CheckMCAnswer(44,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son actividades que obligan al equipo a una atenci&#x00F3;n especial</li></ol></li>
+<li class="QuizQuestion" id="Q_45" style="display: none;"><div class="QuestionText">&#x00BF;Qu&#x00E9; es el OBS?</div><ol class="MCAnswers"><li id="Q_45_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_45_0_Btn" onclick="CheckMCAnswer(45,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Organization Breakdown Structure, representa las responsabilidades sobre larealizaci&#x00F3;n de actividades del proyecto.</li></ol></li>
+<li class="QuizQuestion" id="Q_46" style="display: none;"><div class="QuestionText">&#x00BF;Qu&#x00E9; es el WBS?</div><ol class="MCAnswers"><li id="Q_46_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_46_0_Btn" onclick="CheckMCAnswer(46,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Work Breakdown Structure, se utiliza para representar la estructura de descomposici&#x00F3;ndel trabajo.</li></ol></li>
+<li class="QuizQuestion" id="Q_47" style="display: none;"><div class="QuestionText">Seg&#x00FA;n PMBOK, el plan de gesti&#x00F3;n del cronograma puede establecer&#x2026;</div><ol class="MCAnswers"><li id="Q_47_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_47_0_Btn" onclick="CheckMCAnswer(47,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;&#x2026;El desarrollo de modelo de cronograma del proyecto.</li></ol></li>
+<li class="QuizQuestion" id="Q_48" style="display: none;"><div class="QuestionText">Hablando de actividades &#x00BF;Qu&#x00E9; significa precedencia FS?</div><ol class="MCAnswers"><li id="Q_48_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_48_0_Btn" onclick="CheckMCAnswer(48,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Finish-to-Start, es una relaci&#x00F3;n de precedencia entre las actividades que indica que unaactividad no puede empezar hasta que otra concreta haya terminado.</li></ol></li>
+<li class="QuizQuestion" id="Q_49" style="display: none;"><div class="QuestionText">Hablando de estimaci&#x00F3;n de recursos para las actividades &#x00BF;En qu&#x00E9; consiste la existenciade Datos de estimaci&#x00F3;n publicados?</div><ol class="MCAnswers"><li id="Q_49_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_49_0_Btn" onclick="CheckMCAnswer(49,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Consiste en actividades que, por experiencia previa, se tienen tabuladas y se puedecalcular f&#x00E1;cilmente los recursos que precisan aplicando dichas tablas.</li></ol></li>
+<li class="QuizQuestion" id="Q_50" style="display: none;"><div class="QuestionText">&#x00BF;En qu&#x00E9; consiste la definici&#x00F3;n del cronograma del proyecto?</div><ol class="MCAnswers"><li id="Q_50_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_50_0_Btn" onclick="CheckMCAnswer(50,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es el proceso de an&#x00E1;lisis de secuencias de actividades, duraciones, requisitos de recursosy restricciones del propio cronograma para crear un modelo de programaci&#x00F3;n delproyecto.</li><li id="Q_50_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_50_1_Btn" onclick="CheckMCAnswer(50,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es el proceso de creacion de actividades y su descomposicion en tareas</li><li id="Q_50_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_50_2_Btn" onclick="CheckMCAnswer(50,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es un proceso de colocar todas las actividades en un margen de tiempo definido a priori para el proyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_51" style="display: none;"><div class="QuestionText">&#x00BF;Qu&#x00E9; es el RBS?</div><ol class="MCAnswers"><li id="Q_51_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_51_0_Btn" onclick="CheckMCAnswer(51,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Resource Breakdown Structure, es una lista jer&#x00E1;rquica de los recursos necesarios parala gesti&#x00F3;n y control del proyecto</li><li id="Q_51_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_51_1_Btn" onclick="CheckMCAnswer(51,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Rescue Breakdown Structure, es la lista de recursos de que dispone el equipo pararecuperar situaciones complejas en el proyecto</li><li id="Q_51_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_51_2_Btn" onclick="CheckMCAnswer(51,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Relational Breakdown Structure, es un grafo representando las relaciones entre lasdiferentes actividades del proyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_52" style="display: none;"><div class="QuestionText">La planificaci&#x00F3;n temporal del proyecto es...</div><ol class="MCAnswers"><li id="Q_52_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_52_0_Btn" onclick="CheckMCAnswer(52,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;...un proceso en el que se estima el tiempo que llevar&#x00E1; la gesti&#x00F3;n del proyecto</li><li id="Q_52_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_52_1_Btn" onclick="CheckMCAnswer(52,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;...un proceso en el cual se establecen pol&#x00ED;ticas, procedimientos y documentaci&#x00F3;n paraplanificar, desarrollar, gestionar ejecutar y controlar los tiempos del proyecto</li><li id="Q_52_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_52_2_Btn" onclick="CheckMCAnswer(52,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;...un proceso de c&#x00E1;lculo de los tiempos de cada actividad de gesti&#x00F3;n del proyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_53" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;les de los siguientes son elementos culturales de una empresa?</div><ol class="MCAnswers"><li id="Q_53_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_53_0_Btn" onclick="CheckMCAnswer(53,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Oficinas, despachos, recursos y centros de desarrollo</li><li id="Q_53_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_53_1_Btn" onclick="CheckMCAnswer(53,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Personas, recursos financieros y disponibilidad</li><li id="Q_53_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_53_2_Btn" onclick="CheckMCAnswer(53,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Visiones compartidas, valores, creencias y expectativas</li></ol></li>
+<li class="QuizQuestion" id="Q_54" style="display: none;"><div class="QuestionText">&#x00BF;C&#x00F3;mo se comportan los stakeholders respecto a la responsabilidad y autoridad en elproyecto?</div><ol class="MCAnswers"><li id="Q_54_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_54_0_Btn" onclick="CheckMCAnswer(54,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Tienen diferentes niveles de responsabilidad y autoridad que pueden variar a lo largodel proyecto.</li></ol></li>
+<li class="QuizQuestion" id="Q_55" style="display: none;"><div class="QuestionText">Hablando de estimaci&#x00F3;n de recursos para las actividades, &#x00BF;En qu&#x00E9; consisten los An&#x00E1;lisisalternativos?</div><ol class="MCAnswers"><li id="Q_55_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_55_0_Btn" onclick="CheckMCAnswer(55,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Consiste en recalcular toda la estimaci&#x00F3;n de recuros con otro m&#x00E9;todos difenrente delusado por primera vez</li><li id="Q_55_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_55_1_Btn" onclick="CheckMCAnswer(55,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son m&#x00E9;todos experimentales que est&#x00E1;n poco probados en la industria</li><li id="Q_55_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_55_2_Btn" onclick="CheckMCAnswer(55,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son habitualmente m&#x00E9;todos ad-hoc de cualquier tipo que ayudan a la estimaci&#x00F3;n</li></ol></li>
+<li class="QuizQuestion" id="Q_56" style="display: none;"><div class="QuestionText">&#x00BF;Qu&#x00E9; caracter&#x00ED;stica especial se espera de un Jefe de proyecto que tenga un alcance global?</div><ol class="MCAnswers"><li id="Q_56_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_56_0_Btn" onclick="CheckMCAnswer(56,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Debe tener competencias multiculturales Correcta</li><li id="Q_56_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_56_1_Btn" onclick="CheckMCAnswer(56,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Debe tener capacidad de liderazgo</li><li id="Q_56_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_56_2_Btn" onclick="CheckMCAnswer(56,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Debe tener conocimiento de idiomas</li></ol></li>
+<li class="QuizQuestion" id="Q_57" style="display: none;"><div class="QuestionText">Seg&#x00FA;n el (PMBOK, 2013), el plan de gesti&#x00F3;n del cronograma puede establecer...</div><ol class="MCAnswers"><li id="Q_57_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_57_0_Btn" onclick="CheckMCAnswer(57,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;. ...el desarrollo de modelo de cronograma del proyecto Correcta</li><li id="Q_57_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_57_1_Btn" onclick="CheckMCAnswer(57,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;...el criterio de las horas de trabajo por jornada</li><li id="Q_57_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_57_2_Btn" onclick="CheckMCAnswer(57,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;..el criterio del tiempo a utilizar en los procesos de desarrollo de software</li></ol></li>
+<li class="QuizQuestion" id="Q_58" style="display: none;"><div class="QuestionText">Seg&#x00FA;n el (PMBOK, 2013), el plan de gesti&#x00F3;n del cronograma puede establecer...</div><ol class="MCAnswers"><li id="Q_58_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_58_0_Btn" onclick="CheckMCAnswer(58,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;...el desarrollo de modelo de cronograma del proyecto Correcta</li><li id="Q_58_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_58_1_Btn" onclick="CheckMCAnswer(58,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;..el criterio del tiempo a utilizar en los procesos de desarrollo de software</li><li id="Q_58_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_58_2_Btn" onclick="CheckMCAnswer(58,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;..el criterio de las horas de trabajo por jornada</li></ol></li>
+<li class="QuizQuestion" id="Q_59" style="display: none;"><div class="QuestionText">&#x00BF;Qu&#x00E9; componentes tiene una EDT?</div><ol class="MCAnswers"><li id="Q_59_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_59_0_Btn" onclick="CheckMCAnswer(59,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;WBS, OBS, PBS y RBS</li><li id="Q_59_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_59_1_Btn" onclick="CheckMCAnswer(59,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;ID, T&#x00ED;tulo, Nombre, Precedentes y Sucesoras</li><li id="Q_59_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_59_2_Btn" onclick="CheckMCAnswer(59,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Objetivos del proyecto, Componentes, Productos, Entregables, Paquetes de trabajo y<br />Actividades Correcta</li></ol></li>
+<li class="QuizQuestion" id="Q_60" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;l de las siguientes es un lista de atributos de una actividad?</div><ol class="MCAnswers"><li id="Q_60_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_60_0_Btn" onclick="CheckMCAnswer(60,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Nombre, Direcci&#x00F3;n y C&#x00F3;digo</li><li id="Q_60_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_60_1_Btn" onclick="CheckMCAnswer(60,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Tipo, Clase, Aspecto y Evaluaci&#x00F3;n</li><li id="Q_60_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_60_2_Btn" onclick="CheckMCAnswer(60,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;T&#x00ED;tulo, Duraci&#x00F3;n, Relaci&#x00F3;n con el WBS y Nivel de actividad Correcta</li></ol></li>
+<li class="QuizQuestion" id="Q_61" style="display: none;"><div class="QuestionText">&#x00BF;Que se entiende por gobernabiliad del proyecto?</div><ol class="MCAnswers"><li id="Q_61_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_61_0_Btn" onclick="CheckMCAnswer(61,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La gobernabilidad del proyecto es una funci&#x00F3;n de supervisi&#x00F3;n que est&#x00E1; alineada con el modelo de gobierno de la organizaci&#x00F3;n, y que abarca el ciclo de vida del proyecto Correcta</li><li id="Q_61_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_61_1_Btn" onclick="CheckMCAnswer(61,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es un proceso de otorgamiento de responsabilidades al Jefe de Proyecto para que &#x00E9;ste ejerza su funci&#x00F3;n de gobierno</li><li id="Q_61_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_61_2_Btn" onclick="CheckMCAnswer(61,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es un proceso de nombramiento de responsables del proyecto para que existan responsables del gobierno</li></ol></li>
+<li class="QuizQuestion" id="Q_62" style="display: none;"><div class="QuestionText">Hablando de estimaci&#x00F3;n de recursos para las actividades, &#x00BF;En qu&#x00E9; consiste la existencia de Datos de estimaci&#x00F3;n publicados?</div><ol class="MCAnswers"><li id="Q_62_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_62_0_Btn" onclick="CheckMCAnswer(62,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Consiste en tener listas de precios para las actividades</li><li id="Q_62_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_62_1_Btn" onclick="CheckMCAnswer(62,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Consiste en publicar los precios de las actividades del proyecto para que el cliente sepa los costes a priori</li><li id="Q_62_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_62_2_Btn" onclick="CheckMCAnswer(62,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Consiste en actividades que, por experiencia previa, se tienen tabuladas y se puede calcualr f&#x00E1;cilmente los recusos que precisan aplicando dichas tablas</li></ol></li></ol>
+
+
+
+</div>
+
+
+
+<div class="Feedback" id="FeedbackDiv">
+<div class="FeedbackText" id="FeedbackContent"></div>
+<button id="FeedbackOKButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="HideFeedback(); return false;">&nbsp;OK&nbsp;</button>
+</div>
+
+<!-- BeginBottomNavButtons -->
+
+
+<div class="NavButtonBar" id="BottomNavBar">
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="history.back(); return false;">&lt;=</button>
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)"  onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='index.htm'; return false;"> Index </button>
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='tema_4.htm'; return false;">=&gt;</button>
+
+
+</div>
+
+
+
+<!-- EndBottomNavButtons -->
+
+<!-- BeginSubmissionForm -->
+
+<!-- EndSubmissionForm -->
+
+</body>
+
+</html>

@@ -1,0 +1,2819 @@
+<?xml version="1.0"?>
+       <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "xhtml11.dtd">
+       <html xmlns="http://www.w3.org/1999/xhtml"
+             xml:lang="en"><head><meta name="author" content="Created with Hot Potatoes by Half-Baked Software"></meta><meta name="keywords" content="Hot Potatoes, Hot Potatoes, Half-Baked Software, Windows, University of Victoria"></meta>
+
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<meta name="DC:Title" content="Tema 9: Seguimiento y Control" />
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+
+<title>
+Tema 9: Seguimiento y Control
+</title>
+
+<!-- Made with executable version 6.3 Release 0 Build 5 -->
+
+<!-- The following insertion allows you to add your own code directly to this head tag from the configuration screen -->
+
+
+
+<style type="text/css">
+
+/*  hp6.cs_                   */ 
+/*  Facelift Responsive      */
+/*  7 February 2014         */  
+/*  This version 1.3 - 24 March 2016 - Add responsive iframe */
+
+/* This is a modified CSS3 stylesheet for rounded corners of buttons,
+the layout boxes and the input boxes in the exercise,
+as well as dropshadows on buttons and draggable cards in JMix drag and drop */
+
+/* Removed all browser specific -moz -khtml -webkit  24 March 2016 */
+
+/* Stan Bogdanov  */
+/* stanbogdanov@yahoo.com     */
+/* http://ewbooks.info/hotpot */
+   
+
+/* Elements in square brackets are replaced by data based on configuration settings when the exercise is built. */
+
+/* Resetting */
+/* set image and video max width to 100% */
+img,
+video,
+object,
+embed {
+	max-width: 100%;
+	height: auto;
+	/*width: auto\9; The CSS validator doesn't like this*/ /* for ie8 but should we care about IE8, when IE11 has been around for quite a lot ?*/
+} 
+
+	.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+	margin-left:auto;margin-right:auto;text-align:center; /* Stan: Comment out this line if you don't want the video to be centered */
+}
+
+	.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* BeginCorePageCSS */
+
+/* Made with executable version 6.3 Release 0 Build 5 */
+
+
+/* Hack to hide a nested Quicktime player from IE, which can't handle it. */
+* html object.MediaPlayerNotForIE {
+	display: none;
+}
+
+body{
+	font-family: arial,helvetica,sans-serif;
+	background-color: #ffffff;
+	color: #000000;
+ 
+	margin-right: 1%;
+	margin-left: 1%;
+	font-size: small;
+}
+
+p{
+	text-align: left;
+	margin: 0px;
+	font-size: 100%;
+}
+
+table,div,span,td{
+	font-size: 100%;
+	color: #000000;
+}
+
+div.Titles{
+	padding: 0.5em;
+	text-align: center;
+	color: #000000;
+}
+
+button{
+	font-family: arial,helvetica,sans-serif;
+	font-size: 100%;
+	display: inline;
+/* Stan_Rounded buttons */
+	border-radius: 5px;
+	padding: 4px 17px;
+	margin:2px;
+/* Stan_Rounded buttons  END*/
+}
+
+button:link,
+button:visited,
+button:hover,
+button:focus,
+button:active {
+	outline: none;
+}
+
+
+.ExerciseTitle{
+	font-size: 100%;
+	color: #000000;
+}
+
+.ExerciseSubtitle{
+	font-size: 100%;
+	color: #000000;
+}
+
+div.StdDiv{
+	background-color: #dddddd;
+	text-align: center;
+	font-size: 100%;
+	color: #000000;
+	padding: 0.5em;
+	border: 1px solid #ccc;
+	margin-bottom: 1px;
+/*Stan Rounded corners of layout boxes */	
+	border-radius: 5px;
+/*Stan Rounded corners of layout boxes */	
+}
+
+/* EndCorePageCSS */
+
+.RTLText{
+	text-align: right;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", arial,helvetica,sans-serif; 
+}
+
+.CentredRTLText{
+	text-align: center;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", arial,helvetica,sans-serif; 
+}
+
+button p.RTLText{
+	text-align: center;
+}
+
+.RTLGapBox{
+	text-align: right;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Times New Roman", arial,helvetica,sans-serif;
+}
+
+.Guess{
+	font-weight: bold;
+}
+
+.CorrectAnswer{
+	font-weight: bold;
+}
+
+div#Timer{
+	padding: 0.25em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: #000000;
+
+}
+
+span#TimerText{
+	padding: 0.25em;
+	border-width: 1px;
+	border-style: solid;
+	font-weight: bold;
+	display: none;
+	color: #000000;
+/* Stan  rounded corners of timer */	
+  border-radius: 10px;
+  /* Stan  rounded corners of timer end */
+}
+
+span.Instructions{
+
+}
+
+div.ExerciseText{
+
+}
+
+.FeedbackText, .FeedbackText span.CorrectAnswer, .FeedbackText span.Guess, .FeedbackText span.Answer{
+	color: #000000;
+}
+
+.LeftItem{
+	font-size: 100%;
+	color: #000000;
+	text-align: left;
+}
+
+.RightItem{
+	font-weight: bold;
+	font-size: 100%;
+	color: #000000;
+}
+
+span.CorrectMark{
+
+}
+
+
+input, textarea{
+	font-family: Verdana,Geneva,Arial,sans-serif;
+	font-size: 100%;
+
+/* Stan_rounded border of input boxes and textarea */
+	border-radius: 5px;
+	padding: 5px;
+	border:1px solid silver;
+/* Stan_rounded border of input boxes and textarea END */
+}
+
+/* Stan_rounded focus border of input boxes and textarea */
+
+input:focus, textarea:focus {
+	outline: none; 
+	border-radius: 5px;
+	padding: 5px;
+	border:1px solid silver;
+/* Stan rounded focus border of input boxes and textarea end 8 December 2012 */	
+
+
+/* Stan inset dropshade of input boxes and textarea */
+	box-shadow: -1px -1px 5px #888;
+/* Stan inset dropshade of input boxes and textarea end 8 December 2012 */
+	}
+	
+select{
+	font-size: 100%;
+	/* Stan - Rounded menu */
+	border-radius: 5px;
+	padding: 3px 2px 3px 5px;
+	border: 1px solid silver;
+/* Stan - Rounded menu END */
+}
+
+select:focus {
+outline:none;
+}
+
+div.Feedback {
+	background-color: #ffffff;
+	left: 33%;
+	width: 34%;
+	top: 33%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+	position: absolute;
+	display: none;
+	font-size: 100%;
+/* Stan_rounded border of feedback box */
+	border-radius: 5px;
+	padding: 5px;
+/* Stan_rounded border of fixed box END */
+	
+}
+
+
+
+
+div.ExerciseDiv{
+	color: #000000;
+}
+
+/* JMatch flashcard styles */
+table.FlashcardTable{
+	background-color: transparent;
+	color: #000000;
+	border-color: #000000;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	width: 90%;
+	position: relative;
+	text-align: center;
+	padding: 0px;
+}
+
+table.FlashcardTable tr{
+	border-style: none;
+	margin: 0px;
+	padding: 0px;
+	background-color: #dddddd;
+}
+
+table.FlashcardTable td.Showing{
+	font-size: 140%;
+	text-align: center;
+	width: 50%;
+	display: table-cell;
+	padding: 2em;
+	margin: 0px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: silver;
+	color: #000000;
+	background-color: #dddddd;
+}
+
+table.FlashcardTable td.Hidden{
+	display: none;
+}
+
+/* JMix styles */
+div#SegmentDiv{
+	margin-top: 2em;
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+a.ExSegment{
+	font-size: 120%;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+}
+
+span.RemainingWordList{
+	font-style: italic;
+}
+
+div.DropLine {
+	position: absolute;
+	text-align: center;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	width: 80%;
+}
+
+/* JCloze styles */
+
+.ClozeWordList{
+	text-align: center;
+	font-weight: bold;
+}
+
+div.ClozeBody{
+	text-align: left;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	line-height: 2.0
+}
+
+span.GapSpan{
+	font-weight: bold;
+}
+
+/* JCross styles */
+
+table.CrosswordGrid{
+	margin: auto auto 1em auto;
+	border-collapse: collapse;
+	padding: 0px;
+	background-color: #000000;
+}
+
+table.CrosswordGrid tbody tr td{
+	width: 1.5em;
+	height: 1.5em;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 140%;
+	padding: 1px;
+	margin: 0px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	color: #000000;
+}
+
+table.CrosswordGrid span{
+	color: #000000;
+}
+
+table.CrosswordGrid td.BlankCell{
+	background-color: #000000;
+	color: #000000;
+}
+
+table.CrosswordGrid td.LetterOnlyCell{
+	text-align: center;
+	vertical-align: middle;
+	background-color: #ffffff;
+	color: #000000;
+	font-weight: bold;
+}
+
+table.CrosswordGrid td.NumLetterCell{
+	text-align: left;
+	vertical-align: top;
+	background-color: #ffffff;
+	color: #000000;
+	padding: 1px;
+	font-weight: bold;
+}
+
+.NumLetterCellText{
+	cursor: pointer;
+	color: #000000;
+}
+
+.GridNum{
+	vertical-align: super;
+	font-size: 66%;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+}
+
+.GridNum:hover, .GridNum:visited{
+	color: #000000;
+}
+
+table#Clues{
+	margin: auto;
+	vertical-align: top;
+}
+
+table#Clues td{
+	vertical-align: top;
+}
+
+table.ClueList{
+  margin: auto;
+}
+
+td.ClueNum{
+	text-align: right;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+td.Clue{
+	text-align: left;
+}
+
+div#ClueEntry{
+	text-align: left;
+	margin-bottom: 1em;
+}
+
+/* Keypad styles */
+
+div.Keypad{
+	text-align: center;
+	display: none; /* initially hidden, shown if needed */
+	margin-bottom: 0.5em;
+}
+
+div.Keypad button{
+	font-family: arial,helvetica,sans-serif;
+	font-size: 100%;
+	background-color: #ffffff;
+	color: #000000;
+	width: 2em;
+}
+
+/* JQuiz styles */
+
+div.QuestionNavigation{
+	text-align: center;
+}
+
+.QNum{
+	margin: 0em 1em 0.5em 1em;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+textarea{
+	font-family: arial,helvetica,sans-serif;
+	border: 1px solid #ccc;
+}
+
+.QuestionText{
+	text-align: left;
+	margin: 0px;
+	font-size: 100%;
+}
+
+.Answer{
+	font-size: 100%;
+	letter-spacing: 0.1em;
+}
+
+.PartialAnswer{
+	font-size: 100%;
+	letter-spacing: 0.1em;
+	color: #000000;
+}
+
+.Highlight{
+	color: #000000;
+	background-color: gold;
+	font-weight: bold;
+	font-size: 100%;
+}
+
+ol.QuizQuestions{
+	text-align: left;
+	list-style-type: none;
+}
+
+li.QuizQuestion{
+	padding: 1em;
+	border-color: #ccc;
+}
+
+ol.MCAnswers{
+	text-align: left;
+	list-style-type: upper-alpha;
+	padding: 1em;
+}
+
+ol.MCAnswers li{
+	margin-bottom: 1em;
+}
+
+ol.MSelAnswers{
+	text-align: left;
+	list-style-type: lower-alpha;
+	padding: 1em;
+}
+
+div.ShortAnswer{
+	padding: 1em;
+}
+
+.FuncButton {
+	text-align: center;
+	border: 1px solid silver;
+	margin-right:2px;
+
+	border-left-color: #eeeeee;
+	border-top-color: #eeeeee;
+	border-right-color: #6e6e6e;
+	border-bottom-color: #6e6e6e;
+	color: #000000;
+	background-color: #dddddd;
+
+
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+/* Stan Button Shadow Dec 4 2012*/	
+	box-shadow: 2px 2px 5px #888;
+/* Stan Button Shadow end */
+}
+
+.FuncButtonUp {
+	text-align: center;
+	border: 1px solid silver;
+	margin-right:2px;
+
+	border-left-color: #eeeeee;
+	border-top-color: #eeeeee;
+	border-right-color: #6e6e6e;
+	border-bottom-color: #6e6e6e;
+
+	background-color: #000000;
+	color: #dddddd;
+
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+
+/* Stan Button Shadow */	
+	box-shadow: -2px -2px 5px #888;
+/* Stan Button Shadow end  Dec 4 2012*/
+}
+
+.FuncButtonDown {
+	text-align: center;
+	border:1px solid silver;
+	margin-right:2px;
+
+	border-left-color: #6e6e6e;
+	border-top-color: #6e6e6e;
+	border-right-color: #eeeeee;
+	border-bottom-color: #eeeeee;
+	background-color: #000000;
+	color: #dddddd;
+
+
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+
+/* Stan Button Shadow Dec 4 2012 */	
+	box-shadow: -2px -2px 5px #888;
+/* Stan Button Shadow end */
+}
+
+/*BeginNavBarStyle*/
+
+div.NavButtonBar{
+	background-color: #000000;
+	border: 1px solid #000000;
+	text-align: center;
+	margin: 2px 0px 2px 0px;
+	clear: both;
+	font-size: 100%;
+
+/* Stan Rounded corner of Nav Bar 	*/
+	border-radius: 5px;
+/* Stan Rounded corner of Nav Bar  end */
+/* Stan NavBar Shadow Dec 6 2012 	*/
+	box-shadow: -2px -2px 5px #888;
+/* Stan navBar Shadow end  Dec 6 2012 */
+padding:1px;
+}
+
+.NavButton {
+	border: 1px solid silver;
+	
+	border-left-color: #7f7f7f;
+	border-top-color: #7f7f7f;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	background-color: #000000;
+	color: #ffffff;
+
+
+	cursor: pointer;	
+/* Stan Shadow on buttons Dec 4 2012 	*/
+	box-shadow: 2px 2px 5px #000000;
+/* Stan Shadow on buttons end */
+}
+
+.NavButtonUp {
+	border:1px solid silver;
+
+	border-left-color: #7f7f7f;
+	border-top-color: #7f7f7f;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	color: #000000;
+	background-color: #dddddd;
+
+	cursor: pointer;	
+/* Stan Shadow on buttons Dec 4 2012 */
+	box-shadow: -2px -2px 5px #000000;
+/* Stan Shadow on buttons end */
+}
+
+.NavButtonDown {
+	border: 1px solid silver;
+
+	border-left-color: #000000;
+	border-top-color: #000000;
+	border-right-color: #7f7f7f;
+	border-bottom-color: #7f7f7f;
+	color: #000000;
+	background-color: #dddddd;
+
+	cursor: pointer;
+/* Stan Shadow on buttons Dec 4 2012 */
+	box-shadow: -2px -2px 5px #000000;
+/* Stan Shadow on buttons end */	
+}
+
+/*EndNavBarStyle*/
+
+a{
+	color: #0000ff;
+}
+
+a:visited{
+	color: #ff00ff;
+}
+
+a:hover{
+	color: #0000ff;
+}
+
+div.CardStyle {
+	position: absolute;
+	font-family: arial,helvetica,sans-serif;
+	font-size: 100%;
+	padding: 5px;
+	border: 1px solid silver;
+	color: #000000;
+	background-color: #dddddd;
+	left: -50px;
+	top: -50px;
+	overflow: visible;
+	
+/* Stan_rounded border of cards */
+	border-radius: 5px;
+/* Stan_rounded border of cards END */
+
+/* Stan card Shadow Dec 4 2012 */
+	box-shadow: -2px -2px 2px #888;
+/* Stan card Shadow end */
+}
+
+.rtl{
+	text-align: right;
+	font-size: 140%;
+}
+
+
+/* Responsive */
+
+
+/****************
+smaller than 980
+*****************/
+@media screen and (max-width: 980px) {
+
+/* embedded videos */
+	.video embed,
+	.video object {
+		width: 100%;
+		height: auto;
+		min-height: 300px;
+	}
+	
+	.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+	margin-left:auto;margin-right:auto;text-align:center; /* Stan: Comment out this line if you don't want the video to be centered */
+}
+
+	.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div.Feedback {
+	background-color: #ffffff;
+	left: 2%;
+	top: 1%;
+	width: 95%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+	position: absolute;
+	display: none;
+	font-size: 100%;
+/* Stan_rounded border of feedback box */
+	border-radius: 5px;
+	padding: 5px;
+/* Stan_rounded border of fixed box END */
+	
+	}
+}
+
+/************************************************************************************
+smaller than 650
+*************************************************************************************/
+@media screen and (max-width: 650px) {
+
+	/* embedded videos */
+	.video embed,
+	.video object {
+		min-height: 250px;
+	}
+
+	.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+	margin-left:auto;margin-right:auto;text-align:center; /* Stan: Comment out this line if you don't want the video to be centered */
+}
+
+	.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+	div.LeftContainer{
+		border-style: none;
+		padding: 2px 0px 2px 0px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+	div.RightContainer{
+		border-style: none;
+		padding: 2px 0px 2px 0px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+div.Feedback {
+	background-color: #ffffff;
+	left: 2%;
+	top: 1%;
+	width: 93%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+	position: absolute;
+	display: none;
+	font-size: 100%;
+/* Stan_rounded border of feedback box */
+	border-radius: 5px;
+	padding: 5px;
+/* Stan_rounded border of fixed box END */
+	
+}
+	
+	}
+
+/************************************************************************************
+smaller than 560
+*************************************************************************************/
+@media screen and (max-width: 480px) {
+
+	/* disable webkit text size adjust (for iPhone) */
+	html {
+		-webkit-text-size-adjust: none;
+	}
+	
+	/* embedded videos */
+	.video embed,
+	.video object {
+		min-height: 250px;
+	}
+	
+	.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+	margin-left:auto;margin-right:auto;text-align:center; /* Stan: Comment out this line if you don't want the video to be centered */
+}
+
+	.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+	
+	div.LeftContainer{
+		border-style: none;
+		padding: 2px 0px 2px 0px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+	div.RightContainer{
+		border-style: none;
+		padding: 2px 0px 2px 0px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+div.Feedback {
+	background-color: #ffffff;
+	left: 2%;
+	top: 1%;
+	width: 92%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+	position: absolute;
+	display: none;
+	font-size: 100%;
+/* Stan_rounded border of feedback box */
+	border-radius: 5px;
+	padding: 5px;
+/* Stan_rounded border of fixed box END */
+	
+	}
+}
+
+/************************************************************************************
+smaller than 480
+*************************************************************************************/
+@media screen  and (max-width: 360px) {
+      
+	/* disable webkit text size adjust (for iPhone) */
+	html {
+		-webkit-text-size-adjust: none;
+	}
+	
+	/* embedded videos */
+	.video embed,
+	.video object {
+		min-height: 250px;
+	}
+	
+	.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+	margin-left:auto;margin-right:auto;text-align:center; /* Stan: Comment out this line if you don't want the video to be centered */
+}
+
+	.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+	
+	
+	div.LeftContainer{
+		border-style: none;
+		padding: 2px 0px 2px 0px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+	div.RightContainer{
+		border-style: none;
+		padding: 2px 0px 2px 0px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+div.Feedback {
+	background-color: #ffffff;
+	left: 2%;
+	top: 1%;
+	width: 92%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+	position: absolute;
+	display: none;
+	font-size: 100%;
+/* Stan_rounded border of feedback box */
+	border-radius: 5px;
+	padding: 5px;
+/* Stan_rounded border of fixed box END */
+	
+	}
+}
+	
+
+@media screen and (max-width: 320px) {
+    
+	/* disable webkit text size adjust (for iPhone) */
+	html {
+		-webkit-text-size-adjust: none;
+	}
+	
+	/* embedded videos */
+	.video embed,
+	.video object {
+		min-height: 250px;
+	}
+	
+	.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+	margin-left:auto;margin-right:auto;text-align:center; /* Stan: Comment out this line if you don't want the video to be centered */
+}
+
+	.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+	div.LeftContainer{
+		border-style: none;
+		padding: 2px 0px 2px 0px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+	div.RightContainer{
+		border-style: none;
+		padding: 2px 0px 2px 0px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+div.Feedback {
+	background-color: #ffffff;
+	left: 2%;
+	top: 1%;
+	width: 92%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+	position: absolute;
+	display: none;
+	font-size: 100%;
+/* Stan_rounded border of feedback box */
+	border-radius: 5px;
+	padding: 5px;
+/* Stan_rounded border of fixed box END */
+	
+	}
+      }
+	  
+
+/* ============================================== */
+/* Smaller devices                                */
+/* Android Portrait                       240x320 */
+/* ============================================== */
+@media screen and (max-width:240px) {
+
+	
+	/* embedded videos */
+	.video embed,
+	.video object {
+		min-height: 250px;
+	}
+	
+		
+	.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+	margin-left:auto;margin-right:auto;text-align:center; /* Stan: Comment out this line if you don't want the video to be centered */
+}
+
+	.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+	
+	div.LeftContainer{
+		border-style: none;
+		padding: 2px 0px 2px 0px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+	div.RightContainer{
+		border-style: none;
+		padding: 2px 0px 2px 0px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+div.Feedback {
+	background-color: #ffffff;
+	left: 2%;
+	top: 1%;
+	width: 92%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+	position: absolute;
+	display: none;
+	font-size: 100%;
+/* Stan_rounded border of feedback box */
+	border-radius: 5px;
+	padding: 5px;
+/* Stan_rounded border of fixed box END */
+	
+	}
+}
+
+
+</style>
+
+<script type="text/javascript">
+
+//<![CDATA[
+
+<!--
+
+
+
+
+function Client(){
+//if not a DOM browser, hopeless
+	this.min = false; if (document.getElementById){this.min = true;};
+
+	this.ua = navigator.userAgent;
+	this.name = navigator.appName;
+	this.ver = navigator.appVersion;  
+
+//Get data about the browser
+	this.mac = (this.ver.indexOf('Mac') != -1);
+	this.win = (this.ver.indexOf('Windows') != -1);
+
+//Look for Gecko
+	this.gecko = (this.ua.indexOf('Gecko') > 1);
+	if (this.gecko){
+		this.geckoVer = parseInt(this.ua.substring(this.ua.indexOf('Gecko')+6, this.ua.length));
+//		if (this.geckoVer < 20020000){this.min = false;}
+	}
+	
+//Look for Firebird
+	this.firebird = (this.ua.indexOf('Firebird') > 1);
+	
+//Look for Safari
+	this.safari = (this.ua.indexOf('Safari') > 1);
+	if (this.safari){
+		this.gecko = false;
+	}
+	
+//Look for IE
+	this.ie = (this.ua.indexOf('MSIE') > 0);
+	if (this.ie){
+		this.ieVer = parseFloat(this.ua.substring(this.ua.indexOf('MSIE')+5, this.ua.length));
+		if (this.ieVer < 5.5){this.min = false;}
+	}
+	
+//Look for Opera
+	this.opera = (this.ua.indexOf('Opera') > 0);
+	if (this.opera){
+		this.operaVer = parseFloat(this.ua.substring(this.ua.indexOf('Opera')+6, this.ua.length));
+		if (this.operaVer < 7.04){this.min = false;}
+	}
+	if (this.min == false){
+//		alert('Your browser may not be able to handle this page.');
+	}
+	
+//Special case for the horrible ie5mac
+	this.ie5mac = (this.ie&&this.mac&&(this.ieVer<6));
+}
+
+var C = new Client();
+
+//for (prop in C){
+//	alert(prop + ': ' + C[prop]);
+//}
+
+
+
+//CODE FOR HANDLING NAV BUTTONS AND FUNCTION BUTTONS
+
+//[strNavBarJS]
+function NavBtnOver(Btn){
+	if (Btn.className != 'NavButtonDown'){Btn.className = 'NavButtonUp';}
+}
+
+function NavBtnOut(Btn){
+	Btn.className = 'NavButton';
+}
+
+function NavBtnDown(Btn){
+	Btn.className = 'NavButtonDown';
+}
+//[/strNavBarJS]
+
+function FuncBtnOver(Btn){
+	if (Btn.className != 'FuncButtonDown'){Btn.className = 'FuncButtonUp';}
+}
+
+function FuncBtnOut(Btn){
+	Btn.className = 'FuncButton';
+}
+
+function FuncBtnDown(Btn){
+	Btn.className = 'FuncButtonDown';
+}
+
+function FocusAButton(){
+	if (document.getElementById('CheckButton1') != null){
+		document.getElementById('CheckButton1').focus();
+	}
+	else{
+		if (document.getElementById('CheckButton2') != null){
+			document.getElementById('CheckButton2').focus();
+		}
+		else{
+			document.getElementsByTagName('button')[0].focus();
+		}
+	}
+}
+
+
+
+
+//CODE FOR HANDLING DISPLAY OF POPUP FEEDBACK BOX
+
+var topZ = 1000;
+
+function ShowMessage(Feedback){
+	var Output = Feedback + '<br /><br />';
+	document.getElementById('FeedbackContent').innerHTML = Output;
+	var FDiv = document.getElementById('FeedbackDiv');
+	topZ++;
+	FDiv.style.zIndex = topZ;
+	FDiv.style.top = TopSettingWithScrollOffset(30) + 'px';
+
+	FDiv.style.display = 'block';
+
+	ShowElements(false, 'input');
+	ShowElements(false, 'select');
+	ShowElements(false, 'object');
+	ShowElements(true, 'object', 'FeedbackContent');
+
+//Focus the OK button
+	setTimeout("document.getElementById('FeedbackOKButton').focus()", 50);
+	
+//
+}
+
+function ShowElements(Show, TagName, ContainerToReverse){
+// added third argument to allow objects in the feedback box to appear
+//IE bug -- hide all the form elements that will show through the popup
+//FF on Mac bug : doesn't redisplay objects whose visibility is set to visible
+//unless the object's display property is changed
+
+	//get container object (by Id passed in, or use document otherwise)
+	TopNode = document.getElementById(ContainerToReverse);
+	var Els;
+	if (TopNode != null) {
+		Els = TopNode.getElementsByTagName(TagName);
+	} else {
+		Els = document.getElementsByTagName(TagName);
+	}
+
+	for (var i=0; i<Els.length; i++){
+		if (TagName == "object") {
+			//manipulate object elements in all browsers
+			if (Show == true){
+				Els[i].style.visibility = 'visible';
+				//get Mac FireFox to manipulate display, to force screen redraw
+				if (C.mac && C.gecko) {Els[i].style.display = '';}
+			}
+			else{
+				Els[i].style.visibility = 'hidden';
+				if (C.mac && C.gecko) {Els[i].style.display = 'none';}
+			}
+		} 
+		else {
+			// tagName is either input or select (that is, Form Elements)
+			// ie6 has a problem with Form elements, so manipulate those
+			if (C.ie) {
+				if (C.ieVer < 7) {
+					if (Show == true){
+						Els[i].style.visibility = 'visible';
+					}
+					else{
+						Els[i].style.visibility = 'hidden';
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+function HideFeedback(){
+	document.getElementById('FeedbackDiv').style.display = 'none';
+	ShowElements(true, 'input');
+	ShowElements(true, 'select');
+	ShowElements(true, 'object');
+	if (Finished == true){
+		Finish();
+	}
+}
+
+
+//GENERAL UTILITY FUNCTIONS AND VARIABLES
+
+//PAGE DIMENSION FUNCTIONS
+function PageDim(){
+//Get the page width and height
+	this.W = 600;
+	this.H = 400;
+	this.W = document.getElementsByTagName('body')[0].clientWidth;
+	this.H = document.getElementsByTagName('body')[0].clientHeight;
+}
+
+var pg = null;
+
+function GetPageXY(El) {
+	var XY = {x: 0, y: 0};
+	while(El){
+		XY.x += El.offsetLeft;
+		XY.y += El.offsetTop;
+		El = El.offsetParent;
+	}
+	return XY;
+}
+
+function GetScrollTop(){
+	if (typeof(window.pageYOffset) == 'number'){
+		return window.pageYOffset;
+	}
+	else{
+		if ((document.body)&&(document.body.scrollTop)){
+			return document.body.scrollTop;
+		}
+		else{
+			if ((document.documentElement)&&(document.documentElement.scrollTop)){
+				return document.documentElement.scrollTop;
+			}
+			else{
+				return 0;
+			}
+		}
+	}
+}
+
+function GetViewportHeight(){
+	if (typeof window.innerHeight != 'undefined'){
+		return window.innerHeight;
+	}
+	else{
+		if (((typeof document.documentElement != 'undefined')&&(typeof document.documentElement.clientHeight !=
+     'undefined'))&&(document.documentElement.clientHeight != 0)){
+			return document.documentElement.clientHeight;
+		}
+		else{
+			return document.getElementsByTagName('body')[0].clientHeight;
+		}
+	}
+}
+
+function TopSettingWithScrollOffset(TopPercent){
+	var T = Math.floor(GetViewportHeight() * (TopPercent/100));
+	return GetScrollTop() + T; 
+}
+
+//CODE FOR AVOIDING LOSS OF DATA WHEN BACKSPACE KEY INVOKES history.back()
+var InTextBox = false;
+
+function SuppressBackspace(e){ 
+	if (InTextBox == true){return;}
+	if (C.ie) {
+		thisKey = window.event.keyCode;
+	}
+	else {
+		thisKey = e.keyCode;
+	}
+
+	var Suppress = false;
+
+	if (thisKey == 8) {
+		Suppress = true;
+	}
+
+	if (Suppress == true){
+		if (C.ie){
+			window.event.returnValue = false;	
+			window.event.cancelBubble = true;
+		}
+		else{
+			e.preventDefault();
+		}
+	}
+}
+
+if (C.ie){
+	document.attachEvent('onkeydown',SuppressBackspace);
+	window.attachEvent('onkeydown',SuppressBackspace);
+}
+else{
+	if (window.addEventListener){
+		window.addEventListener('keypress',SuppressBackspace,false);
+	}
+}
+
+function ReduceItems(InArray, ReduceToSize){
+	var ItemToDump=0;
+	var j=0;
+	while (InArray.length > ReduceToSize){
+		ItemToDump = Math.floor(InArray.length*Math.random());
+		InArray.splice(ItemToDump, 1);
+	}
+}
+
+function Shuffle(InArray){
+	var Num;
+	var Temp = new Array();
+	var Len = InArray.length;
+
+	var j = Len;
+
+	for (var i=0; i<Len; i++){
+		Temp[i] = InArray[i];
+	}
+
+	for (i=0; i<Len; i++){
+		Num = Math.floor(j  *  Math.random());
+		InArray[i] = Temp[Num];
+
+		for (var k=Num; k < (j-1); k++) {
+			Temp[k] = Temp[k+1];
+		}
+		j--;
+	}
+	return InArray;
+}
+
+function WriteToInstructions(Feedback) {
+	document.getElementById('InstructionsDiv').innerHTML = Feedback;
+
+}
+
+
+
+
+function EscapeDoubleQuotes(InString){
+	return InString.replace(/"/g, '&quot;')
+}
+
+function TrimString(InString){
+        var x = 0;
+
+        if (InString.length != 0) {
+                while ((InString.charAt(InString.length - 1) == '\u0020') || (InString.charAt(InString.length - 1) == '\u000A') || (InString.charAt(InString.length - 1) == '\u000D')){
+                        InString = InString.substring(0, InString.length - 1)
+                }
+
+                while ((InString.charAt(0) == '\u0020') || (InString.charAt(0) == '\u000A') || (InString.charAt(0) == '\u000D')){
+                        InString = InString.substring(1, InString.length)
+                }
+
+                while (InString.indexOf('  ') != -1) {
+                        x = InString.indexOf('  ')
+                        InString = InString.substring(0, x) + InString.substring(x+1, InString.length)
+                 }
+
+                return InString;
+        }
+
+        else {
+                return '';
+        }
+}
+
+function FindLongest(InArray){
+	if (InArray.length < 1){return -1;}
+
+	var Longest = 0;
+	for (var i=1; i<InArray.length; i++){
+		if (InArray[i].length > InArray[Longest].length){
+			Longest = i;
+		}
+	}
+	return Longest;
+}
+
+//UNICODE CHARACTER FUNCTIONS
+function IsCombiningDiacritic(CharNum){
+	var Result = (((CharNum >= 0x0300)&&(CharNum <= 0x370))||((CharNum >= 0x20d0)&&(CharNum <= 0x20ff)));
+	Result = Result || (((CharNum >= 0x3099)&&(CharNum <= 0x309a))||((CharNum >= 0xfe20)&&(CharNum <= 0xfe23)));
+	return Result;
+}
+
+function IsCJK(CharNum){
+	return ((CharNum >= 0x3000)&&(CharNum < 0xd800));
+}
+
+//SETUP FUNCTIONS
+//BROWSER WILL REFILL TEXT BOXES FROM CACHE IF NOT PREVENTED
+function ClearTextBoxes(){
+	var NList = document.getElementsByTagName('input');
+	for (var i=0; i<NList.length; i++){
+		if ((NList[i].id.indexOf('Guess') > -1)||(NList[i].id.indexOf('Gap') > -1)){
+			NList[i].value = '';
+		}
+		if (NList[i].id.indexOf('Chk') > -1){
+			NList[i].checked = '';
+		}
+	}
+}
+
+//EXTENSION TO ARRAY OBJECT
+function Array_IndexOf(Input){
+	var Result = -1;
+	for (var i=0; i<this.length; i++){
+		if (this[i] == Input){
+			Result = i;
+		}
+	}
+	return Result;
+}
+Array.prototype.indexOf = Array_IndexOf;
+
+//IE HAS RENDERING BUG WITH BOTTOM NAVBAR
+function RemoveBottomNavBarForIE(){
+	if ((C.ie)&&(document.getElementById('Reading') != null)){
+		if (document.getElementById('BottomNavBar') != null){
+			document.getElementById('TheBody').removeChild(document.getElementById('BottomNavBar'));
+		}
+	}
+}
+
+
+
+
+//HOTPOTNET-RELATED CODE
+
+var HPNStartTime = (new Date()).getTime();
+var SubmissionTimeout = 30000;
+var Detail = ''; //Global that is used to submit tracking data
+
+function Finish(){
+//If there's a form, fill it out and submit it
+	if (document.store != null){
+		Frm = document.store;
+		Frm.starttime.value = HPNStartTime;
+		Frm.endtime.value = (new Date()).getTime();
+		Frm.mark.value = Score;
+		Frm.detail.value = Detail;
+		Frm.submit();
+	}
+}
+
+
+
+
+
+//JQUIZ CORE JAVASCRIPT CODE
+
+var CurrQNum = 0;
+var CorrectIndicator = ':-)';
+var IncorrectIndicator = 'X';
+var YourScoreIs = 'Your score is ';
+
+//New for 6.2.2.0
+var CompletedSoFar = 'Questions completed so far: ';
+var ExerciseCompleted = 'You have completed the exercise.';
+var ShowCompletedSoFar = true;
+
+var ContinuousScoring = true;
+var CorrectFirstTime = 'Questions answered correctly first time: ';
+var ShowCorrectFirstTime = true;
+var ShuffleQs = false;
+var ShuffleAs = false;
+var DefaultRight = 'Correct!';
+var DefaultWrong = 'Sorry! Try again.';
+var QsToShow = 69;
+var Score = 0;
+var Finished = false;
+var Qs = null;
+var QArray = new Array();
+var ShowingAllQuestions = false;
+var ShowAllQuestionsCaption = 'Show all questions';
+var ShowOneByOneCaption = 'Show questions one by one';
+var State = new Array();
+var Feedback = '';
+var TimeOver = false;
+var strInstructions = '';
+var Locked = false;
+
+//The following variable can be used to add a message explaining that
+//the question is finished, so no further marking will take place.
+var strQuestionFinished = '';
+
+function CompleteEmptyFeedback(){
+	var QNum, ANum;
+	for (QNum=0; QNum<I.length; QNum++){
+//Only do this if not multi-select
+		if (I[QNum][2] != '3'){
+  		for (ANum = 0; ANum<I[QNum][3].length; ANum++){
+  			if (I[QNum][3][ANum][1].length < 1){
+  				if (I[QNum][3][ANum][2] > 0){
+  					I[QNum][3][ANum][1] = DefaultRight;
+  				}
+  				else{
+  					I[QNum][3][ANum][1] = DefaultWrong;
+  				}
+  			}
+  		}
+		}
+	}
+}
+
+function SetUpQuestions(){
+	var AList = new Array(); 
+	var QList = new Array();
+	var i, j;
+	Qs = document.getElementById('Questions');
+	while (Qs.getElementsByTagName('li').length > 0){
+		QList.push(Qs.removeChild(Qs.getElementsByTagName('li')[0]));
+	}
+	var DumpItem = 0;
+	if (QsToShow > QList.length){
+		QsToShow = QList.length;
+	}
+	while (QsToShow < QList.length){
+		DumpItem = Math.floor(QList.length*Math.random());
+		for (j=DumpItem; j<(QList.length-1); j++){
+			QList[j] = QList[j+1];
+		}
+		QList.length = QList.length-1;
+	}
+	if (ShuffleQs == true){
+		QList = Shuffle(QList);
+	}
+	if (ShuffleAs == true){
+		var As;
+		for (var i=0; i<QList.length; i++){
+			As = QList[i].getElementsByTagName('ol')[0];
+			if (As != null){
+  			AList.length = 0;
+				while (As.getElementsByTagName('li').length > 0){
+					AList.push(As.removeChild(As.getElementsByTagName('li')[0]));
+				}
+				AList = Shuffle(AList);
+				for (j=0; j<AList.length; j++){
+					As.appendChild(AList[j]);
+				}
+			}
+		}
+	}
+	
+	for (i=0; i<QList.length; i++){
+		Qs.appendChild(QList[i]);
+		QArray[QArray.length] = QList[i];
+	}
+
+//Show the first item
+	QArray[0].style.display = '';
+	
+//Now hide all except the first item
+	for (i=1; i<QArray.length; i++){
+		QArray[i].style.display = 'none';
+	}		
+	SetQNumReadout();
+	
+	SetFocusToTextbox();
+}
+
+function SetFocusToTextbox(){
+//if there's a textbox, set the focus in it
+	if (QArray[CurrQNum].getElementsByTagName('input')[0] != null){
+		QArray[CurrQNum].getElementsByTagName('input')[0].focus();
+//and show a keypad if there is one
+		if (document.getElementById('CharacterKeypad') != null){
+			document.getElementById('CharacterKeypad').style.display = 'block';
+		}
+	}
+	else{
+  	if (QArray[CurrQNum].getElementsByTagName('textarea')[0] != null){
+  		QArray[CurrQNum].getElementsByTagName('textarea')[0].focus();	
+//and show a keypad if there is one
+			if (document.getElementById('CharacterKeypad') != null){
+				document.getElementById('CharacterKeypad').style.display = 'block';
+			}
+		}
+//This added for 6.0.4.11: hide accented character buttons if no textbox
+		else{
+			if (document.getElementById('CharacterKeypad') != null){
+				document.getElementById('CharacterKeypad').style.display = 'none';
+			}
+		}
+	}
+}
+
+function ChangeQ(ChangeBy){
+//The following line prevents moving to another question until the current
+//question is answered correctly. Uncomment it to enable this behaviour. 
+//	if (State[CurrQNum][0] == -1){return;}
+	if (((CurrQNum + ChangeBy) < 0)||((CurrQNum + ChangeBy) >= QArray.length)){return;}
+	QArray[CurrQNum].style.display = 'none';
+	CurrQNum += ChangeBy;
+	QArray[CurrQNum].style.display = '';
+//Undocumented function added 10/12/2004
+	ShowSpecialReadingForQuestion();
+	SetQNumReadout();
+	SetFocusToTextbox();
+}
+
+var HiddenReadingShown = false;
+function ShowSpecialReadingForQuestion(){
+//Undocumented function for showing specific reading text elements which change with each question
+//Added on 10/12/2004
+	if (document.getElementById('ReadingDiv') != null){
+		if (HiddenReadingShown == true){
+			document.getElementById('ReadingDiv').innerHTML = '';
+		}
+		if (QArray[CurrQNum] != null){
+//Fix for 6.0.4.25
+			var Children = QArray[CurrQNum].getElementsByTagName('div');
+			for (var i=0; i<Children.length; i++){
+			if (Children[i].className=="HiddenReading"){
+					document.getElementById('ReadingDiv').innerHTML = Children[i].innerHTML;
+					HiddenReadingShown = true;
+//Hide the ShowAllQuestions button to avoid confusion
+					if (document.getElementById('ShowMethodButton') != null){
+						document.getElementById('ShowMethodButton').style.display = 'none';
+					}
+				}
+			}	
+		}
+	}
+}
+
+function SetQNumReadout(){
+	document.getElementById('QNumReadout').innerHTML = (CurrQNum+1) + ' / ' + QArray.length;
+	if ((CurrQNum+1) >= QArray.length){
+		if (document.getElementById('NextQButton') != null){
+			document.getElementById('NextQButton').style.visibility = 'hidden';
+		}
+	}
+	else{
+		if (document.getElementById('NextQButton') != null){
+			document.getElementById('NextQButton').style.visibility = 'visible';
+		}
+	}
+	if (CurrQNum <= 0){
+		if (document.getElementById('PrevQButton') != null){
+			document.getElementById('PrevQButton').style.visibility = 'hidden';
+		}
+	}
+	else{
+		if (document.getElementById('PrevQButton') != null){
+			document.getElementById('PrevQButton').style.visibility = 'visible';
+		}
+	}
+}
+
+var I=new Array();
+I[0]=new Array();I[0][0]=100;
+I[0][1]='';
+I[0][2]='0';
+I[0][3]=new Array();
+I[0][3][0]=new Array('Es la diferencia entre la l\u00EDnea base del proyecto y el trabajo realizado realmente (CV = BCWP - BCWS)','',0,0,1);
+I[0][3][1]=new Array('Es la diferencia entre lo que ha costado realmente y el trabajo realizado realmente (CV = ACWP - BCWS)','',0,0,1);
+I[0][3][2]=new Array('Es la diferencia entre la l\u00EDnea base del poryecto y lo que ha costado realmente (CV = BCWP - ACWP)','',1,100,1);
+I[1]=new Array();I[1][0]=100;
+I[1][1]='';
+I[1][2]='0';
+I[1][3]=new Array();
+I[1][3][0]=new Array('Compara el coste presupuestado con el coste real, CPI = BCWP / ACWP','',1,100,1);
+I[1][3][1]=new Array('Compara la variaci\u00F3n de costes con la variaci\u00F3n de tiempos, CPI = CV / SV','',0,0,1);
+I[1][3][2]=new Array('Compara la programaci\u00F3n planeada con la ejecuci\u00F3n real, CPI = BCWP / BCWS','',0,0,1);
+I[2]=new Array();I[2][0]=100;
+I[2][1]='';
+I[2][2]='0';
+I[2][3]=new Array();
+I[2][3][0]=new Array('Project Management Interface System','',0,0,1);
+I[2][3][1]=new Array('Project Management Infrastructure System','',0,0,1);
+I[2][3][2]=new Array('Project Management Information System','',1,100,1);
+I[3]=new Array();I[3][0]=100;
+I[3][1]='';
+I[3][2]='0';
+I[3][3]=new Array();
+I[3][3][0]=new Array('Asegurar el cumplimiento del desempe\u00F1o','',0,0,1);
+I[3][3][1]=new Array('Asegurar la integridad de la informaci\u00F3n','',1,100,1);
+I[3][3][2]=new Array('Asegurar la buena direcci\u00F3n del proyecto','',0,0,1);
+I[4]=new Array();I[4][0]=100;
+I[4][1]='';
+I[4][2]='0';
+I[4][3]=new Array();
+I[4][3][0]=new Array('Es positiva cuando el proyecto ha sido terminado en los plazos previstos','',0,0,1);
+I[4][3][1]=new Array('Es positiva cuando el proyecto es rentable','',0,0,1);
+I[4][3][2]=new Array('Es positiva cuando el proyecto alcanza sus objetivos','',1,100,1);
+I[5]=new Array();I[5][0]=100;
+I[5][1]='';
+I[5][2]='0';
+I[5][3]=new Array();
+I[5][3][0]=new Array('Es la diferencia entre lo que ha costado realmente y el trabajo realizado realmente (SV = ACWP - BCWS)','',0,0,1);
+I[5][3][1]=new Array('Es la diferencia entre la l\u00EDnea base del proyecto y el trabajo realizado realmente (SV = BCWP - BCWS)','',1,100,1);
+I[5][3][2]=new Array('Es la diferencia entre la l\u00EDnea base del proyecto y lo que ha costado realmente (SV = BCWP - ACWP)','',0,0,1);
+I[6]=new Array();I[6][0]=100;
+I[6][1]='';
+I[6][2]='0';
+I[6][3]=new Array();
+I[6][3][0]=new Array('En el control de la ejecuci\u00F3n del proyecto para verificar que el proyecto no sufre retrasos','',0,0,1);
+I[6][3][1]=new Array('En la supervisi\u00F3n continua o peri\u00F3dica de la ejecuci\u00F3n de un proyecto para asegurarse de que se desarrolla de acuerdo al plan previsto','',1,100,1);
+I[6][3][2]=new Array('En la revisi\u00F3n de la ejecuci\u00F3n del proyecto para conseguir que se desarrolle dentro de los costes acordados','',0,0,1);
+I[7]=new Array();I[7][0]=100;
+I[7][1]='';
+I[7][2]='0';
+I[7][3]=new Array();
+I[7][3][0]=new Array('Es el valor del coste de trabaja hasta el momento, representa cu\u00E1nto ha costado el proyecto hasta el momento actual','',1,100,1);
+I[7][3][1]=new Array('Es la l\u00EDnea base, representa cuanto trabajo deber\u00EDa estar hecho al coste presupuestado','',0,0,1);
+I[7][3][2]=new Array('Es el valor del trabajo realizado, representa cuanto trabajo est\u00E1 terminado en el momento actual','',0,0,1);
+I[8]=new Array();I[8][0]=100;
+I[8][1]='';
+I[8][2]='0';
+I[8][3]=new Array();
+I[8][3][0]=new Array('El alcance, el coste, el cronograma y la calidad','',0,0,1);
+I[8][3][1]=new Array('Los diagramas de Pareto y lo sgr\u00E1ficos ABC','',0,0,1);
+I[8][3][2]=new Array('El SIGP y los cuadros de mandos','',1,100,1);
+I[9]=new Array();I[9][0]=100;
+I[9][1]='';
+I[9][2]='0';
+I[9][3]=new Array();
+I[9][3][0]=new Array('Los recursos para el proyecto van disminuyendo hasta el punto en que no hay actividad','',1,100,1);
+I[9][3][1]=new Array('El proyecto termina porque no se adapta al presupuesto','',0,0,1);
+I[9][3][2]=new Array('Esta terminaci\u00F3n ocurre cuando se termina el proyecto porque se anula su presupuesto','',0,0,1);
+I[10]=new Array();I[10][0]=100;
+I[10][1]='';
+I[10][2]='0';
+I[10][3]=new Array();
+I[10][3][0]=new Array('Es un proceso provocado por una saturaci\u00F3n de trabajo en el proyecto y las tareas siguientes son atropelladas por las anteriores que no han terminado','',0,0,1);
+I[10][3][1]=new Array('Es el momento en que el proyecto ya no es viable y se estrella (crashing) obligando a abandonarlo','',0,0,1);
+I[10][3][2]=new Array('En replanificar el proyecto con el objetivo de acelerarlo para que se pueda terminar en una fecha anterior a la prevista','',1,100,1);
+I[11]=new Array();I[11][0]=100;
+I[11][1]='';
+I[11][2]='0';
+I[11][3]=new Array();
+I[11][3][0]=new Array('Coste presupuestado del trabajo realizado','',1,100,1);
+I[11][3][1]=new Array('Coste presupuestado del trabajo progamado','',0,0,1);
+I[11][3][2]=new Array('Coste real del trabajo realizado','',0,0,1);
+I[12]=new Array();I[12][0]=100;
+I[12][1]='';
+I[12][2]='0';
+I[12][3]=new Array();
+I[12][3][0]=new Array('Es el valor del trabajo realizado, representa cuanto trabajo est\u00E1 terminado en el momento actual','',1,100,1);
+I[12][3][1]=new Array('Es el valor del coste de trabaja hasta el momento, representa cu\u00E1nto ha costado el proyecto hasta el momento actual','',0,0,1);
+I[12][3][2]=new Array('Es la l\u00EDnea base, representa cuanto trabajo deber\u00EDa estar hecho al coste presupuestado','',0,0,1);
+I[13]=new Array();I[13][0]=100;
+I[13][1]='';
+I[13][2]='0';
+I[13][3]=new Array();
+I[13][3][0]=new Array('Tener una lista de distribuci\u00F3n de documentos','',0,0,1);
+I[13][3][1]=new Array('Tener una codificaci\u00F3n de los equipos destinados al proyecto','',0,0,1);
+I[13][3][2]=new Array('Evitar t\u00E9rminos confusos','',1,100,1);
+I[14]=new Array();I[14][0]=100;
+I[14][1]='';
+I[14][2]='0';
+I[14][3]=new Array();
+I[14][3][0]=new Array('Que no se puede formar al usuario en un entorno para, posteriormente, volver a formarle en el mismo entorno pero con modificaciones','',1,100,1);
+I[14][3][1]=new Array('Que no puede obligarse a usuario a hacer operaciones que pongan en peligro su integridad','',0,0,1);
+I[14][3][2]=new Array('QUe la formaci\u00F3n debe realizarse en un curso que integre todos los aspectos y no en diferentes cursos','',0,0,1);
+I[15]=new Array();I[15][0]=100;
+I[15][1]='';
+I[15][2]='0';
+I[15][3]=new Array();
+I[15][3][0]=new Array('El estado de desempe\u00F1o del proyecto en un momento dado','',0,0,1);
+I[15][3][1]=new Array('El tiempo hasta el final del proyecto','',0,0,1);
+I[15][3][2]=new Array('El consumo de reservas del camino cr\u00EDtico','',1,100,1);
+I[16]=new Array();I[16][0]=100;
+I[16][1]='';
+I[16][2]='0';
+I[16][3]=new Array();
+I[16][3][0]=new Array('Coste real del trabajo realizado','',1,100,1);
+I[16][3][1]=new Array('Coste presupuestado del trabajo progamado','',0,0,1);
+I[16][3][2]=new Array('Coste presupuestado del trabajo realizado','',0,0,1);
+I[17]=new Array();I[17][0]=100;
+I[17][1]='';
+I[17][2]='0';
+I[17][3]=new Array();
+I[17][3][0]=new Array('Gestionar los cambios de personal que afecten al proyecto','',0,0,1);
+I[17][3][1]=new Array('Gestionar la l\u00EDnea base y los cambios del proyecto','',1,100,1);
+I[17][3][2]=new Array('Gestionar los cambios de tecnolog\u00EDa durante el proyecto','',0,0,1);
+I[18]=new Array();I[18][0]=100;
+I[18][1]='';
+I[18][2]='0';
+I[18][3]=new Array();
+I[18][3][0]=new Array('En realizar un seguimiento de los costes reales para detectar las desviaciones y tomar las acciones correctoras que permitan corregir dichas desviaciones','',1,100,1);
+I[18][3][1]=new Array('En no consumir todas las reservas dinerarias previstas para el proyecto','',0,0,1);
+I[18][3][2]=new Array('En mantener los costes por debajo de lo presupuestado inicialmente','',0,0,1);
+I[19]=new Array();I[19][0]=100;
+I[19][1]='';
+I[19][2]='0';
+I[19][3]=new Array();
+I[19][3][0]=new Array('En realizar un seguimiento de los costes reales para detectar las desviaciones y tomar las acciones correctoras que permitan corregir dichas desviaciones','',1,100,1);
+I[19][3][1]=new Array('En no consumir todas las reservas dinerarias previstas para el proyecto','',0,0,1);
+I[19][3][2]=new Array('En mantener los costes por debajo de lo presupuestado inicialmente','',0,0,1);
+I[20]=new Array();I[20][0]=100;
+I[20][1]='';
+I[20][2]='0';
+I[20][3]=new Array();
+I[20][3][0]=new Array('Compara la ejecuci\u00F3n del cronograma planeada con la real, SPI = BCWP / BCWS','',1,100,1);
+I[20][3][1]=new Array('Compara la variaci\u00F3n de costes con la variaci\u00F3n de tiempos, SPI = CV / SV','',0,0,1);
+I[20][3][2]=new Array('Compara el coste presupuestado con el coste real, SPI = BCWP / ACWP','',0,0,1);
+I[21]=new Array();I[21][0]=100;
+I[21][1]='';
+I[21][2]='0';
+I[21][3]=new Array();
+I[21][3][0]=new Array('Es la proyecci\u00F3n del coste total final en funci\u00F3n del coste y del desempe\u00F1o actuales. EACA = BAC x (ACWP / BCWP)','',1,100,1);
+I[21][3][1]=new Array('Es la proyecci\u00F3n del coste total final en funci\u00F3n de la variaci\u00F3n de coste y el coste actuales. EACA = BAC x (CV / ACWP)','',0,0,1);
+I[21][3][2]=new Array('Es la proyecci\u00F3n del coste total final en funci\u00F3n de la variaci\u00F3n de cronograma y la de coste actuales. EACA = BAC x (SV / CV)','',0,0,1);
+I[22]=new Array();I[22][0]=100;
+I[22][1]='';
+I[22][2]='0';
+I[22][3]=new Array();
+I[22][3][0]=new Array('Es negativa cuando se ha superado el coste previsto','',0,0,1);
+I[22][3][1]=new Array('Es negativa cuando el proyecto ha tenido una duraci\u00F3n m\u00E1s larga que el cronograma previsto','',0,0,1);
+I[22][3][2]=new Array('Es negativa cuando el proyecto no alcanza sus objetivos','',1,100,1);
+I[23]=new Array();I[23][0]=100;
+I[23][1]='';
+I[23][2]='0';
+I[23][3]=new Array();
+I[23][3][0]=new Array('La informaci\u00F3n debe estar planificada, adaptada, acordada con el usuario y no debe ser redundante ni contradictoria','',0,0,1);
+I[23][3][1]=new Array('La informaci\u00F3n debe ser cierta, completa, tener integridad, estar acotada y no debe ser redundante ni contradictoria','',1,100,1);
+I[23][3][2]=new Array('La informaci\u00F3n debe ser cierta, completa, tener integridad, estar acotada y no debe ser demasiado amplia ni compleja','',0,0,1);
+I[23][3][3]=new Array('La informaci\u00F3n debe estar planificada, adaptada, acordada con el usuario y no debe ser demasiado amplia ni compleja','',0,0,1);
+I[24]=new Array();I[24][0]=100;
+I[24][1]='';
+I[24][2]='0';
+I[24][3]=new Array();
+I[24][3][0]=new Array('Son reuniones con el objetivo de definir el estado actual de avance del proyecto, los riesgos futuros y las posibles decisiones a tomar para maximizar los beneficios del proyecto','',1,100,1);
+I[24][3][1]=new Array('Son reuniones realizadas despu\u00E9s de cada Informe de Avance del Proyecto para discutirlo','',0,0,1);
+I[24][3][2]=new Array('Son reuniones con la direcci\u00F3n de la organizaci\u00F3n para informar sobre el estado del proyecto','',0,0,1);
+I[25]=new Array();I[25][0]=100;
+I[25][1]='';
+I[25][2]='0';
+I[25][3]=new Array();
+I[25][3][0]=new Array('Las leyes impiden que se termine el proyecto','',0,0,1);
+I[25][3][1]=new Array('Decisiones de pol\u00EDtica organizacional hacen abandonar el proyecto','',1,100,1);
+I[25][3][2]=new Array('Los cambios pol\u00EDticos provocados por unas elecciones hacen el proyecto inviable','',0,0,1);
+I[26]=new Array();I[26][0]=100;
+I[26][1]='';
+I[26][2]='0';
+I[26][3]=new Array();
+I[26][3][0]=new Array('Extinci\u00F3n, adici\u00F3n, integraci\u00F3n y hambre','',1,100,1);
+I[26][3][1]=new Array('Finalizaci\u00F3n o proyecto "sin fin"','',0,0,1);
+I[26][3][2]=new Array('Positiva y negativa','',0,0,1);
+I[27]=new Array();I[27][0]=100;
+I[27][1]='';
+I[27][2]='0';
+I[27][3]=new Array();
+I[27][3][0]=new Array('El coste del proyecto no lo hace rentable','',0,0,1);
+I[27][3][1]=new Array('El proyecto ya no est\u00E1 alineado con la estrategia de la organizaci\u00F3n','',1,100,1);
+I[27][3][2]=new Array('El proyecto no termina de funcionar o no se adapta a los requisitos del negocio','',0,0,1);
+I[28]=new Array();I[28][0]=100;
+I[28][1]='';
+I[28][2]='0';
+I[28][3]=new Array();
+I[28][3][0]=new Array('Cuando se han completado las actividades posteriores a su terminaci\u00F3n','',1,100,1);
+I[28][3][1]=new Array('Cuando se ha cobrado el proyecto','',0,0,1);
+I[28][3][2]=new Array('Cuando \u00E9ste se ha entregado al cliente','',0,0,1);
+I[29]=new Array();I[29][0]=100;
+I[29][1]='';
+I[29][2]='0';
+I[29][3]=new Array();
+I[29][3][0]=new Array('La fecha de entrega se ha sobrepasado para un producto donde era vital','',1,100,1);
+I[29][3][1]=new Array('El proyecto tiene tanta complejidad que los requisitos no dejan de aumentar','',0,0,1);
+I[29][3][2]=new Array('El proyecto tiene tantos cambios que parece no acabarse nunca','',0,0,1);
+I[30]=new Array();I[30][0]=100;
+I[30][1]='';
+I[30][2]='0';
+I[30][3]=new Array();
+I[30][3][0]=new Array('En el camino cr\u00EDtico y las reservas','',1,100,1);
+I[30][3][1]=new Array('En el plazo cr\u00EDtico para llegar a los hitos','',0,0,1);
+I[30][3][2]=new Array('En la cadena de actividades para terminar el proyecto','',0,0,1);
+I[31]=new Array();I[31][0]=100;
+I[31][1]='';
+I[31][2]='0';
+I[31][3]=new Array();
+I[31][3][0]=new Array('Deben pasar por el Director de proyecto antes de ir al "Change Control Board"','',0,0,1);
+I[31][3][1]=new Array('Debe existir un "Change Control Board" que debe recepcionar las solicitudes','',1,100,1);
+I[31][3][2]=new Array('Deben ser iniciados por el Jefe de Proyecto y estudiados por el "Change Control Board"','',0,0,1);
+I[32]=new Array();I[32][0]=100;
+I[32][1]='';
+I[32][2]='0';
+I[32][3]=new Array();
+I[32][3][0]=new Array('En atender las solicitudes de cambio de los usuarios finales','',0,0,1);
+I[32][3][1]=new Array('En realizar acciones orientadas a facilitar el paso de los usuarios al nuevo sistema','',1,100,1);
+I[32][3][2]=new Array('En gestionar la selecci\u00F3n de nuevos usuarios para el sistema','',0,0,1);
+I[33]=new Array();I[33][0]=100;
+I[33][1]='';
+I[33][2]='0';
+I[33][3]=new Array();
+I[33][3][0]=new Array('Es la proyecci\u00F3n del coste total final en funci\u00F3n de la l\u00EDnea base y del desempe\u00F1o actuales. ETAC = Tiempo planeado x (BCWS / BCWP) Ver la referencia de la pregunta en Furtel','',1,100,1);
+I[33][3][1]=new Array('Es la proyecci\u00F3n del coste total final en funci\u00F3n de la l\u00EDnea base y de la variaci\u00F3n de cronograma actuales. ETAC = Tiempo Planeado x (BCWS / SV)','',0,0,1);
+I[33][3][2]=new Array('Es la proyecci\u00F3n del coste total final en funci\u00F3n de la l\u00EDnea base y del coste actuales. ETAC = Tiempo planeado x (BCWS / ACWP)','',0,0,1);
+I[34]=new Array();I[34][0]=100;
+I[34][1]='';
+I[34][2]='0';
+I[34][3]=new Array();
+I[34][3][0]=new Array('La Direcci\u00F3n del proyecto, la Coordinaci\u00F3n con el cliente y los Aspectos legales','',0,0,1);
+I[34][3][1]=new Array('La Direcci\u00F3n del proyecto, la Gesti\u00F3n de costes y Consecuci\u00F3n de beneficios del proyecto','',0,0,1);
+I[34][3][2]=new Array('La Direcci\u00F3n del proyecto, el impulso al desarrollo del proyecto y la toma de decisiones','',1,100,1);
+I[35]=new Array();I[35][0]=100;
+I[35][1]='';
+I[35][2]='0';
+I[35][3]=new Array();
+I[35][3][0]=new Array('Son revisiones realizadas a todo o parte del proyecto para identificar fortalezas y debilidades','',1,100,1);
+I[35][3][1]=new Array('Son revisiones realizadas para identificar riesgos que afecten negativamente al proyecto','',0,0,1);
+I[35][3][2]=new Array('Son revisiones realizadas para buscar responsables de los fallos del proyecto','',0,0,1);
+I[36]=new Array();I[36][0]=100;
+I[36][1]='';
+I[36][2]='0';
+I[36][3]=new Array();
+I[36][3][0]=new Array('L\u00F3gicas e il\u00F3gicas o b. De negocio, t\u00E9cnicas, de alcance, de cronograma, de coste, de calidad y pol\u00EDticas','',0,0,1);
+I[36][3][1]=new Array('De negocio, t\u00E9cnicas, de alcance, de cronograma, de coste, de calidad y pol\u00EDticas','',1,100,1);
+I[36][3][2]=new Array('Presupuestarias, plazos, costes y calidad','',0,0,1);
+I[37]=new Array();I[37][0]=100;
+I[37][1]='';
+I[37][2]='0';
+I[37][3]=new Array();
+I[37][3][0]=new Array('En identificar elementos que cubren una parte de los objetivos del proyecto, de manera que se pueden hacer entregas parciales y de este modo verificar el avance del proyecto','',1,100,1);
+I[37][3][1]=new Array('En definir hitos internos que deben ser certificados para hacerlos tangibles al cliente','',0,0,1);
+I[37][3][2]=new Array('En seleccionar elementos que f\u00EDsicamente se puedan tocar para hacer entregas, por ejemplo documentos en papel','',0,0,1);
+I[38]=new Array();I[38][0]=100;
+I[38][1]='';
+I[38][2]='0';
+I[38][3]=new Array();
+I[38][3][0]=new Array('Procedimientos para el control de cambios y gesti\u00F3n de la configuraci\u00F3n, para la realizaci\u00F3n de informes y para el control de calidad','',1,100,1);
+I[38][3][1]=new Array('Procedimientos para el control de costes, alcance, cronograma y calidad','',0,0,1);
+I[38][3][2]=new Array('Procedimientos para gesti\u00F3n de personal, gesti\u00F3n de costes, gesti\u00F3n de plazos, gesti\u00F3n de calidad y gesti\u00F3n de riesgos','',0,0,1);
+I[39]=new Array();I[39][0]=100;
+I[39][1]='';
+I[39][2]='0';
+I[39][3]=new Array();
+I[39][3][0]=new Array('De manera jer\u00E1rquica se da la orden de integrar lo que est\u00E9 realizado hasta ese momento y de da por terminado el proyecto','',0,0,1);
+I[39][3][1]=new Array('El proyecto realiza la integraci\u00F3n final de productos desarrollados y se da por termiando','',0,0,1);
+I[39][3][2]=new Array('El equipo de proyecto, los procesos y los productos se integran en el departamento que realizar\u00E1 la explotaci\u00F3n de manera planificada','',1,100,1);
+I[40]=new Array();I[40][0]=100;
+I[40][1]='';
+I[40][2]='0';
+I[40][3]=new Array();
+I[40][3][0]=new Array('Realizar el cierre administrativo financiero del proyecto','',1,100,1);
+I[40][3][1]=new Array('Publicar el informe final incluyendo lecciones aprendidas y recomendaciones para la mejora del proceso','',0,0,1);
+I[40][3][2]=new Array('Programar y realizar un acto de cierre de proyecto','',0,0,1);
+I[41]=new Array();I[41][0]=100;
+I[41][1]='';
+I[41][2]='0';
+I[41][3]=new Array();
+I[41][3][0]=new Array('Son herramientas que toman decisiones sobre el proyecto en funci\u00F3n de escenarios de ejecuci\u00F3n','',0,0,1);
+I[41][3][1]=new Array('Son herramientas que permiten dise\u00F1ar escenarios de ejecuci\u00F3n del proyecto hasta la conclusi\u00F3n y valorarlos para poder tomar decisiones','',1,100,1);
+I[41][3][2]=new Array('SOn herramientas que simulan el proyecto y lo comparan con lo realizado para ver d\u00F3nde se han cometido fallos','',0,0,1);
+I[42]=new Array();I[42][0]=100;
+I[42][1]='';
+I[42][2]='0';
+I[42][3]=new Array();
+I[42][3][0]=new Array('La Gesti\u00F3n del valor ganado y la Cadena cr\u00EDtica','',1,100,1);
+I[42][3][1]=new Array('La Cadena cr\u00EDtica y las Reuniones de avance de proyecto','',0,0,1);
+I[42][3][2]=new Array('La Gesti\u00F3n del valor ganado y las Reuniones de avance de proyecto','',0,0,1);
+I[43]=new Array();I[43][0]=100;
+I[43][1]='';
+I[43][2]='0';
+I[43][3]=new Array();
+I[43][3][0]=new Array('a. En identificar elementos que cubren una parte de los objetivos del proyecto, de manera que se pueden hacer entregas parciales y de este modo verificar el avance del proyecto','',1,100,1);
+I[43][3][1]=new Array('b. En definir hitos internos que deben ser certificados para hacerlos tangibles al cliente','',0,0,1);
+I[43][3][2]=new Array('c. En seleccionar elementos que f\u00EDsicamente se puedan tocar para hacer entregas, por ejemplo documentos en papel','',0,0,1);
+I[44]=new Array();I[44][0]=100;
+I[44][1]='';
+I[44][2]='0';
+I[44][3]=new Array();
+I[44][3][0]=new Array('1-2 de carrera','',0,0,1);
+I[44][3][1]=new Array('No he visto al vassco en mi vida Hulio','',0,0,1);
+I[44][3][2]=new Array('No sab\u00EDa que iba a la uni, yo solo le veo de fiesta','Cuenta la leyenda que fue de erasmus Ruman\u00EDa y mont\u00F3 una cabra que se llamaba Camila',1,100,1);
+I[45]=new Array();I[45][0]=100;
+I[45][1]='';
+I[45][2]='0';
+I[45][3]=new Array();
+I[45][3][0]=new Array('Un formato de documentaci\u00F3n, un proceso de gesti\u00F3n de costes, una manera de informar del estado de las variables del proceso y un sistema de auditor\u00EDa o revisi\u00F3n peri\u00F3dica','',0,0,1);
+I[45][3][1]=new Array('Un formato de identificaci\u00F3n y nomenclatura, un proceso de gesti\u00F3n de cambios, una manera de informar del estado de las variables del proceso y un sistema de auditor\u00EDa o revisi\u00F3n peri\u00F3dica','',1,100,1);
+I[45][3][2]=new Array('Un formato de identificaci\u00F3n y nomenclatura, un proceso de gesti\u00F3n de costes, una manera de informar del estado de avance del proyecto y un sistema de auditor\u00EDa o revisi\u00F3n peri\u00F3dica','',0,0,1);
+I[46]=new Array();I[46][0]=100;
+I[46][1]='';
+I[46][2]='0';
+I[46][3]=new Array();
+I[46][3][0]=new Array('Son elementos no necesariamente tangibles que permiten identificar el estado de avance del proyecto','',1,100,1);
+I[46][3][1]=new Array('Son tareas ficticias que permiten controlar el el estado de avance del proyecto','',0,0,1);
+I[46][3][2]=new Array('Son tareas introducidas en el cronograma para controlar el avance del proyecto','',0,0,1);
+I[47]=new Array();I[47][0]=100;
+I[47][1]='';
+I[47][2]='0';
+I[47][3]=new Array();
+I[47][3][0]=new Array('Extinci\u00F3n, adici\u00F3n, integraci\u00F3n y hambre','',0,0,1);
+I[47][3][1]=new Array('Finalizaci\u00F3n o proyecto "sin fin"','',0,0,1);
+I[47][3][2]=new Array('Positiva y negativa','',1,100,1);
+I[48]=new Array();I[48][0]=100;
+I[48][1]='';
+I[48][2]='0';
+I[48][3]=new Array();
+I[48][3][0]=new Array('Mejora continua, financiaci\u00F3n, cumplimiento y mantenimiento','',0,0,1);
+I[48][3][1]=new Array('Alcance, coste, plazo y calidad','',1,100,1);
+I[48][3][2]=new Array('Requisitos, usabilidad, accesibilidad y fiabilidad','',0,0,1);
+I[49]=new Array();I[49][0]=100;
+I[49][1]='';
+I[49][2]='0';
+I[49][3]=new Array();
+I[49][3][0]=new Array('Es una visi\u00F3n parcial de algunas variables relacionadas para ofrecer una vista conjunta de alg\u00FAn aspecto del proyecto','',1,100,1);
+I[49][3][1]=new Array('Es una colecci\u00F3n de gr\u00E1ficos que muestran informaci\u00F3n parcial del proyecto','',0,0,1);
+I[49][3][2]=new Array('Es una herramienta que tienes los SIGP para seleccionar variables del proyecto','',0,0,1);
+I[50]=new Array();I[50][0]=100;
+I[50][1]='';
+I[50][2]='0';
+I[50][3]=new Array();
+I[50][3][0]=new Array('La precisi\u00F3n de los c\u00E1lculos','',0,0,1);
+I[50][3][1]=new Array('La mayor informaci\u00F3n sobre el proyecto','',0,0,1);
+I[50][3][2]=new Array('La sencillez de los c\u00E1lculos a realizar','',1,100,1);
+I[51]=new Array();I[51][0]=100;
+I[51][1]='';
+I[51][2]='0';
+I[51][3]=new Array();
+I[51][3][0]=new Array('Usar herramientas de contabilidad anal\u00EDtica que hagan regularmente un an\u00E1lisis del desempe\u00F1o del proyecto','',0,0,1);
+I[51][3][1]=new Array('Usar herramientas de contabilidad anal\u00EDtica que realicen regularmente la gesti\u00F3n de pagos para evitar sobrecostes','',0,0,1);
+I[51][3][2]=new Array('Usar herramientas de contabilidad anal\u00EDtica que permitan cargar los costes a cada actividad del proyecto','',1,100,1);
+I[52]=new Array();I[52][0]=100;
+I[52][1]='';
+I[52][2]='0';
+I[52][3]=new Array();
+I[52][3][0]=new Array('Esta terminaci\u00F3n ocurre cuando se termina el proyecto por una orden jer\u00E1rquica','',0,0,1);
+I[52][3][1]=new Array('Los recursos para el proyecto van disminuyendo hasta el punto en que no hay actividad','',0,0,1);
+I[52][3][2]=new Array('Esta terminaci\u00F3n ocurre cuando el proyecto termina porque es satisfactorio, insatisfactorio, sustituido o \u201Casesinado\u201D','',1,100,1);
+I[53]=new Array();I[53][0]=100;
+I[53][1]='';
+I[53][2]='0';
+I[53][3]=new Array();
+I[53][3][0]=new Array('Tener una lista de distribuci\u00F3n de documentos','',0,0,1);
+I[53][3][1]=new Array('Evitar t\u00E9rminos confusos','',1,100,1);
+I[53][3][2]=new Array('Tener una codificaci\u00F3n de los equipos destinados al proyecto','',0,0,1);
+I[54]=new Array();I[54][0]=100;
+I[54][1]='';
+I[54][2]='0';
+I[54][3]=new Array();
+I[54][3][0]=new Array('Mejora de la productividad de los usuarios','',0,0,1);
+I[54][3][1]=new Array('Aumento de la satisfacci\u00F3n de los usuarios','',0,0,1);
+I[54][3][2]=new Array('Mejora de las condiciones de trabajo de los usuario','',1,100,1);
+I[55]=new Array();I[55][0]=100;
+I[55][1]='';
+I[55][2]='0';
+I[55][3]=new Array();
+I[55][3][0]=new Array('Coste presupuestado del trabajo programado','',1,100,1);
+I[55][3][1]=new Array('Coste presupuestado del trabajo realizado','',0,0,1);
+I[55][3][2]=new Array('Coste real del trabajo realizado','',0,0,1);
+I[56]=new Array();I[56][0]=100;
+I[56][1]='';
+I[56][2]='0';
+I[56][3]=new Array();
+I[56][3][0]=new Array('Consiste en partir tareas para que su coste no sea significativo y su control no sea necesario, centrando la atenci\u00F3n en las que no se pueden partir','',0,0,1);
+I[56][3][1]=new Array('Consiste en unir actividades para que el coste global de todas ellas sea suficientemente alto como para que tenga sentido prestales atenci\u00F3n','',0,0,1);
+I[56][3][2]=new Array('Consiste en usar t\u00E9cnicas como la Ley de Pareto o los diagramas ABC para decidir qu\u00E9 actividades requieren mayor atenci\u00F3n','',1,100,1);
+I[57]=new Array();I[57][0]=100;
+I[57][1]='';
+I[57][2]='0';
+I[57][3]=new Array();
+I[57][3][0]=new Array('En definir actividades de dos o tres d\u00EDas como m\u00E1ximo para evitar la sobrecarga de los equipos de trabajo','',0,0,1);
+I[57][3][1]=new Array('En definir actividades cortas y con costes y tiempos bien calculados y definidos para facilitar las estimaciones','',1,100,1);
+I[57][3][2]=new Array('En dise\u00F1ar el proyecto en base a actividades cortas para identificar mejor los hitos','',0,0,1);
+I[58]=new Array();I[58][0]=100;
+I[58][1]='';
+I[58][2]='0';
+I[58][3]=new Array();
+I[58][3][0]=new Array('No pueden ayudar a seleccionar las adquisiciones con mayor coste para centrar los esfuerzos en ellas','',0,0,1);
+I[58][3][1]=new Array('Nos pueden ayudar a seleccionar aquellas variables que tienen m\u00E1s impacto y que deben ser observadas con m\u00E1s atenci\u00F3n','',1,100,1);
+I[58][3][2]=new Array('Nos pueden ayudar a seleccionar los riesgos m\u00E1s importantes para el proyecto','',0,0,1);
+I[59]=new Array();I[59][0]=100;
+I[59][1]='';
+I[59][2]='0';
+I[59][3]=new Array();
+I[59][3][0]=new Array('Es la l\u00EDnea base, representa cuanto trabajo deber\u00EDa estar hehco al coste presupuestado','',1,100,1);
+I[59][3][1]=new Array('Es el valor del coste de trabaja hasta el momento, representa cu\u00E1nto ha costado el proyecto hasta el momento actual','',0,0,1);
+I[59][3][2]=new Array('Es el valor del trabajo realizado, representa cuanto trabajo est\u00E1 terminado en el momento actual','',0,0,1);
+I[60]=new Array();I[60][0]=100;
+I[60][1]='';
+I[60][2]='0';
+I[60][3]=new Array();
+I[60][3][0]=new Array('Programar actividades de formaci\u00F3n de los usuarios finales','',0,0,1);
+I[60][3][1]=new Array('Facilitar la implicaci\u00F3n del usuario final en la definici\u00F3n del nuevo sistema','',0,0,1);
+I[60][3][2]=new Array('Planear contingencias para el caso de rechazo del usuario final','',1,100,1);
+I[61]=new Array();I[61][0]=100;
+I[61][1]='';
+I[61][2]='0';
+I[61][3]=new Array();
+I[61][3][0]=new Array('Son costes temporales que la organizaci\u00F3n pagar\u00E1 al final del proyecto','',0,0,1);
+I[61][3][1]=new Array('Son los costes de los equipos usados en el proyecto','',0,0,1);
+I[61][3][2]=new Array('Son los costes en los que incurre el proyecto por haber usado recursos propios de la organizaci\u00F3n','',1,100,1);
+I[62]=new Array();I[62][0]=100;
+I[62][1]='';
+I[62][2]='0';
+I[62][3]=new Array();
+I[62][3][0]=new Array('Costes internos y externos','',1,100,1);
+I[62][3][1]=new Array('Costes de proveedores y de clientes','',0,0,1);
+I[62][3][2]=new Array('Costes financieros y laborales','',0,0,1);
+I[63]=new Array();I[63][0]=100;
+I[63][1]='';
+I[63][2]='0';
+I[63][3]=new Array();
+I[63][3][0]=new Array('Es un sistema que permite consultar las posibles acciones a tomar para corregir la marcha del proyecto','',0,0,1);
+I[63][3][1]=new Array('Es un sistema que permite consultar en todo momento la situaci\u00F3n del proyecto en funci\u00F3n de la planificaci\u00F3n aprobada','',1,100,1);
+I[63][3][2]=new Array('Es un sistema que permite actuar sobre el proyecto para corregir las desviaciones','',0,0,1);
+I[64]=new Array();I[64][0]=100;
+I[64][1]='';
+I[64][2]='0';
+I[64][3]=new Array();
+I[64][3][0]=new Array('Que el usuario debe recibir formaci\u00F3n sobre el sistema y sobre los conceptos inform\u00E1ticos que requiera el sistema','',0,0,1);
+I[64][3][1]=new Array('Que el usuario debe recibir formaci\u00F3n suponiendo que no sabe nada sobre el sistema ni el dominio','',0,0,1);
+I[64][3][2]=new Array('c. Que el usuario debe recibir formaci\u00F3n de todos y cada uno de los aspectos que le ata\u00F1en para su trabajo con el sistema','',1,100,1);
+I[65]=new Array();I[65][0]=100;
+I[65][1]='';
+I[65][2]='0';
+I[65][3]=new Array();
+I[65][3][0]=new Array('El proyecto resulta muy caro de mantener porque se ha construido sin calidad','',0,0,1);
+I[65][3][1]=new Array('El proyecto no termina de funcionar o no se adapta a los requisitos','',1,100,1);
+I[65][3][2]=new Array('El proyecto resulta tan caro que no es interesante explotarlo','',0,0,1);
+I[66]=new Array();I[66][0]=100;
+I[66][1]='';
+I[66][2]='0';
+I[66][3]=new Array();
+I[66][3][0]=new Array('Haciendo bloques grandes de costes que pueden manejarse con m\u00E1s facilidad','',0,0,1);
+I[66][3][1]=new Array('Convirti\u00E9ndolos en externos','',0,0,1);
+I[66][3][2]=new Array('c. Mediante sistemas de contabilidad anal\u00EDtica','',1,100,1);
+I[67]=new Array();I[67][0]=100;
+I[67][1]='';
+I[67][2]='0';
+I[67][3]=new Array();
+I[67][3][0]=new Array('Son informes basados en la evaluaci\u00F3n del desempe\u00F1o y en t\u00E9cnicas como la Earned Value Management','',1,100,1);
+I[67][3][1]=new Array('Son informes que informan del estado de avance de las actividades del proyecto','',0,0,1);
+I[67][3][2]=new Array('Son informes que presentan el estado de los costes en un momento del proyecto','',0,0,1);
+I[68]=new Array();I[68][0]=100;
+I[68][1]='';
+I[68][2]='0';
+I[68][3]=new Array();
+I[68][3][0]=new Array('Programar y realizar un acto de cierre de proyecto','',0,0,1);
+I[68][3][1]=new Array('Publicar el informe final incluyendo lecciones aprendidas y recomendaciones para la mejora del proceso','',0,0,1);
+I[68][3][2]=new Array('Realizar el cierre administrativo financiero del proyecto','',1,100,1);
+
+
+function StartUp(){
+	RemoveBottomNavBarForIE();
+
+//If there's only one question, no need for question navigation controls
+	if (QsToShow < 2){
+		document.getElementById('QNav').style.display = 'none';
+	}
+	
+//Stash the instructions so they can be redisplayed
+	strInstructions = document.getElementById('InstructionsDiv').innerHTML;
+	
+
+	
+
+	
+
+	
+	CompleteEmptyFeedback();
+
+	SetUpQuestions();
+	ClearTextBoxes();
+	CreateStatusArray();
+	
+
+	
+//Check search string for q parameter
+	if (document.location.search.length > 0){
+		if (ShuffleQs == false){
+			var JumpTo = parseInt(document.location.search.substring(1,document.location.search.length))-1;
+			if (JumpTo <= QsToShow){
+				ChangeQ(JumpTo);
+			}
+		}
+	}
+//Undocumented function added 10/12/2004
+	ShowSpecialReadingForQuestion();
+}
+
+function ShowHideQuestions(){
+	FuncBtnOut(document.getElementById('ShowMethodButton'));
+	document.getElementById('ShowMethodButton').style.display = 'none';
+	if (ShowingAllQuestions == false){
+		for (var i=0; i<QArray.length; i++){
+				QArray[i].style.display = '';
+			}
+		document.getElementById('Questions').style.listStyleType = 'decimal';
+		document.getElementById('OneByOneReadout').style.display = 'none';
+		document.getElementById('ShowMethodButton').innerHTML = ShowOneByOneCaption;
+		ShowingAllQuestions = true;
+	}
+	else{
+		for (var i=0; i<QArray.length; i++){
+				if (i != CurrQNum){
+					QArray[i].style.display = 'none';
+				}
+			}
+		document.getElementById('Questions').style.listStyleType = 'none';
+		document.getElementById('OneByOneReadout').style.display = '';
+		document.getElementById('ShowMethodButton').innerHTML = ShowAllQuestionsCaption;
+		ShowingAllQuestions = false;	
+	}
+	document.getElementById('ShowMethodButton').style.display = 'inline';
+}
+
+function CreateStatusArray(){
+	var QNum, ANum;
+//For each item in the item array
+	for (QNum=0; QNum<I.length; QNum++){
+//Check if the question still exists (hasn't been nuked by showing a random selection)
+		if (document.getElementById('Q_' + QNum) != null){
+			State[QNum] = new Array();
+			State[QNum][0] = -1; //Score for this q; -1 shows question not done yet
+			State[QNum][1] = new Array(); //answers
+			for (ANum = 0; ANum<I[QNum][3].length; ANum++){
+				State[QNum][1][ANum] = 0; //answer not chosen yet; when chosen, will store its position in the series of choices
+			}
+			State[QNum][2] = 0; //tries at this q so far
+			State[QNum][3] = 0; //incrementing percent-correct values of selected answers
+			State[QNum][4] = 0; //penalties incurred for hints
+			State[QNum][5] = ''; //Sequence of answers chosen by number
+		}
+		else{
+			State[QNum] = null;
+		}
+	}
+}
+
+
+
+function CheckMCAnswer(QNum, ANum, Btn){
+//if question doesn't exist, bail
+	if (State[QNum].length < 1){return;}
+	
+//Get the feedback
+	Feedback = I[QNum][3][ANum][1];
+	
+//Now show feedback and bail if question already complete
+	if (State[QNum][0] > -1){
+//Add an extra message explaining that the question
+// is finished if defined by the user
+		if (strQuestionFinished.length > 0){Feedback += '<br />' + strQuestionFinished;}
+//Show the feedback
+		ShowMessage(Feedback);
+//New for 6.2.2.1: If you want to mark an answer as correct even when it's the final choice, uncomment this line.
+//		if (I[QNum][3][ANum][2] >= 1){Btn.innerHTML = CorrectIndicator;}else{Btn.innerHTML = IncorrectIndicator;}	
+		return;
+	}
+	
+//Hide the button while processing
+	Btn.style.display = 'none';
+
+//Increment the number of tries
+	State[QNum][2]++;
+	
+//Add the percent-correct value of this answer
+	State[QNum][3] += I[QNum][3][ANum][3];
+	
+//Store the try number in the answer part of the State array, for tracking purposes
+	State[QNum][1][ANum] = State[QNum][2];
+	if (State[QNum][5].length > 0){State[QNum][5] += ' | ';}
+	State[QNum][5] += String.fromCharCode(65+ANum);
+	
+//Should this answer be accepted as correct?
+	if (I[QNum][3][ANum][2] < 1){
+//It's wrong
+
+//Mark the answer
+		Btn.innerHTML = IncorrectIndicator;
+		
+//Remove any previous score unless exercise is finished (6.0.3.8+)
+		if (Finished == false){
+			WriteToInstructions(strInstructions);
+		}	
+		
+//Check whether this leaves just one MC answer unselected, in which case the Q is terminated
+		var RemainingAnswer = FinalAnswer(QNum);
+		if (RemainingAnswer > -1){
+//Behave as if the last answer had been selected, but give no credit for it
+//Increment the number of tries
+			State[QNum][2]++;		
+		
+//Calculate the score for this question
+			CalculateMCQuestionScore(QNum);
+			
+//Get the overall score and add it to the feedback
+			CalculateOverallScore();
+//New for 6.2.2.1
+			var QsDone = CheckQuestionsCompleted();
+			if ((ContinuousScoring == true)||(Finished == true)){
+				Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
+				WriteToInstructions(YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone);
+			}
+			else{
+				WriteToInstructions(QsDone);
+			}
+		}
+	}
+	else{
+//It's right
+//Mark the answer
+		Btn.innerHTML = CorrectIndicator;
+				
+//Calculate the score for this question
+		CalculateMCQuestionScore(QNum);
+		
+//New for 6.2.2.0
+		var QsDone = CheckQuestionsCompleted();
+
+//Get the overall score and add it to the feedback
+		if (ContinuousScoring == true){
+			CalculateOverallScore();
+			if ((ContinuousScoring == true)||(Finished == true)){
+				Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
+				WriteToInstructions(YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone);
+			}
+		}
+		else{
+			WriteToInstructions(QsDone);
+		}
+	}
+	
+//Show the button again
+	Btn.style.display = 'inline';
+	
+//Finally, show the feedback	
+	ShowMessage(Feedback);
+	
+//Check whether all questions are now done
+	CheckFinished();
+}
+
+function CalculateMCQuestionScore(QNum){
+	var Tries = State[QNum][2] + State[QNum][4]; //include tries and hint penalties
+	var PercentCorrect = State[QNum][3];
+	var TotAns = GetTotalMCAnswers(QNum);
+	var HintPenalties = State[QNum][4];
+	
+//Make sure it's not already complete
+
+	if (State[QNum][0] < 0){
+//Allow for Hybrids
+		if (HintPenalties >= 1){
+			State[QNum][0] = 0;
+		}
+		else{
+//This line calculates the score for this question
+			if (TotAns == 1){
+				State[QNum][0] = 1;
+			}
+			else{
+				State[QNum][0] = ((TotAns-((Tries*100)/State[QNum][3]))/(TotAns-1));
+			}
+		}
+//Fix for Safari bug added for version 6.0.3.42 (negative infinity problem)
+		if ((State[QNum][0] < 0)||(State[QNum][0] == Number.NEGATIVE_INFINITY)){
+			State[QNum][0] = 0;
+		}
+	}
+}
+
+function GetTotalMCAnswers(QNum){
+	var Result = 0;
+	for (var ANum=0; ANum<I[QNum][3].length; ANum++){
+		if (I[QNum][3][ANum][4] == 1){ //This is an MC answer
+			Result++;
+		}
+	}
+	return Result;
+}
+
+function FinalAnswer(QNum){
+	var UnchosenAnswers = 0;
+	var FinalAnswer = -1;
+	for (var ANum=0; ANum<I[QNum][3].length; ANum++){
+		if (I[QNum][3][ANum][4] == 1){ //This is an MC answer
+			if (State[QNum][1][ANum] < 1){ //This answer hasn't been chosen yet
+				UnchosenAnswers++;
+				FinalAnswer = ANum;
+			}
+		}
+	}
+	if (UnchosenAnswers == 1){
+		return FinalAnswer;
+	}
+	else{
+		return -1;
+	}
+}
+
+
+
+
+
+function CalculateOverallScore(){
+	var TotalWeighting = 0;
+	var TotalScore = 0;
+	
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] > -1){
+				TotalWeighting += I[QNum][0];
+				TotalScore += (I[QNum][0] * State[QNum][0]);
+			}
+		}
+	}
+	if (TotalWeighting > 0){
+		Score = Math.floor((TotalScore/TotalWeighting)*100);
+	}
+	else{
+//if TotalWeighting is 0, no questions so far have any value, so 
+//no penalty should be shown.
+		Score = 100; 
+	}
+}
+
+//New for 6.2.2.0
+function CheckQuestionsCompleted(){
+	if (ShowCompletedSoFar == false){return '';}
+	var QsCompleted = 0;
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] >= 0){
+				QsCompleted++;
+			}
+		}
+	}
+//Fixes for 6.2.2.2
+	if (QsCompleted >= QArray.length){
+		return ExerciseCompleted;
+	}
+	else{
+		return CompletedSoFar + ' ' + QsCompleted + '/' + QArray.length + '.';
+	}
+}
+
+function CheckFinished(){
+	var FB = '';
+	var AllDone = true;
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] < 0){
+				AllDone = false;
+			}
+		}
+	}
+	if (AllDone == true){
+	
+//Report final score and submit if necessary
+		CalculateOverallScore();
+		FB = YourScoreIs + ' ' + Score + '%.';
+		if (ShowCorrectFirstTime == true){
+			var CFT = 0;
+			for (QNum=0; QNum<State.length; QNum++){
+				if (State[QNum] != null){
+					if (State[QNum][0] >= 1){
+						CFT++;
+					}
+				}
+			}
+			FB += '<br />' + CorrectFirstTime + ' ' + CFT + '/' + QsToShow;
+		}
+		
+//New for 6.2.2.0
+		FB += '<br />' + ExerciseCompleted;
+		
+		WriteToInstructions(FB);
+		
+		Finished == true;
+
+
+
+
+		TimeOver = true;
+		Locked = true;
+		
+
+
+		Finished = true;
+		Detail = '<?xml version="1.0"?><hpnetresult><fields>';
+		for (QNum=0; QNum<State.length; QNum++){
+			if (State[QNum] != null){
+				if (State[QNum][5].length > 0){
+					Detail += '<field><fieldname>Question #' + (QNum+1) + '</fieldname><fieldtype>question-tracking</fieldtype><fieldlabel>Q ' + (QNum+1) + '</fieldlabel><fieldlabelid>QuestionTrackingField</fieldlabelid><fielddata>' + State[QNum][5] + '</fielddata></field>';
+				}
+			}
+		}
+		Detail += '</fields></hpnetresult>';
+		setTimeout('Finish()', SubmissionTimeout);
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+//-->
+
+//]]>
+
+</script>
+
+
+</head>
+
+<body onload="StartUp()" id="TheBody" >
+
+<!-- BeginTopNavButtons -->
+
+
+<div class="NavButtonBar" id="TopNavBar">
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="history.back(); return false;">&lt;=</button>
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)"  onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='index.htm'; return false;"> Index </button>
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='tema_1.htm'; return false;">=&gt;</button>
+
+
+</div>
+
+
+
+<!-- EndTopNavButtons -->
+
+<div class="Titles">
+	<h2 class="ExerciseTitle">Tema 9: Seguimiento y Control</h2>
+
+	<h3 class="ExerciseSubtitle">Quiz</h3>
+
+
+
+</div>
+
+<div id="InstructionsDiv" class="StdDiv">
+	<div id="Instructions"></div>
+</div>
+
+
+
+
+<div id="MainDiv" class="StdDiv">
+ 
+<div id="QNav" class="QuestionNavigation">
+
+<p style="text-align: right;">
+<button id="ShowMethodButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="ShowHideQuestions(); return false;">Show all questions</button>
+</p>
+
+<div id="OneByOneReadout">
+<button id="PrevQButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="ChangeQ(-1); return false;">&lt;=</button>
+
+<span id="QNumReadout" class="QNum">&nbsp;</span>
+
+<button id="NextQButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="ChangeQ(1); return false;">=&gt;</button>
+<br />
+</div>
+
+</div>
+ 
+<ol class="QuizQuestions" id="Questions">
+<li class="QuizQuestion" id="Q_0" style="display: none;"><div class="QuestionText">En la t&#x00E9;cnica de la Gesti&#x00F3;n de Valor ganado o acumulado, &#x00BF;Qu&#x00E9; es la variaci&#x00F3;n de coste (CV)?</div><ol class="MCAnswers"><li id="Q_0_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_0_0_Btn" onclick="CheckMCAnswer(0,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es la diferencia entre la l&#x00ED;nea base del proyecto y el trabajo realizado realmente (CV = BCWP - BCWS)</li><li id="Q_0_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_0_1_Btn" onclick="CheckMCAnswer(0,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es la diferencia entre lo que ha costado realmente y el trabajo realizado realmente (CV = ACWP - BCWS)</li><li id="Q_0_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_0_2_Btn" onclick="CheckMCAnswer(0,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es la diferencia entre la l&#x00ED;nea base del poryecto y lo que ha costado realmente (CV = BCWP - ACWP)</li></ol></li>
+<li class="QuizQuestion" id="Q_1" style="display: none;"><div class="QuestionText">En la t&#x00E9;cnica de la Gesti&#x00F3;n de Valor ganado o acumulado, &#x00BF;Cu&#x00E1;l es el &#x00ED;ndice de rendimiento de costes (CPI)?</div><ol class="MCAnswers"><li id="Q_1_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_1_0_Btn" onclick="CheckMCAnswer(1,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Compara el coste presupuestado con el coste real, CPI = BCWP / ACWP</li><li id="Q_1_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_1_1_Btn" onclick="CheckMCAnswer(1,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Compara la variaci&#x00F3;n de costes con la variaci&#x00F3;n de tiempos, CPI = CV / SV</li><li id="Q_1_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_1_2_Btn" onclick="CheckMCAnswer(1,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Compara la programaci&#x00F3;n planeada con la ejecuci&#x00F3;n real, CPI = BCWP / BCWS</li></ol></li>
+<li class="QuizQuestion" id="Q_2" style="display: none;"><div class="QuestionText">&#x00BF;Qu&#x00E9; es el PMIS?</div><ol class="MCAnswers"><li id="Q_2_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_2_0_Btn" onclick="CheckMCAnswer(2,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Project Management Interface System</li><li id="Q_2_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_2_1_Btn" onclick="CheckMCAnswer(2,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Project Management Infrastructure System</li><li id="Q_2_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_2_2_Btn" onclick="CheckMCAnswer(2,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Project Management Information System</li></ol></li>
+<li class="QuizQuestion" id="Q_3" style="display: none;"><div class="QuestionText">Dentro de los elementos b&#x00E1;sicos del control del alcance, &#x00BF;Qu&#x00E9; objetivo cumple tener un sistema de auditor&#x00ED;a o revisi&#x00F3;n peri&#x00F3;dica?</div><ol class="MCAnswers"><li id="Q_3_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_3_0_Btn" onclick="CheckMCAnswer(3,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Asegurar el cumplimiento del desempe&#x00F1;o</li><li id="Q_3_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_3_1_Btn" onclick="CheckMCAnswer(3,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Asegurar la integridad de la informaci&#x00F3;n</li><li id="Q_3_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_3_2_Btn" onclick="CheckMCAnswer(3,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Asegurar la buena direcci&#x00F3;n del proyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_4" style="display: none;"><div class="QuestionText">Seg&#x00FA;n Pritchard, &#x00BF;En qu&#x00E9; consiste la terminaci&#x00F3;n positiva?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_4_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_4_0_Btn" onclick="CheckMCAnswer(4,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es positiva cuando el proyecto ha sido terminado en los plazos previstos</li><li id="Q_4_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_4_1_Btn" onclick="CheckMCAnswer(4,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es positiva cuando el proyecto es rentable</li><li id="Q_4_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_4_2_Btn" onclick="CheckMCAnswer(4,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es positiva cuando el proyecto alcanza sus objetivos</li></ol></li>
+<li class="QuizQuestion" id="Q_5" style="display: none;"><div class="QuestionText">En la t&#x00E9;cnica de la Gesti&#x00F3;n de Valor ganado o acumulado, &#x00BF;Qu&#x00E9; es la variaci&#x00F3;n del cronograma (SV)?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_5_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_5_0_Btn" onclick="CheckMCAnswer(5,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es la diferencia entre lo que ha costado realmente y el trabajo realizado realmente (SV = ACWP - BCWS)</li><li id="Q_5_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_5_1_Btn" onclick="CheckMCAnswer(5,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es la diferencia entre la l&#x00ED;nea base del proyecto y el trabajo realizado realmente (SV = BCWP - BCWS)</li><li id="Q_5_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_5_2_Btn" onclick="CheckMCAnswer(5,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es la diferencia entre la l&#x00ED;nea base del proyecto y lo que ha costado realmente (SV = BCWP - ACWP)</li></ol></li>
+<li class="QuizQuestion" id="Q_6" style="display: none;"><div class="QuestionText">&#x00BF;En qu&#x00E9; consiste el seguimiento de un proyecto?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_6_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_6_0_Btn" onclick="CheckMCAnswer(6,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;En el control de la ejecuci&#x00F3;n del proyecto para verificar que el proyecto no sufre retrasos</li><li id="Q_6_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_6_1_Btn" onclick="CheckMCAnswer(6,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;En la supervisi&#x00F3;n continua o peri&#x00F3;dica de la ejecuci&#x00F3;n de un proyecto para asegurarse de que se desarrolla de acuerdo al plan previsto</li><li id="Q_6_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_6_2_Btn" onclick="CheckMCAnswer(6,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;En la revisi&#x00F3;n de la ejecuci&#x00F3;n del proyecto para conseguir que se desarrolle dentro de los costes acordados</li></ol></li>
+<li class="QuizQuestion" id="Q_7" style="display: none;"><div class="QuestionText">En la t&#x00E9;cnica de la Gesti&#x00F3;n de Valor ganado o acumulado, &#x00BF;Que representa el ACWP?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_7_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_7_0_Btn" onclick="CheckMCAnswer(7,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es el valor del coste de trabaja hasta el momento, representa cu&#x00E1;nto ha costado el proyecto hasta el momento actual</li><li id="Q_7_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_7_1_Btn" onclick="CheckMCAnswer(7,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es la l&#x00ED;nea base, representa cuanto trabajo deber&#x00ED;a estar hecho al coste presupuestado</li><li id="Q_7_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_7_2_Btn" onclick="CheckMCAnswer(7,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es el valor del trabajo realizado, representa cuanto trabajo est&#x00E1; terminado en el momento actual</li></ol></li>
+<li class="QuizQuestion" id="Q_8" style="display: none;"><div class="QuestionText">Dentro de los elementos b&#x00E1;sicos del control del alcance, &#x00BF;Que elementos ayudan a tener una manera de informar del estado de las variables del proceso?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_8_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_8_0_Btn" onclick="CheckMCAnswer(8,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El alcance, el coste, el cronograma y la calidad</li><li id="Q_8_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_8_1_Btn" onclick="CheckMCAnswer(8,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Los diagramas de Pareto y lo sgr&#x00E1;ficos ABC</li><li id="Q_8_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_8_2_Btn" onclick="CheckMCAnswer(8,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El SIGP y los cuadros de mandos</li></ol></li>
+<li class="QuizQuestion" id="Q_9" style="display: none;"><div class="QuestionText">Seg&#x00FA;n Meredith y Mantel, &#x00BF;En qu&#x00E9; consiste la terminaci&#x00F3;n por Hambre?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_9_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_9_0_Btn" onclick="CheckMCAnswer(9,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Los recursos para el proyecto van disminuyendo hasta el punto en que no hay actividad</li><li id="Q_9_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_9_1_Btn" onclick="CheckMCAnswer(9,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El proyecto termina porque no se adapta al presupuesto</li><li id="Q_9_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_9_2_Btn" onclick="CheckMCAnswer(9,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Esta terminaci&#x00F3;n ocurre cuando se termina el proyecto porque se anula su presupuesto</li></ol></li>
+<li class="QuizQuestion" id="Q_10" style="display: none;"><div class="QuestionText">&#x00BF;en qu&#x00E9; consiste el Crashing and Fast Tracking?</div><ol class="MCAnswers"><li id="Q_10_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_10_0_Btn" onclick="CheckMCAnswer(10,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es un proceso provocado por una saturaci&#x00F3;n de trabajo en el proyecto y las tareas siguientes son atropelladas por las anteriores que no han terminado</li><li id="Q_10_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_10_1_Btn" onclick="CheckMCAnswer(10,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es el momento en que el proyecto ya no es viable y se estrella (crashing) obligando a abandonarlo</li><li id="Q_10_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_10_2_Btn" onclick="CheckMCAnswer(10,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;En replanificar el proyecto con el objetivo de acelerarlo para que se pueda terminar en una fecha anterior a la prevista</li></ol></li>
+<li class="QuizQuestion" id="Q_11" style="display: none;"><div class="QuestionText">En la t&#x00E9;cnica de la Gesti&#x00F3;n de Valor ganado o acumulado, &#x00BF;Que es el BCWP?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_11_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_11_0_Btn" onclick="CheckMCAnswer(11,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Coste presupuestado del trabajo realizado</li><li id="Q_11_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_11_1_Btn" onclick="CheckMCAnswer(11,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Coste presupuestado del trabajo progamado</li><li id="Q_11_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_11_2_Btn" onclick="CheckMCAnswer(11,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Coste real del trabajo realizado</li></ol></li>
+<li class="QuizQuestion" id="Q_12" style="display: none;"><div class="QuestionText">En la t&#x00E9;cnica de la Gesti&#x00F3;n de Valor ganado o acumulado, &#x00BF;Que representa el BCWP?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_12_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_12_0_Btn" onclick="CheckMCAnswer(12,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es el valor del trabajo realizado, representa cuanto trabajo est&#x00E1; terminado en el momento actual</li><li id="Q_12_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_12_1_Btn" onclick="CheckMCAnswer(12,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es el valor del coste de trabaja hasta el momento, representa cu&#x00E1;nto ha costado el proyecto hasta el momento actual</li><li id="Q_12_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_12_2_Btn" onclick="CheckMCAnswer(12,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es la l&#x00ED;nea base, representa cuanto trabajo deber&#x00ED;a estar hecho al coste presupuestado</li></ol></li>
+<li class="QuizQuestion" id="Q_13" style="display: none;"><div class="QuestionText">Dentro de los elementos b&#x00E1;sicos del control del alcance, &#x00BF;Qu&#x00E9; objetivo cumple tener un formato de identificaci&#x00F3;n y nomenclatura?</div><ol class="MCAnswers"><li id="Q_13_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_13_0_Btn" onclick="CheckMCAnswer(13,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Tener una lista de distribuci&#x00F3;n de documentos</li><li id="Q_13_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_13_1_Btn" onclick="CheckMCAnswer(13,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Tener una codificaci&#x00F3;n de los equipos destinados al proyecto</li><li id="Q_13_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_13_2_Btn" onclick="CheckMCAnswer(13,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Evitar t&#x00E9;rminos confusos</li></ol></li>
+<li class="QuizQuestion" id="Q_14" style="display: none;"><div class="QuestionText">&#x00BF;Qu&#x00E9; quiere decir que la formaci&#x00F3;n deber tener integridad?</div><ol class="MCAnswers"><li id="Q_14_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_14_0_Btn" onclick="CheckMCAnswer(14,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Que no se puede formar al usuario en un entorno para, posteriormente, volver a formarle en el mismo entorno pero con modificaciones</li><li id="Q_14_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_14_1_Btn" onclick="CheckMCAnswer(14,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Que no puede obligarse a usuario a hacer operaciones que pongan en peligro su integridad</li><li id="Q_14_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_14_2_Btn" onclick="CheckMCAnswer(14,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;QUe la formaci&#x00F3;n debe realizarse en un curso que integre todos los aspectos y no en diferentes cursos</li></ol></li>
+<li class="QuizQuestion" id="Q_15" style="display: none;"><div class="QuestionText">&#x00BF;Qu&#x00E9; se representa en el gr&#x00E1;fico de la cadena cr&#x00ED;tica?</div><ol class="MCAnswers"><li id="Q_15_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_15_0_Btn" onclick="CheckMCAnswer(15,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El estado de desempe&#x00F1;o del proyecto en un momento dado</li><li id="Q_15_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_15_1_Btn" onclick="CheckMCAnswer(15,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El tiempo hasta el final del proyecto</li><li id="Q_15_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_15_2_Btn" onclick="CheckMCAnswer(15,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El consumo de reservas del camino cr&#x00ED;tico</li></ol></li>
+<li class="QuizQuestion" id="Q_16" style="display: none;"><div class="QuestionText">En la t&#x00E9;cnica de la Gesti&#x00F3;n de Valor ganado o acumulado, &#x00BF;Que es el ACWP?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_16_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_16_0_Btn" onclick="CheckMCAnswer(16,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Coste real del trabajo realizado</li><li id="Q_16_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_16_1_Btn" onclick="CheckMCAnswer(16,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Coste presupuestado del trabajo progamado</li><li id="Q_16_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_16_2_Btn" onclick="CheckMCAnswer(16,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Coste presupuestado del trabajo realizado</li></ol></li>
+<li class="QuizQuestion" id="Q_17" style="display: none;"><div class="QuestionText">Dentro de los elementos b&#x00E1;sicos del control del alcance, &#x00BF;Qu&#x00E9; objetivo cumple tener un proceso de gesti&#x00F3;n de cambios?</div><ol class="MCAnswers"><li id="Q_17_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_17_0_Btn" onclick="CheckMCAnswer(17,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Gestionar los cambios de personal que afecten al proyecto</li><li id="Q_17_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_17_1_Btn" onclick="CheckMCAnswer(17,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Gestionar la l&#x00ED;nea base y los cambios del proyecto</li><li id="Q_17_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_17_2_Btn" onclick="CheckMCAnswer(17,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Gestionar los cambios de tecnolog&#x00ED;a durante el proyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_18" style="display: none;"><div class="QuestionText">En qu&#x00E9; consiste el Control de costes<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_18_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_18_0_Btn" onclick="CheckMCAnswer(18,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;En realizar un seguimiento de los costes reales para detectar las desviaciones y tomar las acciones correctoras que permitan corregir dichas desviaciones</li><li id="Q_18_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_18_1_Btn" onclick="CheckMCAnswer(18,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;En no consumir todas las reservas dinerarias previstas para el proyecto</li><li id="Q_18_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_18_2_Btn" onclick="CheckMCAnswer(18,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;En mantener los costes por debajo de lo presupuestado inicialmente</li></ol></li>
+<li class="QuizQuestion" id="Q_19" style="display: none;"><div class="QuestionText">En qu&#x00E9; consiste el Control de costes<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_19_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_19_0_Btn" onclick="CheckMCAnswer(19,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;En realizar un seguimiento de los costes reales para detectar las desviaciones y tomar las acciones correctoras que permitan corregir dichas desviaciones</li><li id="Q_19_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_19_1_Btn" onclick="CheckMCAnswer(19,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;En no consumir todas las reservas dinerarias previstas para el proyecto</li><li id="Q_19_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_19_2_Btn" onclick="CheckMCAnswer(19,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;En mantener los costes por debajo de lo presupuestado inicialmente</li></ol></li>
+<li class="QuizQuestion" id="Q_20" style="display: none;"><div class="QuestionText">En la t&#x00E9;cnica de la Gesti&#x00F3;n de Valor ganado o acumulado, &#x00BF;Cu&#x00E1;l es el &#x00ED;ndice de rendimiento de cronograma (SPI)?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_20_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_20_0_Btn" onclick="CheckMCAnswer(20,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Compara la ejecuci&#x00F3;n del cronograma planeada con la real, SPI = BCWP / BCWS</li><li id="Q_20_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_20_1_Btn" onclick="CheckMCAnswer(20,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Compara la variaci&#x00F3;n de costes con la variaci&#x00F3;n de tiempos, SPI = CV / SV</li><li id="Q_20_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_20_2_Btn" onclick="CheckMCAnswer(20,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Compara el coste presupuestado con el coste real, SPI = BCWP / ACWP</li></ol></li>
+<li class="QuizQuestion" id="Q_21" style="display: none;"><div class="QuestionText">En la t&#x00E9;cnica de la Gesti&#x00F3;n de Valor ganado o acumulado, &#x00BF;Cu&#x00E1;l es el coste estimado en la terminaci&#x00F3;n (ECAC)?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_21_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_21_0_Btn" onclick="CheckMCAnswer(21,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es la proyecci&#x00F3;n del coste total final en funci&#x00F3;n del coste y del desempe&#x00F1;o actuales. EACA = BAC x (ACWP / BCWP)</li><li id="Q_21_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_21_1_Btn" onclick="CheckMCAnswer(21,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es la proyecci&#x00F3;n del coste total final en funci&#x00F3;n de la variaci&#x00F3;n de coste y el coste actuales. EACA = BAC x (CV / ACWP)</li><li id="Q_21_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_21_2_Btn" onclick="CheckMCAnswer(21,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es la proyecci&#x00F3;n del coste total final en funci&#x00F3;n de la variaci&#x00F3;n de cronograma y la de coste actuales. EACA = BAC x (SV / CV)</li></ol></li>
+<li class="QuizQuestion" id="Q_22" style="display: none;"><div class="QuestionText">Seg&#x00FA;n Pritchard, &#x00BF;En qu&#x00E9; consiste la terminaci&#x00F3;n negativa?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_22_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_22_0_Btn" onclick="CheckMCAnswer(22,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es negativa cuando se ha superado el coste previsto</li><li id="Q_22_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_22_1_Btn" onclick="CheckMCAnswer(22,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es negativa cuando el proyecto ha tenido una duraci&#x00F3;n m&#x00E1;s larga que el cronograma previsto</li><li id="Q_22_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_22_2_Btn" onclick="CheckMCAnswer(22,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es negativa cuando el proyecto no alcanza sus objetivos</li></ol></li>
+<li class="QuizQuestion" id="Q_23" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;les son los principios b&#x00E1;sicos para la formaci&#x00F3;n de los usuarios?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_23_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_23_0_Btn" onclick="CheckMCAnswer(23,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La informaci&#x00F3;n debe estar planificada, adaptada, acordada con el usuario y no debe ser redundante ni contradictoria</li><li id="Q_23_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_23_1_Btn" onclick="CheckMCAnswer(23,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La informaci&#x00F3;n debe ser cierta, completa, tener integridad, estar acotada y no debe ser redundante ni contradictoria</li><li id="Q_23_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_23_2_Btn" onclick="CheckMCAnswer(23,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La informaci&#x00F3;n debe ser cierta, completa, tener integridad, estar acotada y no debe ser demasiado amplia ni compleja</li><li id="Q_23_3"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_23_3_Btn" onclick="CheckMCAnswer(23,3,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La informaci&#x00F3;n debe estar planificada, adaptada, acordada con el usuario y no debe ser demasiado amplia ni compleja</li></ol></li>
+<li class="QuizQuestion" id="Q_24" style="display: none;"><div class="QuestionText">Las t&#x00E9;cnicas usuales para controlar y comunicar los avances del proyecto permiten informar a los diferentes stakeholders sobre el estado del proyecto. Dentro de ellas, &#x00BF;Qu&#x00E9; son las reuniones de avance de proyecto?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_24_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_24_0_Btn" onclick="CheckMCAnswer(24,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son reuniones con el objetivo de definir el estado actual de avance del proyecto, los riesgos futuros y las posibles decisiones a tomar para maximizar los beneficios del proyecto</li><li id="Q_24_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_24_1_Btn" onclick="CheckMCAnswer(24,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son reuniones realizadas despu&#x00E9;s de cada Informe de Avance del Proyecto para discutirlo</li><li id="Q_24_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_24_2_Btn" onclick="CheckMCAnswer(24,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son reuniones con la direcci&#x00F3;n de la organizaci&#x00F3;n para informar sobre el estado del proyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_25" style="display: none;"><div class="QuestionText">Son varias las razones para terminar un proyecto, de ellas, &#x00BF;Qu&#x00E9; son la razones pol&#x00ED;ticas?</div><ol class="MCAnswers"><li id="Q_25_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_25_0_Btn" onclick="CheckMCAnswer(25,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Las leyes impiden que se termine el proyecto</li><li id="Q_25_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_25_1_Btn" onclick="CheckMCAnswer(25,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Decisiones de pol&#x00ED;tica organizacional hacen abandonar el proyecto</li><li id="Q_25_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_25_2_Btn" onclick="CheckMCAnswer(25,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Los cambios pol&#x00ED;ticos provocados por unas elecciones hacen el proyecto inviable</li></ol></li>
+<li class="QuizQuestion" id="Q_26" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;les son los tipos de final de proyecto seg&#x00FA;n Meredith y Mantel?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_26_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_26_0_Btn" onclick="CheckMCAnswer(26,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Extinci&#x00F3;n, adici&#x00F3;n, integraci&#x00F3;n y hambre</li><li id="Q_26_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_26_1_Btn" onclick="CheckMCAnswer(26,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Finalizaci&#x00F3;n o proyecto "sin fin"</li><li id="Q_26_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_26_2_Btn" onclick="CheckMCAnswer(26,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Positiva y negativa</li></ol></li>
+<li class="QuizQuestion" id="Q_27" style="display: none;"><div class="QuestionText">Son varias las razones para terminar un proyecto, de ellas, &#x00BF;Qu&#x00E9; son la razones de negocio?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_27_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_27_0_Btn" onclick="CheckMCAnswer(27,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El coste del proyecto no lo hace rentable</li><li id="Q_27_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_27_1_Btn" onclick="CheckMCAnswer(27,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El proyecto ya no est&#x00E1; alineado con la estrategia de la organizaci&#x00F3;n</li><li id="Q_27_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_27_2_Btn" onclick="CheckMCAnswer(27,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El proyecto no termina de funcionar o no se adapta a los requisitos del negocio</li></ol></li>
+<li class="QuizQuestion" id="Q_28" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;ndo termina realmente un proyecto?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_28_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_28_0_Btn" onclick="CheckMCAnswer(28,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Cuando se han completado las actividades posteriores a su terminaci&#x00F3;n</li><li id="Q_28_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_28_1_Btn" onclick="CheckMCAnswer(28,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Cuando se ha cobrado el proyecto</li><li id="Q_28_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_28_2_Btn" onclick="CheckMCAnswer(28,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Cuando &#x00E9;ste se ha entregado al cliente</li></ol></li>
+<li class="QuizQuestion" id="Q_29" style="display: none;"><div class="QuestionText">Son varias las razones para terminar un proyecto, de ellas, &#x00BF;Qu&#x00E9; son la razones de cronograma?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_29_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_29_0_Btn" onclick="CheckMCAnswer(29,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La fecha de entrega se ha sobrepasado para un producto donde era vital</li><li id="Q_29_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_29_1_Btn" onclick="CheckMCAnswer(29,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El proyecto tiene tanta complejidad que los requisitos no dejan de aumentar</li><li id="Q_29_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_29_2_Btn" onclick="CheckMCAnswer(29,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El proyecto tiene tantos cambios que parece no acabarse nunca</li></ol></li>
+<li class="QuizQuestion" id="Q_30" style="display: none;"><div class="QuestionText">&#x00BF;En qu&#x00E9; se basa el m&#x00E9;todo de la cadena cr&#x00ED;tica?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_30_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_30_0_Btn" onclick="CheckMCAnswer(30,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;En el camino cr&#x00ED;tico y las reservas</li><li id="Q_30_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_30_1_Btn" onclick="CheckMCAnswer(30,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;En el plazo cr&#x00ED;tico para llegar a los hitos</li><li id="Q_30_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_30_2_Btn" onclick="CheckMCAnswer(30,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;En la cadena de actividades para terminar el proyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_31" style="display: none;"><div class="QuestionText">&#x00BF;Seg&#x00FA;n Furtel, &#x00BF;C&#x00F3;mo se debe comenzar cualquier solicitud de cambio?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_31_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_31_0_Btn" onclick="CheckMCAnswer(31,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Deben pasar por el Director de proyecto antes de ir al "Change Control Board"</li><li id="Q_31_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_31_1_Btn" onclick="CheckMCAnswer(31,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Debe existir un "Change Control Board" que debe recepcionar las solicitudes</li><li id="Q_31_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_31_2_Btn" onclick="CheckMCAnswer(31,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Deben ser iniciados por el Jefe de Proyecto y estudiados por el "Change Control Board"</li></ol></li>
+<li class="QuizQuestion" id="Q_32" style="display: none;"><div class="QuestionText">&#x00BF;En qu&#x00E9; consiste la gesti&#x00F3;n del cambio desde el punto de vista del usuario final?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_32_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_32_0_Btn" onclick="CheckMCAnswer(32,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;En atender las solicitudes de cambio de los usuarios finales</li><li id="Q_32_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_32_1_Btn" onclick="CheckMCAnswer(32,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;En realizar acciones orientadas a facilitar el paso de los usuarios al nuevo sistema</li><li id="Q_32_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_32_2_Btn" onclick="CheckMCAnswer(32,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;En gestionar la selecci&#x00F3;n de nuevos usuarios para el sistema</li></ol></li>
+<li class="QuizQuestion" id="Q_33" style="display: none;"><div class="QuestionText">En la t&#x00E9;cnica de la Gesti&#x00F3;n de Valor ganado o acumulado, &#x00BF;Cu&#x00E1;l es el tiempo estimado en la terminaci&#x00F3;n (ETAC)?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_33_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_33_0_Btn" onclick="CheckMCAnswer(33,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es la proyecci&#x00F3;n del coste total final en funci&#x00F3;n de la l&#x00ED;nea base y del desempe&#x00F1;o actuales. ETAC = Tiempo planeado x (BCWS / BCWP) Ver la referencia de la pregunta en Furtel</li><li id="Q_33_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_33_1_Btn" onclick="CheckMCAnswer(33,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es la proyecci&#x00F3;n del coste total final en funci&#x00F3;n de la l&#x00ED;nea base y de la variaci&#x00F3;n de cronograma actuales. ETAC = Tiempo Planeado x (BCWS / SV)</li><li id="Q_33_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_33_2_Btn" onclick="CheckMCAnswer(33,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es la proyecci&#x00F3;n del coste total final en funci&#x00F3;n de la l&#x00ED;nea base y del coste actuales. ETAC = Tiempo planeado x (BCWS / ACWP)</li></ol></li>
+<li class="QuizQuestion" id="Q_34" style="display: none;"><div class="QuestionText">Durante la ejecuci&#x00F3;n del proyecto el Jefe de proyecto es el responsable de...<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_34_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_34_0_Btn" onclick="CheckMCAnswer(34,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La Direcci&#x00F3;n del proyecto, la Coordinaci&#x00F3;n con el cliente y los Aspectos legales</li><li id="Q_34_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_34_1_Btn" onclick="CheckMCAnswer(34,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La Direcci&#x00F3;n del proyecto, la Gesti&#x00F3;n de costes y Consecuci&#x00F3;n de beneficios del proyecto</li><li id="Q_34_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_34_2_Btn" onclick="CheckMCAnswer(34,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La Direcci&#x00F3;n del proyecto, el impulso al desarrollo del proyecto y la toma de decisiones</li></ol></li>
+<li class="QuizQuestion" id="Q_35" style="display: none;"><div class="QuestionText">Las t&#x00E9;cnicas usuales para controlar y comunicar los avances del proyecto permiten informar a los diferentes stakeholders sobre el estado del proyecto. Dentro de ellas, &#x00BF;Qu&#x00E9; es la realizaci&#x00F3;n de pruebas y de auditor&#x00ED;as?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_35_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_35_0_Btn" onclick="CheckMCAnswer(35,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son revisiones realizadas a todo o parte del proyecto para identificar fortalezas y debilidades</li><li id="Q_35_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_35_1_Btn" onclick="CheckMCAnswer(35,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son revisiones realizadas para identificar riesgos que afecten negativamente al proyecto</li><li id="Q_35_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_35_2_Btn" onclick="CheckMCAnswer(35,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son revisiones realizadas para buscar responsables de los fallos del proyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_36" style="display: none;"><div class="QuestionText">Seg&#x00FA;n Furtel, &#x00BF;Cu&#x00E1;les son las principales razones para terminar un proyecto?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_36_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_36_0_Btn" onclick="CheckMCAnswer(36,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;L&#x00F3;gicas e il&#x00F3;gicas o b. De negocio, t&#x00E9;cnicas, de alcance, de cronograma, de coste, de calidad y pol&#x00ED;ticas</li><li id="Q_36_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_36_1_Btn" onclick="CheckMCAnswer(36,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;De negocio, t&#x00E9;cnicas, de alcance, de cronograma, de coste, de calidad y pol&#x00ED;ticas</li><li id="Q_36_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_36_2_Btn" onclick="CheckMCAnswer(36,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Presupuestarias, plazos, costes y calidad</li></ol></li>
+<li class="QuizQuestion" id="Q_37" style="display: none;"><div class="QuestionText">Las t&#x00E9;cnicas usuales para controlar y comunicar los avances del proyecto permiten informar a los diferentes stakeholders sobre el estado del proyecto. Dentro de ellas, &#x00BF;En qu&#x00E9; consiste la entrega de elementos "tangibles"?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_37_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_37_0_Btn" onclick="CheckMCAnswer(37,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;En identificar elementos que cubren una parte de los objetivos del proyecto, de manera que se pueden hacer entregas parciales y de este modo verificar el avance del proyecto</li><li id="Q_37_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_37_1_Btn" onclick="CheckMCAnswer(37,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;En definir hitos internos que deben ser certificados para hacerlos tangibles al cliente</li><li id="Q_37_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_37_2_Btn" onclick="CheckMCAnswer(37,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;En seleccionar elementos que f&#x00ED;sicamente se puedan tocar para hacer entregas, por ejemplo documentos en papel</li></ol></li>
+<li class="QuizQuestion" id="Q_38" style="display: none;"><div class="QuestionText">Seg&#x00FA;n Furtel, para el control y seguimiento del proyecto y cuando dicho proyecto debe organizar al personal a partir de cero, se deben establecer procesos simples, claros (qu&#x00E9; hacer) y procedimientos (c&#x00F3;mo hacerlo) que todos deben seguir. Esto debe incluir, entre otros...<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_38_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_38_0_Btn" onclick="CheckMCAnswer(38,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Procedimientos para el control de cambios y gesti&#x00F3;n de la configuraci&#x00F3;n, para la realizaci&#x00F3;n de informes y para el control de calidad</li><li id="Q_38_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_38_1_Btn" onclick="CheckMCAnswer(38,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Procedimientos para el control de costes, alcance, cronograma y calidad</li><li id="Q_38_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_38_2_Btn" onclick="CheckMCAnswer(38,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Procedimientos para gesti&#x00F3;n de personal, gesti&#x00F3;n de costes, gesti&#x00F3;n de plazos, gesti&#x00F3;n de calidad y gesti&#x00F3;n de riesgos</li></ol></li>
+<li class="QuizQuestion" id="Q_39" style="display: none;"><div class="QuestionText">Seg&#x00FA;n Meredith y Mantel, &#x00BF;En qu&#x00E9; consiste la terminaci&#x00F3;n por Integraci&#x00F3;n?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_39_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_39_0_Btn" onclick="CheckMCAnswer(39,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;De manera jer&#x00E1;rquica se da la orden de integrar lo que est&#x00E9; realizado hasta ese momento y de da por terminado el proyecto</li><li id="Q_39_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_39_1_Btn" onclick="CheckMCAnswer(39,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El proyecto realiza la integraci&#x00F3;n final de productos desarrollados y se da por termiando</li><li id="Q_39_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_39_2_Btn" onclick="CheckMCAnswer(39,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El equipo de proyecto, los procesos y los productos se integran en el departamento que realizar&#x00E1; la explotaci&#x00F3;n de manera planificada</li></ol></li>
+<li class="QuizQuestion" id="Q_40" style="display: none;"><div class="QuestionText">El equipo de proyecto, los procesos y los productos se integran en el departamento que realizar&#x00E1; la explotaci&#x00F3;n de manera planificada</div><ol class="MCAnswers"><li id="Q_40_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_40_0_Btn" onclick="CheckMCAnswer(40,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Realizar el cierre administrativo financiero del proyecto</li><li id="Q_40_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_40_1_Btn" onclick="CheckMCAnswer(40,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Publicar el informe final incluyendo lecciones aprendidas y recomendaciones para la mejora del proceso</li><li id="Q_40_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_40_2_Btn" onclick="CheckMCAnswer(40,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Programar y realizar un acto de cierre de proyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_41" style="display: none;"><div class="QuestionText">Dentro de las t&#x00E9;cnicas que ayudan a controlar los costes, &#x00BF;En qu&#x00E9; consiste el uso de herramientas de simulaci&#x00F3;n y estimaci&#x00F3;n de costes?<br />Seleccione una</div><ol class="MCAnswers"><li id="Q_41_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_41_0_Btn" onclick="CheckMCAnswer(41,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son herramientas que toman decisiones sobre el proyecto en funci&#x00F3;n de escenarios de ejecuci&#x00F3;n</li><li id="Q_41_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_41_1_Btn" onclick="CheckMCAnswer(41,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son herramientas que permiten dise&#x00F1;ar escenarios de ejecuci&#x00F3;n del proyecto hasta la conclusi&#x00F3;n y valorarlos para poder tomar decisiones</li><li id="Q_41_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_41_2_Btn" onclick="CheckMCAnswer(41,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;SOn herramientas que simulan el proyecto y lo comparan con lo realizado para ver d&#x00F3;nde se han cometido fallos</li></ol></li>
+<li class="QuizQuestion" id="Q_42" style="display: none;"><div class="QuestionText">&#x00BF;Qu&#x00E9; dos t&#x00E9;cnicas recomienda Furtel para hacer la evaluaci&#x00F3;n del desempe&#x00F1;o?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_42_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_42_0_Btn" onclick="CheckMCAnswer(42,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La Gesti&#x00F3;n del valor ganado y la Cadena cr&#x00ED;tica</li><li id="Q_42_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_42_1_Btn" onclick="CheckMCAnswer(42,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La Cadena cr&#x00ED;tica y las Reuniones de avance de proyecto</li><li id="Q_42_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_42_2_Btn" onclick="CheckMCAnswer(42,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La Gesti&#x00F3;n del valor ganado y las Reuniones de avance de proyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_43" style="display: none;"><div class="QuestionText">Las t&#x00E9;cnicas usuales para controlar y comunicar los avances del proyecto permiten informar a los diferentes stakeholders sobre el estado del proyecto. Dentro de ellas, &#x00BF;En qu&#x00E9; consiste la entrega de elementos &#x201C;tangibles&#x201D;?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_43_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_43_0_Btn" onclick="CheckMCAnswer(43,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;a. En identificar elementos que cubren una parte de los objetivos del proyecto, de manera que se pueden hacer entregas parciales y de este modo verificar el avance del proyecto</li><li id="Q_43_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_43_1_Btn" onclick="CheckMCAnswer(43,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;b. En definir hitos internos que deben ser certificados para hacerlos tangibles al cliente</li><li id="Q_43_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_43_2_Btn" onclick="CheckMCAnswer(43,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;c. En seleccionar elementos que f&#x00ED;sicamente se puedan tocar para hacer entregas, por ejemplo documentos en papel</li></ol></li>
+<li class="QuizQuestion" id="Q_44" style="display: none;"><div class="QuestionText">&#x00BF;Hace cu&#x00E1;nto que no veis al Vascu por la Universidad?</div><ol class="MCAnswers"><li id="Q_44_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_44_0_Btn" onclick="CheckMCAnswer(44,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;1-2 de carrera</li><li id="Q_44_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_44_1_Btn" onclick="CheckMCAnswer(44,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;No he visto al vassco en mi vida Hulio</li><li id="Q_44_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_44_2_Btn" onclick="CheckMCAnswer(44,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;No sab&#x00ED;a que iba a la uni, yo solo le veo de fiesta</li></ol></li>
+<li class="QuizQuestion" id="Q_45" style="display: none;"><div class="QuestionText">Seg&#x00FA;n Furtel (Furtel y otros, 2005) , &#x00BF;Cu&#x00E1;les son los elementos b&#x00E1;sicos del control del alcance?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_45_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_45_0_Btn" onclick="CheckMCAnswer(45,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Un formato de documentaci&#x00F3;n, un proceso de gesti&#x00F3;n de costes, una manera de informar del estado de las variables del proceso y un sistema de auditor&#x00ED;a o revisi&#x00F3;n peri&#x00F3;dica</li><li id="Q_45_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_45_1_Btn" onclick="CheckMCAnswer(45,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Un formato de identificaci&#x00F3;n y nomenclatura, un proceso de gesti&#x00F3;n de cambios, una manera de informar del estado de las variables del proceso y un sistema de auditor&#x00ED;a o revisi&#x00F3;n peri&#x00F3;dica</li><li id="Q_45_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_45_2_Btn" onclick="CheckMCAnswer(45,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Un formato de identificaci&#x00F3;n y nomenclatura, un proceso de gesti&#x00F3;n de costes, una manera de informar del estado de avance del proyecto y un sistema de auditor&#x00ED;a o revisi&#x00F3;n peri&#x00F3;dica</li></ol></li>
+<li class="QuizQuestion" id="Q_46" style="display: none;"><div class="QuestionText">Las t&#x00E9;cnicas usuales para controlar y comunicar los avances del proyecto permiten informar a los diferentes stakeholders sobre el estado del proyecto. Dentro de ellas, &#x00BF;Qu&#x00E9; son los hitos de control?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_46_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_46_0_Btn" onclick="CheckMCAnswer(46,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son elementos no necesariamente tangibles que permiten identificar el estado de avance del proyecto</li><li id="Q_46_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_46_1_Btn" onclick="CheckMCAnswer(46,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son tareas ficticias que permiten controlar el el estado de avance del proyecto</li><li id="Q_46_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_46_2_Btn" onclick="CheckMCAnswer(46,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son tareas introducidas en el cronograma para controlar el avance del proyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_47" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;les son los tipos de final de proyecto seg&#x00FA;n Pritchard?</div><ol class="MCAnswers"><li id="Q_47_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_47_0_Btn" onclick="CheckMCAnswer(47,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Extinci&#x00F3;n, adici&#x00F3;n, integraci&#x00F3;n y hambre</li><li id="Q_47_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_47_1_Btn" onclick="CheckMCAnswer(47,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Finalizaci&#x00F3;n o proyecto "sin fin"</li><li id="Q_47_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_47_2_Btn" onclick="CheckMCAnswer(47,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Positiva y negativa</li></ol></li>
+<li class="QuizQuestion" id="Q_48" style="display: none;"><div class="QuestionText">El seguimiento y control de un proyecto es un conjunto de actividades que pretenden conseguir que el proyecto se ajuste a los planes establecidos a priori y que consiga los objetivos que para &#x00E9;l se hayan determinado. &#x00BF;Cu&#x00E1;les son estos objetivos?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_48_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_48_0_Btn" onclick="CheckMCAnswer(48,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Mejora continua, financiaci&#x00F3;n, cumplimiento y mantenimiento</li><li id="Q_48_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_48_1_Btn" onclick="CheckMCAnswer(48,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Alcance, coste, plazo y calidad</li><li id="Q_48_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_48_2_Btn" onclick="CheckMCAnswer(48,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Requisitos, usabilidad, accesibilidad y fiabilidad</li></ol></li>
+<li class="QuizQuestion" id="Q_49" style="display: none;"><div class="QuestionText">&#x00BF;Qu&#x00E9; es un cuadro de mandos desde el punto de vista del SIGP?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_49_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_49_0_Btn" onclick="CheckMCAnswer(49,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es una visi&#x00F3;n parcial de algunas variables relacionadas para ofrecer una vista conjunta de alg&#x00FA;n aspecto del proyecto</li><li id="Q_49_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_49_1_Btn" onclick="CheckMCAnswer(49,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es una colecci&#x00F3;n de gr&#x00E1;ficos que muestran informaci&#x00F3;n parcial del proyecto</li><li id="Q_49_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_49_2_Btn" onclick="CheckMCAnswer(49,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es una herramienta que tienes los SIGP para seleccionar variables del proyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_50" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;l es la principal ventaja del m&#x00E9;todo de la Cadena Cr&#x00ED;tica frente al EVM?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_50_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_50_0_Btn" onclick="CheckMCAnswer(50,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La precisi&#x00F3;n de los c&#x00E1;lculos</li><li id="Q_50_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_50_1_Btn" onclick="CheckMCAnswer(50,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La mayor informaci&#x00F3;n sobre el proyecto</li><li id="Q_50_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_50_2_Btn" onclick="CheckMCAnswer(50,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;La sencillez de los c&#x00E1;lculos a realizar</li></ol></li>
+<li class="QuizQuestion" id="Q_51" style="display: none;"><div class="QuestionText">Dentro de las t&#x00E9;cnicas que ayudan a controlar los costes, &#x00BF;En qu&#x00E9; consiste el uso de la contabilidad anal&#x00ED;tica?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_51_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_51_0_Btn" onclick="CheckMCAnswer(51,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Usar herramientas de contabilidad anal&#x00ED;tica que hagan regularmente un an&#x00E1;lisis del desempe&#x00F1;o del proyecto</li><li id="Q_51_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_51_1_Btn" onclick="CheckMCAnswer(51,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Usar herramientas de contabilidad anal&#x00ED;tica que realicen regularmente la gesti&#x00F3;n de pagos para evitar sobrecostes</li><li id="Q_51_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_51_2_Btn" onclick="CheckMCAnswer(51,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Usar herramientas de contabilidad anal&#x00ED;tica que permitan cargar los costes a cada actividad del proyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_52" style="display: none;"><div class="QuestionText">Seg&#x00FA;n Meredith y Mantel, &#x00BF;En qu&#x00E9; consiste la terminaci&#x00F3;n por Extinci&#x00F3;n?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_52_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_52_0_Btn" onclick="CheckMCAnswer(52,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Esta terminaci&#x00F3;n ocurre cuando se termina el proyecto por una orden jer&#x00E1;rquica</li><li id="Q_52_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_52_1_Btn" onclick="CheckMCAnswer(52,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Los recursos para el proyecto van disminuyendo hasta el punto en que no hay actividad</li><li id="Q_52_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_52_2_Btn" onclick="CheckMCAnswer(52,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Esta terminaci&#x00F3;n ocurre cuando el proyecto termina porque es satisfactorio, insatisfactorio, sustituido o &#x201C;asesinado&#x201D;</li></ol></li>
+<li class="QuizQuestion" id="Q_53" style="display: none;"><div class="QuestionText">Dentro de los elementos b&#x00E1;sicos del control del alcance, &#x00BF;Qu&#x00E9; objetivo cumple tener un formato de identificaci&#x00F3;n y nomenclatura?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_53_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_53_0_Btn" onclick="CheckMCAnswer(53,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Tener una lista de distribuci&#x00F3;n de documentos</li><li id="Q_53_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_53_1_Btn" onclick="CheckMCAnswer(53,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Evitar t&#x00E9;rminos confusos</li><li id="Q_53_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_53_2_Btn" onclick="CheckMCAnswer(53,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Tener una codificaci&#x00F3;n de los equipos destinados al proyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_54" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;l de los siguientes NO es un beneficio propio de la gesti&#x00F3;n del cambio?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_54_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_54_0_Btn" onclick="CheckMCAnswer(54,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Mejora de la productividad de los usuarios</li><li id="Q_54_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_54_1_Btn" onclick="CheckMCAnswer(54,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Aumento de la satisfacci&#x00F3;n de los usuarios</li><li id="Q_54_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_54_2_Btn" onclick="CheckMCAnswer(54,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Mejora de las condiciones de trabajo de los usuario</li></ol></li>
+<li class="QuizQuestion" id="Q_55" style="display: none;"><div class="QuestionText">En la t&#x00E9;cnica de la Gesti&#x00F3;n de Valor ganado o acumulado, &#x00BF;Que es el BCWS?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_55_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_55_0_Btn" onclick="CheckMCAnswer(55,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Coste presupuestado del trabajo programado</li><li id="Q_55_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_55_1_Btn" onclick="CheckMCAnswer(55,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Coste presupuestado del trabajo realizado</li><li id="Q_55_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_55_2_Btn" onclick="CheckMCAnswer(55,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Coste real del trabajo realizado</li></ol></li>
+<li class="QuizQuestion" id="Q_56" style="display: none;"><div class="QuestionText">Dentro de las t&#x00E9;cnicas que ayudan a controlar los costes, &#x00BF;En qu&#x00E9; consiste centrar el esfuerzo en las partidas de mayor coste?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_56_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_56_0_Btn" onclick="CheckMCAnswer(56,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Consiste en partir tareas para que su coste no sea significativo y su control no sea necesario, centrando la atenci&#x00F3;n en las que no se pueden partir</li><li id="Q_56_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_56_1_Btn" onclick="CheckMCAnswer(56,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Consiste en unir actividades para que el coste global de todas ellas sea suficientemente alto como para que tenga sentido prestales atenci&#x00F3;n</li><li id="Q_56_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_56_2_Btn" onclick="CheckMCAnswer(56,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Consiste en usar t&#x00E9;cnicas como la Ley de Pareto o los diagramas ABC para decidir qu&#x00E9; actividades requieren mayor atenci&#x00F3;n</li></ol></li>
+<li class="QuizQuestion" id="Q_57" style="display: none;"><div class="QuestionText">Dentro de las t&#x00E9;cnicas que ayudan a controlar los costes, &#x00BF;En qu&#x00E9;<br />consiste el desglose en actividades sencillas?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_57_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_57_0_Btn" onclick="CheckMCAnswer(57,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;En definir actividades de dos o tres d&#x00ED;as como m&#x00E1;ximo para evitar la sobrecarga de los equipos de trabajo</li><li id="Q_57_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_57_1_Btn" onclick="CheckMCAnswer(57,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;En definir actividades cortas y con costes y tiempos bien<br />calculados y definidos para facilitar las estimaciones</li><li id="Q_57_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_57_2_Btn" onclick="CheckMCAnswer(57,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;En dise&#x00F1;ar el proyecto en base a actividades cortas para identificar mejor los hitos</li></ol></li>
+<li class="QuizQuestion" id="Q_58" style="display: none;"><div class="QuestionText">&#x00BF;A qu&#x00E9; nos puede ayudar la aplicaci&#x00F3;n de t&#x00E9;cnicas como las de los gr&#x00E1;ficos ABC o la ley de Pareto (80/20) con respecto del SIGP?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_58_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_58_0_Btn" onclick="CheckMCAnswer(58,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;No pueden ayudar a seleccionar las adquisiciones con mayor coste para centrar los esfuerzos en ellas</li><li id="Q_58_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_58_1_Btn" onclick="CheckMCAnswer(58,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Nos pueden ayudar a seleccionar aquellas variables que tienen m&#x00E1;s impacto y que deben ser observadas con m&#x00E1;s atenci&#x00F3;n</li><li id="Q_58_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_58_2_Btn" onclick="CheckMCAnswer(58,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Nos pueden ayudar a seleccionar los riesgos m&#x00E1;s importantes para el proyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_59" style="display: none;"><div class="QuestionText">En la t&#x00E9;cnica de la Gesti&#x00F3;n de Valor ganado o acumulado, &#x00BF;Qu&#x00E9; representa el BCWS?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_59_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_59_0_Btn" onclick="CheckMCAnswer(59,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es la l&#x00ED;nea base, representa cuanto trabajo deber&#x00ED;a estar hehco al coste presupuestado</li><li id="Q_59_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_59_1_Btn" onclick="CheckMCAnswer(59,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es el valor del coste de trabaja hasta el momento, representa cu&#x00E1;nto ha costado el proyecto hasta el momento actual</li><li id="Q_59_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_59_2_Btn" onclick="CheckMCAnswer(59,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es el valor del trabajo realizado, representa cuanto trabajo est&#x00E1; terminado en el momento actual</li></ol></li>
+<li class="QuizQuestion" id="Q_60" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;l de las siguientes NO es una actividad propia de la gesti&#x00F3;n del cambio?<br />Seleccione una</div><ol class="MCAnswers"><li id="Q_60_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_60_0_Btn" onclick="CheckMCAnswer(60,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Programar actividades de formaci&#x00F3;n de los usuarios finales</li><li id="Q_60_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_60_1_Btn" onclick="CheckMCAnswer(60,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Facilitar la implicaci&#x00F3;n del usuario final en la definici&#x00F3;n del nuevo sistema</li><li id="Q_60_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_60_2_Btn" onclick="CheckMCAnswer(60,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Planear contingencias para el caso de rechazo del usuario final</li></ol></li>
+<li class="QuizQuestion" id="Q_61" style="display: none;"><div class="QuestionText">&#x00BF;C&#x00F3;mo se pueden definir los costes internos?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_61_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_61_0_Btn" onclick="CheckMCAnswer(61,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son costes temporales que la organizaci&#x00F3;n pagar&#x00E1; al final del proyecto</li><li id="Q_61_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_61_1_Btn" onclick="CheckMCAnswer(61,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son los costes de los equipos usados en el proyecto</li><li id="Q_61_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_61_2_Btn" onclick="CheckMCAnswer(61,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son los costes en los que incurre el proyecto por haber usado recursos propios de la organizaci&#x00F3;n</li></ol></li>
+<li class="QuizQuestion" id="Q_62" style="display: none;"><div class="QuestionText">&#x00BF;Qu&#x00E9; tipos de costes exiten en un proyecto desde el punto de vista del origen?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_62_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_62_0_Btn" onclick="CheckMCAnswer(62,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Costes internos y externos</li><li id="Q_62_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_62_1_Btn" onclick="CheckMCAnswer(62,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Costes de proveedores y de clientes</li><li id="Q_62_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_62_2_Btn" onclick="CheckMCAnswer(62,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Costes financieros y laborales</li></ol></li>
+<li class="QuizQuestion" id="Q_63" style="display: none;"><div class="QuestionText">&#x00BF;Qu&#x00E9; es el Sistema de Informaci&#x00F3;n de Gesti&#x00F3;n del Proyecto (SIGP)?<br />Seleccione una:</div><ol class="MCAnswers"><li id="Q_63_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_63_0_Btn" onclick="CheckMCAnswer(63,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es un sistema que permite consultar las posibles acciones a tomar para<br />corregir la marcha del proyecto</li><li id="Q_63_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_63_1_Btn" onclick="CheckMCAnswer(63,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es un sistema que permite consultar en todo momento la situaci&#x00F3;n del<br />proyecto en funci&#x00F3;n de la planificaci&#x00F3;n aprobada</li><li id="Q_63_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_63_2_Btn" onclick="CheckMCAnswer(63,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Es un sistema que permite actuar sobre el proyecto para corregir las<br />desviaciones</li></ol></li>
+<li class="QuizQuestion" id="Q_64" style="display: none;"><div class="QuestionText">&#x00BF;Qu&#x00E9; quiere decir que la formaci&#x00F3;n debe ser completa?<br />son los informes de avance del proyecto?</div><ol class="MCAnswers"><li id="Q_64_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_64_0_Btn" onclick="CheckMCAnswer(64,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Que el usuario debe recibir formaci&#x00F3;n sobre el sistema y sobre los conceptos<br />inform&#x00E1;ticos que requiera el sistema</li><li id="Q_64_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_64_1_Btn" onclick="CheckMCAnswer(64,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Que el usuario debe recibir formaci&#x00F3;n suponiendo que no sabe nada sobre el sistema ni el dominio</li><li id="Q_64_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_64_2_Btn" onclick="CheckMCAnswer(64,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;c. Que el usuario debe recibir formaci&#x00F3;n de todos y cada uno de los aspectos que<br />le ata&#x00F1;en para su trabajo con el sistema</li></ol></li>
+<li class="QuizQuestion" id="Q_65" style="display: none;"><div class="QuestionText">Son varias las razones para terminar un proyecto, de ellas, &#x00BF;Qu&#x00E9; son la razones de<br />calidad?</div><ol class="MCAnswers"><li id="Q_65_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_65_0_Btn" onclick="CheckMCAnswer(65,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El proyecto resulta muy caro de mantener porque se ha construido sin calidad</li><li id="Q_65_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_65_1_Btn" onclick="CheckMCAnswer(65,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El proyecto no termina de funcionar o no se adapta a los requisitos</li><li id="Q_65_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_65_2_Btn" onclick="CheckMCAnswer(65,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;El proyecto resulta tan caro que no es interesante explotarlo</li></ol></li>
+<li class="QuizQuestion" id="Q_66" style="display: none;"><div class="QuestionText">&#x00BF;C&#x00F3;mo se pueden identificar los costes internos?</div><ol class="MCAnswers"><li id="Q_66_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_66_0_Btn" onclick="CheckMCAnswer(66,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Haciendo bloques grandes de costes que pueden manejarse con m&#x00E1;s facilidad</li><li id="Q_66_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_66_1_Btn" onclick="CheckMCAnswer(66,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Convirti&#x00E9;ndolos en externos</li><li id="Q_66_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_66_2_Btn" onclick="CheckMCAnswer(66,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;c. Mediante sistemas de contabilidad anal&#x00ED;tica</li></ol></li>
+<li class="QuizQuestion" id="Q_67" style="display: none;"><div class="QuestionText">Las t&#x00E9;cnicas usuales para controlar y comunicar los avances del proyecto permiten<br />informar a los diferentes stakeholders sobre el estado del proyecto. Dentro de ellas,<br />&#x00BF;Qu&#x00E9; son los informes de avance del proyecto?</div><ol class="MCAnswers"><li id="Q_67_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_67_0_Btn" onclick="CheckMCAnswer(67,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son informes basados en la evaluaci&#x00F3;n del desempe&#x00F1;o y en t&#x00E9;cnicas como la<br />Earned Value Management</li><li id="Q_67_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_67_1_Btn" onclick="CheckMCAnswer(67,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son informes que informan del estado de avance de las actividades del proyecto</li><li id="Q_67_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_67_2_Btn" onclick="CheckMCAnswer(67,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Son informes que presentan el estado de los costes en un momento del proyecto</li></ol></li>
+<li class="QuizQuestion" id="Q_68" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;l suele ser realmente la &#x00FA;ltima actividad del proyecto?</div><ol class="MCAnswers"><li id="Q_68_0"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_68_0_Btn" onclick="CheckMCAnswer(68,0,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Programar y realizar un acto de cierre de proyecto</li><li id="Q_68_1"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_68_1_Btn" onclick="CheckMCAnswer(68,1,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Publicar el informe final incluyendo lecciones aprendidas y recomendaciones<br />para la mejora del proceso</li><li id="Q_68_2"><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_68_2_Btn" onclick="CheckMCAnswer(68,2,this)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsp;&nbsp;Realizar el cierre administrativo financiero del proyecto</li></ol></li></ol>
+
+
+
+</div>
+
+
+
+<div class="Feedback" id="FeedbackDiv">
+<div class="FeedbackText" id="FeedbackContent"></div>
+<button id="FeedbackOKButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="HideFeedback(); return false;">&nbsp;OK&nbsp;</button>
+</div>
+
+<!-- BeginBottomNavButtons -->
+
+
+<div class="NavButtonBar" id="BottomNavBar">
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="history.back(); return false;">&lt;=</button>
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)"  onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='index.htm'; return false;"> Index </button>
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='tema_1.htm'; return false;">=&gt;</button>
+
+
+</div>
+
+
+
+<!-- EndBottomNavButtons -->
+
+<!-- BeginSubmissionForm -->
+
+<!-- EndSubmissionForm -->
+
+</body>
+
+</html>
