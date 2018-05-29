@@ -1466,8 +1466,19 @@ function Shuffle(InArray){
 }
 
 function WriteToInstructions(Feedback) {
+	var CFT = 0;
+	var FFT = 0;
+	for (QNum=0; QNum<State.length; QNum++){		
+		if (State[QNum] != null){
+			if (State[QNum][0] == 1) CFT++;
+			else if(State[QNum][2] || State[QNum][4] || State[QNum][4] ) FFT ++;			
+		}
+	}
+	point_value = (10 / QsToShow);
+	Feedback = '<br />Questions Answered OK: ' + CFT 
+	Feedback += '<br /> Questions Answered BAD: ' + FFT;
+	Feedback += '<br /> Final Computed Score is: ' + ((point_value * CFT) - (point_value/2 * FFT)) + '/10';
 	document.getElementById('InstructionsDiv').innerHTML = Feedback;
-
 }
 
 
