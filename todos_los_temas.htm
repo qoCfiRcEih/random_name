@@ -7,7 +7,7 @@
 <meta name="DC:Title" content="Todos los temas" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
 
 <title>
 Todos los temas
@@ -1476,9 +1476,11 @@ function WriteToInstructions(Feedback) {
 		}
 	}
 	point_value = (10 / QsToShow);
+	computed_score = ((point_value * CFT) - (point_value/3 * FFT)).toFixed(2);
 	Feedback = '<br />Questions Answered OK: ' + CFT 
 	Feedback += '<br /> Questions Answered BAD: ' + FFT;
-	Feedback += '<br /> Final Computed Score is: ' + ((point_value * CFT) - (point_value/3 * FFT)) + '/10';
+	Feedback += '<br /> Final Computed Score is: ' + computed_score + '/10 ';
+	Feedback += (computed_score >= 3)?'😎':'🤬';
 	document.getElementById('InstructionsDiv').innerHTML = Feedback;
 	RefreshImages();
 }
