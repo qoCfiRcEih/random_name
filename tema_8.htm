@@ -1474,7 +1474,7 @@ function WriteToInstructions(Feedback) {
 	point_value = (10 / QsToShow);
 	Feedback = '<br />Questions Answered OK: ' + CFT 
 	Feedback += '<br /> Questions Answered BAD: ' + FFT;
-	Feedback += '<br /> Final Computed Score is: ' + ((point_value * CFT) - (point_value/2 * FFT)) + '/10';
+	Feedback += '<br /> Final Computed Score is: ' + ((point_value * CFT) - (point_value/3 * FFT)) + '/10';
 	document.getElementById('InstructionsDiv').innerHTML = Feedback;
 }
 
